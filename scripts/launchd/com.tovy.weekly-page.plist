@@ -3,10 +3,9 @@
 <!--
   Weekly content loop for tovyphotography.com. Mondays at 9:00 local time.
   If the Mac is asleep at 9:00, launchd runs it at the next wake.
-  Installed copy lives at ~/Library/LaunchAgents/com.tovy.weekly-page.plist.
-  Reload after editing:
-    launchctl bootout gui/$(id -u)/com.tovy.weekly-page
-    launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.tovy.weekly-page.plist
+  This file is a template: __REPO__ and __HOME__ are filled in by scripts/install-launchd.sh,
+  which writes ~/Library/LaunchAgents/com.tovy.weekly-page.plist and loads it.
+  Load it on ONE machine only. To remove: scripts/install-launchd.sh --uninstall
 -->
 <plist version="1.0">
 <dict>
@@ -16,18 +15,18 @@
   <key>ProgramArguments</key>
   <array>
     <string>/bin/bash</string>
-    <string>/Users/gabiamrami/gabi-photography-site/scripts/weekly-page.sh</string>
+    <string>__REPO__/scripts/weekly-page.sh</string>
   </array>
 
   <key>WorkingDirectory</key>
-  <string>/Users/gabiamrami/gabi-photography-site</string>
+  <string>__REPO__</string>
 
   <key>EnvironmentVariables</key>
   <dict>
     <key>PATH</key>
-    <string>/Users/gabiamrami/.local/node/bin:/Users/gabiamrami/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <string>__HOME__/.local/node/bin:__HOME__/.local/bin:__HOME__/.npm-global/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
     <key>HOME</key>
-    <string>/Users/gabiamrami</string>
+    <string>__HOME__</string>
   </dict>
 
   <key>StartCalendarInterval</key>
@@ -54,8 +53,8 @@
   <false/>
 
   <key>StandardOutPath</key>
-  <string>/Users/gabiamrami/Library/Logs/tovy-weekly-page.log</string>
+  <string>__HOME__/Library/Logs/tovy-weekly-page.log</string>
   <key>StandardErrorPath</key>
-  <string>/Users/gabiamrami/Library/Logs/tovy-weekly-page.log</string>
+  <string>__HOME__/Library/Logs/tovy-weekly-page.log</string>
 </dict>
 </plist>

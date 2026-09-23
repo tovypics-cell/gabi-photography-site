@@ -11,8 +11,12 @@
 #                                       and the PR is a draft on a --dry-run- branch
 #   scripts/weekly-page.sh --base BR    start from branch BR instead of main
 #
+# Runs on Omer's Mac mini (OpenSEO available) since 2026-09-22. It can also run on Gabi's
+# MacBook; only one machine should have the launchd agent loaded at a time.
+#
 # Local settings (not in git): ~/.config/tovy-weekly/env
-#   IMESSAGE_TO=...                 phone number or Apple ID email to text
+#   TELEGRAM_CHAT_ID=... and TELEGRAM_BOT_TOKEN=... (or TELEGRAM_BOT_TOKEN_JSON=/path/to/openclaw.json)
+#   IMESSAGE_TO=...                 phone number or Apple ID email to text (fallback channel)
 #   CLAUDE_CODE_OAUTH_TOKEN=...     from `claude setup-token`, so launchd can run claude
 #   CLAUDE_BIN=... / GH_BIN=...     optional overrides
 set -euo pipefail
@@ -20,20 +24,22 @@ set -euo pipefail
 # Run from a temp copy: this script lives in the repo and `git checkout` below can
 # rewrite it on disk while bash is still reading it.
 if [ -z "${TOVY_WEEKLY_COPY:-}" ]; then
+  export TOVY_REPO="${TOVY_REPO:-$(cd "$(dirname "$0")/.." && pwd)}"
   src="$(cd "$(dirname "$0")" && pwd)/$(basename "$0")"
   tmpdir="$(mktemp -d "${TMPDIR:-/tmp}/tovy-weekly.XXXXXX")"
   cp "$src" "$tmpdir/weekly-page.sh"
   TOVY_WEEKLY_COPY="$tmpdir" exec /bin/bash "$tmpdir/weekly-page.sh" "$@"
 fi
 
-REPO="/Users/gabiamrami/gabi-photography-site"
+# The repo is wherever this script lives (Gabi's MacBook or Omer's Mac mini). Override with TOVY_REPO.
+REPO="${TOVY_REPO:?TOVY_REPO not set}"
 GH_REPO="tovypics-cell/gabi-photography-site"
-CONFIG="$HOME/.config/tovy-weekly/env"
+CONFIG="${TOVY_WEEKLY_CONFIG:-$HOME/.config/tovy-weekly/env}"
 QUEUE="content/queue.json"
 PROMPT_FILE="scripts/weekly-page-prompt.md"
 RUN_DIR=".content-run"
 LOCK="$HOME/.cache/tovy-weekly-page.lock"
-export PATH="/Users/gabiamrami/.local/node/bin:$HOME/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$HOME/.local/node/bin:$HOME/.local/bin:$HOME/.npm-global/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 DRY_RUN=0
 BASE="main"
@@ -54,8 +60,23 @@ log() { printf '[%s] %s\n' "$(date '+%Y-%m-%d %H:%M:%S')" "$*"; }
 
 notify() {
   local msg="$1"
+  # Telegram (set TELEGRAM_CHAT_ID plus TELEGRAM_BOT_TOKEN, or TELEGRAM_BOT_TOKEN_JSON pointing at a
+  # JSON file whose .channels.telegram.botToken holds the token, in the config file).
+  if [ -n "${TELEGRAM_CHAT_ID:-}" ]; then
+    local token="${TELEGRAM_BOT_TOKEN:-}"
+    if [ -z "$token" ] && [ -n "${TELEGRAM_BOT_TOKEN_JSON:-}" ] && [ -r "$TELEGRAM_BOT_TOKEN_JSON" ]; then
+      token="$(jq -r '.channels.telegram.botToken // empty' "$TELEGRAM_BOT_TOKEN_JSON" 2>/dev/null || true)"
+    fi
+    if [ -n "$token" ]; then
+      curl -s -m 20 -o /dev/null --data-urlencode "chat_id=$TELEGRAM_CHAT_ID" --data-urlencode "text=$msg" \
+        --data-urlencode "disable_web_page_preview=true" "https://api.telegram.org/bot$token/sendMessage" \
+        || log "Telegram send failed"
+      return 0
+    fi
+    log "TELEGRAM_CHAT_ID set but no bot token found, skipping Telegram"
+  fi
   if [ -z "${IMESSAGE_TO:-}" ]; then
-    log "IMESSAGE_TO not set in $CONFIG, skipping iMessage: $msg"
+    log "no notification channel configured (Telegram or iMessage), skipping: $msg"
     return 0
   fi
   /usr/bin/osascript - "$IMESSAGE_TO" "$msg" <<'OSA' >/dev/null || log "iMessage send failed"
@@ -160,7 +181,7 @@ SUMMARY="$RUN_DIR/summary.json"
 log "running claude (transcript: $REPO/$RUN_DIR/claude.log)"
 "$CLAUDE_BIN" -p \
   --permission-mode acceptEdits \
-  --allowedTools "Read,Edit,Write,WebSearch,WebFetch,Bash(git *),Bash(npm run build)" \
+  --allowedTools "Read,Edit,Write,WebSearch,WebFetch,Bash(git *),Bash(npm run build),mcp__openseo__get_keyword_metrics,mcp__openseo__get_serp_results,mcp__openseo__get_project_context" \
   --max-turns 120 \
   < "$RUN_DIR/prompt.md" > "$RUN_DIR/claude.log" 2>&1 \
   || die "claude exited with an error (see $RUN_DIR/claude.log)"

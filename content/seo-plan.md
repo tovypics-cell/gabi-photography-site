@@ -99,7 +99,7 @@ One page per intent. These queue items were removed as separate pages and folded
 
 ## Cadence
 
-The loop runs Monday and Thursday at 9:00. Monday usually lands a new page, Thursday a rewrite, because the queue alternates them. Every run opens a PR; Gabi merging is the publish step. Nothing is scheduled to publish on its own.
+The loop runs Monday and Thursday at 9:00 on Omer's Mac mini, where OpenSEO and DataForSEO are available to the writer (since 2026-09-22). Gabi's MacBook no longer needs the launchd agent; only one machine should have it loaded. Monday usually lands a new page, Thursday a rewrite, because the queue alternates them. Every run opens a PR; Gabi merging is the publish step. Nothing is scheduled to publish on its own.
 
 ## Implementation phases
 
