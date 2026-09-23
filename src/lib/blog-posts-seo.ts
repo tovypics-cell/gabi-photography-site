@@ -196,4 +196,240 @@ export const seoBlogPosts: BlogPost[] = [
 <p>Ready to plan? Here is <a href="/sessions/newborn-photography">how my in-home newborn sessions work</a>, or <a href="/contact">reach out</a> with your due date.</p>
 `,
   },
+  {
+    slug: "engagement-photoshoot-cost-chicago",
+    title: "How Much Does an Engagement Photoshoot Cost in Chicago?",
+    excerpt:
+      "Engagement photoshoot cost in Chicago, from published 2026 guides and from my own pricing: what the ranges mean, what drives them, and what you should get for the money.",
+    date: "2026-09-22",
+    category: "Tips",
+    image: "/photos/garfield-park-conservatory-engagement/cover-bench.jpg",
+    seoTitle: "Engagement Photoshoot Cost in Chicago | Tovy Photography",
+    seoDescription:
+      "How much does an engagement photoshoot cost? Chicago guides put standalone sessions at $450 to $1,200. My North Shore engagement sessions run $200 to $500.",
+    faqs: [
+      {
+        question: "How much does an engagement photoshoot cost in Chicago?",
+        answer:
+          "A 2026 Chicago pricing guide from TWA Photography puts a standalone engagement session with a professional at $450 to $1,200. My engagement sessions in Chicago and the North Shore run from $200 for a 30-minute mini to $500 for a 90-minute session with two locations, edited images and print rights included.",
+      },
+      {
+        question: "Why do engagement photographers charge such different prices?",
+        answer:
+          "Experience is the biggest factor. PhotographersRanked's 2026 guide puts a second-shooter at $300 to $500 an hour, an experienced portrait photographer at $600 to $1,200, and an in-demand wedding photographer at $1,200 to $2,500 or more. Session length, number of locations and whether images are included matter too.",
+      },
+      {
+        question: "Is an engagement session included in wedding photography?",
+        answer:
+          "Sometimes. Higher-priced wedding packages often bundle one. If you are booking a wedding photographer, ask. If you want a standalone session, or your wedding photographer is far away, a local portrait photographer is usually the more affordable route.",
+      },
+      {
+        question: "What should an engagement photoshoot include?",
+        answer:
+          "At minimum: the photographer's time at one location, direction so you look natural, professionally edited digital images, and the right to print and share them. Ask whether a second location, a second outfit and a fast sneak peek are included.",
+      },
+    ],
+    content: `
+<p>An engagement photoshoot in Chicago typically costs between $450 and $1,200 for a standalone session with a professional photographer, according to <a href="https://twaphoto.com/engagement-photography-in-chicago-locations-pricing-everything-you-need-to-know-2026/">TWA Photography's 2026 Chicago pricing guide</a>. Nationally the spread is wider. <a href="https://withjoy.com/blog/engagement-photos-cost/">Joy's engagement photo cost guide</a> puts it anywhere from $200 to more than $3,000. My engagement sessions in Chicago and the North Shore run from $200 to $500, and the edited images are included.</p>
+
+<p>That is the short answer. Here is what sits behind the numbers so you can compare quotes fairly.</p>
+
+<h2>What the 2026 guides say</h2>
+
+<h3>How much does an engagement photoshoot cost in Chicago?</h3>
+
+<p>TWA's guide says a standalone Chicago session runs $450 to $1,200. At the low end that means about 45 to 60 minutes at one location with edited digital files. At the high end it means 90 minutes to two hours, more than one location, heavier editing and sometimes print credits. The same guide notes that couples spending $3,500 to $7,000 on wedding photography often have an engagement session bundled in or offered as a discounted add-on.</p>
+
+<h3>Why do engagement photographers charge such different prices?</h3>
+
+<p>Experience, mostly. <a href="https://photographersranked.com/blog/engagement-photography-pricing-guide-2026">PhotographersRanked's 2026 pricing guide</a> breaks it into three tiers: a photographer who second-shoots weddings may charge $300 to $500 for a one-hour session, a working portrait photographer with three to seven years of experience charges $600 to $1,200, and a sought-after wedding photographer who books out a year ahead charges $1,200 to $2,500 or more. The same guide adds a 15 to 25 percent premium for Chicago compared to national averages, and notes that spring and fall weekends often carry a 10 to 20 percent peak-season premium.</p>
+
+<h2>What changes the price</h2>
+
+<ul>
+<li><strong>Session length and locations.</strong> One location for an hour is the base. A second location, a second outfit and a longer session all add cost.</li>
+<li><strong>Images included or sold separately.</strong> Some photographers charge a session fee and then price each image. Add it up before you compare.</li>
+<li><strong>Wedding bundling.</strong> If your wedding photographer includes a session, the standalone price may not matter. If they are out of town, a local session is often cheaper than flying them in.</li>
+<li><strong>Permits.</strong> The Garfield Park Conservatory, the Chicago Botanic Garden and several Chicago Park District sites require a photography permit. It is usually a small fee, but it is a fee.</li>
+<li><strong>Season.</strong> Peak fall and spring dates cost more with many photographers. Winter and weekday sessions are easier to book.</li>
+</ul>
+
+<h2>What my engagement sessions cost</h2>
+
+<h3>How much does Tovy Photography charge for engagement photos?</h3>
+
+<p>Engagement sessions use my standard packages. The Mini is $200 for 30 minutes at one location with 10 edited images. The Classic is $325 for 60 minutes and 20 images, and it is what most couples choose. The Full is $500 for 90 minutes and 30 images with two locations, which works well for a lakefront-plus-neighborhood plan. Every package includes a private online gallery and full print rights, and sessions within 10 miles of Skokie carry no travel fee. Details are on the <a href="/sessions/engagement-photography">engagement photography page</a> and the <a href="/sessions">Sessions and Pricing page</a>.</p>
+
+<h2>What you should get for the money</h2>
+
+<p>Whatever you spend, an engagement session should include a photographer who directs you gently rather than posing you stiffly, professionally edited images, clear print rights, and a plan for weather. Ask to see a full gallery from a real session, not just highlights. You can see one of mine from the <a href="/gallery/milestone/garfield-park-conservatory-engagement">Garfield Park Conservatory</a>.</p>
+
+<h2>Ways to keep the cost reasonable</h2>
+
+<p>Book a weekday evening. Choose one strong location instead of two. Skip products until you have seen the gallery. And if you want the photos for save-the-dates, plan the session at least two months before you need to send them so there is no rush fee anywhere in the chain.</p>
+
+<p>If you are planning engagement photos in Chicago or on the North Shore, <a href="/contact">tell me about the two of you</a> and where you would like to be photographed, and I will suggest a location, a time and a package.</p>
+`,
+  },
+  {
+    slug: "maternity-photoshoot-cost-chicago",
+    title: "How Much Does a Maternity Photoshoot Cost in Chicago?",
+    excerpt:
+      "Maternity photoshoot cost in Chicago and the North Shore: the 2026 published ranges, what drives them, and what my natural light maternity sessions cost.",
+    date: "2026-09-22",
+    category: "Maternity",
+    image: "/photos/family-bed-portrait.jpg",
+    seoTitle: "Maternity Photoshoot Cost in Chicago | Tovy Photography",
+    seoDescription:
+      "How much does a maternity photoshoot cost? Chicago guides put most sessions at $500 to $1,200. My natural light maternity sessions run $200 to $500.",
+    faqs: [
+      {
+        question: "How much does a maternity photoshoot cost in Chicago?",
+        answer:
+          "One Big Happy Photo's 2026 pricing guide puts most professional Chicago maternity sessions between $500 and $1,200. Tov Studio Photo's 2026 guide puts Chicago outdoor sessions at $350 to $600 and boutique studio sessions at $800 to $1,500. My maternity sessions in Skokie and the North Shore run from $200 to $500 with edited images and print rights included.",
+      },
+      {
+        question: "What is the average cost of maternity photography in the US?",
+        answer:
+          "Tov Studio Photo's 2026 guide puts the US average at $250 to $700 for a standard session. One Big Happy Photo's tiers run $200 to $400 for a short budget session, $450 to $800 for mid-range, and $900 to $2,500 or more for studio packages with wardrobe, hair and makeup.",
+      },
+      {
+        question: "Why are studio maternity sessions more expensive?",
+        answer:
+          "Gown collections, hair and makeup, studio rent and products such as albums. Those add several hundred dollars. A natural light session outdoors or at home skips all of them.",
+      },
+      {
+        question: "What should a maternity photoshoot include?",
+        answer:
+          "The photographer's time, gentle direction, your partner and kids in the frames if you want them, professionally edited images, and the right to print. Ask whether wardrobe help is included and whether images are part of the price or sold separately.",
+      },
+    ],
+    content: `
+<p>A maternity photoshoot in Chicago costs between $500 and $1,200 for most professional sessions, according to <a href="https://onebighappyphoto.com/maternity-photoshoot-pricing/">One Big Happy Photo's 2026 maternity pricing guide</a>. <a href="https://tovstudiophoto.com/average-cost-of-maternity-photography/">Tov Studio Photo's 2026 cost guide</a> splits Chicago into outdoor sessions at $350 to $600 and boutique studio sessions at $800 to $1,500, with a national average of $250 to $700. My maternity sessions in Skokie and the North Shore run from $200 to $500, and the edited images are included.</p>
+
+<p>Here is what is behind those ranges, so you can compare quotes that are structured differently.</p>
+
+<h2>What the 2026 guides say</h2>
+
+<h3>How much does a maternity photoshoot cost in Chicago?</h3>
+
+<p>One Big Happy Photo's guide says most professional Chicago sessions land between $500 and $1,200, and describes three tiers: budget sessions of 30 to 45 minutes with 5 to 10 edited images at $200 to $400, mid-range sessions of 60 to 90 minutes with 20 to 40 images and an online gallery at $450 to $800, and premium studio sessions with styling, wardrobe, hair and makeup and albums at $900 to $2,500 or more.</p>
+
+<h3>What is the average cost of maternity photography in the US?</h3>
+
+<p>Tov Studio Photo's guide puts the 2026 national average at $250 to $700 for a standard session. It places Chicago in its second pricing tier alongside Seattle, Austin and Denver, with outdoor sessions at $350 to $600 and boutique studio work at $800 to $1,500. Wardrobe is the single biggest driver: studios with a gown collection charge more because the gowns are expensive to buy and maintain.</p>
+
+<h2>What changes the price</h2>
+
+<ul>
+<li><strong>Studio or natural light.</strong> Studio rent, backdrops and lighting are built into the price. Outdoor and in-home sessions are not.</li>
+<li><strong>Wardrobe, hair and makeup.</strong> Beautiful, and often the difference between a $400 session and a $1,200 one. If you already have a dress you love, you do not need them.</li>
+<li><strong>Images included or sold separately.</strong> Add up the session fee plus the images you actually want before comparing.</li>
+<li><strong>Length.</strong> A 30-minute session at golden hour covers you and your partner. A 60 or 90-minute session leaves time for older kids and a second outfit.</li>
+<li><strong>Travel.</strong> Sessions within 10 miles of Skokie carry no travel fee with me. Beyond that, $50.</li>
+</ul>
+
+<h2>What my maternity sessions cost</h2>
+
+<h3>How much does Tovy Photography charge for maternity photos?</h3>
+
+<p>Maternity sessions use my standard packages. The Mini is $200 for 30 minutes at one location with 10 edited images. The Classic is $325 for 60 minutes and 20 images, and it is the usual choice because it leaves room for your partner and kids. The Full is $500 for 90 minutes and 30 images. Wardrobe guidance is included with Classic and Full sessions, every package includes a private online gallery with full print rights, and I photograph outdoors at North Shore parks and beaches or in your home. Details are on the <a href="/sessions/maternity-photography">maternity photography page</a>. Many families pair the maternity session with an in-home newborn session, which is described on the <a href="/sessions/maternity-and-newborn-photography">maternity and newborn page</a>.</p>
+
+<h2>When to book</h2>
+
+<p>The best window for maternity photos is 28 to 34 weeks. Reach out around 20 weeks to hold a date in the season you want, and earlier if you are expecting twins or an early delivery. More on timing and what to wear is in <a href="/blog/maternity-photos-when-to-book-what-to-wear">when to book maternity photos and what to wear</a>.</p>
+
+<h2>Ways to keep the cost reasonable</h2>
+
+<p>Choose natural light over a studio. Wear a dress you already own, in a soft solid color that moves. Book a weekday evening at a park close to home. Skip albums until you have seen the gallery. If you are expecting in Skokie, Evanston, Wilmette or anywhere on the North Shore, <a href="/contact">tell me your due date</a> and I will suggest timing, a location and a package.</p>
+`,
+  },
+  {
+    slug: "fall-family-photos-guide",
+    title: "Planning a Fall Family Photoshoot: Timing, Locations, and What to Wear",
+    excerpt:
+      "A fall family photoshoot means warm light, changing leaves, and the busiest season of the year to book. Here is when to schedule, where to shoot, and what to wear on the North Shore.",
+    date: "2026-09-21",
+    category: "Family",
+    image: "/photos/golden-hour-family-lakeside.jpg",
+    seoTitle: "Fall Family Photoshoot Guide, North Shore | Tovy Photography",
+    seoDescription:
+      "Planning a fall family photoshoot? A Skokie photographer covers when to book, the best North Shore locations, timing for golden light, and what to wear.",
+    faqs: [
+      {
+        question: "When should I book a fall family photoshoot?",
+        answer:
+          "As early as you can, ideally by August or early September. Fall is my most popular season for family photos, and weekend evening dates fill first, so booking early gets you the date and time you actually want.",
+      },
+      {
+        question: "Where are the best fall family photo locations near Skokie?",
+        answer:
+          "Spots with mature trees hold their color the longest. Harms Woods on the Skokie and Glenview border, Keay Nature Center in Wilmette, and Emily Oaks Nature Center in Skokie are all favorites once the leaves start turning.",
+      },
+      {
+        question: "What is the best time of day for a fall family photoshoot?",
+        answer:
+          "Golden hour, the hour or so before sunset, still gives the softest and warmest light in fall. That window arrives earlier than summer, often starting around 4:30 or 5:00 in the evening instead of 7:00.",
+      },
+      {
+        question: "What should we wear for a fall family photoshoot?",
+        answer:
+          "Warm, soft tones work best: cream, rust, olive, navy, mustard. Coordinate colors instead of matching exactly, layer in a light sweater if the morning is cool, and skip logos, neon, and all-white pieces.",
+      },
+      {
+        question: "How much does a fall family photoshoot cost?",
+        answer:
+          "My family sessions run from $200 for a 30-minute mini session with 10 edited images to $500 for a 90-minute full session with 30 images. The Classic session, $325 for 60 minutes and 20 images, is what most families choose for fall.",
+      },
+    ],
+    content: `
+<p>A fall family photoshoot works best when it's booked early and scheduled for the last hour or so before sunset, when the light turns warm and the North Shore trees start to change. Fall is my busiest season, and the families who reach out in August or early September get first pick of weekend dates and that golden evening light.</p>
+
+<p>If you've been thinking about a fall session for your family, here is what actually goes into planning one: when to book, where to shoot, how to time it, and what to wear.</p>
+
+<h2>Why fall is the most popular season for family photos</h2>
+
+<p>Cooler weather means a more comfortable session without summer humidity or the harsh midday sun of June and July. Kids are usually settling back into a school routine, which tends to mean better naps and steadier moods. And there is the visual part: warm color in the trees pairs beautifully with the soft, warm neutral tones that photograph well in every family portrait.</p>
+
+<h3>When should I book a fall family photoshoot?</h3>
+
+<p>As early as you can, ideally by late summer. Fall is the season most families want, both for the color in the trees and for getting fresh photos in time for holiday cards, so weekend evening slots go first. I recommend reaching out in August or early September so we can find a date and time before the calendar fills.</p>
+
+<p>If a mini session is what you're after, that goes even faster. Mini sessions are 30 minutes with 10 edited images, and I only have a handful of fall mini dates each year.</p>
+
+<h2>Best fall family photo locations near Skokie and the North Shore</h2>
+
+<h3>Where are the best fall family photo locations near Skokie?</h3>
+
+<p>Look for spots with mature trees, since they tend to hold their color the longest. Harms Woods, right on the Skokie and Glenview border, is one I recommend often once the leaves start turning. The tall trees and wide trails give that layered, golden forest look. Keay Nature Center in Wilmette and Emily Oaks Nature Center in Skokie are two more favorites, both with canopy trails that filter the light beautifully in October. I wrote more about these and a few other spots in my guide to <a href="/blog/best-family-photo-locations-skokie-north-shore">family photo locations in Skokie and the North Shore</a>.</p>
+
+<p>You can see what a wooded North Shore session looks like in this <a href="/gallery/family/keay-nature-center-wilmette-family-session">family session at Keay Nature Center in Wilmette</a>.</p>
+
+<p>If the weather doesn't cooperate, an in-home session is always a warm, easy backup. No jackets to coordinate, no waiting out rain, just your family being yourselves in the space you already know.</p>
+
+<h2>Timing your fall session for the best light</h2>
+
+<h3>What is the best time of day for a fall family photoshoot?</h3>
+
+<p>Golden hour, the hour or so before sunset, still gives you the softest and warmest light in fall. The difference from summer is timing: as the days get shorter, that golden window arrives earlier, often starting around 4:30 or 5:00 in the evening instead of 7:00. That earlier start is actually a gift for families with younger kids, since it means less waiting around past dinner and bedtime.</p>
+
+<p>I'll always look up the sunset time for your actual session date and suggest a start time from there, rather than guessing at a generic hour.</p>
+
+<h2>What to wear for a fall family photoshoot</h2>
+
+<h3>What should we wear for a fall family photoshoot?</h3>
+
+<p>Lean into warm, soft tones: cream, rust, olive, navy, mustard. Layer in a light sweater or flannel if the morning is cool. Coordinate your family's colors rather than matching everyone exactly, mix in a few textures, and skip logos, neon, and all-white pieces, which tend to wash people out against fall backgrounds. For Classic and Full sessions I help with wardrobe guidance ahead of time, so nobody is guessing the morning of.</p>
+
+<h2>What a fall family photoshoot costs</h2>
+
+<h3>How much does a fall family photoshoot cost?</h3>
+
+<p>My family sessions run from $200 for a 30-minute mini session with 10 edited images, up to $500 for a 90-minute full session with 30 images. The Classic session, $325 for 60 minutes and 20 images, is what most families choose for a fall shoot since it gives enough time for both posed and candid moments without rushing anyone. You can see the full breakdown on the <a href="/sessions/family-photography">family photography page</a>.</p>
+
+<h2>Let's plan your fall session</h2>
+
+<p>Fall in Skokie and the North Shore goes by fast, and the best dates go even faster. If you've been picturing your family under changing leaves in that warm evening light, <a href="/contact">reach out</a> and let's find a date before the season books up.</p>
+`,
+  },
 ];

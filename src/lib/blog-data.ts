@@ -23,8 +23,8 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-13",
     category: "Locations",
     image: "/photos/garfield-park-conservatory-engagement/cover-bench.jpg",
-    seoTitle: "Garfield Park Conservatory Engagement Photos in Chicago | Tovy Photography",
-    seoDescription: "Planning Garfield Park Conservatory engagement photos in Chicago? See why this lush indoor location works so beautifully, what to wear, and what makes a conservatory session feel so special.",
+    seoTitle: "Garfield Park Conservatory Engagement Photos | Tovy Photography",
+    seoDescription: "Garfield Park Conservatory engagement photos: why the lush indoor setting works so well, what to wear, and how a conservatory session feels.",
     content: `
 <p>If you're looking for a Chicago engagement photo location that feels green, romantic, and a little removed from the city outside, Garfield Park Conservatory is such a beautiful choice. This session had all the things I love most: soft light, quiet in-between moments, layered greenery, and just enough variety to make the gallery feel full without needing to run all over the city.</p>
 
@@ -68,8 +68,8 @@ export const blogPosts: BlogPost[] = [
     date: "2026-03-23",
     category: "Newborn",
     image: "/photos/newborn-sleeping-headband.jpg",
-    seoTitle: "When to Book Newborn Photos & What to Expect | Skokie Newborn Photographer | Tovy Photography",
-    seoDescription: "Wondering when to book your newborn photography session? Skokie newborn photographer Gabi Tovy explains the ideal timing, what to expect, and how to prepare for beautiful in-home newborn photos.",
+    seoTitle: "When to Book Newborn Photos | Tovy Photography",
+    seoDescription: "When to book newborn photos, the best age for the session, and what an in-home newborn session with a Skokie photographer is really like.",
     content: `
 <p>If you're expecting or just welcomed a new baby, you've probably been thinking about newborn photos. When should you book? What actually happens during a session? Do you need to have everything together first? As a newborn photographer in Skokie serving families across Chicago's North Shore, these are the questions I hear most. Let me walk you through everything.</p>
 
@@ -130,14 +130,41 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "what-to-wear-family-photo-session",
-    title: "What to Wear for Your Family Photo Session",
-    excerpt: "The outfit question comes up every single time. Here are my real, no-stress tips for looking great in your family photos without overthinking it.",
+    title: "Family Photo Outfits: What to Wear for Family Photos, by Season",
+    excerpt: "Family photo outfit ideas by season and by session type, plus the simple coordinate-not-match rule I give every family before a session.",
     date: "2026-03-19",
     category: "Tips",
     image: "/photos/family-bed-portrait.jpg",
-    seoTitle: "What to Wear for Family Photos — Skokie & North Shore Photographer Tips | Tovy Photography",
-    seoDescription: "Not sure what to wear for your family photo session? Skokie family photographer Gabi Tovy shares simple, real-world outfit tips for newborn, family, and milestone sessions.",
+    seoTitle: "Family Photo Outfits: What to Wear, by Season | Tovy Photography",
+    seoDescription: "Family photo outfit ideas for fall, spring, summer, winter and holiday cards, plus what dad and the kids should wear. Coordinate, do not match.",
+    faqs: [
+      { question: "What are the best family photo outfits?", answer: "Coordinated, not matching: two or three soft, warm colors shared across the family in simple textures everyone can move in. Cream, olive, rust, navy and mustard photograph well in natural light. Skip logos, neon and all-white." },
+      { question: "What should we wear for fall family photos?", answer: "Warm layered neutrals such as rust, mustard, olive, cream and navy, with a light sweater or flannel for kids and a long dress or soft wide-leg pants for mom. Skip bright orange and heavy coats." },
+      { question: "Should a family match for photos?", answer: "No. Pick two or three colors and let each person wear one in a different piece. Coordinated outfits look intentional while everyone still looks like themselves." },
+      { question: "What should dad wear for family photos?", answer: "A solid henley, knit sweater or linen shirt with chinos or dark jeans, usually in the darkest color of the family's palette. No logos and nothing shiny." },
+      { question: "Do you help families choose outfits?", answer: "Yes. Wardrobe guidance is included with Classic and Full sessions. Send photos of what you are considering and I will say what works and what to swap." },
+    ],
     content: `
+<p>The best family photo outfits are coordinated, not matching: two or three soft, warm colors shared across the family, simple textures, and clothes everyone can move in. Cream, olive, rust, navy and mustard photograph beautifully in natural light on the North Shore. Skip logos, neon and all-white, and dress for the season you are shooting in. That is the whole formula. Below is how I apply it, plus outfit ideas by season and by session type.</p>
+
+<h2>Family photo outfit ideas by season</h2>
+
+<h3>What should we wear for fall family photos?</h3>
+
+<p>Warm, layered neutrals. Rust, mustard, olive, cream and deep navy sit naturally against changing leaves. A light sweater or a flannel for the kids, a long dress or wide-leg pants in a soft solid for mom, a henley or a knit over a collar for dad. Skip bright orange, which fights the trees, and skip heavy coats if you can, since they hide everyone's shape.</p>
+
+<h3>What should we wear for spring and summer family photos?</h3>
+
+<p>Lighter fabrics in cream, sage, dusty rose, chambray and soft white paired with a color, never all white. Linen, cotton and flowy dresses move in the breeze at the lakefront. Bare feet on the beach are fine. For spring blossoms, soft pastels read well without looking like Easter.</p>
+
+<h3>What should we wear for winter or in-home family photos?</h3>
+
+<p>Cozy textures in cream, oatmeal, camel and charcoal: chunky knits, corduroy, a wool dress. For in-home sessions, think of what you would wear on a relaxed Sunday, one notch nicer. Socks or bare feet instead of shoes. Avoid black head to toe, which loses all detail indoors.</p>
+
+<h3>What should we wear for holiday card photos?</h3>
+
+<p>Keep it timeless rather than themed. A palette of cream, forest green, burgundy and navy looks like the holidays without a single reindeer. Matching pajamas are fun for one or two frames at home, not for the whole session.</p>
+
 <p>This is the number one question I get from families before their photo session, every single time, without fail. And I love it because it means you care. So let me take the stress out of it right now.</p>
 
 <h2>The Golden Rule: Let the People Shine</h2>
@@ -159,11 +186,11 @@ export const blogPosts: BlogPost[] = [
 <h2>What to Skip</h2>
 
 <ul>
-<li><strong>Neon or overly bright colors</strong> — they reflect onto skin and pull focus from your faces</li>
-<li><strong>Big logos or graphics</strong> — they date your photos and distract from the moment</li>
-<li><strong>All black everything</strong> — it absorbs light and loses detail, especially in natural light photography</li>
-<li><strong>Brand new shoes on kids</strong> — blisters and meltdowns are not the vibe</li>
-<li><strong>Anything that needs constant adjusting</strong> — if you're tugging at it now, you'll be tugging at it during the session</li>
+<li><strong>Neon or overly bright colors</strong>, they reflect onto skin and pull focus from your faces</li>
+<li><strong>Big logos or graphics</strong>, they date your photos and distract from the moment</li>
+<li><strong>All black everything</strong>, it absorbs light and loses detail, especially in natural light photography</li>
+<li><strong>Brand new shoes on kids</strong>, blisters and meltdowns are not the vibe</li>
+<li><strong>Anything that needs constant adjusting</strong>, if you're tugging at it now, you'll be tugging at it during the session</li>
 </ul>
 
 <h2>What to Wear for a Newborn Session</h2>
@@ -181,6 +208,28 @@ export const blogPosts: BlogPost[] = [
 <p>If you're still stuck, send me a photo of your outfit options. I do this all the time with my clients and I'm happy to help you narrow it down. Seriously, text me a mirror selfie. I've seen it all.</p>
 
 <p>Ready to book your family or newborn session in Skokie or the North Shore? <a href="/contact">Let's chat</a> and figure out the rest together.</p>
+
+<h2>Family photo outfits, answered</h2>
+
+<h3>What colors look best in family photos?</h3>
+
+<p>Soft, warm, muted tones: cream, olive, rust, navy, mustard, dusty rose, camel. They flatter every skin tone and hold up in natural light. Bright primary colors and neon cast color onto faces. Pure white blows out in sun. Black loses detail indoors.</p>
+
+<h3>Should a family match for photos?</h3>
+
+<p>No. Coordinate instead. Pick two or three colors and let each person wear one of them in a different piece. The photos look intentional and everyone still looks like themselves.</p>
+
+<h3>What should dad wear for family photos?</h3>
+
+<p>A solid henley, a knit sweater, a chambray or linen shirt, or a plain tee under an open overshirt, with chinos or dark jeans. Nothing with a logo, nothing shiny. Dads usually look best in the darkest color of the palette.</p>
+
+<h3>What should kids wear for family photos?</h3>
+
+<p>Whatever they can run in. Soft solids and small textures, comfortable shoes or bare feet, no characters and no words. Bring a spare outfit for anyone under five. Let older kids have a say so they show up happy.</p>
+
+<h3>Do you help with outfits?</h3>
+
+<p>Yes. Wardrobe guidance is included with my Classic and Full sessions. Send me photos of what you are thinking and I will tell you honestly what works and what to swap. You can see the packages on the <a href="/sessions/family-photography">family photography page</a>.</p>
 `,
   },
   {
@@ -190,8 +239,8 @@ export const blogPosts: BlogPost[] = [
     date: "2026-03-20",
     category: "Locations",
     image: "/photos/spring-blossoms.jpg",
-    seoTitle: "8 Best Spring Family Photo Locations in Skokie & North Shore Chicago (2026) | Tovy Photography",
-    seoDescription: "Spring is here! Skokie family photographer shares 8 beautiful photo locations in Skokie, Evanston & Wilmette for your spring family session. Tips on best time of day and what makes each spot special.",
+    seoTitle: "Family Photo Locations in Skokie & North Shore | Tovy Photography",
+    seoDescription: "Eight spring family photo locations in Skokie and Chicago's North Shore, with what makes each one work and when the light is best.",
     content: `
 <p>Spring is officially here and after a long Chicago winter, there's no better time to get outside with your family and capture some beautiful photos. The flowers are starting to bloom, the light is getting warmer, and the kids are ready to run. One of the first things families ask me after booking is "where should we shoot?" Here are spots I love and recommend for spring family sessions in Skokie, Evanston, Wilmette, and across the North Shore.</p>
 
@@ -227,7 +276,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>6. Harms Woods — Skokie / Glenview Border</h2>
 
-<p>For families who want a deep, wooded, natural feel, Harms Woods is worth considering. The tall trees and wide trails create beautiful layered depth in photos. Fall is especially stunning here when the leaves are changing and the forest floor is covered in golden tones. It's a forest preserve so it stays fairly uncrowded.</p>
+<p>For families who want a deep, wooded, natural feel, Harms Woods is worth considering. The tall trees and wide trails create beautiful layered depth in photos. Fall is especially stunning here when the leaves are changing and the forest floor is covered in golden tones. It's a forest preserve so it stays fairly uncrowded. For more on timing and what to wear this time of year, see my guide to <a href="/blog/fall-family-photos-guide">planning a fall family photoshoot</a>.</p>
 
 <p><strong>Best time to shoot:</strong> Afternoon light works well since the tree cover softens even midday sun. Fall is peak season.</p>
 
@@ -258,8 +307,8 @@ export const blogPosts: BlogPost[] = [
     category: "Maternity",
     image: "/photos/maternity-side-profile-bw.jpg",
     imagePosition: "center 70%",
-    seoTitle: "Maternity Photos: When to Book & What to Wear | Skokie Maternity Photographer | Tovy Photography",
-    seoDescription: "Everything you need to know about maternity photography sessions. When to book, what to wear, in-home vs outdoor, and why it's worth it. Serving Skokie, Evanston & Chicago's North Shore.",
+    seoTitle: "When to Take Maternity Photos, What to Wear | Tovy Photography",
+    seoDescription: "When to schedule maternity photos, what to wear, and how to plan a relaxed natural light session in Skokie and the North Shore.",
     content: `
 <p>If you're expecting, you've probably thought about maternity photos at least once. Maybe you're not sure if it's "your thing." Maybe you're wondering if it's too late. Maybe you just want to know what it actually looks like before committing. Here's everything you need to know about booking a maternity session.</p>
 
@@ -332,8 +381,8 @@ export const blogPosts: BlogPost[] = [
     date: "2026-06-15",
     category: "Locations",
     image: "/photos/north-shore-family-tall-grasses.jpg",
-    seoTitle: "Best Outdoor Family Photo Locations on Chicago's North Shore | Tovy Photography",
-    seoDescription: "A North Shore family photographer's guide to the best outdoor family photo locations near Chicago, from Glencoe beaches and the Chicago Botanic Garden to Fort Sheridan, Gillson Park, and quieter spots in Evanston and Skokie.",
+    seoTitle: "Outdoor Family Photo Locations, North Shore | Tovy Photography",
+    seoDescription: "The best outdoor family photo locations on Chicago's North Shore, from lakefront beaches to wooded trails, with the light and timing that make each one work.",
     content: `
 <p>One of the questions I get asked most often is some version of "where should we actually take our pictures?" And I love it, because choosing the right spot is half the magic. As a Skokie-based photographer, I spend a lot of my time scouting outdoor family photo locations across Chicago's North Shore, and I've built a detailed mental map of the spots that photograph beautifully in every season, and the ones that look gorgeous in person but turn into a sea of harsh shadows and parking headaches the moment you show up with three kids and a stroller.</p>
 
@@ -383,7 +432,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-07-03",
     category: "Tips",
     image: "/photos/golden-hour-family-lakeside.jpg",
-    seoTitle: "Best Time of Day for Outdoor Family Photos | Golden Hour Guide | Tovy Photography",
+    seoTitle: "Best Time of Day for Outdoor Family Photos | Tovy Photography",
     seoDescription: "Wondering the best time of day for outdoor family photos? A Skokie photographer shares golden hour timing, summer tips, and North Shore session advice.",
     content: `
 <p>If there's one question I get more than any other before a summer shoot, it's this: what's the best time of day for outdoor family photos? It's a great question, and the answer matters more than most people realize. You can pick the perfect outfits, choose a beautiful park, and have kids in genuinely good moods, but if we're standing in a field at high noon in July, the light will fight us the entire time. Get the timing right, and everything else falls into place. As a photographer who specializes in family and newborn sessions here in Skokie, timing is the very first thing I plan around, and I want to walk you through exactly how I think about it.</p>
@@ -430,8 +479,8 @@ export const blogPosts: BlogPost[] = [
     date: "2026-07-20",
     category: "Locations",
     image: "/photos/engagement-ring-hands-reaching.jpg",
-    seoTitle: "Best Engagement Photo Locations on Chicago's North Shore | Tovy Photography",
-    seoDescription: "A Skokie photographer's guide to the best engagement photo locations on Chicago's North Shore: beaches, gardens, lighthouses, and hidden gems in Evanston, Wilmette, Glencoe, and Highland Park.",
+    seoTitle: "Engagement Photo Spots on the North Shore | Tovy Photography",
+    seoDescription: "Engagement photo locations on Chicago's North Shore: lakefront, gardens, woods and neighborhood spots, with timing tips from a Skokie photographer.",
     content: `
 <p>When couples ask me where to take their engagement photos, they almost always assume we need to head downtown. The Chicago skyline is gorgeous, no argument there, but as a photographer based in Skokie, I'm going to let you in on something: some of the most beautiful engagement photo locations in the Chicago area are right here on the North Shore, and most of them come without the crowds, the parking headaches, or the twelve other couples waiting for the same spot.</p>
 
