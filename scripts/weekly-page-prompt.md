@@ -29,6 +29,8 @@ The run parameters are appended at the bottom of this prompt: `SLUG`, `TYPE`, `P
 - **Images** must already exist under `public/photos/`. Open each one you pick with Read and confirm it fits the topic. A maternity page needs a pregnancy photo, a newborn page needs a newborn. If nothing fits, use the closest honest option and say so in the summary `notes`.
 - **Cost pages** (`TYPE` = `cost`) need outside ranges. Use WebSearch to find two published cost guides for this topic and area, from different organizations, dated 2025 or 2026. Open each with WebFetch and confirm the exact range appears on the page. Attribute every outside number in the text to its source by name with a link, for example `<a href="...">Thumbtack's 2026 cost guide</a> lists ...`. If you cannot verify two sources, block with reason `could not verify two cost sources`.
 
+- **Keyword check (when OpenSEO tools are available).** Call `mcp__openseo__get_keyword_metrics` once with `PRIMARY_KEYWORD` plus up to five close variants you plan to use in headings (projectId `7b5ef095-2c80-4041-a2b7-1fdc3bf07e77`, `includeMonthlyTrends` false). Use the result to pick the exact phrasing for the H1, title and question headings: prefer the variant with the most volume that still reads naturally. Record what you found in the summary under `keywordMetrics` as `[{keyword, volume, difficulty}]`. Never put search volumes on the page itself. If the tool is not available, skip this step; do not block on it.
+
 **No invented numbers.** Every number on the page (prices, durations, image counts, distances, percentages, review counts, years in business) must come from the site data above or from a source you fetched in this run. When in doubt, leave the number out.
 
 ## Step 3: Write the page
@@ -114,6 +116,7 @@ Write `SUMMARY_PATH` as JSON. The script reads it to build the pull request. Sha
   "linksTo": ["/sessions/newborn-photography", "/contact"],
   "linkedFrom": [{ "file": "src/lib/services.ts", "page": "/sessions/newborn-photography" }],
   "sources": [{ "name": "", "url": "" }],
+  "keywordMetrics": [{ "keyword": "", "volume": 0, "difficulty": 0 }],
   "images": ["/photos/example.jpg"],
   "notes": "Anything Gabi should check before merging, in one or two sentences."
 }
