@@ -31,6 +31,10 @@ The run parameters are appended at the bottom of this prompt: `SLUG`, `TYPE`, `P
 
 - **Keyword check (when OpenSEO tools are available).** Call `mcp__openseo__get_keyword_metrics` once with `PRIMARY_KEYWORD` plus up to five close variants you plan to use in headings (projectId `7b5ef095-2c80-4041-a2b7-1fdc3bf07e77`, `includeMonthlyTrends` false). Use the result to pick the exact phrasing for the H1, title and question headings: prefer the variant with the most volume that still reads naturally. Record what you found in the summary under `keywordMetrics` as `[{keyword, volume, difficulty}]`. Never put search volumes on the page itself. If the tool is not available, skip this step; do not block on it.
 
+**Numbers already in Gabi's copy are hers.** On a `rewrite`, a duration, count or fact that is already on the page (for example "sessions run 1.5 to 2 hours") came from Gabi and stays. Do not replace it with package lengths and do not delete it. Only numbers *you* add must come from `site.pricing` or a fetched source.
+
+**Local titles stay local.** When rewriting a service page, keep the title pattern "<Town> <Service> Photographer, <Area>" (for example "Skokie Newborn Photographer, North Shore"). Work the primary keyword into the H1 subtitle, the citable summary and the question headings instead. Blog posts and guides may lead with the keyword.
+
 **No invented numbers.** Every number on the page (prices, durations, image counts, distances, percentages, review counts, years in business) must come from the site data above or from a source you fetched in this run. When in doubt, leave the number out.
 
 ## Step 3: Write the page
