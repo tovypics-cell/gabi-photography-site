@@ -7,60 +7,65 @@
       "type": "service",
       "primaryKeyword": "chicago proposal photographer",
       "sourceDraft": null,
-      "status": "in_review",
+      "status": "published",
       "plan": 5,
       "notes": "Only claim proposals if gallery-data.ts has one; otherwise frame it as planning a proposal shoot and link the real engagement sessions. Shipped in the batch PR from Omer's fork (seo-batch-1).",
       "branch": "seo-batch-1",
       "pr": 5,
-      "updatedAt": "2026-09-22"
+      "updatedAt": "2026-09-22",
+      "publishedAt": "2026-09-23"
     },
     {
       "slug": "maternity-and-newborn-photography",
       "type": "service",
       "primaryKeyword": "maternity and newborn photography",
       "sourceDraft": null,
-      "status": "in_review",
+      "status": "published",
       "plan": 10,
       "notes": "There is no bundle price in site.pricing. Describe booking both sessions without inventing a package price. Shipped in the batch PR from Omer's fork (seo-batch-1).",
       "branch": "seo-batch-1",
       "pr": 5,
-      "updatedAt": "2026-09-22"
+      "updatedAt": "2026-09-22",
+      "publishedAt": "2026-09-23"
     },
     {
       "slug": "extended-family-photography",
       "type": "service",
       "primaryKeyword": "large family photoshoot",
       "sourceDraft": null,
-      "status": "in_review",
+      "status": "published",
       "plan": 13,
       "notes": "Also cover 'extended family photos' and 'multigenerational family photos'. Shipped in the batch PR from Omer's fork (seo-batch-1).",
       "branch": "seo-batch-1",
       "pr": 5,
-      "updatedAt": "2026-09-22"
+      "updatedAt": "2026-09-22",
+      "publishedAt": "2026-09-23"
     },
     {
       "slug": "engagement-photoshoot-cost-chicago",
       "type": "cost",
       "primaryKeyword": "engagement photoshoot cost",
       "sourceDraft": null,
-      "status": "in_review",
+      "status": "published",
       "plan": 18,
       "branch": "seo-batch-1",
       "pr": 5,
       "updatedAt": "2026-09-22",
-      "notes": " Shipped in the batch PR from Omer's fork (seo-batch-1)."
+      "notes": " Shipped in the batch PR from Omer's fork (seo-batch-1).",
+      "publishedAt": "2026-09-23"
     },
     {
       "slug": "maternity-photoshoot-cost-chicago",
       "type": "cost",
       "primaryKeyword": "maternity photoshoot cost",
       "sourceDraft": null,
-      "status": "in_review",
+      "status": "published",
       "plan": 19,
       "branch": "seo-batch-1",
       "pr": 5,
       "updatedAt": "2026-09-22",
-      "notes": " Shipped in the batch PR from Omer's fork (seo-batch-1)."
+      "notes": " Shipped in the batch PR from Omer's fork (seo-batch-1).",
+      "publishedAt": "2026-09-23"
     },
     {
       "slug": "fall-family-photos-guide",
