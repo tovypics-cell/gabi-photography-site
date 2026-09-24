@@ -76,7 +76,7 @@ export const services: Record<string, ServicePage> = {
       items: [
         {
           title: "Dark rooms are the number one worry, and the easiest fix.",
-          body: "Nearly every home has one window with enough light. I find it, turn off the overhead lights so skin tones stay true, and work within a few feet of it. Your living room does not need to be bright. One window does.",
+          body: "Nearly every home has one window with enough light. I find it, turn off the overhead lights so skin tones stay true, and work within a few feet of it. One good window is all your living room needs.",
         },
         {
           title: "The 5 to 14 day window closes fast.",

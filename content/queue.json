@@ -89,8 +89,10 @@
         "file": "src/app/sessions/newborn-photography/page.tsx"
       },
       "sourceDraft": null,
-      "status": "queued",
+      "status": "in_review",
+      "branch": "content/rewrite-newborn-photography",
       "pr": null,
+      "updatedAt": "2026-09-24",
       "notes": "Folds the former in-home-newborn and lifestyle-newborn items into this page. Work the phrases 'in-home newborn photography' and 'lifestyle newborn photography' into the citable summary, one H3 and one FAQ. Keep every existing FAQ. Do not change the hero.",
       "keep": [
         "The tiny details you'll want to remember forever."
