@@ -783,6 +783,7 @@ export const services: Record<string, ServicePage> = {
     related: [
       { label: "Family Photography", href: "/sessions/family-photography" },
       { label: "Best Family Photo Locations in Skokie", href: "/blog/best-family-photo-locations-skokie-north-shore" },
+      { label: "Planning Christmas Family Photos", href: "/blog/christmas-holiday-family-photos" },
       { label: "Sessions and Pricing", href: "/sessions" },
     ],
     cta: {

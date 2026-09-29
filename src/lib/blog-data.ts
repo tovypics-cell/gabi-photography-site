@@ -163,7 +163,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>What should we wear for holiday card photos?</h3>
 
-<p>Keep it timeless rather than themed. A palette of cream, forest green, burgundy and navy looks like the holidays without a single reindeer. Matching pajamas are fun for one or two frames at home, not for the whole session.</p>
+<p>Keep it timeless rather than themed. A palette of cream, forest green, burgundy and navy looks like the holidays without a single reindeer. Matching pajamas are fun for one or two frames at home, not for the whole session. For timing and setup ideas, see my guide to <a href="/blog/christmas-holiday-family-photos">planning Christmas family photos</a>.</p>
 
 <p>This is the number one question I get from families before their photo session, every single time, without fail. And I love it because it means you care. So let me take the stress out of it right now.</p>
 
