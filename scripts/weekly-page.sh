@@ -96,6 +96,10 @@ finish() {
   local code=$?
   rm -rf "$LOCK" "${TOVY_WEEKLY_COPY:-/nonexistent}"
   if [ "$code" -ne 0 ]; then
+    # leave the checkout the way a person expects it: on the base branch, queue file clean
+    if [ -d "${REPO:-}/.git" ]; then
+      (cd "$REPO" && git checkout -q -- "$QUEUE" 2>/dev/null; git checkout -q "${BASE:-main}" 2>/dev/null) || true
+    fi
     log "FAILED during: $STAGE (exit $code)"
     notify "Tovy weekly page FAILED during $STAGE. Log: ~/Library/Logs/tovy-weekly-page.log"
   fi
@@ -122,6 +126,12 @@ command -v jq >/dev/null || die "jq not found"
 log "claude: $CLAUDE_BIN"
 
 cd "$REPO"
+# content/queue.json is rewritten by mark-published.sh on every run; a failed earlier run can
+# leave it modified. It is regenerated below, so discard that change. Anything else is a person's work.
+if [ -n "$(git status --porcelain -- "$QUEUE")" ] && [ -z "$(git status --porcelain | grep -v " $QUEUE\$")" ]; then
+  git checkout -q -- "$QUEUE"
+  log "discarded a leftover uncommitted $QUEUE from a previous run"
+fi
 [ -z "$(git status --porcelain)" ] || die "working tree has uncommitted changes, not touching it"
 
 # ---------- sync base ----------
