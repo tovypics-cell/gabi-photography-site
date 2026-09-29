@@ -137,7 +137,16 @@ STAGE="mark-published"
 
 # ---------- pick the item ----------
 STAGE="pick item"
-item="$(jq -c '[.items[] | select(.status == "queued")][0] // empty' "$QUEUE")"
+# Queue status only reaches main through a merged PR, so an item that already has a
+# content/<slug> branch on GitHub is in review even if main still says "queued". Skip those.
+existing_branches="$(git ls-remote --heads origin 'refs/heads/content/*' | awk '{print $2}' | sed 's|refs/heads/content/||' | sed 's/--dry-run-.*$//' | sort -u)"
+item="$(jq -c --arg skip "$existing_branches" '
+  ($skip | split("\n") | map(select(length > 0))) as $s
+  | [.items[] | select(.status == "queued") | select((.slug as $x | $s | index($x)) == null)][0] // empty' "$QUEUE")"
+skipped="$(jq -r --arg skip "$existing_branches" '
+  ($skip | split("\n") | map(select(length > 0))) as $s
+  | [.items[] | select(.status == "queued") | select((.slug as $x | $s | index($x)) != null) | .slug] | join(", ")' "$QUEUE")"
+[ -n "$skipped" ] && log "skipping items that already have an open branch (awaiting merge): $skipped"
 if [ -z "$item" ]; then
   git checkout -q -- "$QUEUE"
   log "no queued items, nothing to do"
@@ -156,7 +165,7 @@ else
   BRANCH="content/$SLUG"
 fi
 if git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then
-  die "branch $BRANCH already exists on GitHub. Merge or close its PR and delete the branch."
+  die "branch $BRANCH already exists on GitHub (should have been skipped). Merge or close its PR and delete the branch."
 fi
 
 git checkout -q -b "$BRANCH"
