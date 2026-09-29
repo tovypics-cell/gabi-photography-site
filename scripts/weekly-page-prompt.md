@@ -15,7 +15,7 @@ The run parameters are appended at the bottom of this prompt: `SLUG`, `TYPE`, `P
 ## Step 1: Load the item
 
 1. Read `content/queue.json`. Find the first item whose `status` is `"queued"`. Its `slug` must equal `SLUG`. If it does not, block with reason `queue mismatch`.
-2. Read `CLAUDE.md` in full. Its Brand Rules are binding. Then read the Ground rules section of `content/seo-plan.md`, which is binding too.
+2. Read `CLAUDE.md` in full. Its Brand Rules are binding. Then read the Ground rules section of `content/seo-plan.md` and the phase this item belongs to in `content/seo-roadmap.md` (the item's `phase` number), which are binding too.
    If the queue item has a `notes` field, follow it. A note that says "Block unless" is a condition you must check before writing anything.
 3. If `SOURCE_DRAFT` is not `null`, read that file. It is Gabi's draft. Keep her wording and ideas wherever they already meet the rules below. Your job is to shape it, not replace her voice.
 4. If `TYPE` is `rewrite`, skip this check: the page already exists and the queue item's `target` field names it (a URL path plus the file that renders it). Otherwise, check the slug is new. Block with reason `slug exists` if it already appears in `src/lib/blog-posts-seo.ts`, `src/lib/blog-data.ts`, `src/lib/services.ts`, or `src/lib/locations.ts`.
