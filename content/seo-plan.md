@@ -1,5 +1,7 @@
 # Tovy Photography SEO Plan
 
+Sequencing by vertical and the proof gates now live in `content/seo-roadmap.md` (2026-09-29). This file keeps the original page list and the ground rules.
+
 Prepared 2026-09-17 from OpenSEO research (site audit, backlinks, keyword metrics, competitor ranked keywords, Maps results near Skokie). Volumes are monthly US searches. Nearly every term here is keyword difficulty 0 to 5, so the real competition is Google Maps, not backlinks.
 
 Status key: Live = on main today. Built = in the seo-merge branch. New = to create. Queue order is in content/queue.json.
