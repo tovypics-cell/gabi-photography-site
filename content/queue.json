@@ -202,17 +202,6 @@
       "notes": "Newborn at 5 to 14 days, 3 months, 6 to 9 month sitter, first birthday. Link newborn, milestone, first-birthday and maternity-and-newborn pages. Proof: newborn galleries and the 9-month session."
     },
     {
-      "slug": "cake-smash-photoshoot-guide",
-      "type": "guide",
-      "primaryKeyword": "cake smash photoshoot",
-      "sourceDraft": null,
-      "status": "queued",
-      "pr": null,
-      "phase": 1,
-      "notes": "Gate: a cake smash gallery. Until then this is skipped automatically.",
-      "gate": "cake smash|cake-smash|smash cake"
-    },
-    {
       "slug": "rewrite-milestone-photography",
       "type": "rewrite",
       "primaryKeyword": "first birthday photographer",
@@ -225,17 +214,6 @@
         "url": "/sessions/milestone-photography",
         "file": "src/lib/services.ts"
       }
-    },
-    {
-      "slug": "sweet-16-photoshoot-chicago",
-      "type": "guide",
-      "primaryKeyword": "sweet 16 photographer",
-      "sourceDraft": null,
-      "status": "queued",
-      "pr": null,
-      "phase": 1,
-      "notes": "Gate: a teen or sweet 16 gallery.",
-      "gate": "sweet 16|sweet sixteen|teen|senior"
     },
     {
       "slug": "hanukkah-family-photoshoot",
@@ -288,17 +266,6 @@
       "pr": null,
       "phase": 2,
       "notes": "A photo timeline for the day: tallit, Torah, family groupings, the party. Built from the Stolberg gallery. Answer 'what photos do you take at a bar mitzvah'."
-    },
-    {
-      "slug": "bris-and-baby-naming-photography",
-      "type": "service",
-      "primaryKeyword": "bris photographer chicago",
-      "sourceDraft": null,
-      "status": "queued",
-      "pr": null,
-      "phase": 2,
-      "notes": "Gate: a bris, brit milah or baby naming gallery.",
-      "gate": "bris|brit milah|baby naming|simchat bat"
     },
     {
       "slug": "rewrite-maternity-when-to-book",
@@ -504,92 +471,6 @@
       }
     },
     {
-      "slug": "anniversary-photography",
-      "type": "service",
-      "primaryKeyword": "anniversary photoshoot",
-      "sourceDraft": null,
-      "status": "queued",
-      "pr": null,
-      "phase": 3,
-      "notes": "Couples sessions for anniversaries and vow-renewal style portraits, future tense. Proof: Garfield Park engagement gallery for the couples style."
-    },
-    {
-      "slug": "family-reunion-photos-guide",
-      "type": "guide",
-      "primaryKeyword": "family reunion photos",
-      "sourceDraft": null,
-      "status": "queued",
-      "pr": null,
-      "phase": 3,
-      "notes": "Gate: a reunion or large extended family gallery.",
-      "gate": "reunion|extended family|grandparents|multigenerational"
-    },
-    {
-      "slug": "graduation-and-senior-portraits",
-      "type": "service",
-      "primaryKeyword": "senior photographer near me",
-      "sourceDraft": null,
-      "status": "queued",
-      "pr": null,
-      "phase": 3,
-      "notes": "Gate: a senior or graduation gallery. Model call recommended in spring.",
-      "gate": "senior|graduat"
-    },
-    {
-      "slug": "gender-reveal-photoshoot-ideas",
-      "type": "guide",
-      "primaryKeyword": "gender reveal photoshoot",
-      "sourceDraft": null,
-      "status": "queued",
-      "pr": null,
-      "phase": 3,
-      "notes": "Future tense; link maternity and maternity-and-newborn pages. No claim of having photographed one."
-    },
-    {
-      "slug": "twins-newborn-photography",
-      "type": "service",
-      "primaryKeyword": "twins newborn photography",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 14,
-      "notes": "Block unless gallery-data.ts shows a twins session.",
-      "phase": 3,
-      "gate": "twin|fresh 48|fresh48|hospital"
-    },
-    {
-      "slug": "fresh-48-newborn-photography",
-      "type": "service",
-      "primaryKeyword": "fresh 48 newborn photos",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 15,
-      "notes": "Block unless gallery-data.ts shows a hospital or first-48-hours session.",
-      "phase": 3,
-      "gate": "twin|fresh 48|fresh48|hospital"
-    },
-    {
-      "slug": "elopement-and-small-wedding-photography",
-      "type": "service",
-      "primaryKeyword": "chicago elopement photographer",
-      "sourceDraft": null,
-      "status": "queued",
-      "pr": null,
-      "phase": 4,
-      "notes": "Gate: an elopement, courthouse wedding, vow renewal or small wedding gallery. Also requires Gabi's decision to take small weddings.",
-      "gate": "elopement|vow renewal|courthouse|small wedding|micro wedding|wedding day|wedding ceremony"
-    },
-    {
-      "slug": "wedding-photographer-cost-chicago",
-      "type": "cost",
-      "primaryKeyword": "how much does a wedding photographer cost",
-      "sourceDraft": null,
-      "status": "queued",
-      "pr": null,
-      "phase": 4,
-      "notes": "Gate: same as elopement page.",
-      "gate": "elopement|vow renewal|courthouse|small wedding|micro wedding|wedding day|wedding ceremony"
-    },
-    {
       "slug": "mothers-day-mini-sessions",
       "type": "guide",
       "primaryKeyword": "mothers day mini sessions",
@@ -636,37 +517,7 @@
       "plan": 47,
       "notes": "Plan gate: publish once the first 12 town pages show impressions in Search Console.",
       "phase": 5
-    },
-    {
-      "slug": "lake-forest",
-      "type": "location",
-      "primaryKeyword": "lake forest family photographer",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 48,
-      "notes": "Lowest priority in the plan.",
-      "phase": 5
-    },
-    {
-      "slug": "buffalo-grove",
-      "type": "location",
-      "primaryKeyword": "buffalo grove family photographer",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 48,
-      "notes": "Lowest priority in the plan.",
-      "phase": 5
-    },
-    {
-      "slug": "arlington-heights",
-      "type": "location",
-      "primaryKeyword": "arlington heights family photographer",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 48,
-      "notes": "Lowest priority in the plan.",
-      "phase": 5
     }
   ],
-  "note": "Publish order for the content loop, sequenced by content/seo-roadmap.md. Types: guide, cost, service, location write a new page; rewrite improves an existing page in place. 'gate' is a case-insensitive regex tested against src/lib/gallery-data.ts; no match = skipped until a matching gallery exists. The loop runs Monday and Thursday."
+  "note": "Publish order for the content loop, sequenced by content/seo-roadmap.md. Every item is reachable from sessions Gabi has actually photographed. Types: guide, cost, service, location write a new page; rewrite improves an existing page in place. The loop runs Monday and Thursday."
 }
