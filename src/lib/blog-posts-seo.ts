@@ -432,4 +432,111 @@ export const seoBlogPosts: BlogPost[] = [
 <p>Fall in Skokie and the North Shore goes by fast, and the best dates go even faster. If you've been picturing your family under changing leaves in that warm evening light, <a href="/contact">reach out</a> and let's find a date before the season books up.</p>
 `,
   },
+  {
+    slug: "christmas-holiday-family-photos",
+    title: "Christmas Family Photos: When to Book, Where to Shoot, and What to Wear",
+    excerpt:
+      "Planning Christmas family photos for this year's card? Here is when to book, how in-home and outdoor holiday sessions compare, what to wear, and what it costs on the North Shore.",
+    date: "2026-09-29",
+    category: "Family",
+    image: "/photos/family-bed-session.jpg",
+    seoTitle: "Christmas Family Photos, North Shore | Tovy Photography",
+    seoDescription:
+      "Planning Christmas family photos? A Skokie photographer on when to book for holiday cards, in-home vs outdoor sessions, what to wear, and what it costs.",
+    faqs: [
+      {
+        question: "When should I book Christmas family photos?",
+        answer:
+          "Book by early October if the photos are for holiday cards. Galleries are delivered within 2 to 3 weeks, so a session in early or mid November still leaves time to design, order and mail cards in early December.",
+      },
+      {
+        question: "Where should we take Christmas family photos?",
+        answer:
+          "At home is the easiest and coziest option: the tree, the couch, a bright window and nobody shivering. If you want an outdoor look, a North Shore park in November gives you bare trees and soft light before the deep cold arrives.",
+      },
+      {
+        question: "What should we wear for Christmas family photos?",
+        answer:
+          "Choose two or three colors like cream, forest green, burgundy and navy, in soft knits and simple textures. Coordinate instead of matching, skip big logos and novelty prints, and save matching pajamas for a frame or two at the end.",
+      },
+      {
+        question: "How much do Christmas family photos cost?",
+        answer:
+          "My holiday family sessions use my regular packages: $200 for a 30-minute mini with 10 edited images, $325 for 60 minutes and 20 images, and $500 for 90 minutes and 30 images. Every package includes a private online gallery and full print rights.",
+      },
+      {
+        question: "Is a mini session enough for a Christmas card?",
+        answer:
+          "For an immediate family, yes. Thirty minutes and 10 edited images gives you a card photo and a few extras to frame. For extended family, new babies or shy toddlers, a 60 or 90-minute session gives everyone time.",
+      },
+      {
+        question: "Can we take Christmas photos with our tree at home?",
+        answer:
+          "Yes, and it is one of my favorite setups. We turn the tree lights on, turn the overhead lights off, and work in daylight from your brightest window, so faces stay natural while the tree glows softly behind you.",
+      },
+    ],
+    content: `
+<p>The best Christmas family photos are booked by early October, taken in November or early December, and photographed in soft natural light either at home by the tree or outdoors at a nearby park. That timing leaves room for your gallery to arrive and your holiday cards to go out on time. I photograph Christmas family photos in Skokie, Evanston, Wilmette, Lincolnwood and across Chicago's North Shore, and here is how I help families plan them.</p>
+
+<h2>When to book Christmas family photos</h2>
+
+<h3>When should I book Christmas family photos?</h3>
+
+<p>Book by early October if the photos are for your holiday card. My galleries are delivered within 2 to 3 weeks, so a session in early or mid November leaves enough time to pick a favorite, design the card, order prints and still mail everything in early December.</p>
+
+<p>If you are booking a mini session, early November is the latest I would recommend for cards that mail in early December. If you have a firm card deadline, tell me when you book and I will plan the session date around it.</p>
+
+<h3>What is the best time of day for Christmas family photos?</h3>
+
+<p>For outdoor sessions, the hour or so before sunset, which starts in the middle of the afternoon by late November. That early golden hour is kind to families with little ones, since it lands well before dinner and bedtime. For in-home sessions, late morning to early afternoon is usually best, when your windows let in the most daylight. I look up the light for your actual date and suggest a start time from there.</p>
+
+<h2>In-home or outdoor Christmas family photos</h2>
+
+<h3>Where should we take Christmas family photos?</h3>
+
+<p>At home, for most families. An in-home session gives you the tree, the couch everyone piles onto, the kids in socks and nobody shivering. It also means no packing snacks and coats for a toddler in December. You can see what an in-home family session looks like in this <a href="/gallery/family/west-rogers-park-9-month-family-session">in-home family session in West Rogers Park</a>, all warm window light and real moments on the couch and the floor.</p>
+
+<p>If you would rather be outside, a North Shore park in November gives you bare branches, dry grass in warm tones and soft, low light, before the deep cold settles in. Wooded spots like Emily Oaks Nature Center in Skokie or Keay Nature Center in Wilmette work well for that. If a fresh snowfall lands on your session date, we can meet at a park close to your home and keep it short so the kids stay happy.</p>
+
+<h3>Can we take Christmas photos with our tree at home?</h3>
+
+<p>Yes, and it is one of my favorite setups. We turn the tree lights on, turn the overhead lights off, and work with daylight from your brightest window. Faces stay soft and natural, and the tree lights show up as a warm glow behind you. The room does not need to be spotless. I need one bright window and a little clear space near the tree, and the rest can look like real life during the holidays.</p>
+
+<h2>What to wear for Christmas family photos</h2>
+
+<h3>What should we wear for Christmas family photos?</h3>
+
+<p>Choose two or three colors and let everyone wear them in different pieces. Cream, forest green, burgundy, navy and camel look like the holidays without a single reindeer. Soft knits, corduroy, a velvet dress for a little one and a chunky sweater for dad all photograph beautifully indoors. Skip big logos, bright novelty prints and black head to toe, which loses detail in window light.</p>
+
+<p>Matching pajamas are fun, and I am happy to photograph them. I just suggest saving them for the last few frames, after the card photo is done, so you have both. I go deeper on colors and outfits for every season in my guide to <a href="/blog/what-to-wear-family-photo-session">family photo outfits</a>, and I help with wardrobe for Classic and Full sessions.</p>
+
+<h2>Ideas that keep Christmas family photos feeling like you</h2>
+
+<p>The Christmas family photos people keep on the wall for years are rarely the stiff ones. A few things I like to include:</p>
+
+<ul>
+<li><strong>Reading a holiday book together</strong> on the couch, with the youngest on a lap.</li>
+<li><strong>Decorating the tree</strong>, or hanging the last few ornaments while I photograph from across the room.</li>
+<li><strong>Baking or decorating cookies</strong> in the kitchen, flour and all.</li>
+<li><strong>Grandparents with every grandchild</strong>, if the family is together for the holidays.</li>
+<li><strong>One classic card photo</strong> where everyone looks at the camera, so the card is covered and everyone can relax.</li>
+</ul>
+
+<p>If the whole extended family will be in town, a longer session gives every grouping its moment. Here is how I plan <a href="/sessions/extended-family-photography">extended family sessions</a>.</p>
+
+<h2>What Christmas family photos cost</h2>
+
+<h3>How much do Christmas family photos cost?</h3>
+
+<p>My holiday family sessions use my regular packages. The Mini is $200 for 30 minutes at one location with 10 edited images. The Classic is $325 for 60 minutes and 20 images. The Full is $500 for 90 minutes and 30 images. Every package includes a private online gallery and full print rights, so you can print your cards anywhere you like. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee.</p>
+
+<h3>Is a mini session enough for a Christmas card?</h3>
+
+<p>For an immediate family, yes. Thirty minutes and 10 edited images gives you a card photo and a few extras to frame. You can read how <a href="/sessions/mini-sessions">mini sessions</a> work. For a new baby, a shy toddler who needs time to warm up, or a big family gathering, the Classic or Full session is the better fit. The full breakdown is on the <a href="/sessions/family-photography">family photography page</a>.</p>
+
+<h2>Let's plan your Christmas family photos</h2>
+
+<p>Holiday dates fill up alongside the end of fall, so the earlier we talk, the more choice you have. <a href="/contact">Tell me about your family</a>, whether you are picturing the tree at home or a walk in the park, and when your cards need to go out, and I will suggest a date, a place and a package.</p>
+`,
+  },
 ];

@@ -104,9 +104,11 @@
       "type": "guide",
       "primaryKeyword": "christmas family photos",
       "sourceDraft": null,
-      "status": "queued",
+      "status": "in_review",
       "plan": 23,
-      "phase": 0
+      "phase": 0,
+      "pr": 11,
+      "branch": "content/christmas-holiday-family-photos"
     },
     {
       "slug": "rewrite-family-photography",
