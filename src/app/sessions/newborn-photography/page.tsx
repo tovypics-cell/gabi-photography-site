@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: "Do I need to have a clean house?",
-    a: "No. I only need a small area near a window with good natural light. I'll move things around if needed. Your home only has to look like the place your family lives.",
+    a: "No. I only need a small area near a window with good natural light. I'll move things around if needed. Your home doesn't need to be magazine-ready. It needs to be yours.",
   },
   {
     q: "What if my baby won't sleep or is fussy?",
