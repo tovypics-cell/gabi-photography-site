@@ -7,65 +7,65 @@
       "type": "service",
       "primaryKeyword": "chicago proposal photographer",
       "sourceDraft": null,
-      "status": "published",
+      "status": "in_review",
       "plan": 5,
       "notes": "Only claim proposals if gallery-data.ts has one; otherwise frame it as planning a proposal shoot and link the real engagement sessions. Shipped in the batch PR from Omer's fork (seo-batch-1).",
       "branch": "seo-batch-1",
       "pr": 5,
       "updatedAt": "2026-09-22",
-      "publishedAt": "2026-09-23"
+      "phase": 0
     },
     {
       "slug": "maternity-and-newborn-photography",
       "type": "service",
       "primaryKeyword": "maternity and newborn photography",
       "sourceDraft": null,
-      "status": "published",
+      "status": "in_review",
       "plan": 10,
       "notes": "There is no bundle price in site.pricing. Describe booking both sessions without inventing a package price. Shipped in the batch PR from Omer's fork (seo-batch-1).",
       "branch": "seo-batch-1",
       "pr": 5,
       "updatedAt": "2026-09-22",
-      "publishedAt": "2026-09-23"
+      "phase": 0
     },
     {
       "slug": "extended-family-photography",
       "type": "service",
       "primaryKeyword": "large family photoshoot",
       "sourceDraft": null,
-      "status": "published",
+      "status": "in_review",
       "plan": 13,
       "notes": "Also cover 'extended family photos' and 'multigenerational family photos'. Shipped in the batch PR from Omer's fork (seo-batch-1).",
       "branch": "seo-batch-1",
       "pr": 5,
       "updatedAt": "2026-09-22",
-      "publishedAt": "2026-09-23"
+      "phase": 0
     },
     {
       "slug": "engagement-photoshoot-cost-chicago",
       "type": "cost",
       "primaryKeyword": "engagement photoshoot cost",
       "sourceDraft": null,
-      "status": "published",
+      "status": "in_review",
       "plan": 18,
       "branch": "seo-batch-1",
       "pr": 5,
       "updatedAt": "2026-09-22",
       "notes": " Shipped in the batch PR from Omer's fork (seo-batch-1).",
-      "publishedAt": "2026-09-23"
+      "phase": 0
     },
     {
       "slug": "maternity-photoshoot-cost-chicago",
       "type": "cost",
       "primaryKeyword": "maternity photoshoot cost",
       "sourceDraft": null,
-      "status": "published",
+      "status": "in_review",
       "plan": 19,
       "branch": "seo-batch-1",
       "pr": 5,
       "updatedAt": "2026-09-22",
       "notes": " Shipped in the batch PR from Omer's fork (seo-batch-1).",
-      "publishedAt": "2026-09-23"
+      "phase": 0
     },
     {
       "slug": "fall-family-photos-guide",
@@ -78,7 +78,8 @@
       "branch": "content/fall-family-photos-guide",
       "updatedAt": "2026-09-21",
       "publishedAt": "2026-09-23",
-      "notes": " PR #4 was closed by GitHub because its commits landed through PR #5."
+      "notes": " PR #4 was closed by GitHub because its commits landed through PR #5.",
+      "phase": 0
     },
     {
       "slug": "rewrite-newborn-photography",
@@ -90,13 +91,13 @@
       },
       "sourceDraft": null,
       "status": "in_review",
-      "branch": "content/rewrite-newborn-photography",
       "pr": 8,
-      "updatedAt": "2026-09-24",
       "notes": "Folds the former in-home-newborn and lifestyle-newborn items into this page. Work the phrases 'in-home newborn photography' and 'lifestyle newborn photography' into the citable summary, one H3 and one FAQ. Keep every existing FAQ. Do not change the hero.",
       "keep": [
         "The tiny details you'll want to remember forever."
-      ]
+      ],
+      "phase": 0,
+      "branch": "content/rewrite-newborn-photography"
     },
     {
       "slug": "christmas-holiday-family-photos",
@@ -104,7 +105,8 @@
       "primaryKeyword": "christmas family photos",
       "sourceDraft": null,
       "status": "queued",
-      "plan": 23
+      "plan": 23,
+      "phase": 0
     },
     {
       "slug": "rewrite-family-photography",
@@ -120,15 +122,8 @@
       "notes": "Folds the former lifestyle-family item into this page. Add 'lifestyle family photography' and 'in-home family photoshoot' to the summary, one H3 and one FAQ. Keep every existing FAQ.",
       "keep": [
         "Nobody stands in a line and says cheese."
-      ]
-    },
-    {
-      "slug": "hanukkah-family-photoshoot",
-      "type": "guide",
-      "primaryKeyword": "hanukkah photoshoot",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 31
+      ],
+      "phase": 0
     },
     {
       "slug": "rewrite-about",
@@ -141,15 +136,8 @@
       "sourceDraft": null,
       "status": "queued",
       "pr": null,
-      "notes": "Add a citable two-sentence summary under the H1 (who Gabi is, where she is based, what she photographs, starting price). Add three literal-question H3s: Who is the photographer behind Tovy Photography, What areas do you serve, What is your photography style. Render a FAQ with FAQPage schema the way the newborn page does. The hero must stay solid rose pink."
-    },
-    {
-      "slug": "bar-mitzvah-photographer-cost",
-      "type": "cost",
-      "primaryKeyword": "how much does a bar mitzvah photographer cost",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 20
+      "notes": "Add a citable two-sentence summary under the H1 (who Gabi is, where she is based, what she photographs, starting price). Add three literal-question H3s: Who is the photographer behind Tovy Photography, What areas do you serve, What is your photography style. Render a FAQ with FAQPage schema the way the newborn page does. The hero must stay solid rose pink.",
+      "phase": 0
     },
     {
       "slug": "rewrite-when-to-book-newborn-photos",
@@ -162,7 +150,8 @@
       "sourceDraft": null,
       "status": "queued",
       "pr": null,
-      "notes": "Blog post in blog-data.ts. Make the first paragraph the direct answer (5 to 14 days; book in the third trimester). Add H3s for 'When to take newborn photos', 'When to schedule newborn photos', 'How old should baby be for newborn photos'. Add a faqs array. Keep Gabi's paragraphs."
+      "notes": "Blog post in blog-data.ts. Make the first paragraph the direct answer (5 to 14 days; book in the third trimester). Add H3s for 'When to take newborn photos', 'When to schedule newborn photos', 'How old should baby be for newborn photos'. Add a faqs array. Keep Gabi's paragraphs.",
+      "phase": 0
     },
     {
       "slug": "family-photos-with-dog",
@@ -170,7 +159,114 @@
       "primaryKeyword": "family photos with dog",
       "sourceDraft": null,
       "status": "queued",
-      "plan": 26
+      "plan": 26,
+      "phase": 0
+    },
+    {
+      "slug": "birthday-party-photography",
+      "type": "service",
+      "primaryKeyword": "birthday party photographer",
+      "sourceDraft": null,
+      "status": "queued",
+      "pr": null,
+      "phase": 1,
+      "notes": "Also target 'photographer for birthday party' and 'birthday photographer near me'. Proof: the Shilo 3rd birthday and upsherin gallery. Kids parties, adult milestone birthdays, at home or at a venue. Quote per event like the mitzvah page; pre-party portraits use standard packages."
+    },
+    {
+      "slug": "first-birthday-photography",
+      "type": "service",
+      "primaryKeyword": "first birthday photoshoot",
+      "sourceDraft": null,
+      "status": "queued",
+      "pr": null,
+      "phase": 1,
+      "notes": "Proof: West Rogers Park 9-month session and Shilo 3rd birthday. Describe cake smash in future tense only, no claim of having shot one. Link to milestone page and newborn page (first-year story)."
+    },
+    {
+      "slug": "what-is-an-upsherin",
+      "type": "guide",
+      "primaryKeyword": "upsherin",
+      "sourceDraft": null,
+      "status": "queued",
+      "pr": null,
+      "phase": 1,
+      "notes": "Answer-first: what an upsherin is, when it happens (third birthday), what happens (first haircut, peyos, sweets, blessings), how it is photographed. Proof gallery: /gallery/milestone/shilo-3rd-birthday-upshirin. Use the site's spelling 'upsherin' in slug and H1 and mention the 'upshirin' spelling once. This is a 1,000/mo term with zero difficulty."
+    },
+    {
+      "slug": "babys-first-year-photo-plan",
+      "type": "guide",
+      "primaryKeyword": "newborn and family photoshoot",
+      "sourceDraft": null,
+      "status": "queued",
+      "pr": null,
+      "phase": 1,
+      "notes": "Newborn at 5 to 14 days, 3 months, 6 to 9 month sitter, first birthday. Link newborn, milestone, first-birthday and maternity-and-newborn pages. Proof: newborn galleries and the 9-month session."
+    },
+    {
+      "slug": "rewrite-milestone-photography",
+      "type": "rewrite",
+      "primaryKeyword": "first birthday photographer",
+      "sourceDraft": null,
+      "status": "queued",
+      "pr": null,
+      "phase": 1,
+      "notes": "Add literal H3s for birthday party, first birthday and cake smash (future tense) and link the new Phase 1 pages. Keep every existing FAQ.",
+      "target": {
+        "url": "/sessions/milestone-photography",
+        "file": "src/lib/services.ts"
+      }
+    },
+    {
+      "slug": "hanukkah-family-photoshoot",
+      "type": "guide",
+      "primaryKeyword": "hanukkah photoshoot",
+      "sourceDraft": null,
+      "status": "queued",
+      "plan": 31,
+      "phase": 2
+    },
+    {
+      "slug": "bar-mitzvah-photographer-cost",
+      "type": "cost",
+      "primaryKeyword": "how much does a bar mitzvah photographer cost",
+      "sourceDraft": null,
+      "status": "queued",
+      "plan": 20,
+      "phase": 2
+    },
+    {
+      "slug": "rewrite-bar-mitzvah-photography",
+      "type": "rewrite",
+      "primaryKeyword": "bat mitzvah photographer",
+      "sourceDraft": null,
+      "status": "queued",
+      "pr": null,
+      "phase": 2,
+      "notes": "Add a Bat Mitzvah section with its own literal H3s (the page currently leans Bar Mitzvah), a Shabbat timing section, and a synagogue portrait section. Keep every FAQ and the Stolberg gallery proof. Title stays 'Bar Mitzvah Photographer, Skokie and Chicago' but the H1 and summary must name Bat Mitzvah too.",
+      "target": {
+        "url": "/sessions/bar-mitzvah-photography",
+        "file": "src/lib/services.ts"
+      }
+    },
+    {
+      "slug": "bat-mitzvah-photoshoot-guide",
+      "type": "guide",
+      "primaryKeyword": "bat mitzvah photoshoot",
+      "sourceDraft": null,
+      "status": "queued",
+      "pr": null,
+      "phase": 2,
+      "notes": "Pre-event portrait session for a Bat Mitzvah girl and family: timing, outfits, locations, what to bring. Future tense for Bat Mitzvah specifically; the Bar Mitzvah gallery is the closest proof and may be linked as such."
+    },
+    {
+      "slug": "bar-mitzvah-photo-timeline",
+      "type": "guide",
+      "primaryKeyword": "bar mitzvah photos",
+      "sourceDraft": null,
+      "status": "queued",
+      "pr": null,
+      "phase": 2,
+      "notes": "A photo timeline for the day: tallit, Torah, family groupings, the party. Built from the Stolberg gallery. Answer 'what photos do you take at a bar mitzvah'."
     },
     {
       "slug": "rewrite-maternity-when-to-book",
@@ -183,7 +279,8 @@
       "sourceDraft": null,
       "status": "queued",
       "pr": null,
-      "notes": "Blog post in blog-data.ts. First paragraph answers directly (28 to 34 weeks). Add H3s for 'When to take maternity photos', 'What is the best week for maternity photos', 'What to wear for maternity photos'. Add faqs. Keep Gabi's paragraphs."
+      "notes": "Blog post in blog-data.ts. First paragraph answers directly (28 to 34 weeks). Add H3s for 'When to take maternity photos', 'What is the best week for maternity photos', 'What to wear for maternity photos'. Add faqs. Keep Gabi's paragraphs.",
+      "phase": 0
     },
     {
       "slug": "newborn-photos-with-siblings",
@@ -191,7 +288,8 @@
       "primaryKeyword": "newborn photos with siblings",
       "sourceDraft": null,
       "status": "queued",
-      "plan": 27
+      "plan": 27,
+      "phase": 0
     },
     {
       "slug": "rewrite-best-family-photo-locations",
@@ -204,7 +302,8 @@
       "sourceDraft": null,
       "status": "queued",
       "pr": null,
-      "notes": "Blog post. Add an answer-first opener listing the locations in one sentence, an H3 per location phrased as a question where natural, permit notes for forest preserves and the Botanic Garden, and a faqs array. Keep the eight locations and Gabi's descriptions."
+      "notes": "Blog post. Add an answer-first opener listing the locations in one sentence, an H3 per location phrased as a question where natural, permit notes for forest preserves and the Botanic Garden, and a faqs array. Keep the eight locations and Gabi's descriptions.",
+      "phase": 0
     },
     {
       "slug": "what-to-wear-for-maternity-photos",
@@ -213,7 +312,8 @@
       "sourceDraft": null,
       "status": "queued",
       "plan": 28,
-      "notes": "The live post maternity-photos-when-to-book-what-to-wear overlaps. Go deeper on outfits and link to it."
+      "notes": "The live post maternity-photos-when-to-book-what-to-wear overlaps. Go deeper on outfits and link to it.",
+      "phase": 0
     },
     {
       "slug": "rewrite-testimonials",
@@ -226,7 +326,8 @@
       "sourceDraft": null,
       "status": "queued",
       "pr": null,
-      "notes": "Add a citable summary under the H1 that says what the reviews are from (family, in-home and event sessions in Skokie and Chicago). Add a short 'How to leave a review' line linking to the Google Business Profile if its link is in site.ts, otherwise to /contact. Keep every testimonial verbatim. Keep the Review schema."
+      "notes": "Add a citable summary under the H1 that says what the reviews are from (family, in-home and event sessions in Skokie and Chicago). Add a short 'How to leave a review' line linking to the Google Business Profile if its link is in site.ts, otherwise to /contact. Keep every testimonial verbatim. Keep the Review schema.",
+      "phase": 0
     },
     {
       "slug": "what-to-wear-for-newborn-photos",
@@ -234,7 +335,8 @@
       "primaryKeyword": "what to wear for newborn photos",
       "sourceDraft": null,
       "status": "queued",
-      "plan": 29
+      "plan": 29,
+      "phase": 0
     },
     {
       "slug": "rewrite-engagement-locations",
@@ -247,7 +349,8 @@
       "sourceDraft": null,
       "status": "queued",
       "pr": null,
-      "notes": "Blog post. Answer-first opener, H3 per location, permit notes, faqs array. Link to /sessions/engagement-photography and /sessions/proposal-photography."
+      "notes": "Blog post. Answer-first opener, H3 per location, permit notes, faqs array. Link to /sessions/engagement-photography and /sessions/proposal-photography.",
+      "phase": 0
     },
     {
       "slug": "birth-announcement-photos",
@@ -255,7 +358,8 @@
       "primaryKeyword": "birth announcement photos",
       "sourceDraft": null,
       "status": "queued",
-      "plan": 34
+      "plan": 34,
+      "phase": 0
     },
     {
       "slug": "rewrite-outdoor-family-locations",
@@ -268,7 +372,8 @@
       "sourceDraft": null,
       "status": "queued",
       "pr": null,
-      "notes": "Blog post. Answer-first opener, H3 per location, best-light notes, faqs array. Cross-link with the fall guide and the Skokie locations post."
+      "notes": "Blog post. Answer-first opener, H3 per location, best-light notes, faqs array. Cross-link with the fall guide and the Skokie locations post.",
+      "phase": 0
     },
     {
       "slug": "how-to-prepare-for-family-photos",
@@ -277,7 +382,8 @@
       "sourceDraft": null,
       "status": "queued",
       "plan": 35,
-      "notes": "Also answer 'how long does a family photo session take' from site.pricing durations. The plan says a draft exists, but it is not on this Mac."
+      "notes": "Also answer 'how long does a family photo session take' from site.pricing durations. The plan says a draft exists, but it is not on this Mac.",
+      "phase": 0
     },
     {
       "slug": "rewrite-best-time-of-day",
@@ -290,7 +396,8 @@
       "sourceDraft": null,
       "status": "queued",
       "pr": null,
-      "notes": "Blog post. First sentence gives the answer (60 to 90 minutes before sunset). H3s for 'What time of day is best for outdoor family photos', 'Is morning or evening better', 'What about winter'. faqs array."
+      "notes": "Blog post. First sentence gives the answer (60 to 90 minutes before sunset). H3s for 'What time of day is best for outdoor family photos', 'Is morning or evening better', 'What about winter'. faqs array.",
+      "phase": 0
     },
     {
       "slug": "gillson-park-family-photos",
@@ -299,7 +406,8 @@
       "sourceDraft": null,
       "status": "queued",
       "plan": 38,
-      "notes": "Include a permit note. Only claim a session there if gallery-data.ts has one."
+      "notes": "Include a permit note. Only claim a session there if gallery-data.ts has one.",
+      "phase": 0
     },
     {
       "slug": "chicago-botanic-garden-photos-permits",
@@ -308,7 +416,8 @@
       "sourceDraft": null,
       "status": "queued",
       "plan": 39,
-      "notes": "Include the garden's photography permit rules from its official site."
+      "notes": "Include the garden's photography permit rules from its official site.",
+      "phase": 0
     },
     {
       "slug": "chicago-riverwalk-engagement-photos",
@@ -316,7 +425,8 @@
       "primaryKeyword": "chicago riverwalk photoshoot",
       "sourceDraft": null,
       "status": "queued",
-      "plan": 41
+      "plan": 41,
+      "phase": 0
     },
     {
       "slug": "lincoln-park-conservatory-engagement-photos",
@@ -324,7 +434,8 @@
       "primaryKeyword": "lincoln park conservatory engagement photos",
       "sourceDraft": null,
       "status": "queued",
-      "plan": 42
+      "plan": 42,
+      "phase": 0
     },
     {
       "slug": "best-maternity-photo-locations-north-shore",
@@ -333,7 +444,32 @@
       "sourceDraft": null,
       "status": "queued",
       "plan": 43,
-      "notes": "The plan says a draft exists, but it is not on this Mac."
+      "notes": "The plan says a draft exists, but it is not on this Mac.",
+      "phase": 0
+    },
+    {
+      "slug": "family-celebration-photography",
+      "type": "service",
+      "primaryKeyword": "event photographer near me",
+      "sourceDraft": null,
+      "status": "queued",
+      "pr": null,
+      "phase": 3,
+      "notes": "Reunions, adult milestone birthdays, baby namings, anniversaries, holiday gatherings. Proof: Bar Mitzvah and upsherin galleries. Quote per event. Do not overlap the mitzvah or birthday pages; link to them."
+    },
+    {
+      "slug": "rewrite-engagement-photography",
+      "type": "rewrite",
+      "primaryKeyword": "engagement photographer near me",
+      "sourceDraft": null,
+      "status": "queued",
+      "pr": null,
+      "phase": 3,
+      "notes": "Add an engagement party section (literal H3 'Do you photograph engagement parties?') and an anniversary mention, plus 'near me' phrasing in the summary. Keep the page's own FAQs. File is a static page.",
+      "target": {
+        "url": "/sessions/engagement-photography",
+        "file": "src/app/sessions/engagement-photography/page.tsx"
+      }
     },
     {
       "slug": "mothers-day-mini-sessions",
@@ -341,7 +477,8 @@
       "primaryKeyword": "mothers day mini sessions",
       "sourceDraft": null,
       "status": "queued",
-      "plan": 32
+      "plan": 32,
+      "phase": 5
     },
     {
       "slug": "spring-mini-sessions",
@@ -349,7 +486,8 @@
       "primaryKeyword": "spring mini sessions",
       "sourceDraft": null,
       "status": "queued",
-      "plan": 33
+      "plan": 33,
+      "phase": 5
     },
     {
       "slug": "deerfield",
@@ -358,7 +496,8 @@
       "sourceDraft": null,
       "status": "queued",
       "plan": 47,
-      "notes": "Plan gate: publish once the first 12 town pages show impressions in Search Console."
+      "notes": "Plan gate: publish once the first 12 town pages show impressions in Search Console.",
+      "phase": 5
     },
     {
       "slug": "glencoe",
@@ -367,7 +506,8 @@
       "sourceDraft": null,
       "status": "queued",
       "plan": 47,
-      "notes": "Plan gate: publish once the first 12 town pages show impressions in Search Console."
+      "notes": "Plan gate: publish once the first 12 town pages show impressions in Search Console.",
+      "phase": 5
     },
     {
       "slug": "kenilworth",
@@ -376,62 +516,9 @@
       "sourceDraft": null,
       "status": "queued",
       "plan": 47,
-      "notes": "Plan gate: publish once the first 12 town pages show impressions in Search Console."
-    },
-    {
-      "slug": "lake-forest",
-      "type": "location",
-      "primaryKeyword": "lake forest family photographer",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 48,
-      "notes": "Lowest priority in the plan."
-    },
-    {
-      "slug": "buffalo-grove",
-      "type": "location",
-      "primaryKeyword": "buffalo grove family photographer",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 48,
-      "notes": "Lowest priority in the plan."
-    },
-    {
-      "slug": "arlington-heights",
-      "type": "location",
-      "primaryKeyword": "arlington heights family photographer",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 48,
-      "notes": "Lowest priority in the plan."
-    },
-    {
-      "slug": "twins-newborn-photography",
-      "type": "service",
-      "primaryKeyword": "twins newborn photography",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 14,
-      "notes": "Block unless gallery-data.ts shows a twins session."
-    },
-    {
-      "slug": "fresh-48-newborn-photography",
-      "type": "service",
-      "primaryKeyword": "fresh 48 newborn photos",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 15,
-      "notes": "Block unless gallery-data.ts shows a hospital or first-48-hours session."
-    },
-    {
-      "slug": "senior-portraits-evanston",
-      "type": "service",
-      "primaryKeyword": "senior pictures chicago",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 50,
-      "notes": "Block unless gallery-data.ts shows a senior or graduation session."
+      "notes": "Plan gate: publish once the first 12 town pages show impressions in Search Console.",
+      "phase": 5
     }
   ],
-  "note": "Types: guide, cost, service, location write a new page; rewrite improves an existing page in place (see the prompt). The loop runs Monday and Thursday."
+  "note": "Publish order for the content loop, sequenced by content/seo-roadmap.md. Every item is reachable from sessions Gabi has actually photographed. Types: guide, cost, service, location write a new page; rewrite improves an existing page in place. The loop runs Monday and Thursday."
 }

@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { track } from "@vercel/analytics";
+import { readVisitSource } from "@/lib/visit-source";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
@@ -12,6 +14,7 @@ export default function ContactForm() {
     setStatus("sending");
 
     const formData = new FormData(e.currentTarget);
+    const visit = readVisitSource();
     const firstName = formData.get("firstName");
     const lastName = formData.get("lastName");
     try {
@@ -27,10 +30,28 @@ export default function ContactForm() {
           phone: formData.get("phone") || "Not provided",
           session_type: formData.get("sessionType") || "Not specified",
           message: formData.get("message"),
+          "How they found the site": visit.source,
+          "First page they saw": visit.landing.startsWith("/")
+            ? `https://tovyphotography.com${visit.landing}`
+            : visit.landing,
+          "Page right before Contact": visit.before.startsWith("/")
+            ? `https://tovyphotography.com${visit.before}`
+            : visit.before,
+          "First visit": visit.firstVisit,
         }),
       });
       const result = await res.json();
       if (result.success) {
+        try {
+          track("Inquiry", {
+            source: visit.source,
+            landing: visit.landing.split("?")[0],
+            before: visit.before.split("?")[0],
+            sessionType: String(formData.get("sessionType") || "not specified"),
+          });
+        } catch {
+          /* analytics is best effort */
+        }
         setStatus("sent");
       } else {
         setStatus("error");

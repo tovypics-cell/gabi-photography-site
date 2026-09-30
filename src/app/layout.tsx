@@ -3,6 +3,9 @@ import { Cormorant_Garamond, Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Suspense } from "react";
+import { Analytics } from "@vercel/analytics/next";
+import VisitSourceTracker from "@/components/VisitSourceTracker";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -60,6 +63,10 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <Suspense fallback={null}>
+          <VisitSourceTracker />
+        </Suspense>
+        <Analytics />
       </body>
     </html>
   );

@@ -7,6 +7,35 @@
 # Usage: scripts/mark-published.sh [--quiet]
 set -euo pipefail
 
+# ---------- single loop host ----------
+# Only the machine holding ~/.config/tovy-weekly/loop-host runs the content loop
+# (scripts/install-launchd.sh creates the marker). Since 2026-09-22 that is Omer's Mac mini.
+# Every runner, including the original 9:00 one on Gabi's MacBook, pulls main and then calls
+# this script, so this is where a second machine retires itself: a scheduled run on any other
+# machine removes its own launchd job, cleans up, and stops the runner before it writes
+# anything or sends a notification. A manual run on another machine just refuses with a message.
+LOOP_HOST_MARKER="$HOME/.config/tovy-weekly/loop-host"
+if [ ! -f "$LOOP_HOST_MARKER" ]; then
+  LABEL="com.tovy.weekly-page"
+  runner_pid="$PPID"
+  runner_parent="$(ps -o ppid= -p "$runner_pid" 2>/dev/null | tr -d ' ' || true)"
+  runner_cmd="$(ps -o command= -p "$runner_pid" 2>/dev/null || true)"
+  if [ "$runner_parent" = "1" ] && [[ "$runner_cmd" == *weekly-page.sh* ]]; then
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] not the content-loop host: retiring the $LABEL launchd job on this machine. The loop runs on Omer's Mac mini."
+    rm -f "$HOME/Library/LaunchAgents/$LABEL.plist"
+    rm -rf "$HOME/.cache/tovy-weekly-page.lock"
+    case "${TOVY_WEEKLY_COPY:-}" in
+      */tovy-weekly.*) rm -rf "$TOVY_WEEKLY_COPY" ;;
+    esac
+    kill -9 "$runner_pid" 2>/dev/null || true
+    launchctl bootout "gui/$(id -u)/$LABEL" 2>/dev/null || true
+    exit 0
+  fi
+  echo "mark-published: this machine is not the content-loop host ($LOOP_HOST_MARKER is missing)." >&2
+  echo "The loop runs on Omer's Mac mini. To move it here, run scripts/install-launchd.sh on this machine and uninstall it there." >&2
+  exit 1
+fi
+
 REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 QUEUE="$REPO_DIR/content/queue.json"
 GH_REPO="${GH_REPO:-tovypics-cell/gabi-photography-site}"

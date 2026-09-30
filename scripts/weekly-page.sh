@@ -96,6 +96,10 @@ finish() {
   local code=$?
   rm -rf "$LOCK" "${TOVY_WEEKLY_COPY:-/nonexistent}"
   if [ "$code" -ne 0 ]; then
+    # leave the checkout the way a person expects it: on the base branch, queue file clean
+    if [ -d "${REPO:-}/.git" ]; then
+      (cd "$REPO" && git checkout -q -- "$QUEUE" 2>/dev/null; git checkout -q "${BASE:-main}" 2>/dev/null) || true
+    fi
     log "FAILED during: $STAGE (exit $code)"
     notify "Tovy weekly page FAILED during $STAGE. Log: ~/Library/Logs/tovy-weekly-page.log"
   fi
@@ -122,6 +126,12 @@ command -v jq >/dev/null || die "jq not found"
 log "claude: $CLAUDE_BIN"
 
 cd "$REPO"
+# content/queue.json is rewritten by mark-published.sh on every run; a failed earlier run can
+# leave it modified. It is regenerated below, so discard that change. Anything else is a person's work.
+if [ -n "$(git status --porcelain -- "$QUEUE")" ] && [ -z "$(git status --porcelain | grep -v " $QUEUE\$")" ]; then
+  git checkout -q -- "$QUEUE"
+  log "discarded a leftover uncommitted $QUEUE from a previous run"
+fi
 [ -z "$(git status --porcelain)" ] || die "working tree has uncommitted changes, not touching it"
 
 # ---------- sync base ----------
@@ -137,7 +147,29 @@ STAGE="mark-published"
 
 # ---------- pick the item ----------
 STAGE="pick item"
-item="$(jq -c '[.items[] | select(.status == "queued")][0] // empty' "$QUEUE")"
+# Queue status only reaches main through a merged PR, so an item that already has a
+# content/<slug> branch on GitHub is in review even if main still says "queued". Skip those.
+existing_branches="$(git ls-remote --heads origin 'refs/heads/content/*' | awk '{print $2}' | sed 's|refs/heads/content/||' | sed 's/--dry-run-.*$//' | sort -u)"
+# Items the writer blocked on an earlier run (missing sources, cannibalization) are kept locally so
+# they are not retried every run. A person clears them by editing the queue and deleting the entry.
+BLOCKED_FILE="${TOVY_BLOCKED_FILE:-$HOME/.config/tovy-weekly/blocked.json}"
+[ -f "$BLOCKED_FILE" ] || echo '{}' > "$BLOCKED_FILE"
+blocked_slugs="$(jq -r 'keys[]' "$BLOCKED_FILE" 2>/dev/null || true)"
+# Proof gates: an item's "gate" is a case-insensitive regex that must match src/lib/gallery-data.ts.
+gate_failed=""
+for slug in $(jq -r '.items[] | select(.status == "queued") | select(.gate != null) | .slug' "$QUEUE"); do
+  gate="$(jq -r --arg s "$slug" '.items[] | select(.slug == $s) | .gate' "$QUEUE")"
+  grep -E '^\s*(slug|title|category|description):' src/lib/gallery-data.ts | grep -qiE -- "$gate" || gate_failed="$gate_failed $slug"
+done
+[ -n "$gate_failed" ] && log "gate not met (no matching gallery yet):$gate_failed"
+skip_all="$(printf '%s\n%s\n%s\n' "$existing_branches" "$blocked_slugs" "$(echo $gate_failed | tr ' ' '\n')")"
+item="$(jq -c --arg skip "$skip_all" '
+  ($skip | split("\n") | map(select(length > 0))) as $s
+  | [.items[] | select(.status == "queued") | select((.slug as $x | $s | index($x)) == null)][0] // empty' "$QUEUE")"
+skipped="$(jq -r --arg skip "$existing_branches" '
+  ($skip | split("\n") | map(select(length > 0))) as $s
+  | [.items[] | select(.status == "queued") | select((.slug as $x | $s | index($x)) != null) | .slug] | join(", ")' "$QUEUE")"
+[ -n "$skipped" ] && log "skipping items that already have an open branch (awaiting merge): $skipped"
 if [ -z "$item" ]; then
   git checkout -q -- "$QUEUE"
   log "no queued items, nothing to do"
@@ -156,7 +188,7 @@ else
   BRANCH="content/$SLUG"
 fi
 if git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then
-  die "branch $BRANCH already exists on GitHub. Merge or close its PR and delete the branch."
+  die "branch $BRANCH already exists on GitHub (should have been skipped). Merge or close its PR and delete the branch."
 fi
 
 git checkout -q -b "$BRANCH"
@@ -199,8 +231,9 @@ if [ "$STATUS" != "ok" ]; then
   [ -z "$(git status --porcelain)" ] || die "blocked ($REASON) and left uncommitted changes on $BRANCH"
   git checkout -q "$BASE"
   git branch -q -D "$BRANCH"
-  log "blocked: $REASON"
-  notify "Tovy weekly page skipped $SLUG: $REASON. It stays queued. Edit content/queue.json to fix or skip it."
+  tmpb="$(mktemp)"; jq --arg s "$SLUG" --arg r "$REASON" --arg d "$(date +%Y-%m-%d)" '. + {($s): {reason: $r, date: $d}}' "$BLOCKED_FILE" > "$tmpb" && mv "$tmpb" "$BLOCKED_FILE"
+  log "blocked: $REASON (recorded in $BLOCKED_FILE; later runs skip it)"
+  notify "Tovy weekly page skipped $SLUG: $REASON. Later runs move past it. Fix the item in content/queue.json and remove it from $BLOCKED_FILE to retry."
   exit 0
 fi
 [ -z "$(git status --porcelain)" ] || die "claude left uncommitted changes on $BRANCH"
