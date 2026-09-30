@@ -24,14 +24,17 @@ npx vercel deploy --prod --yes
 ```
 No Vercel token is stored anywhere in this repo. Do NOT add one.
 
-## Weekly Content Loop
-A launchd job (`com.tovy.weekly-page`, Mondays 9:00) runs `scripts/weekly-page.sh`, which writes the next `"queued"` page from `content/queue.json` with `claude -p`, verifies the build, opens a PR on a `content/<slug>` branch, and texts Gabi. Publishing is Gabi merging that PR. Details:
-- Plan and priorities: `content/seo-plan.md`. Queue order is the publish order.
-- Writer rules: `scripts/weekly-page-prompt.md` (brand rules, answer-first format, no invented numbers, real locations only).
-- `scripts/mark-published.sh` flips queue items to `"published"` once their PR is merged. It runs at the start of every weekly run.
-- Private settings (iMessage number, Claude token) live in `~/.config/tovy-weekly/env`, not in git.
-- Log: `~/Library/Logs/tovy-weekly-page.log`. Dry run: `scripts/weekly-page.sh --dry-run`.
+## Content Loop (SEO pages)
+Runs on **Omer's Mac mini**, not on Gabi's MacBook (since 2026-09-22), because OpenSEO and its keyword data live there. A launchd job (`com.tovy.weekly-page`, **Mondays and Thursdays 8:00**) runs `scripts/weekly-page.sh`, which writes the next `"queued"` item from `content/queue.json` with `claude -p` (a new page or a rewrite of an existing one), verifies the build, and opens a PR on a `content/<slug>` branch. Omer gets a Telegram alert; Gabi gets GitHub's PR email. **Nothing publishes until the PR is merged.** Details:
+- Roadmap and phase order: `content/seo-roadmap.md`. Page list and ground rules: `content/seo-plan.md`. Queue order is the publish order.
+- Writer rules: `scripts/weekly-page-prompt.md` (brand rules, answer-first format, no invented numbers, only sessions and places Gabi has actually photographed, keep her existing copy on rewrites).
+- `scripts/mark-published.sh` flips queue items to `"published"` once their PR is merged. It runs at the start of every run.
+- One loop host only. The host has `~/.config/tovy-weekly/loop-host` (written by `scripts/install-launchd.sh`). A scheduled run on any other machine, including an old job on this MacBook, removes its own launchd job on its first run. Do not install the loop on this MacBook.
+- Host-only settings (Telegram, Claude token) live in `~/.config/tovy-weekly/env` on the Mac mini, not in git.
 - To skip or reorder a page, edit `content/queue.json` on a branch and merge it.
+
+## Inquiry Source Tracking
+Every contact-form email ends with four lines the visitor never sees: how they found the site, the first page they saw, the page right before Contact, and the date of their first visit (remembered 30 days). Code: `src/lib/visit-source.ts`, `src/components/VisitSourceTracker.tsx`, `src/components/ContactForm.tsx`. Vercel Web Analytics is in the layout (`<Analytics />`); it also has to be enabled in the Vercel project settings.
 
 ## Brand Identity
 - **Tagline:** "Seeing the good in your world"
