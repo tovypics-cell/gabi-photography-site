@@ -15,10 +15,11 @@ The run parameters are appended at the bottom of this prompt: `SLUG`, `TYPE`, `P
 ## Step 1: Load the item
 
 1. Read `content/queue.json`. Find the first item whose `status` is `"queued"`. Its `slug` must equal `SLUG`. If it does not, block with reason `queue mismatch`.
-2. Read `CLAUDE.md` in full. Its Brand Rules are binding. Then read the Ground rules section of `content/seo-plan.md`, which is binding too.
+2. Read `CLAUDE.md` in full. Its Brand Rules are binding. Then read the Ground rules section of `content/seo-plan.md` and the phase this item belongs to in `content/seo-roadmap.md` (the item's `phase` number), which are binding too.
    If the queue item has a `notes` field, follow it. A note that says "Block unless" is a condition you must check before writing anything.
 3. If `SOURCE_DRAFT` is not `null`, read that file. It is Gabi's draft. Keep her wording and ideas wherever they already meet the rules below. Your job is to shape it, not replace her voice.
-4. Check the slug is new. Block with reason `slug exists` if it already appears in `src/lib/blog-posts-seo.ts`, `src/lib/blog-data.ts`, `src/lib/services.ts`, or `src/lib/locations.ts`.
+4. If `TYPE` is `rewrite`, skip this check: the page already exists and the queue item's `target` field names it (a URL path plus the file that renders it). Otherwise, check the slug is new. Block with reason `slug exists` if it already appears in `src/lib/blog-posts-seo.ts`, `src/lib/blog-data.ts`, `src/lib/services.ts`, or `src/lib/locations.ts`.
+5. **One page per intent.** Before writing a new `service` or `guide`, read the titles and first paragraphs of the existing service pages (`src/lib/services.ts`, `src/app/sessions/*/page.tsx`) and SEO posts (`src/lib/blog-posts-seo.ts`). If an existing page already answers the same core question as `PRIMARY_KEYWORD` (for example "in-home newborn photography" is the newborn page, "lifestyle family photography" is the family page), do not create a second page. Block with reason `cannibalizes /<existing-path>` so a human can turn the item into a `rewrite` of that page instead.
 
 ## Step 2: Gather facts before writing
 
@@ -27,6 +28,12 @@ The run parameters are appended at the bottom of this prompt: `SLUG`, `TYPE`, `P
 - **Proof links** must point to real gallery pages: `/gallery/<category>/<slug>` built from `gallery-data.ts`.
 - **Images** must already exist under `public/photos/`. Open each one you pick with Read and confirm it fits the topic. A maternity page needs a pregnancy photo, a newborn page needs a newborn. If nothing fits, use the closest honest option and say so in the summary `notes`.
 - **Cost pages** (`TYPE` = `cost`) need outside ranges. Use WebSearch to find two published cost guides for this topic and area, from different organizations, dated 2025 or 2026. Open each with WebFetch and confirm the exact range appears on the page. Attribute every outside number in the text to its source by name with a link, for example `<a href="...">Thumbtack's 2026 cost guide</a> lists ...`. If you cannot verify two sources, block with reason `could not verify two cost sources`.
+
+- **Keyword check (when OpenSEO tools are available).** Call `mcp__openseo__get_keyword_metrics` once with `PRIMARY_KEYWORD` plus up to five close variants you plan to use in headings (projectId `7b5ef095-2c80-4041-a2b7-1fdc3bf07e77`, `includeMonthlyTrends` false). Use the result to pick the exact phrasing for the H1, title and question headings: prefer the variant with the most volume that still reads naturally. Record what you found in the summary under `keywordMetrics` as `[{keyword, volume, difficulty}]`. Never put search volumes on the page itself. If the tool is not available, skip this step; do not block on it.
+
+**Numbers already in Gabi's copy are hers.** On a `rewrite`, a duration, count or fact that is already on the page (for example "sessions run 1.5 to 2 hours") came from Gabi and stays. Do not replace it with package lengths and do not delete it. Only numbers *you* add must come from `site.pricing` or a fetched source.
+
+**Local titles stay local.** When rewriting a service page, keep the title pattern "<Town> <Service> Photographer, <Area>" (for example "Skokie Newborn Photographer, North Shore"). Work the primary keyword into the H1 subtitle, the citable summary and the question headings instead. Blog posts and guides may lead with the keyword.
 
 **No invented numbers.** Every number on the page (prices, durations, image counts, distances, percentages, review counts, years in business) must come from the site data above or from a source you fetched in this run. When in doubt, leave the number out.
 
@@ -49,7 +56,21 @@ The run parameters are appended at the bottom of this prompt: `SLUG`, `TYPE`, `P
 | `service` | `src/lib/services.ts` | Add a `ServicePage` to `services`, keyed by slug. Fill every required field of the interface. Phrase `intro[].heading` as literal questions where it reads naturally. Do not set `hasOwnPage`. | `/sessions/<slug>` |
 | `location` | `src/lib/locations.ts` | Add a `LocationPage` to `locationPages`, keyed by slug. Use the shared FAQ helpers in that file where they fit. `proof` items must be real galleries. `nearby` must list existing location slugs. | `/locations/<slug>` |
 
+| `rewrite` | The file named in the queue item's `target.file` | See **Rewriting an existing page** below. | Unchanged: `target.url` |
+
 The sitemap reads all three files, so do not edit `src/app/sitemap.ts`.
+
+**Rewriting an existing page (`TYPE` = `rewrite`).** The goal is to make a page that already exists answer its question directly for search engines and AI assistants, without changing what Gabi wrote or how the page looks.
+
+- Keep the URL, the file, the layout, the images and every design element. You are editing copy and metadata, not redesigning.
+- Keep Gabi's sentences wherever they already work. Add, tighten and reorder; do not replace her voice with yours. If the queue item lists `keep` phrases, they must survive verbatim.
+- Add a two-sentence citable summary directly under the H1 (or as the first paragraph of a blog post) that says who, what, where and the starting price in plain words. Static service pages already have a "Citable summary" section; update it rather than adding a second one.
+- Turn the questions people actually search into literal `<h3>` headings with the direct answer in the first sentence. Aim for 3 to 6 of them. For a blog post, add or update the `faqs` array so it matches those questions. For a static page under `src/app/`, update the `faqs` constant the page already has, or add one and render it the same way the newborn page does.
+- Set the page `title` to 60 characters or fewer **without** the brand name (the layout adds " | Tovy Photography"). Blog posts use `seoTitle` with the brand included, 65 characters or fewer. Descriptions 120 to 155 characters, plain, no exclamation points.
+- Replace every em dash and every "Not X. Y." construction. Remove any number that is not from `site.pricing` or a linked source.
+- Add two internal links from the page to related pages that exist, and one link to the page from another existing page if it has fewer than two inbound links (check with `grep -r "<url>" src`).
+- Do not touch `Header.tsx`, pricing values, the About page hero color, admin or client-gallery code.
+- In the summary file set `url` to `target.url` and `dataFile` to `target.file`.
 
 ## Step 4: Link it in
 
@@ -78,6 +99,8 @@ Stage only the files you changed and commit once:
 ```
 git add <files>
 git commit -m "Add <type> page: <page title>" -m "Primary keyword: <keyword>. Linked from: <pages>."
+# or, for a rewrite:
+git commit -m "Rewrite: <page title>" -m "Primary keyword: <keyword>. Answer-first summary, question headings, FAQ schema, metadata."
 ```
 
 ## Step 8: Write the summary
@@ -97,6 +120,7 @@ Write `SUMMARY_PATH` as JSON. The script reads it to build the pull request. Sha
   "linksTo": ["/sessions/newborn-photography", "/contact"],
   "linkedFrom": [{ "file": "src/lib/services.ts", "page": "/sessions/newborn-photography" }],
   "sources": [{ "name": "", "url": "" }],
+  "keywordMetrics": [{ "keyword": "", "volume": 0, "difficulty": 0 }],
   "images": ["/photos/example.jpg"],
   "notes": "Anything Gabi should check before merging, in one or two sentences."
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { site, breadcrumbJsonLd } from "@/lib/site";
 import PlaceholderImage from "@/components/PlaceholderImage";
 import { getAllShoots, getShootBySlug, getShootsByCategory } from "@/lib/gallery-data";
 
@@ -28,8 +29,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const shoot = getShootBySlug(category, slug);
   if (!shoot) return {};
 
-  const title = `${shoot.title} | ${categoryLabels[category] || "Photography"}`;
-  const description = `${shoot.description} View the full ${shoot.category.toLowerCase()} photography session by Tovy Photography in Skokie, IL.`;
+  const title = {
+    absolute: shoot.title.length > 45 ? shoot.title : `${shoot.title} | Tovy Photography`,
+  };
+  const description =
+    shoot.description.length > 155
+      ? shoot.description.slice(0, shoot.description.lastIndexOf(" ", 152)) + "."
+      : shoot.description;
 
   return {
     title,
@@ -75,11 +81,28 @@ export default async function ShootPage({ params }: Props) {
     },
   };
 
+  const serviceHref: Record<string, string> = {
+    family: "/sessions/family-photography",
+    newborn: "/sessions/newborn-photography",
+    milestone: "/sessions/milestone-photography",
+    event: "/sessions/bar-mitzvah-photography",
+  };
+  const breadcrumbLd = breadcrumbJsonLd([
+    { name: "Home", url: site.url },
+    { name: "Gallery", url: `${site.url}/gallery` },
+    { name: categoryLabels[category] || category, url: `${site.url}/gallery/${category}` },
+    { name: shoot.title, url: `${site.url}/gallery/${category}/${slug}` },
+  ]);
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
 
       {/* Header */}
@@ -135,6 +158,26 @@ export default async function ShootPage({ params }: Props) {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Context */}
+      <section className="bg-white px-6 py-14 lg:px-8">
+        <div className="mx-auto max-w-3xl text-charcoal-light leading-relaxed">
+          <p>
+            This {(categoryLabels[category] || category).toLowerCase()} session was photographed
+            by Tovy Photography, a natural light photographer based in Skokie, IL serving
+            Chicago&apos;s North Shore. Sessions like this one start at $200 and include
+            professionally edited images with full print rights.{" "}
+            <Link href={serviceHref[category] || "/sessions"} className="text-sage-dark hover:text-charcoal">
+              See how {(categoryLabels[category] || category).toLowerCase()} sessions work
+            </Link>
+            , or{" "}
+            <Link href="/contact" className="text-sage-dark hover:text-charcoal">
+              get in touch
+            </Link>{" "}
+            to plan your own.
+          </p>
         </div>
       </section>
 

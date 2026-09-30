@@ -11,8 +11,12 @@
 #                                       and the PR is a draft on a --dry-run- branch
 #   scripts/weekly-page.sh --base BR    start from branch BR instead of main
 #
+# Runs on Omer's Mac mini (OpenSEO available) since 2026-09-22. It can also run on Gabi's
+# MacBook; only one machine should have the launchd agent loaded at a time.
+#
 # Local settings (not in git): ~/.config/tovy-weekly/env
-#   IMESSAGE_TO=...                 phone number or Apple ID email to text
+#   TELEGRAM_CHAT_ID=... and TELEGRAM_BOT_TOKEN=... (or TELEGRAM_BOT_TOKEN_JSON=/path/to/openclaw.json)
+#   IMESSAGE_TO=...                 phone number or Apple ID email to text (fallback channel)
 #   CLAUDE_CODE_OAUTH_TOKEN=...     from `claude setup-token`, so launchd can run claude
 #   CLAUDE_BIN=... / GH_BIN=...     optional overrides
 set -euo pipefail
@@ -20,20 +24,22 @@ set -euo pipefail
 # Run from a temp copy: this script lives in the repo and `git checkout` below can
 # rewrite it on disk while bash is still reading it.
 if [ -z "${TOVY_WEEKLY_COPY:-}" ]; then
+  export TOVY_REPO="${TOVY_REPO:-$(cd "$(dirname "$0")/.." && pwd)}"
   src="$(cd "$(dirname "$0")" && pwd)/$(basename "$0")"
   tmpdir="$(mktemp -d "${TMPDIR:-/tmp}/tovy-weekly.XXXXXX")"
   cp "$src" "$tmpdir/weekly-page.sh"
   TOVY_WEEKLY_COPY="$tmpdir" exec /bin/bash "$tmpdir/weekly-page.sh" "$@"
 fi
 
-REPO="/Users/gabiamrami/gabi-photography-site"
+# The repo is wherever this script lives (Gabi's MacBook or Omer's Mac mini). Override with TOVY_REPO.
+REPO="${TOVY_REPO:?TOVY_REPO not set}"
 GH_REPO="tovypics-cell/gabi-photography-site"
-CONFIG="$HOME/.config/tovy-weekly/env"
+CONFIG="${TOVY_WEEKLY_CONFIG:-$HOME/.config/tovy-weekly/env}"
 QUEUE="content/queue.json"
 PROMPT_FILE="scripts/weekly-page-prompt.md"
 RUN_DIR=".content-run"
 LOCK="$HOME/.cache/tovy-weekly-page.lock"
-export PATH="/Users/gabiamrami/.local/node/bin:$HOME/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="$HOME/.local/node/bin:$HOME/.local/bin:$HOME/.npm-global/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 DRY_RUN=0
 BASE="main"
@@ -54,8 +60,23 @@ log() { printf '[%s] %s\n' "$(date '+%Y-%m-%d %H:%M:%S')" "$*"; }
 
 notify() {
   local msg="$1"
+  # Telegram (set TELEGRAM_CHAT_ID plus TELEGRAM_BOT_TOKEN, or TELEGRAM_BOT_TOKEN_JSON pointing at a
+  # JSON file whose .channels.telegram.botToken holds the token, in the config file).
+  if [ -n "${TELEGRAM_CHAT_ID:-}" ]; then
+    local token="${TELEGRAM_BOT_TOKEN:-}"
+    if [ -z "$token" ] && [ -n "${TELEGRAM_BOT_TOKEN_JSON:-}" ] && [ -r "$TELEGRAM_BOT_TOKEN_JSON" ]; then
+      token="$(jq -r '.channels.telegram.botToken // empty' "$TELEGRAM_BOT_TOKEN_JSON" 2>/dev/null || true)"
+    fi
+    if [ -n "$token" ]; then
+      curl -s -m 20 -o /dev/null --data-urlencode "chat_id=$TELEGRAM_CHAT_ID" --data-urlencode "text=$msg" \
+        --data-urlencode "disable_web_page_preview=true" "https://api.telegram.org/bot$token/sendMessage" \
+        || log "Telegram send failed"
+      return 0
+    fi
+    log "TELEGRAM_CHAT_ID set but no bot token found, skipping Telegram"
+  fi
   if [ -z "${IMESSAGE_TO:-}" ]; then
-    log "IMESSAGE_TO not set in $CONFIG, skipping iMessage: $msg"
+    log "no notification channel configured (Telegram or iMessage), skipping: $msg"
     return 0
   fi
   /usr/bin/osascript - "$IMESSAGE_TO" "$msg" <<'OSA' >/dev/null || log "iMessage send failed"
@@ -75,6 +96,10 @@ finish() {
   local code=$?
   rm -rf "$LOCK" "${TOVY_WEEKLY_COPY:-/nonexistent}"
   if [ "$code" -ne 0 ]; then
+    # leave the checkout the way a person expects it: on the base branch, queue file clean
+    if [ -d "${REPO:-}/.git" ]; then
+      (cd "$REPO" && git checkout -q -- "$QUEUE" 2>/dev/null; git checkout -q "${BASE:-main}" 2>/dev/null) || true
+    fi
     log "FAILED during: $STAGE (exit $code)"
     notify "Tovy weekly page FAILED during $STAGE. Log: ~/Library/Logs/tovy-weekly-page.log"
   fi
@@ -101,6 +126,12 @@ command -v jq >/dev/null || die "jq not found"
 log "claude: $CLAUDE_BIN"
 
 cd "$REPO"
+# content/queue.json is rewritten by mark-published.sh on every run; a failed earlier run can
+# leave it modified. It is regenerated below, so discard that change. Anything else is a person's work.
+if [ -n "$(git status --porcelain -- "$QUEUE")" ] && [ -z "$(git status --porcelain | grep -v " $QUEUE\$")" ]; then
+  git checkout -q -- "$QUEUE"
+  log "discarded a leftover uncommitted $QUEUE from a previous run"
+fi
 [ -z "$(git status --porcelain)" ] || die "working tree has uncommitted changes, not touching it"
 
 # ---------- sync base ----------
@@ -116,7 +147,29 @@ STAGE="mark-published"
 
 # ---------- pick the item ----------
 STAGE="pick item"
-item="$(jq -c '[.items[] | select(.status == "queued")][0] // empty' "$QUEUE")"
+# Queue status only reaches main through a merged PR, so an item that already has a
+# content/<slug> branch on GitHub is in review even if main still says "queued". Skip those.
+existing_branches="$(git ls-remote --heads origin 'refs/heads/content/*' | awk '{print $2}' | sed 's|refs/heads/content/||' | sed 's/--dry-run-.*$//' | sort -u)"
+# Items the writer blocked on an earlier run (missing sources, cannibalization) are kept locally so
+# they are not retried every run. A person clears them by editing the queue and deleting the entry.
+BLOCKED_FILE="${TOVY_BLOCKED_FILE:-$HOME/.config/tovy-weekly/blocked.json}"
+[ -f "$BLOCKED_FILE" ] || echo '{}' > "$BLOCKED_FILE"
+blocked_slugs="$(jq -r 'keys[]' "$BLOCKED_FILE" 2>/dev/null || true)"
+# Proof gates: an item's "gate" is a case-insensitive regex that must match src/lib/gallery-data.ts.
+gate_failed=""
+for slug in $(jq -r '.items[] | select(.status == "queued") | select(.gate != null) | .slug' "$QUEUE"); do
+  gate="$(jq -r --arg s "$slug" '.items[] | select(.slug == $s) | .gate' "$QUEUE")"
+  grep -E '^\s*(slug|title|category|description):' src/lib/gallery-data.ts | grep -qiE -- "$gate" || gate_failed="$gate_failed $slug"
+done
+[ -n "$gate_failed" ] && log "gate not met (no matching gallery yet):$gate_failed"
+skip_all="$(printf '%s\n%s\n%s\n' "$existing_branches" "$blocked_slugs" "$(echo $gate_failed | tr ' ' '\n')")"
+item="$(jq -c --arg skip "$skip_all" '
+  ($skip | split("\n") | map(select(length > 0))) as $s
+  | [.items[] | select(.status == "queued") | select((.slug as $x | $s | index($x)) == null)][0] // empty' "$QUEUE")"
+skipped="$(jq -r --arg skip "$existing_branches" '
+  ($skip | split("\n") | map(select(length > 0))) as $s
+  | [.items[] | select(.status == "queued") | select((.slug as $x | $s | index($x)) != null) | .slug] | join(", ")' "$QUEUE")"
+[ -n "$skipped" ] && log "skipping items that already have an open branch (awaiting merge): $skipped"
 if [ -z "$item" ]; then
   git checkout -q -- "$QUEUE"
   log "no queued items, nothing to do"
@@ -135,7 +188,7 @@ else
   BRANCH="content/$SLUG"
 fi
 if git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then
-  die "branch $BRANCH already exists on GitHub. Merge or close its PR and delete the branch."
+  die "branch $BRANCH already exists on GitHub (should have been skipped). Merge or close its PR and delete the branch."
 fi
 
 git checkout -q -b "$BRANCH"
@@ -153,13 +206,14 @@ SUMMARY="$RUN_DIR/summary.json"
   cat "$PROMPT_FILE"
   printf '\n\n## Run parameters\n\n'
   printf -- '- SLUG: %s\n- TYPE: %s\n- PRIMARY_KEYWORD: %s\n- SOURCE_DRAFT: %s\n' "$SLUG" "$TYPE" "$KEYWORD" "$SOURCE_DRAFT"
+  printf -- '- TARGET: %s\n' "$(jq -c '.target // null' <<<"$item")"
   printf -- '- DRY_RUN: %s\n- TODAY: %s\n- SUMMARY_PATH: %s\n' "$DRY_RUN" "$(date +%Y-%m-%d)" "$SUMMARY"
 } > "$RUN_DIR/prompt.md"
 
 log "running claude (transcript: $REPO/$RUN_DIR/claude.log)"
 "$CLAUDE_BIN" -p \
   --permission-mode acceptEdits \
-  --allowedTools "Read,Edit,Write,WebSearch,WebFetch,Bash(git *),Bash(npm run build)" \
+  --allowedTools "Read,Edit,Write,WebSearch,WebFetch,Bash(git *),Bash(npm run build),mcp__openseo__get_keyword_metrics,mcp__openseo__get_serp_results,mcp__openseo__get_project_context" \
   --max-turns 120 \
   < "$RUN_DIR/prompt.md" > "$RUN_DIR/claude.log" 2>&1 \
   || die "claude exited with an error (see $RUN_DIR/claude.log)"
@@ -177,8 +231,9 @@ if [ "$STATUS" != "ok" ]; then
   [ -z "$(git status --porcelain)" ] || die "blocked ($REASON) and left uncommitted changes on $BRANCH"
   git checkout -q "$BASE"
   git branch -q -D "$BRANCH"
-  log "blocked: $REASON"
-  notify "Tovy weekly page skipped $SLUG: $REASON. It stays queued. Edit content/queue.json to fix or skip it."
+  tmpb="$(mktemp)"; jq --arg s "$SLUG" --arg r "$REASON" --arg d "$(date +%Y-%m-%d)" '. + {($s): {reason: $r, date: $d}}' "$BLOCKED_FILE" > "$tmpb" && mv "$tmpb" "$BLOCKED_FILE"
+  log "blocked: $REASON (recorded in $BLOCKED_FILE; later runs skip it)"
+  notify "Tovy weekly page skipped $SLUG: $REASON. Later runs move past it. Fix the item in content/queue.json and remove it from $BLOCKED_FILE to retry."
   exit 0
 fi
 [ -z "$(git status --porcelain)" ] || die "claude left uncommitted changes on $BRANCH"
@@ -217,12 +272,16 @@ git push -q -u origin "$BRANCH"
 STAGE="pull request"
 TITLE="$(jq -r .title "$SUMMARY")"
 URL_PATH="$(jq -r .url "$SUMMARY")"
-PR_TITLE="New $TYPE page: $TITLE"
+if [ "$TYPE" = "rewrite" ]; then PR_TITLE="Rewrite: $TITLE"; else PR_TITLE="New $TYPE page: $TITLE"; fi
 [ "$DRY_RUN" = 1 ] && PR_TITLE="[DRY RUN] $PR_TITLE"
 {
   [ "$DRY_RUN" = 1 ] && printf '> **Dry run.** The queue item stays `queued`. Merging publishes the page and the next weekly run will mark it published. Close it instead if you only wanted to preview.\n\n'
   printf '**Primary keyword:** %s\n\n' "$KEYWORD"
-  printf '**New page:** `%s` (%s, in `%s`)\n\n' "$URL_PATH" "$TYPE" "$(jq -r .dataFile "$SUMMARY")"
+  if [ "$TYPE" = "rewrite" ]; then
+    printf '**Rewritten page:** `%s` (in `%s`). Same URL, same design, sharper copy and metadata.\n\n' "$URL_PATH" "$(jq -r .dataFile "$SUMMARY")"
+  else
+    printf '**New page:** `%s` (%s, in `%s`)\n\n' "$URL_PATH" "$TYPE" "$(jq -r .dataFile "$SUMMARY")"
+  fi
   printf '**Vercel preview:** _paste preview URL here_\n\n'
   printf '### Pages it links to\n'
   jq -r '.linksTo[]? | "- `\(.)`"' "$SUMMARY"

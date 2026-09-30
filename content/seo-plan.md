@@ -1,5 +1,7 @@
 # Tovy Photography SEO Plan
 
+Sequencing by vertical and the proof gates now live in `content/seo-roadmap.md` (2026-09-29). This file keeps the original page list and the ground rules.
+
 Prepared 2026-09-17 from OpenSEO research (site audit, backlinks, keyword metrics, competitor ranked keywords, Maps results near Skokie). Volumes are monthly US searches. Nearly every term here is keyword difficulty 0 to 5, so the real competition is Google Maps, not backlinks.
 
 Status key: Live = on main today. Built = in the seo-merge branch. New = to create. Queue order is in content/queue.json.
@@ -86,6 +88,20 @@ Status key: Live = on main today. Built = in the seo-merge branch. New = to crea
 | 48 | Lake Forest, Buffalo Grove, Arlington Heights | New, lowest priority |
 | 49 | Chicago neighborhoods: Lincoln Park, Lakeview, Edgewater, Rogers Park | New, only after real sessions there |
 | 50 | Graduation and senior portraits, Evanston | senior pictures chicago 70; northwestern graduation photos 20 | New |
+
+## Rewrite track (existing pages, AEO)
+
+New pages are half the job. The pages that already rank or already get clicks need the same answer-first treatment, in place, without changing URLs or design. Done 2026-09-22 in the batch PR: home, newborn, family and engagement service pages, gallery hub, category and session pages, testimonials, about metadata, seven blog titles. Queued as `rewrite` items, one between every new page: newborn (folds in "in-home" and "lifestyle" intents), family (folds in "lifestyle family"), about, testimonials, and the six older blog posts.
+
+Rewrite rules: keep Gabi's copy, add a two-sentence citable summary, literal-question H3s with the answer first, FAQ schema, title under 60 characters without the brand, description under 155, no em dashes, two internal links.
+
+## Cannibalization decisions
+
+One page per intent. These queue items were removed as separate pages and folded into rewrites: in-home newborn photography and lifestyle newborn photography (the newborn page), lifestyle family photography (the family page). Twins, Fresh 48 and senior portraits stay blocked until a real gallery exists.
+
+## Cadence
+
+The loop runs Monday and Thursday at 8:00 on Omer's Mac mini, where OpenSEO and DataForSEO are available to the writer (since 2026-09-22). Only one machine is the loop host (it holds `~/.config/tovy-weekly/loop-host`, created by `scripts/install-launchd.sh`). A scheduled run on any other machine, including the original job on Gabi's MacBook, retires its own launchd job the first time it runs (see the top of `scripts/mark-published.sh`). Monday usually lands a new page, Thursday a rewrite, because the queue alternates them. Every run opens a PR; Gabi merging is the publish step. Nothing is scheduled to publish on its own.
 
 ## Implementation phases
 
