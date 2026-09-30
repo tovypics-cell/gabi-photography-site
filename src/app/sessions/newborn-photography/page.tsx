@@ -10,7 +10,7 @@ import { site, breadcrumbJsonLd } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Skokie Newborn Photographer, North Shore",
   description:
-    "In-home newborn photography in Skokie, Evanston, Wilmette and Chicago's North Shore. Natural light, baby-led sessions for babies 5 to 14 days old. From $200.",
+    "In-home newborn photography in Skokie, Evanston and Chicago's North Shore. Lifestyle sessions in natural light for babies 5 to 14 days old, from $200.",
   alternates: {
     canonical: "https://tovyphotography.com/sessions/newborn-photography",
   },
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: "Do I need to have a clean house?",
-    a: "No. I only need a small area near a window with good natural light. I'll move things around if needed. Your home doesn't need to be magazine-ready. It needs to be yours.",
+    a: "No. I only need a small area near a window with good natural light. I'll move things around if needed. Your home only has to look like the place your family lives.",
   },
   {
     q: "What if my baby won't sleep or is fussy?",
@@ -46,6 +46,10 @@ const faqs = [
   {
     q: "Where do you photograph newborn sessions?",
     a: "Primarily in-home throughout Skokie, Evanston, Wilmette, Lincolnwood, and the greater North Shore. Your baby is most comfortable at home, and the photos feel more personal and authentic.",
+  },
+  {
+    q: "What is in-home lifestyle newborn photography?",
+    a: "In-home newborn photography means I come to your house, and lifestyle newborn photography means I photograph your baby and family as you really are, in natural window light, with gentle guidance instead of props. Together they give you photos of your baby in the rooms, arms and blankets of their first days at home.",
   },
 ];
 
@@ -113,7 +117,7 @@ export default function NewbornPhotographyPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
-      {/* Hero — image left, text right */}
+      {/* Hero: image left, text right */}
       <section
         className="pt-28 pb-16 md:pt-36 md:pb-20 px-6 lg:px-8"
         style={{ backgroundColor: "#E8D5CE" }}
@@ -153,7 +157,7 @@ export default function NewbornPhotographyPage() {
       {/* Citable summary */}
       <section className="px-6 pt-16 lg:px-8">
         <div className="mx-auto max-w-3xl space-y-4 text-lg md:text-xl leading-relaxed text-charcoal">
-          <p>Tovy Photography offers in-home newborn photography in Skokie, Evanston, Wilmette, Lincolnwood and across Chicago's North Shore. Sessions are lifestyle style in natural window light, photographed at your home when your baby is about 5 to 14 days old, and start at $200 with edited images and full print rights included.</p>
+          <p>Tovy Photography offers in-home newborn photography in Skokie, Evanston, Wilmette, Lincolnwood and across Chicago's North Shore. It is lifestyle newborn photography in natural window light, photographed at your home when your baby is about 5 to 14 days old, and sessions start at $200 with edited images and full print rights included.</p>
           <p>I am Gabi, a Skokie-based photographer. I come to you, follow your baby's cues, and photograph siblings and the whole family in the same visit, so the first days at home are the photos you keep.</p>
         </div>
       </section>
@@ -186,6 +190,22 @@ export default function NewbornPhotographyPage() {
                   actually feel. Quiet, warm, and full of a love so big it
                   surprises you.
                 </p>
+                <h3 className="font-[family-name:var(--font-cormorant)] text-2xl pt-2 text-charcoal">
+                  What is lifestyle newborn photography?
+                </h3>
+                <p>
+                  Lifestyle newborn photography is a relaxed, unposed style that
+                  photographs your baby with the people and places around them,
+                  instead of on a studio backdrop with props. It looks like the{" "}
+                  <Link
+                    href="/gallery/newborn/hoffman-family-welcome-baby-ava"
+                    className="text-sage-dark underline underline-offset-4"
+                  >
+                    Hoffman family&apos;s in-home newborn session
+                  </Link>
+                  : parents by the window, big siblings on the couch, and the tiny
+                  details in between.
+                </p>
               </div>
             </div>
           </ScrollReveal>
@@ -193,7 +213,7 @@ export default function NewbornPhotographyPage() {
             <div className="relative aspect-[4/5] w-full overflow-hidden">
               <Image
                 src="/photos/newborn-mom-siblings-window.jpg"
-                alt="newborn photography session in Skokie home — mom holding newborn in natural window light with big brother beside her"
+                alt="newborn photography session in Skokie home, mom holding newborn in natural window light with big brother beside her"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -212,6 +232,9 @@ export default function NewbornPhotographyPage() {
               The best time for newborn photos
             </h2>
             <div className="space-y-4 text-charcoal-light leading-relaxed">
+              <h3 className="font-[family-name:var(--font-cormorant)] text-2xl text-charcoal">
+                How old should my baby be for newborn photos?
+              </h3>
               <p>
                 The sweet spot is 5 to 14 days old. During this window, babies are
                 sleepier, curlier, and still have that brand-new softness that
@@ -225,6 +248,9 @@ export default function NewbornPhotographyPage() {
                 session. It just might look a little different, and that&apos;s
                 perfectly fine.
               </p>
+              <h3 className="font-[family-name:var(--font-cormorant)] text-2xl pt-2 text-charcoal">
+                When should I book a newborn photographer?
+              </h3>
               <p>
                 I recommend reaching out during your third trimester so we can get a
                 tentative date on the calendar. Once your baby arrives, we&apos;ll
@@ -242,7 +268,7 @@ export default function NewbornPhotographyPage() {
             <div className="relative aspect-[4/5] w-full overflow-hidden">
               <Image
                 src="/photos/newborn-parents-hands-skyline.jpg"
-                alt="in-home newborn photographer Skokie — parents' hands cradling sleeping baby by the window with city skyline"
+                alt="in-home newborn photographer Skokie, parents' hands cradling sleeping baby by the window with city skyline"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -296,10 +322,21 @@ export default function NewbornPhotographyPage() {
             <h2 className="font-[family-name:var(--font-cormorant)] text-3xl md:text-4xl mb-6 text-charcoal">
               Newborn session pricing
             </h2>
+            <h3 className="font-[family-name:var(--font-cormorant)] text-2xl mb-4 text-charcoal">
+              How much does newborn photography cost in Skokie?
+            </h3>
             <p className="text-charcoal-light leading-relaxed mb-8">
               Sessions start at $200 for a mini session and go up to $500 for a full
               session with extended coverage and more edited images. Every package
-              includes an online gallery and full print rights.
+              includes an online gallery and full print rights. For a wider look at
+              what shapes the price, read my{" "}
+              <Link
+                href="/blog/newborn-photography-cost-chicago-north-shore"
+                className="text-sage-dark underline underline-offset-4"
+              >
+                guide to newborn photography cost
+              </Link>
+              .
             </p>
             <Link
               href="/sessions#pricing"
@@ -318,6 +355,23 @@ export default function NewbornPhotographyPage() {
           <h2 className="font-[family-name:var(--font-cormorant)] text-3xl md:text-4xl mb-8 text-charcoal">
             What makes in-home newborn photos work
           </h2>
+          <h3 className="font-[family-name:var(--font-cormorant)] text-2xl mb-4 text-charcoal">
+            Can you do newborn photography at home?
+          </h3>
+          <p className="mb-8 text-charcoal-light leading-relaxed">
+            Yes, and in-home newborn photography is how I photograph most of my
+            newborn sessions: I bring
+            everything to your house, find your best window, and work around feeds
+            and naps. If you are weighing it against a studio, here is my honest
+            comparison of{" "}
+            <Link
+              href="/blog/newborn-photos-at-home-vs-studio"
+              className="text-sage-dark underline underline-offset-4"
+            >
+              newborn photos at home vs. a studio
+            </Link>
+            .
+          </p>
           <ul className="space-y-6">
             {why.items.map((item, i) => (
               <li key={i} className="border-l-2 border-sage pl-5">

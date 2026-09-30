@@ -90,13 +90,14 @@
         "file": "src/app/sessions/newborn-photography/page.tsx"
       },
       "sourceDraft": null,
-      "status": "queued",
-      "pr": null,
+      "status": "in_review",
+      "pr": 8,
       "notes": "Folds the former in-home-newborn and lifestyle-newborn items into this page. Work the phrases 'in-home newborn photography' and 'lifestyle newborn photography' into the citable summary, one H3 and one FAQ. Keep every existing FAQ. Do not change the hero.",
       "keep": [
         "The tiny details you'll want to remember forever."
       ],
-      "phase": 0
+      "phase": 0,
+      "branch": "content/rewrite-newborn-photography"
     },
     {
       "slug": "christmas-holiday-family-photos",
