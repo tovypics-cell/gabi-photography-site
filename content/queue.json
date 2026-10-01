@@ -128,7 +128,7 @@
       "sourceDraft": null,
       "status": "in_review",
       "branch": "content/rewrite-family-photography",
-      "pr": null,
+      "pr": 18,
       "updatedAt": "2026-10-01",
       "notes": "Folds the former lifestyle-family item into this page. Add 'lifestyle family photography' and 'in-home family photoshoot' to the summary, one H3 and one FAQ. Keep every existing FAQ.",
       "keep": [
