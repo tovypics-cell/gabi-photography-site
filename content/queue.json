@@ -122,9 +122,12 @@
       "type": "guide",
       "primaryKeyword": "hanukkah photoshoot",
       "sourceDraft": null,
-      "status": "queued",
+      "status": "in_review",
       "plan": 31,
       "phase": 2,
+      "branch": "content/hanukkah-family-photoshoot",
+      "pr": null,
+      "updatedAt": "2026-10-05",
       "notes": " Moved to the front 2026-10-04 so it is live by mid October for card season. Hanukkah 2026 begins the evening of December 4."
     },
     {

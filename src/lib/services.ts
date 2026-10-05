@@ -784,6 +784,7 @@ export const services: Record<string, ServicePage> = {
       { label: "Family Photography", href: "/sessions/family-photography" },
       { label: "Best Family Photo Locations in Skokie", href: "/blog/best-family-photo-locations-skokie-north-shore" },
       { label: "Planning Christmas Family Photos", href: "/blog/christmas-holiday-family-photos" },
+      { label: "Planning a Hanukkah Photoshoot", href: "/blog/hanukkah-family-photoshoot" },
       { label: "Sessions and Pricing", href: "/sessions" },
     ],
     cta: {
@@ -905,6 +906,7 @@ export const services: Record<string, ServicePage> = {
     related: [
       { label: "View the Event Gallery", href: "/gallery/event" },
       { label: "Milestone Photography", href: "/sessions/milestone-photography" },
+      { label: "Planning a Hanukkah Photoshoot", href: "/blog/hanukkah-family-photoshoot" },
       { label: "Sessions and Pricing", href: "/sessions" },
     ],
     cta: {
