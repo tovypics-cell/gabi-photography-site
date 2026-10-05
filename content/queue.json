@@ -111,6 +111,16 @@
       "branch": "content/christmas-holiday-family-photos"
     },
     {
+      "slug": "hanukkah-family-photoshoot",
+      "type": "guide",
+      "primaryKeyword": "hanukkah photoshoot",
+      "sourceDraft": null,
+      "status": "queued",
+      "plan": 31,
+      "phase": 2,
+      "notes": " Moved to the front 2026-10-04 so it is live by mid October for card season. Hanukkah 2026 begins the evening of December 4."
+    },
+    {
       "slug": "rewrite-family-photography",
       "type": "rewrite",
       "primaryKeyword": "lifestyle family photography",
@@ -217,15 +227,6 @@
         "url": "/sessions/milestone-photography",
         "file": "src/lib/services.ts"
       }
-    },
-    {
-      "slug": "hanukkah-family-photoshoot",
-      "type": "guide",
-      "primaryKeyword": "hanukkah photoshoot",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 31,
-      "phase": 2
     },
     {
       "slug": "bar-mitzvah-photographer-cost",
