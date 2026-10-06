@@ -10,7 +10,7 @@ import { site, breadcrumbJsonLd } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Skokie Family Photographer, North Shore",
   description:
-    "Natural, relaxed family photography in Skokie, Evanston and Chicago's North Shore. Outdoor and in-home sessions in natural light. Sessions from $200.",
+    "Lifestyle family photography in Skokie, Evanston and Chicago's North Shore. Outdoor sessions and in-home family photoshoots in natural light, from $200.",
   alternates: {
     canonical: "https://tovyphotography.com/sessions/family-photography",
   },
@@ -46,6 +46,10 @@ const faqs = [
   {
     q: "Can I include our dog?",
     a: "Yes! Pets are absolutely welcome. They're part of the family.",
+  },
+  {
+    q: "What is lifestyle family photography?",
+    a: "Lifestyle family photography is a relaxed, unposed style where I photograph your family doing real things together, with gentle guidance instead of stiff poses. It works outdoors at a park or as an in-home family photoshoot on your couch, in your kitchen or in your backyard, all in natural light.",
   },
 ];
 
@@ -113,7 +117,7 @@ export default function FamilyPhotographyPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
-      {/* Hero — image left, text right */}
+      {/* Hero: image left, text right */}
       <section
         className="pt-28 pb-16 md:pt-36 md:pb-20 px-6 lg:px-8"
         style={{ backgroundColor: "#E8D5CE" }}
@@ -122,7 +126,7 @@ export default function FamilyPhotographyPage() {
           <div className="relative aspect-[4/5] w-full overflow-hidden">
             <Image
               src="/photos/family-hero-park-laughing.jpg"
-              alt="family photography Skokie IL — parents laughing with their two kids during a relaxed outdoor session on Chicago's North Shore"
+              alt="family photography Skokie IL, parents laughing with their two kids during a relaxed outdoor session on Chicago's North Shore"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -153,7 +157,7 @@ export default function FamilyPhotographyPage() {
       {/* Citable summary */}
       <section className="px-6 pt-16 lg:px-8">
         <div className="mx-auto max-w-3xl space-y-4 text-lg md:text-xl leading-relaxed text-charcoal">
-          <p>Tovy Photography is a family photographer based in Skokie, IL, photographing families outdoors at North Shore parks and beaches, in their own homes, and in their backyards across Evanston, Wilmette, Lincolnwood, Glenview and Chicago. Sessions are natural light and gently guided, and start at $200 with edited images and full print rights included.</p>
+          <p>Tovy Photography offers lifestyle family photography in Skokie, IL and across Chicago's North Shore, either outdoors at a park or as an in-home family photoshoot in your own house or backyard, for families in Evanston, Wilmette, Lincolnwood, Glenview and Chicago. Sessions are natural light and gently guided, and start at $200 with edited images and full print rights included.</p>
           <p>I photograph lifestyle family sessions, which means no stiff line-ups and no forced smiles. You walk, play and talk to each other, and I photograph what that looks like on a good day.</p>
         </div>
       </section>
@@ -187,6 +191,22 @@ export default function FamilyPhotographyPage() {
                   The photos you get back? They look like your family on your best
                   day.
                 </p>
+                <h3 className="font-[family-name:var(--font-cormorant)] text-2xl pt-2 text-charcoal">
+                  What is lifestyle family photography?
+                </h3>
+                <p>
+                  Lifestyle family photography is a relaxed, unposed style that
+                  photographs your family doing real things together, instead of
+                  lining up in front of a backdrop. It looks like the{" "}
+                  <Link
+                    href="/gallery/family/keay-nature-center-wilmette-family-session"
+                    className="text-sage-dark underline underline-offset-4"
+                  >
+                    family session I photographed at Keay Nature Center in Wilmette
+                  </Link>
+                  : walking the trails, sitting on a blanket in the tall grass, and
+                  kids being lifted into the air.
+                </p>
               </div>
             </div>
           </ScrollReveal>
@@ -194,7 +214,7 @@ export default function FamilyPhotographyPage() {
             <div className="relative aspect-[4/3] w-full overflow-hidden">
               <Image
                 src="/photos/family-kids-walking-path.jpg"
-                alt="family photography session in Skokie park — four siblings walking hand in hand during golden hour"
+                alt="family photography session in Skokie park, four siblings walking hand in hand during golden hour"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -222,7 +242,7 @@ export default function FamilyPhotographyPage() {
                 "Growing families with young kids",
                 "Extended families and multigenerational groups",
                 "Couples without kids who want beautiful portraits together",
-                "Siblings — chaotic energy included",
+                "Siblings, chaotic energy included",
                 "Families going through transitions who want to freeze a moment in time",
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">
@@ -245,6 +265,21 @@ export default function FamilyPhotographyPage() {
               Your family doesn&apos;t need to be &ldquo;picture perfect.&rdquo;
               They need to be present. I&apos;ll handle the rest.
             </p>
+            <h3 className="font-[family-name:var(--font-cormorant)] text-2xl mt-8 mb-4 text-charcoal">
+              Do you photograph large or extended families?
+            </h3>
+            <p className="text-charcoal-light leading-relaxed">
+              Yes, grandparents, cousins and everyone in between are welcome, and
+              the Full session gives a bigger group the time it needs. Here is how
+              I plan{" "}
+              <Link
+                href="/sessions/extended-family-photography"
+                className="text-sage-dark underline underline-offset-4"
+              >
+                extended family photo sessions
+              </Link>
+              .
+            </p>
           </ScrollReveal>
         </div>
       </section>
@@ -256,7 +291,7 @@ export default function FamilyPhotographyPage() {
             <div className="relative aspect-[4/5] w-full overflow-hidden">
               <Image
                 src="/photos/hero-mom-lift-kiss-bw.jpg"
-                alt="family photographer Evanston — mom lifting and kissing her laughing daughter during outdoor session"
+                alt="family photographer Evanston, mom lifting and kissing her laughing daughter during outdoor session"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -290,6 +325,22 @@ export default function FamilyPhotographyPage() {
                   without looking overdone. Think warm neutrals, soft textures,
                   nothing too matchy.
                 </p>
+                <h3 className="font-[family-name:var(--font-cormorant)] text-2xl pt-2 text-charcoal">
+                  What happens during an in-home family photoshoot?
+                </h3>
+                <p>
+                  An in-home family photoshoot is a regular afternoon at your
+                  house: I find the best window light, and you play, cuddle and
+                  read together while I photograph it. Your home doesn&apos;t
+                  need to be tidy for it to work. See the{" "}
+                  <Link
+                    href="/gallery/family/west-rogers-park-9-month-family-session"
+                    className="text-sage-dark underline underline-offset-4"
+                  >
+                    in-home family session I photographed in West Rogers Park
+                  </Link>{" "}
+                  for what it looks like.
+                </p>
               </div>
             </div>
           </ScrollReveal>
@@ -303,13 +354,24 @@ export default function FamilyPhotographyPage() {
             <h2 className="font-[family-name:var(--font-cormorant)] text-3xl md:text-4xl mb-6 text-charcoal">
               Family session pricing
             </h2>
+            <h3 className="font-[family-name:var(--font-cormorant)] text-2xl mb-4 text-charcoal">
+              How much does a family photographer cost in Skokie?
+            </h3>
             <p className="text-charcoal-light leading-relaxed mb-8">
               Sessions start at $200 for a 30-minute mini session, perfect for
               seasonal updates and quick family portraits. The Classic session
               ($325, 60 minutes) is the most popular choice for families who want
               more relaxed coverage and time to capture real moments. The Full
               session ($500, 90 minutes) is ideal for extended families and
-              multigenerational groups.
+              multigenerational groups. For a wider look at what shapes the
+              price, read my{" "}
+              <Link
+                href="/blog/how-much-do-family-photos-cost-north-shore"
+                className="text-sage-dark underline underline-offset-4"
+              >
+                guide to family photo costs on the North Shore
+              </Link>
+              .
             </p>
             <Link
               href="/sessions#pricing"
