@@ -160,8 +160,10 @@
         "file": "src/app/about/page.tsx"
       },
       "sourceDraft": null,
-      "status": "queued",
+      "status": "in_review",
+      "branch": "content/rewrite-about",
       "pr": null,
+      "updatedAt": "2026-10-05",
       "notes": "Add a citable two-sentence summary under the H1 (who Gabi is, where she is based, what she photographs, starting price). Add three literal-question H3s: Who is the photographer behind Tovy Photography, What areas do you serve, What is your photography style. Render a FAQ with FAQPage schema the way the newborn page does. The hero must stay solid rose pink.",
       "phase": 0
     },
