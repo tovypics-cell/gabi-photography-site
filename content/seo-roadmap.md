@@ -23,7 +23,7 @@ What she does: family, newborn, maternity, milestones and birthdays, mini sessio
 1. **Google Business Profile.** Move the pin to Skokie, set the service area to the 12 towns, list every session type as a service. Post weekly using the GBP playbook in CLAUDE.md. This is the single biggest lever and does not involve the site.
 2. **Reviews.** Target 25 by year end; every delivered gallery gets a request. Rena Meystel has 47.
 3. **Search Console into OpenSEO** so impressions per page are visible.
-4. **Merge cadence.** Two PRs a week; unmerged PRs are skipped, not blocking, but nothing ranks until merged.
+4. **Publishing.** Two pages a week, fully automated since 2026-10-05: the loop merges its own PR once the build passes, so pages go live the morning they are written, and Gabi gets an email with the live link. She reviews live pages and asks for changes rather than approving drafts.
 5. Existing queue continues: rewrites of her own pages (newborn, family, about, testimonials, the older posts) and the holiday guides in time for card season.
 
 ## Phase 1: Milestones and birthdays (October to November)

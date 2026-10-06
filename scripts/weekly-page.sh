@@ -15,6 +15,8 @@
 # MacBook; only one machine should have the launchd agent loaded at a time.
 #
 # Local settings (not in git): ~/.config/tovy-weekly/env
+#   AUTO_MERGE=1                    merge each page's PR as soon as it is opened (this publishes it)
+#   GABI_GITHUB=tovypics-cell       GitHub handle mentioned on each merged PR so GitHub emails her (default)
 #   TELEGRAM_CHAT_ID=... and TELEGRAM_BOT_TOKEN=... (or TELEGRAM_BOT_TOKEN_JSON=/path/to/openclaw.json)
 #   IMESSAGE_TO=...                 phone number or Apple ID email to text (fallback channel)
 #   CLAUDE_CODE_OAUTH_TOKEN=...     from `claude setup-token`, so launchd can run claude
@@ -57,6 +59,23 @@ log() { printf '[%s] %s\n' "$(date '+%Y-%m-%d %H:%M:%S')" "$*"; }
 
 # shellcheck disable=SC1090
 [ -f "$CONFIG" ] && set -a && . "$CONFIG" && set +a
+
+# Tell Gabi by email without any mail credentials: a comment on the merged PR that mentions her
+# GitHub account. GitHub emails mentions to the account's address (tovypics-cell is Gabi's).
+# GABI_GITHUB in the config file overrides the handle; set it empty to skip.
+email_gabi() {
+  local pr_number="$1" body="$2"
+  local handle="${GABI_GITHUB-tovypics-cell}"
+  if [ -z "$handle" ]; then
+    log "GABI_GITHUB is empty, skipping Gabi's notification"
+    return 0
+  fi
+  if "$GH_BIN" pr comment "$pr_number" --repo "$GH_REPO" --body "@${handle} ${body}" >/dev/null 2>&1; then
+    log "notified @$handle on PR #$pr_number (GitHub emails the mention)"
+  else
+    log "could not post the notification comment on PR #$pr_number"
+  fi
+}
 
 notify() {
   local msg="$1"
@@ -314,12 +333,46 @@ if [ "$DRY_RUN" = 0 ]; then
   git push -q origin "$BRANCH"
 fi
 
-# ---------- tell Gabi ----------
+# ---------- publish ----------
+# AUTO_MERGE=1 in the config file: the PR is merged right away. The build already passed and
+# the writer's rules were applied, and merging main is what deploys the page. Set AUTO_MERGE=0
+# to go back to a person merging each PR.
+MERGED=0
+if [ "$DRY_RUN" = 0 ] && [ "${AUTO_MERGE:-0}" = "1" ]; then
+  STAGE="publish"
+  if "$GH_BIN" pr merge "$PR_NUMBER" --repo "$GH_REPO" --merge --delete-branch >/dev/null 2>&1; then
+    MERGED=1
+    log "merged PR #$PR_NUMBER; Vercel is deploying main"
+  else
+    log "could not merge PR #$PR_NUMBER automatically; it stays open for a person"
+  fi
+fi
+
+# ---------- tell Omer and Gabi ----------
 STAGE="notify"
 prefix=""; [ "$DRY_RUN" = 1 ] && prefix="[Dry run] "
-notify "${prefix}New page ready to review: $TITLE
+writer_notes="$(jq -r '.notes // ""' "$SUMMARY")"
+LIVE_URL="https://tovyphotography.com${URL_PATH}"
+if [ "$MERGED" = 1 ]; then
+  notify "${prefix}Published: $TITLE
+Keyword: $KEYWORD
+Live in about 2 minutes: $LIVE_URL
+PR: $PR_URL${writer_notes:+
+Note from the writer: $writer_notes}"
+  email_gabi "$PR_NUMBER" "a new page is live on your site: **$TITLE**
+
+$LIVE_URL
+
+It should be visible within a couple of minutes. Read it when you have a moment and tell Omer about anything you want changed.${writer_notes:+
+
+Note from the writer: $writer_notes}
+
+Written for the search: $KEYWORD"
+else
+  notify "${prefix}New page ready to review: $TITLE
 Keyword: $KEYWORD
 $PR_URL"
+fi
 
 git checkout -q "$BASE"
 log "done: $PR_URL"
