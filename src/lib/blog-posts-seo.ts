@@ -532,11 +532,123 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h3>Is a mini session enough for a Christmas card?</h3>
 
-<p>For an immediate family, yes. Thirty minutes and 10 edited images gives you a card photo and a few extras to frame. You can read how <a href="/sessions/mini-sessions">mini sessions</a> work. For a new baby, a shy toddler who needs time to warm up, or a big family gathering, the Classic or Full session is the better fit. The full breakdown is on the <a href="/sessions/family-photography">family photography page</a>.</p>
+<p>For an immediate family, yes. Thirty minutes and 10 edited images gives you a card photo and a few extras to frame. You can read how <a href="/sessions/mini-sessions">mini sessions</a> work. For a new baby, a shy toddler who needs time to warm up, or a big family gathering, the Classic or Full session is the better fit. The full breakdown is on the <a href="/sessions/family-photography">family photography page</a>. If your family lights the menorah too, here is how I plan a <a href="/blog/hanukkah-family-photoshoot">Hanukkah photoshoot</a>.</p>
 
 <h2>Let's plan your Christmas family photos</h2>
 
 <p>Holiday dates fill up alongside the end of fall, so the earlier we talk, the more choice you have. <a href="/contact">Tell me about your family</a>, whether you are picturing the tree at home or a walk in the park, and when your cards need to go out, and I will suggest a date, a place and a package.</p>
+`,
+  },
+  {
+    slug: "hanukkah-family-photoshoot",
+    title: "Planning a Hanukkah Photoshoot: When to Book, Photo Ideas, and What to Wear",
+    excerpt:
+      "A Hanukkah photoshoot is a family session built around the menorah, the candles and the people you light them with. Here is when to book for cards, how candlelight photos work, and what to wear.",
+    date: "2026-10-05",
+    category: "Family",
+    image: "/photos/west-rogers-park-9-month-family/cover-home.jpg",
+    seoTitle: "Hanukkah Photoshoot Ideas and Tips, Skokie | Tovy Photography",
+    seoDescription:
+      "Planning a Hanukkah photoshoot? A Skokie family photographer on when to book for cards, menorah and candlelight photos, what to wear, and what it costs.",
+    faqs: [
+      {
+        question: "When should I book a Hanukkah photoshoot?",
+        answer:
+          "Book in October if the photos are for Hanukkah cards. Hanukkah 2026 begins the evening of December 4, and galleries are delivered within 2 to 3 weeks, so a session in late October or early November leaves time to design and mail cards.",
+      },
+      {
+        question: "Can you take Hanukkah photos by real candlelight?",
+        answer:
+          "Yes. For an evening session during Hanukkah, the menorah becomes part of the light, so I photograph without flash and keep a lamp or two on low. For card photos before the holiday, we light the menorah by a bright window in daylight so faces stay clear.",
+      },
+      {
+        question: "What are good Hanukkah photo ideas for families?",
+        answer:
+          "Lighting the menorah together, kids holding their own menorahs, a dreidel game on the floor, frying latkes in the kitchen, and grandparents with the grandchildren. I also like one classic photo where everyone looks at the camera, so the card is covered.",
+      },
+      {
+        question: "What should we wear for Hanukkah family photos?",
+        answer:
+          "Pick two or three colors such as navy, soft blue, cream, white and silver gray, in simple knits and soft textures. Coordinate instead of matching, and skip big logos and busy novelty prints, which pull the eye away from faces and candlelight.",
+      },
+      {
+        question: "Where should we take Hanukkah photos?",
+        answer:
+          "At home, for most families, because that is where the menorah and the traditions live. If you want an outdoor card photo, a North Shore park in November works well, and we can finish with a few frames at home by the menorah.",
+      },
+      {
+        question: "How much does a Hanukkah photoshoot cost?",
+        answer:
+          "Hanukkah sessions use my regular packages: $200 for a 30-minute mini with 10 edited images, $325 for 60 minutes and 20 images, and $500 for 90 minutes and 30 images. Every package includes a private online gallery and full print rights.",
+      },
+    ],
+    content: `
+<p>A Hanukkah photoshoot is a family session built around the menorah, the candles and the people you light them with, and the best time to book one is October, so your photos are back before the first night. Hanukkah 2026 begins the evening of December 4. I am a family photographer in Skokie, and I photograph families at home and outdoors across Evanston, Lincolnwood, West Rogers Park, Wilmette and Chicago's North Shore. Here is how I help families plan Hanukkah photos that feel like their own.</p>
+
+<h2>When to book a Hanukkah photoshoot</h2>
+
+<h3>When should I book a Hanukkah photoshoot?</h3>
+
+<p>Book in October if the photos are for Hanukkah cards. My galleries are delivered within 2 to 3 weeks, so a session in late October or early November leaves time to pick a favorite, design the card and mail it before December 4. If you have a firm card deadline, tell me when you book and I will plan the session date around it.</p>
+
+<p>If the photos are just for you, there is a second option: an evening session during Hanukkah itself, when the candles are really lit and the house smells like latkes. Those photos will not make the card, but they hold the real thing. Some families do both, a short daytime session for the card in November and a few frames on one of the eight nights.</p>
+
+<p>If your family keeps Shabbat, we will skip the Friday night and Saturday of Hanukkah and pick another night together.</p>
+
+<h2>Menorah and candlelight Hanukkah photos</h2>
+
+<h3>Can you take Hanukkah photos by real candlelight?</h3>
+
+<p>Yes. On a real night of Hanukkah, the menorah becomes part of the light. I photograph without flash so the flames stay soft and warm, and I ask you to leave a lamp or two on low so faces do not fall into shadow. The photos have a quiet, golden feel, a little grain and a lot of glow, and they look like the evening actually felt.</p>
+
+<p>For card photos taken before the holiday, I do it differently. We set the menorah near your brightest window and light a few candles in daylight. Faces stay clear and natural, and the flames still read as flames. Nothing about it needs to be staged beyond that. The kids can argue about who gets the shamash, and that is usually the photo I love most.</p>
+
+<h2>Hanukkah photo ideas that feel like your family</h2>
+
+<h3>What are good Hanukkah photo ideas for families?</h3>
+
+<p>The best Hanukkah photos come from the things your family already does. A few I like to include:</p>
+
+<ul>
+<li><strong>Lighting the menorah together</strong>, with a parent's hand over a small hand on the shamash.</li>
+<li><strong>Each child with their own menorah</strong>, if your family lights more than one.</li>
+<li><strong>A dreidel game on the floor</strong>, with gelt piling up in front of whoever is winning.</li>
+<li><strong>Latkes or sufganiyot in the kitchen</strong>, powdered sugar and all.</li>
+<li><strong>Grandparents with every grandchild</strong>, or the family menorah that has been passed down.</li>
+<li><strong>One classic photo where everyone looks at the camera</strong>, so the card is covered and everyone can relax.</li>
+</ul>
+
+<p>If the whole extended family is gathering for a night of Hanukkah, a longer session gives every grouping its moment. Here is how I plan <a href="/sessions/extended-family-photography">extended family sessions</a>.</p>
+
+<h2>Where to take Hanukkah photos</h2>
+
+<h3>Where should we take Hanukkah photos?</h3>
+
+<p>At home, for most families, because that is where the menorah and the traditions live. Your home doesn't need to be spotless. I need one bright window and a little clear space near where you light, and the rest can look like real life in December. You can see how an in-home session feels in this <a href="/gallery/family/west-rogers-park-9-month-family-session">in-home family session in West Rogers Park</a>, full of soft window light and real moments on the couch and the floor.</p>
+
+<p>If you want an outdoor card photo, a North Shore park in November gives you bare branches and low, soft light before the deep cold arrives. We can meet at a park close to your home for the card photo and finish with a few frames by the menorah inside.</p>
+
+<p>Family celebrations in the Jewish calendar are some of my favorite things to photograph. I have photographed an <a href="/gallery/milestone/shilo-3rd-birthday-upshirin">upsherin and third birthday</a> and a <a href="/sessions/bar-mitzvah-photography">Bar Mitzvah</a>, and I bring the same care for tradition and family to a Hanukkah session.</p>
+
+<h2>What to wear for Hanukkah family photos</h2>
+
+<h3>What should we wear for Hanukkah family photos?</h3>
+
+<p>Pick two or three colors and let everyone wear them in different pieces. Navy, soft blue, cream, white and a little silver gray feel like Hanukkah without spelling it out. Soft knits, a velvet dress for a little one and a simple sweater for everyone else photograph beautifully by window light and candlelight alike. Coordinate instead of matching, and skip big logos and busy novelty prints, which pull the eye away from faces and flames.</p>
+
+<p>Matching Hanukkah pajamas are fun, and I am happy to photograph them. I suggest saving them for the last few frames, after the card photo is done. For more on colors and outfits, see my guide to <a href="/blog/what-to-wear-family-photo-session">what to wear for family photos</a>.</p>
+
+<h2>What a Hanukkah photoshoot costs</h2>
+
+<h3>How much does a Hanukkah photoshoot cost?</h3>
+
+<p>My Hanukkah sessions use my regular packages. The Mini is $200 for 30 minutes at one location with 10 edited images. The Classic is $325 for 60 minutes and 20 images. The Full is $500 for 90 minutes and 30 images. Every package includes a private online gallery and full print rights, so you can print your cards anywhere you like. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee.</p>
+
+<p>For a card photo of an immediate family, a <a href="/sessions/mini-sessions">mini session</a> is often enough. For candlelight on a real night of Hanukkah, or a gathering with grandparents and cousins, the Classic or Full session gives everyone time. The full breakdown is on the <a href="/sessions/family-photography">family photography page</a>. If your family celebrates both Hanukkah and Christmas, my guide to <a href="/blog/christmas-holiday-family-photos">Christmas family photos</a> covers the tree side of the season.</p>
+
+<h2>Let's plan your Hanukkah photos</h2>
+
+<p>The weeks before Hanukkah fill up alongside the rest of the holiday season, so the earlier we talk, the more choice you have. <a href="/contact">Tell me about your family</a>, whether you are picturing a card photo by the window or the real candles on the fourth night, and I will suggest a date, a time and a package.</p>
 `,
   },
 ];
