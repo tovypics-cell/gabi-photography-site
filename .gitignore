@@ -43,3 +43,6 @@ next-env.d.ts
 
 # weekly content loop scratch (summary + claude transcript per run)
 /.content-run/
+
+# Claude Code local permissions on the loop host (not shared)
+.claude/settings.local.json
