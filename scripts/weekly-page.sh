@@ -340,12 +340,18 @@ fi
 MERGED=0
 if [ "$DRY_RUN" = 0 ] && [ "${AUTO_MERGE:-0}" = "1" ]; then
   STAGE="publish"
-  if "$GH_BIN" pr merge "$PR_NUMBER" --repo "$GH_REPO" --merge --delete-branch >/dev/null 2>&1; then
-    MERGED=1
-    log "merged PR #$PR_NUMBER; Vercel is deploying main"
-  else
-    log "could not merge PR #$PR_NUMBER automatically; it stays open for a person"
-  fi
+  # GitHub needs a few seconds after a push to compute mergeability, so retry with a short wait.
+  merge_err=""
+  for attempt in 1 2 3 4 5 6; do
+    sleep 10
+    if merge_err="$("$GH_BIN" pr merge "$PR_NUMBER" --repo "$GH_REPO" --merge --delete-branch 2>&1 >/dev/null)"; then
+      MERGED=1
+      log "merged PR #$PR_NUMBER on attempt $attempt; Vercel is deploying main"
+      break
+    fi
+    log "merge attempt $attempt failed: ${merge_err//$'\n'/ }"
+  done
+  [ "$MERGED" = 1 ] || log "could not merge PR #$PR_NUMBER automatically; it stays open for a person"
 fi
 
 # ---------- tell Omer and Gabi ----------
