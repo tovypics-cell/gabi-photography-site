@@ -122,13 +122,14 @@
       "type": "guide",
       "primaryKeyword": "hanukkah photoshoot",
       "sourceDraft": null,
-      "status": "in_review",
+      "status": "published",
       "plan": 31,
       "phase": 2,
       "branch": "content/hanukkah-family-photoshoot",
       "pr": 20,
       "updatedAt": "2026-10-05",
-      "notes": " Moved to the front 2026-10-04 so it is live by mid October for card season. Hanukkah 2026 begins the evening of December 4."
+      "notes": " Moved to the front 2026-10-04 so it is live by mid October for card season. Hanukkah 2026 begins the evening of December 4.",
+      "publishedAt": "2026-10-06"
     },
     {
       "slug": "rewrite-family-photography",
@@ -139,7 +140,7 @@
         "file": "src/app/sessions/family-photography/page.tsx"
       },
       "sourceDraft": null,
-      "status": "in_review",
+      "status": "published",
       "branch": "content/rewrite-family-photography",
       "pr": 18,
       "updatedAt": "2026-10-01",
@@ -147,7 +148,8 @@
       "keep": [
         "Nobody stands in a line and says cheese."
       ],
-      "phase": 0
+      "phase": 0,
+      "publishedAt": "2026-10-06"
     },
     {
       "slug": "rewrite-about",
