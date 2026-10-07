@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About Gabi Tovy, Skokie Family Photographer",
   description:
-    "Meet Gabi Tovy, the Skokie family photographer behind Tovy Photography. Natural light family and newborn sessions across the North Shore, from $200.",
+    "Meet Gabi Tovy, the Skokie family photographer behind Tovy Photography. Natural light family and newborn sessions across the North Shore, from $250.",
   alternates: {
     canonical: "https://tovyphotography.com/about",
   },

@@ -462,7 +462,7 @@ export const seoBlogPosts: BlogPost[] = [
       {
         question: "How much do Christmas family photos cost?",
         answer:
-          "My holiday family sessions use my regular packages: $200 for a 30-minute mini with 10 edited images, $325 for 60 minutes and 20 images, and $500 for 90 minutes and 30 images. Every package includes a private online gallery and full print rights.",
+          "My holiday family sessions use my regular packages: $250 for a 30-minute mini with 10 edited images, $375 for 60 minutes and 20 images, and $500 for 90 minutes and 30 images. Every package includes a private online gallery and full print rights.",
       },
       {
         question: "Is a mini session enough for a Christmas card?",
@@ -528,7 +528,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h3>How much do Christmas family photos cost?</h3>
 
-<p>My holiday family sessions use my regular packages. The Mini is $200 for 30 minutes at one location with 10 edited images. The Classic is $325 for 60 minutes and 20 images. The Full is $500 for 90 minutes and 30 images. Every package includes a private online gallery and full print rights, so you can print your cards anywhere you like. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee.</p>
+<p>My holiday family sessions use my regular packages. The Mini is $250 for 30 minutes at one location with 10 edited images. The Classic is $375 for 60 minutes and 20 images. The Full is $500 for 90 minutes and 30 images. Every package includes a private online gallery and full print rights, so you can print your cards anywhere you like. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee.</p>
 
 <h3>Is a mini session enough for a Christmas card?</h3>
 
@@ -579,7 +579,7 @@ export const seoBlogPosts: BlogPost[] = [
       {
         question: "How much does a Hanukkah photoshoot cost?",
         answer:
-          "Hanukkah sessions use my regular packages: $200 for a 30-minute mini with 10 edited images, $325 for 60 minutes and 20 images, and $500 for 90 minutes and 30 images. Every package includes a private online gallery and full print rights.",
+          "Hanukkah sessions use my regular packages: $250 for a 30-minute mini with 10 edited images, $375 for 60 minutes and 20 images, and $500 for 90 minutes and 30 images. Every package includes a private online gallery and full print rights.",
       },
     ],
     content: `
@@ -642,7 +642,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h3>How much does a Hanukkah photoshoot cost?</h3>
 
-<p>My Hanukkah sessions use my regular packages. The Mini is $200 for 30 minutes at one location with 10 edited images. The Classic is $325 for 60 minutes and 20 images. The Full is $500 for 90 minutes and 30 images. Every package includes a private online gallery and full print rights, so you can print your cards anywhere you like. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee.</p>
+<p>My Hanukkah sessions use my regular packages. The Mini is $250 for 30 minutes at one location with 10 edited images. The Classic is $375 for 60 minutes and 20 images. The Full is $500 for 90 minutes and 30 images. Every package includes a private online gallery and full print rights, so you can print your cards anywhere you like. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee.</p>
 
 <p>For a card photo of an immediate family, a <a href="/sessions/mini-sessions">mini session</a> is often enough. For candlelight on a real night of Hanukkah, or a gathering with grandparents and cousins, the Classic or Full session gives everyone time. The full breakdown is on the <a href="/sessions/family-photography">family photography page</a>. If your family celebrates both Hanukkah and Christmas, my guide to <a href="/blog/christmas-holiday-family-photos">Christmas family photos</a> covers the tree side of the season.</p>
 
