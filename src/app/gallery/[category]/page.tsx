@@ -38,7 +38,7 @@ const categoryMeta: Record<
     ],
     faqs: [
       { question: "Where were these family sessions photographed?", answer: "At real North Shore locations: the Skokie Public Library grounds, the Keay Nature Center in Wilmette, and a family's home in West Rogers Park. Every gallery page names its location." },
-      { question: "How many photos do you deliver from a family session?", answer: "10 edited images from a 30-minute mini, 25+ from a 60-minute Classic, and 40+ from a 90-minute Full session, all in a private online gallery with print rights." },
+      { question: "How many photos do you deliver from a family session?", answer: "10+ edited images from a 30-minute mini, 25+ from a 60-minute Classic, and 40+ from a 90-minute Full session, all in a private online gallery with print rights." },
       { question: "Can we book a session like one of these?", answer: "Yes. Tell me which gallery you liked and I will suggest a similar location, time of day and package." },
     ],
   },

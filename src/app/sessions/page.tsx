@@ -69,7 +69,7 @@ const packages = [
     features: [
       { text: "30-minute session", highlight: true },
       { text: "One location" },
-      { text: "10 edited digital images", highlight: true },
+      { text: "10+ edited digital images", highlight: true },
       { text: "Online gallery" },
       { text: "Full rights to print and share" },
     ],

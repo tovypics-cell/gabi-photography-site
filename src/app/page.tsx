@@ -80,7 +80,7 @@ export default function HomePage() {
     {
       question: "How much does a photography session cost?",
       answer:
-        "Sessions start at $250 for a 30-minute mini session with 10 edited images. The Classic session is $375 for 60 minutes and 25+ images, and the Full session is $500 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights. Events are quoted individually.",
+        "Sessions start at $250 for a 30-minute mini session with 10+ edited images. The Classic session is $375 for 60 minutes and 25+ images, and the Full session is $500 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights. Events are quoted individually.",
     },
     {
       question: "Do you photograph newborns at home?",

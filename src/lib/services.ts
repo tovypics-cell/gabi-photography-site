@@ -690,7 +690,7 @@ export const services: Record<string, ServicePage> = {
       {
         heading: "What a mini session is",
         paragraphs: [
-          "A mini session is a 30-minute session at one location with 10 edited images. It is the right choice when you want updated family photos without making a whole afternoon of it: a holiday card, a yearly update, a quick set with grandparents in town, or a milestone that does not need a full session.",
+          "A mini session is a 30-minute session at one location with 10+ edited images. It is the right choice when you want updated family photos without making a whole afternoon of it: a holiday card, a yearly update, a quick set with grandparents in town, or a milestone that does not need a full session.",
           "Minis are photographed the same way as every session: natural light, gentle direction, real moments. The only difference is the length.",
         ],
       },
@@ -706,7 +706,7 @@ export const services: Record<string, ServicePage> = {
       heading: "What you get",
       items: [
         { label: "30-minute session", text: "at one location within 10 miles of Skokie" },
-        { label: "10 edited digital images", text: "in a private online gallery" },
+        { label: "10+ edited digital images", text: "in a private online gallery" },
         { label: "Full print rights", text: "for cards, prints and sharing" },
         { label: "Location suggestions", text: "I will recommend a spot that fits the season and your family" },
       ],
@@ -734,13 +734,13 @@ export const services: Record<string, ServicePage> = {
     },
     pricing: {
       heading: "Mini session pricing",
-      text: `Mini sessions are $250 for 30 minutes at one location with 10 edited images. ${pricingNote} Need more time or more images? The Classic session is $375 for 60 minutes and 25+ images.`,
+      text: `Mini sessions are $250 for 30 minutes at one location with 10+ edited images. ${pricingNote} Need more time or more images? The Classic session is $375 for 60 minutes and 25+ images.`,
     },
     faqs: [
       {
         question: "How much is a family mini session?",
         answer:
-          "$250 for a 30-minute session at one location with 10 edited digital images, an online gallery and full print rights. There is no travel fee within 10 miles of Skokie.",
+          "$250 for a 30-minute session at one location with 10+ edited digital images, an online gallery and full print rights. There is no travel fee within 10 miles of Skokie.",
       },
       {
         question: "Where are mini sessions held?",
