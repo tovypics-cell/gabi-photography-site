@@ -82,7 +82,7 @@ const packages = [
     features: [
       { text: "60-minute session", highlight: true },
       { text: "One location" },
-      { text: "20 edited digital images", highlight: true },
+      { text: "25+ edited digital images", highlight: true },
       { text: "Online gallery" },
       { text: "Full rights to print and share" },
       { text: "Wardrobe guidance", highlight: true },
@@ -98,7 +98,7 @@ const packages = [
     features: [
       { text: "90-minute session", highlight: true },
       { text: "One location" },
-      { text: "30 edited digital images", highlight: true },
+      { text: "40+ edited digital images", highlight: true },
       { text: "Online gallery" },
       { text: "Full rights to print and share" },
       { text: "Wardrobe guidance" },

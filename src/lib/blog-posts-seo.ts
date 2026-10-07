@@ -48,14 +48,14 @@ export const seoBlogPosts: BlogPost[] = [
 <ul>
 <li><strong>Studio or in-home.</strong> Studios carry rent, props and backdrops. In-home sessions carry a drive. That is the single biggest difference in price.</li>
 <li><strong>Session fee versus all-inclusive.</strong> Some photographers charge a lower fee up front and then price each image or product afterward. Others, like me, include the images in the package. Always ask what the number you are quoted actually gets you.</li>
-<li><strong>Length and number of images.</strong> A 30-minute mini with 10 images costs less than a 90-minute session with 30 images and sibling photos.</li>
+<li><strong>Length and number of images.</strong> A 30-minute mini with 10 images costs less than a 90-minute session with 40+ images and sibling photos.</li>
 <li><strong>Products.</strong> Albums, wall art and prints can add several hundred dollars. If you only want digital files, say so.</li>
 <li><strong>Travel.</strong> I include travel within 10 miles of Skokie. Farther than that, a $50 travel fee applies.</li>
 </ul>
 
 <h2>What my newborn sessions cost</h2>
 
-<p>My newborn sessions happen in your home in Skokie, Evanston, Wilmette, Lincolnwood or anywhere on the North Shore. The Mini is $250 for 30 minutes and 10 edited images. The Classic is $375 for 60 minutes and 20 images. The Full is $500 for 90 minutes and 30 images, which is the right choice when you want unhurried time for siblings and the whole family. Newborn sessions run on the baby's schedule, so I book them with room for feeding and settling.</p>
+<p>My newborn sessions happen in your home in Skokie, Evanston, Wilmette, Lincolnwood or anywhere on the North Shore. The Mini is $250 for 30 minutes and 10 edited images. The Classic is $375 for 60 minutes and 25+ images. The Full is $500 for 90 minutes and 40+ images, which is the right choice when you want unhurried time for siblings and the whole family. Newborn sessions run on the baby's schedule, so I book them with room for feeding and settling.</p>
 
 <p>You can see the full breakdown on the <a href="/sessions">Sessions and Pricing page</a>, and read more about how in-home newborn sessions work on the <a href="/sessions/newborn-photography">newborn photography page</a>.</p>
 
@@ -119,7 +119,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h2>What my family sessions cost</h2>
 
-<p>The Mini is $250 for 30 minutes at one location with 10 edited images. The Classic is $375 for 60 minutes and 20 images, and it is the most popular choice for families with young kids because it leaves room to play. The Full is $500 for 90 minutes and 30 images, the right fit for extended family and multigenerational groups. Every package includes a private online gallery and full print rights. Wardrobe guidance is included with the Classic and Full sessions.</p>
+<p>The Mini is $250 for 30 minutes at one location with 10 edited images. The Classic is $375 for 60 minutes and 25+ images, and it is the most popular choice for families with young kids because it leaves room to play. The Full is $500 for 90 minutes and 40+ images, the right fit for extended family and multigenerational groups. Every package includes a private online gallery and full print rights. Wardrobe guidance is included with the Classic and Full sessions.</p>
 
 <p>Details and what each package includes are on the <a href="/sessions">Sessions and Pricing page</a>. You can read about how sessions work on the <a href="/sessions/family-photography">family photography page</a>.</p>
 
@@ -258,7 +258,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h3>How much does Tovy Photography charge for engagement photos?</h3>
 
-<p>Engagement sessions use my standard packages. The Mini is $250 for 30 minutes at one location with 10 edited images. The Classic is $375 for 60 minutes and 20 images, and it is what most couples choose. The Full is $500 for 90 minutes and 30 images with two locations, which works well for a lakefront-plus-neighborhood plan. Every package includes a private online gallery and full print rights, and sessions within 10 miles of Skokie carry no travel fee. Details are on the <a href="/sessions/engagement-photography">engagement photography page</a> and the <a href="/sessions">Sessions and Pricing page</a>.</p>
+<p>Engagement sessions use my standard packages. The Mini is $250 for 30 minutes at one location with 10 edited images. The Classic is $375 for 60 minutes and 25+ images, and it is what most couples choose. The Full is $500 for 90 minutes and 40+ images with two locations, which works well for a lakefront-plus-neighborhood plan. Every package includes a private online gallery and full print rights, and sessions within 10 miles of Skokie carry no travel fee. Details are on the <a href="/sessions/engagement-photography">engagement photography page</a> and the <a href="/sessions">Sessions and Pricing page</a>.</p>
 
 <h2>What you should get for the money</h2>
 
@@ -333,7 +333,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h3>How much does Tovy Photography charge for maternity photos?</h3>
 
-<p>Maternity sessions use my standard packages. The Mini is $250 for 30 minutes at one location with 10 edited images. The Classic is $375 for 60 minutes and 20 images, and it is the usual choice because it leaves room for your partner and kids. The Full is $500 for 90 minutes and 30 images. Wardrobe guidance is included with Classic and Full sessions, every package includes a private online gallery with full print rights, and I photograph outdoors at North Shore parks and beaches or in your home. Details are on the <a href="/sessions/maternity-photography">maternity photography page</a>. Many families pair the maternity session with an in-home newborn session, which is described on the <a href="/sessions/maternity-and-newborn-photography">maternity and newborn page</a>.</p>
+<p>Maternity sessions use my standard packages. The Mini is $250 for 30 minutes at one location with 10 edited images. The Classic is $375 for 60 minutes and 25+ images, and it is the usual choice because it leaves room for your partner and kids. The Full is $500 for 90 minutes and 40+ images. Wardrobe guidance is included with Classic and Full sessions, every package includes a private online gallery with full print rights, and I photograph outdoors at North Shore parks and beaches or in your home. Details are on the <a href="/sessions/maternity-photography">maternity photography page</a>. Many families pair the maternity session with an in-home newborn session, which is described on the <a href="/sessions/maternity-and-newborn-photography">maternity and newborn page</a>.</p>
 
 <h2>When to book</h2>
 
@@ -379,7 +379,7 @@ export const seoBlogPosts: BlogPost[] = [
       {
         question: "How much does a fall family photoshoot cost?",
         answer:
-          "My family sessions run from $250 for a 30-minute mini session with 10 edited images to $500 for a 90-minute full session with 30 images. The Classic session, $375 for 60 minutes and 20 images, is what most families choose for fall.",
+          "My family sessions run from $250 for a 30-minute mini session with 10 edited images to $500 for a 90-minute full session with 40+ images. The Classic session, $375 for 60 minutes and 25+ images, is what most families choose for fall.",
       },
     ],
     content: `
@@ -425,7 +425,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h3>How much does a fall family photoshoot cost?</h3>
 
-<p>My family sessions run from $250 for a 30-minute mini session with 10 edited images, up to $500 for a 90-minute full session with 30 images. The Classic session, $375 for 60 minutes and 20 images, is what most families choose for a fall shoot since it gives enough time for both posed and candid moments without rushing anyone. You can see the full breakdown on the <a href="/sessions/family-photography">family photography page</a>.</p>
+<p>My family sessions run from $250 for a 30-minute mini session with 10 edited images, up to $500 for a 90-minute full session with 40+ images. The Classic session, $375 for 60 minutes and 25+ images, is what most families choose for a fall shoot since it gives enough time for both posed and candid moments without rushing anyone. You can see the full breakdown on the <a href="/sessions/family-photography">family photography page</a>.</p>
 
 <h2>Let's plan your fall session</h2>
 
@@ -462,7 +462,7 @@ export const seoBlogPosts: BlogPost[] = [
       {
         question: "How much do Christmas family photos cost?",
         answer:
-          "My holiday family sessions use my regular packages: $250 for a 30-minute mini with 10 edited images, $375 for 60 minutes and 20 images, and $500 for 90 minutes and 30 images. Every package includes a private online gallery and full print rights.",
+          "My holiday family sessions use my regular packages: $250 for a 30-minute mini with 10 edited images, $375 for 60 minutes and 25+ images, and $500 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights.",
       },
       {
         question: "Is a mini session enough for a Christmas card?",
@@ -528,7 +528,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h3>How much do Christmas family photos cost?</h3>
 
-<p>My holiday family sessions use my regular packages. The Mini is $250 for 30 minutes at one location with 10 edited images. The Classic is $375 for 60 minutes and 20 images. The Full is $500 for 90 minutes and 30 images. Every package includes a private online gallery and full print rights, so you can print your cards anywhere you like. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee.</p>
+<p>My holiday family sessions use my regular packages. The Mini is $250 for 30 minutes at one location with 10 edited images. The Classic is $375 for 60 minutes and 25+ images. The Full is $500 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights, so you can print your cards anywhere you like. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee.</p>
 
 <h3>Is a mini session enough for a Christmas card?</h3>
 
@@ -579,7 +579,7 @@ export const seoBlogPosts: BlogPost[] = [
       {
         question: "How much does a Hanukkah photoshoot cost?",
         answer:
-          "Hanukkah sessions use my regular packages: $250 for a 30-minute mini with 10 edited images, $375 for 60 minutes and 20 images, and $500 for 90 minutes and 30 images. Every package includes a private online gallery and full print rights.",
+          "Hanukkah sessions use my regular packages: $250 for a 30-minute mini with 10 edited images, $375 for 60 minutes and 25+ images, and $500 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights.",
       },
     ],
     content: `
@@ -642,7 +642,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h3>How much does a Hanukkah photoshoot cost?</h3>
 
-<p>My Hanukkah sessions use my regular packages. The Mini is $250 for 30 minutes at one location with 10 edited images. The Classic is $375 for 60 minutes and 20 images. The Full is $500 for 90 minutes and 30 images. Every package includes a private online gallery and full print rights, so you can print your cards anywhere you like. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee.</p>
+<p>My Hanukkah sessions use my regular packages. The Mini is $250 for 30 minutes at one location with 10 edited images. The Classic is $375 for 60 minutes and 25+ images. The Full is $500 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights, so you can print your cards anywhere you like. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee.</p>
 
 <p>For a card photo of an immediate family, a <a href="/sessions/mini-sessions">mini session</a> is often enough. For candlelight on a real night of Hanukkah, or a gathering with grandparents and cousins, the Classic or Full session gives everyone time. The full breakdown is on the <a href="/sessions/family-photography">family photography page</a>. If your family celebrates both Hanukkah and Christmas, my guide to <a href="/blog/christmas-holiday-family-photos">Christmas family photos</a> covers the tree side of the season.</p>
 

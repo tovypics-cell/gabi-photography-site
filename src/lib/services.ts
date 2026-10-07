@@ -734,7 +734,7 @@ export const services: Record<string, ServicePage> = {
     },
     pricing: {
       heading: "Mini session pricing",
-      text: `Mini sessions are $250 for 30 minutes at one location with 10 edited images. ${pricingNote} Need more time or more images? The Classic session is $375 for 60 minutes and 20 images.`,
+      text: `Mini sessions are $250 for 30 minutes at one location with 10 edited images. ${pricingNote} Need more time or more images? The Classic session is $375 for 60 minutes and 25+ images.`,
     },
     faqs: [
       {
@@ -1066,7 +1066,7 @@ export const services: Record<string, ServicePage> = {
         paragraphs: [
           "Extended family sessions are for the times everyone is in town: grandparents visiting, cousins together for a holiday, a reunion, a milestone birthday. We start with the whole group while everyone is fresh, then work through the smaller groupings that families actually frame: each household, the grandparents with every grandchild, the siblings, the cousins.",
           "I photograph large family groups outdoors at North Shore parks and beaches, in backyards, and inside homes when the group fits. Sessions are natural light and gently guided, so the photos look like your family on a good day rather than a line-up.",
-          "Extended family sessions are the 90-minute Full session, $500, with 30 edited images and full print rights included. Groups of six or fewer usually fit the 60-minute Classic.",
+          "Extended family sessions are the 90-minute Full session, $500, with 40+ edited images and full print rights included. Groups of six or fewer usually fit the 60-minute Classic.",
         ],
       },
       {
@@ -1115,13 +1115,13 @@ export const services: Record<string, ServicePage> = {
     },
     pricing: {
       heading: "Extended family session pricing",
-      text: `Most extended family and multigenerational sessions are the $500 Full session: 90 minutes, one location and 30 edited images. Smaller groups of six or fewer usually fit the $375 Classic. ${pricingNote}`,
+      text: `Most extended family and multigenerational sessions are the $500 Full session: 90 minutes, one location and 40+ edited images. Smaller groups of six or fewer usually fit the $375 Classic. ${pricingNote}`,
     },
     faqs: [
       {
         question: "How much does an extended family photoshoot cost?",
         answer:
-          "My extended family sessions are $500 for the 90-minute Full session with 30 edited images and full print rights. Published 2026 cost guides put typical professional family sessions in the United States between about $300 and $750, and large groups with multiple households usually sit toward the top of that.",
+          "My extended family sessions are $500 for the 90-minute Full session with 40+ edited images and full print rights. Published 2026 cost guides put typical professional family sessions in the United States between about $300 and $750, and large groups with multiple households usually sit toward the top of that.",
       },
       {
         question: "How many people can be in an extended family session?",

@@ -61,8 +61,8 @@ Every contact-form email ends with four lines the visitor never sees: how they f
 
 ## Pricing (source of truth is sessions page code)
 - Mini: $250 (30 min, 10 images)
-- Classic: $375 (60 min, 20 images) - Most Popular
-- Full: $500 (90 min, 30 images)
+- Classic: $375 (60 min, 25+ images) - Most Popular
+- Full: $500 (90 min, 40+ images)
 - Tailored: Custom (events/special occasions)
 
 ## Architecture
