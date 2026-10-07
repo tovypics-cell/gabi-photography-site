@@ -68,7 +68,7 @@ const proofBarMitzvah: ProofItem = {
 // FAQ builders keep answers consistent across towns while staying specific.
 const faqCost = (town: string): Faq => ({
   question: `How much does a family photographer in ${town} cost?`,
-  answer: `My sessions start at $200 for a 30-minute mini session and go up to $500 for a 90-minute full session. Every package includes professionally edited images in a private online gallery with full print rights. Sessions within 10 miles of Skokie carry no travel fee.`,
+  answer: `My sessions start at $250 for a 30-minute mini session and go up to $500 for a 90-minute full session. Every package includes professionally edited images in a private online gallery with full print rights. Sessions within 10 miles of Skokie carry no travel fee.`,
 });
 const faqInHome = (town: string): Faq => ({
   question: `Do you photograph in-home sessions in ${town}?`,
@@ -100,7 +100,7 @@ export const locationPages: Record<string, LocationPage> = {
     name: "Skokie",
     title: "Skokie Family and Newborn Photographer",
     description:
-      "Skokie family, newborn and milestone photographer. Natural light sessions at home or at Skokie parks. Sessions from $200 with full print rights.",
+      "Skokie family, newborn and milestone photographer. Natural light sessions at home or at Skokie parks. Sessions from $250 with full print rights.",
     h1: "Skokie Family Photographer",
     heroLabel: legacyLocationData.skokie.heroLabel,
     intro: [
@@ -150,7 +150,7 @@ export const locationPages: Record<string, LocationPage> = {
     name: "Evanston",
     title: "Evanston Family and Newborn Photographer",
     description:
-      "Evanston family, newborn and maternity photographer. Lakefront, park and in-home sessions in natural light, minutes from Skokie. Sessions from $200.",
+      "Evanston family, newborn and maternity photographer. Lakefront, park and in-home sessions in natural light, minutes from Skokie. Sessions from $250.",
     h1: "Evanston Family Photographer",
     heroLabel: legacyLocationData.evanston.heroLabel,
     intro: [
@@ -200,7 +200,7 @@ export const locationPages: Record<string, LocationPage> = {
     name: "Lincolnwood",
     title: "Lincolnwood Family and Newborn Photographer",
     description:
-      "Lincolnwood family, newborn and milestone photographer. In-home and park sessions in natural light, next door to Skokie. Sessions from $200.",
+      "Lincolnwood family, newborn and milestone photographer. In-home and park sessions in natural light, next door to Skokie. Sessions from $250.",
     h1: "Lincolnwood Family Photographer",
     heroLabel: legacyLocationData.lincolnwood.heroLabel,
     intro: [
@@ -246,7 +246,7 @@ export const locationPages: Record<string, LocationPage> = {
     name: "Wilmette",
     title: "Wilmette Family and Newborn Photographer",
     description:
-      "Wilmette family, newborn and maternity photographer. Gillson Beach, Keay Nature Center and in-home sessions in natural light. Sessions from $200.",
+      "Wilmette family, newborn and maternity photographer. Gillson Beach, Keay Nature Center and in-home sessions in natural light. Sessions from $250.",
     h1: "Wilmette Family Photographer",
     heroLabel: legacyLocationData.wilmette.heroLabel,
     intro: [
@@ -296,7 +296,7 @@ export const locationPages: Record<string, LocationPage> = {
     name: "Morton Grove",
     title: "Morton Grove Family and Newborn Photographer",
     description:
-      "Morton Grove family, newborn and milestone photographer. Forest preserve, park and in-home sessions in natural light, minutes from Skokie. From $200.",
+      "Morton Grove family, newborn and milestone photographer. Forest preserve, park and in-home sessions in natural light, minutes from Skokie. From $250.",
     h1: "Morton Grove Family Photographer",
     heroLabel: "Morton Grove Hero Photo",
     intro: [
@@ -346,7 +346,7 @@ export const locationPages: Record<string, LocationPage> = {
     name: "Glenview",
     title: "Glenview Family and Newborn Photographer",
     description:
-      "Glenview family, newborn and maternity photographer. The Grove, Gallery Park and in-home sessions in natural light, a short drive from Skokie. From $200.",
+      "Glenview family, newborn and maternity photographer. The Grove, Gallery Park and in-home sessions in natural light, a short drive from Skokie. From $250.",
     h1: "Glenview Family Photographer",
     heroLabel: "Glenview Hero Photo",
     intro: [
@@ -396,7 +396,7 @@ export const locationPages: Record<string, LocationPage> = {
     name: "Niles",
     title: "Niles Family and Newborn Photographer",
     description:
-      "Niles, IL family, newborn and milestone photographer. Park, forest preserve and in-home sessions in natural light, minutes from Skokie. From $200.",
+      "Niles, IL family, newborn and milestone photographer. Park, forest preserve and in-home sessions in natural light, minutes from Skokie. From $250.",
     h1: "Niles Family Photographer",
     heroLabel: "Niles Hero Photo",
     intro: [
@@ -446,7 +446,7 @@ export const locationPages: Record<string, LocationPage> = {
     name: "Northbrook",
     title: "Northbrook Family and Newborn Photographer",
     description:
-      "Northbrook family, newborn and maternity photographer. Park, prairie and in-home sessions in natural light near the Chicago Botanic Garden. From $200.",
+      "Northbrook family, newborn and maternity photographer. Park, prairie and in-home sessions in natural light near the Chicago Botanic Garden. From $250.",
     h1: "Northbrook Family Photographer",
     heroLabel: "Northbrook Hero Photo",
     intro: [
@@ -500,7 +500,7 @@ export const locationPages: Record<string, LocationPage> = {
     name: "Park Ridge",
     title: "Park Ridge Family and Newborn Photographer",
     description:
-      "Park Ridge family, newborn and milestone photographer. Park, uptown and in-home sessions in natural light, a short drive from Skokie. Sessions from $200.",
+      "Park Ridge family, newborn and milestone photographer. Park, uptown and in-home sessions in natural light, a short drive from Skokie. Sessions from $250.",
     h1: "Park Ridge Family Photographer",
     heroLabel: "Park Ridge Hero Photo",
     intro: [
@@ -550,7 +550,7 @@ export const locationPages: Record<string, LocationPage> = {
     name: "Winnetka",
     title: "Winnetka Family and Newborn Photographer",
     description:
-      "Winnetka family, newborn and maternity photographer. Beach, Skokie Lagoons and in-home sessions in natural light on the North Shore. Sessions from $200.",
+      "Winnetka family, newborn and maternity photographer. Beach, Skokie Lagoons and in-home sessions in natural light on the North Shore. Sessions from $250.",
     h1: "Winnetka Family Photographer",
     heroLabel: "Winnetka Hero Photo",
     intro: [
@@ -600,7 +600,7 @@ export const locationPages: Record<string, LocationPage> = {
     name: "Highland Park",
     title: "Highland Park Family and Newborn Photographer",
     description:
-      "Highland Park family, newborn and maternity photographer. Rosewood Beach, ravines and in-home sessions in natural light on the North Shore. From $200.",
+      "Highland Park family, newborn and maternity photographer. Rosewood Beach, ravines and in-home sessions in natural light on the North Shore. From $250.",
     h1: "Highland Park Family Photographer",
     heroLabel: "Highland Park Hero Photo",
     intro: [
@@ -631,7 +631,7 @@ export const locationPages: Record<string, LocationPage> = {
       {
         question: "How much does a family photographer in Highland Park cost?",
         answer:
-          "My sessions start at $200 for a 30-minute mini session and go up to $500 for a 90-minute full session, plus a $50 travel fee for Highland Park because it is beyond 10 miles from Skokie. Every package includes edited images in a private online gallery with full print rights.",
+          "My sessions start at $250 for a 30-minute mini session and go up to $500 for a 90-minute full session, plus a $50 travel fee for Highland Park because it is beyond 10 miles from Skokie. Every package includes edited images in a private online gallery with full print rights.",
       },
       faqInHome("Highland Park"),
       {
@@ -654,7 +654,7 @@ export const locationPages: Record<string, LocationPage> = {
     name: "West Rogers Park",
     title: "West Rogers Park Family Photographer",
     description:
-      "West Rogers Park and West Ridge family, newborn and milestone photographer. In-home and park sessions in natural light, minutes from Skokie. From $200.",
+      "West Rogers Park and West Ridge family, newborn and milestone photographer. In-home and park sessions in natural light, minutes from Skokie. From $250.",
     h1: "West Rogers Park Family Photographer",
     heroLabel: "West Rogers Park Hero Photo",
     intro: [

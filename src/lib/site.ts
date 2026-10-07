@@ -24,7 +24,7 @@ export const site = {
     travelRadiusMiles: 10,
     extraTimePer15Min: 100,
   },
-  priceRange: "$200-$500",
+  priceRange: "$250-$500",
   tagline: "Seeing the good in your world",
 };
 

@@ -6,14 +6,14 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Sessions and Pricing",
   description:
-    "Family, newborn, maternity, milestone, mini session and event photography from $200. In-home and on-location sessions in Skokie and the North Shore.",
+    "Family, newborn, maternity, milestone, mini session and event photography from $250. In-home and on-location sessions in Skokie and the North Shore.",
   alternates: {
     canonical: "https://tovyphotography.com/sessions",
   },
   openGraph: {
     title: "Sessions & Pricing — Tovy Photography",
     description:
-      "Photography packages starting at $200. Family, newborn, milestone, and event sessions in Skokie, IL.",
+      "Photography packages starting at $250. Family, newborn, milestone, and event sessions in Skokie, IL.",
     url: "https://tovyphotography.com/sessions",
   },
 };
@@ -65,7 +65,7 @@ const sessions: {
 const packages = [
   {
     name: "Mini Session",
-    price: "$200",
+    price: "$250",
     features: [
       { text: "30-minute session", highlight: true },
       { text: "One location" },
@@ -78,7 +78,7 @@ const packages = [
   },
   {
     name: "Classic Session",
-    price: "$325",
+    price: "$375",
     features: [
       { text: "60-minute session", highlight: true },
       { text: "One location" },

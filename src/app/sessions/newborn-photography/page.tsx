@@ -10,7 +10,7 @@ import { site, breadcrumbJsonLd } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Skokie Newborn Photographer, North Shore",
   description:
-    "In-home newborn photography in Skokie, Evanston and Chicago's North Shore. Lifestyle sessions in natural light for babies 5 to 14 days old, from $200.",
+    "In-home newborn photography in Skokie, Evanston and Chicago's North Shore. Lifestyle sessions in natural light for babies 5 to 14 days old, from $250.",
   alternates: {
     canonical: "https://tovyphotography.com/sessions/newborn-photography",
   },
@@ -68,7 +68,7 @@ export default function NewbornPhotographyPage() {
         addressCountry: "US",
       },
       url: "https://tovyphotography.com",
-      priceRange: "$200-$500",
+      priceRange: "$250-$500",
     },
     areaServed: [
       "Skokie",
@@ -157,7 +157,7 @@ export default function NewbornPhotographyPage() {
       {/* Citable summary */}
       <section className="px-6 pt-16 lg:px-8">
         <div className="mx-auto max-w-3xl space-y-4 text-lg md:text-xl leading-relaxed text-charcoal">
-          <p>Tovy Photography offers in-home newborn photography in Skokie, Evanston, Wilmette, Lincolnwood and across Chicago's North Shore. It is lifestyle newborn photography in natural window light, photographed at your home when your baby is about 5 to 14 days old, and sessions start at $200 with edited images and full print rights included.</p>
+          <p>Tovy Photography offers in-home newborn photography in Skokie, Evanston, Wilmette, Lincolnwood and across Chicago's North Shore. It is lifestyle newborn photography in natural window light, photographed at your home when your baby is about 5 to 14 days old, and sessions start at $250 with edited images and full print rights included.</p>
           <p>I am Gabi, a Skokie-based photographer. I come to you, follow your baby's cues, and photograph siblings and the whole family in the same visit, so the first days at home are the photos you keep.</p>
         </div>
       </section>
@@ -326,7 +326,7 @@ export default function NewbornPhotographyPage() {
               How much does newborn photography cost in Skokie?
             </h3>
             <p className="text-charcoal-light leading-relaxed mb-8">
-              Sessions start at $200 for a mini session and go up to $500 for a full
+              Sessions start at $250 for a mini session and go up to $500 for a full
               session with extended coverage and more edited images. Every package
               includes an online gallery and full print rights. For a wider look at
               what shapes the price, read my{" "}

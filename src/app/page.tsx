@@ -80,7 +80,7 @@ export default function HomePage() {
     {
       question: "How much does a photography session cost?",
       answer:
-        "Sessions start at $200 for a 30-minute mini session with 10 edited images. The Classic session is $325 for 60 minutes and 20 images, and the Full session is $500 for 90 minutes and 30 images. Every package includes a private online gallery and full print rights. Events are quoted individually.",
+        "Sessions start at $250 for a 30-minute mini session with 10 edited images. The Classic session is $375 for 60 minutes and 20 images, and the Full session is $500 for 90 minutes and 30 images. Every package includes a private online gallery and full print rights. Events are quoted individually.",
     },
     {
       question: "Do you photograph newborns at home?",
@@ -148,7 +148,7 @@ export default function HomePage() {
               photographer based in Skokie, IL, serving Evanston, Wilmette,
               Lincolnwood and all of Chicago&apos;s North Shore. Sessions are
               natural light, gently guided, at your home or on location, and
-              start at $200 with edited images and full print rights included.
+              start at $250 with edited images and full print rights included.
             </p>
           </ScrollReveal>
           <ScrollReveal animation="fade-up" delay={450}>
@@ -309,7 +309,7 @@ export default function HomePage() {
           </ScrollReveal>
           <ScrollReveal animation="fade-up" delay={150}>
             <p className="mb-4 text-charcoal-light leading-relaxed">
-              Sessions start at <span className="font-semibold text-charcoal">$200</span> and include
+              Sessions start at <span className="font-semibold text-charcoal">$250</span> and include
               professionally edited digital images.
             </p>
             <p className="mb-8 text-charcoal-light">

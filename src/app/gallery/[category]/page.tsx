@@ -34,7 +34,7 @@ const categoryMeta: Record<
     serviceLabel: "Family Photography",
     about: [
       "Every session here was photographed in natural light, at a North Shore park, in a family's home, or in their backyard. Nothing is staged in a studio. Families in these galleries are from Skokie, Wilmette, West Rogers Park and nearby.",
-      "If you like what you see, family sessions start at $200 and include edited images with full print rights.",
+      "If you like what you see, family sessions start at $250 and include edited images with full print rights.",
     ],
     faqs: [
       { question: "Where were these family sessions photographed?", answer: "At real North Shore locations: the Skokie Public Library grounds, the Keay Nature Center in Wilmette, and a family's home in West Rogers Park. Every gallery page names its location." },
@@ -53,7 +53,7 @@ const categoryMeta: Record<
     serviceLabel: "Newborn Photography",
     about: [
       "Every newborn session here happened at home, in window light, with no props and no studio. The families are in Skokie and downtown Chicago, and siblings and parents are part of every gallery.",
-      "In-home newborn sessions start at $200 and include edited images with full print rights.",
+      "In-home newborn sessions start at $250 and include edited images with full print rights.",
     ],
     faqs: [
       { question: "Are these newborn photos taken at home or in a studio?", answer: "At home. I photograph newborns in the family's own space by the brightest window, which keeps the baby comfortable and makes the photos feel like their first days really felt." },
@@ -72,7 +72,7 @@ const categoryMeta: Record<
     serviceLabel: "Milestone Photography",
     about: [
       "Birthdays, first haircuts, engagements and the small moments in between. These sessions were photographed at home, at a family celebration, and at the Garfield Park Conservatory.",
-      "Milestone sessions start at $200 and include edited images with full print rights.",
+      "Milestone sessions start at $250 and include edited images with full print rights.",
     ],
     faqs: [
       { question: "What counts as a milestone session?", answer: "Baby milestones at 3, 6, 9 and 12 months, first birthdays and cake smashes, upsherins and first haircuts, graduations, engagements and holiday sessions." },
@@ -91,7 +91,7 @@ const categoryMeta: Record<
     serviceLabel: "Bar and Bat Mitzvah Photography",
     about: [
       "Bar and Bat Mitzvahs, upsherins, brises and family celebrations in Skokie and Chicago's North Shore, photographed quietly during the ceremony and joyfully at the party.",
-      "Events are quoted per celebration based on hours of coverage. Pre-event portrait sessions start at $200.",
+      "Events are quoted per celebration based on hours of coverage. Pre-event portrait sessions start at $250.",
     ],
     faqs: [
       { question: "Do you photograph Bar and Bat Mitzvahs?", answer: "Yes. The gallery here is a Bar Mitzvah at the synagogue, from putting on the tallit through the celebration. I photograph ceremonies where photography is permitted and cover the party afterward." },

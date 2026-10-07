@@ -167,7 +167,7 @@ export default async function ShootPage({ params }: Props) {
           <p>
             This {(categoryLabels[category] || category).toLowerCase()} session was photographed
             by Tovy Photography, a natural light photographer based in Skokie, IL serving
-            Chicago&apos;s North Shore. Sessions like this one start at $200 and include
+            Chicago&apos;s North Shore. Sessions like this one start at $250 and include
             professionally edited images with full print rights.{" "}
             <Link href={serviceHref[category] || "/sessions"} className="text-sage-dark hover:text-charcoal">
               See how {(categoryLabels[category] || category).toLowerCase()} sessions work

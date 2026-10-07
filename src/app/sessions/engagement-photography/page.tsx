@@ -10,7 +10,7 @@ import { site, breadcrumbJsonLd } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Chicago North Shore Engagement Photographer",
   description:
-    "Natural, joyful engagement photography in Evanston, Wilmette, Skokie and Chicago. Lakefront, conservatory and neighborhood sessions from $200.",
+    "Natural, joyful engagement photography in Evanston, Wilmette, Skokie and Chicago. Lakefront, conservatory and neighborhood sessions from $250.",
   alternates: {
     canonical: "https://tovyphotography.com/sessions/engagement-photography",
   },
@@ -68,7 +68,7 @@ export default function EngagementPhotographyPage() {
         addressCountry: "US",
       },
       url: "https://tovyphotography.com",
-      priceRange: "$200-$500",
+      priceRange: "$250-$500",
     },
     areaServed: [
       "Skokie",
@@ -152,7 +152,7 @@ export default function EngagementPhotographyPage() {
       {/* Citable summary */}
       <section className="px-6 pt-16 lg:px-8">
         <div className="mx-auto max-w-3xl space-y-4 text-lg md:text-xl leading-relaxed text-charcoal">
-          <p>Tovy Photography photographs engagement sessions in Chicago and on the North Shore, at the Garfield Park Conservatory, on the lakefront in Evanston and Wilmette, at the Skokie Lagoons, and in the neighborhoods where your story actually happened. Sessions are natural light and relaxed, and start at $200 with edited images and full print rights included.</p>
+          <p>Tovy Photography photographs engagement sessions in Chicago and on the North Shore, at the Garfield Park Conservatory, on the lakefront in Evanston and Wilmette, at the Skokie Lagoons, and in the neighborhoods where your story actually happened. Sessions are natural light and relaxed, and start at $250 with edited images and full print rights included.</p>
           <p>I am Gabi, based in Skokie. Surprise proposals are welcome too: you tell me the spot and the plan, and I am hidden and ready.</p>
         </div>
       </section>
@@ -313,8 +313,8 @@ export default function EngagementPhotographyPage() {
               Engagement session pricing
             </h2>
             <p className="text-charcoal-light leading-relaxed mb-8">
-              Engagement sessions start at $200 for a focused 30-minute mini
-              session. Most couples choose the Classic session ($325, 60
+              Engagement sessions start at $250 for a focused 30-minute mini
+              session. Most couples choose the Classic session ($375, 60
               minutes) which gives us time to explore a location and capture the
               full range: wide shots, close-ups, candid moments, and those
               portraits you&apos;ll actually want to frame. The Full session

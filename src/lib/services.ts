@@ -34,7 +34,7 @@ export const services: Record<string, ServicePage> = {
     shortName: "Newborn Sessions",
     title: "Skokie Newborn Photographer, North Shore",
     description:
-      "In-home newborn photography in Skokie, Evanston, Wilmette and Chicago's North Shore. Gentle, natural light sessions, baby-led timing. From $200.",
+      "In-home newborn photography in Skokie, Evanston, Wilmette and Chicago's North Shore. Gentle, natural light sessions, baby-led timing. From $250.",
     eyebrow: "Skokie and Chicago North Shore",
     h1: "Newborn Photography",
     tagline: "The tiny details you will want to remember forever.",
@@ -98,7 +98,7 @@ export const services: Record<string, ServicePage> = {
     },
     pricing: {
       heading: "Newborn session pricing",
-      text: `Sessions start at $200 for a mini session and go up to $500 for a full session with extended coverage and more edited images. ${pricingNote}`,
+      text: `Sessions start at $250 for a mini session and go up to $500 for a full session with extended coverage and more edited images. ${pricingNote}`,
     },
     faqs: [
       {
@@ -109,7 +109,7 @@ export const services: Record<string, ServicePage> = {
       {
         question: "How much does newborn photography cost in the Chicago area?",
         answer:
-          "My newborn sessions run from $200 to $500 depending on length and the number of edited images. Published Chicago cost guides put typical newborn sessions anywhere from a few hundred dollars for a mini session to well over $1,000 for studio packages with products, so an in-home lifestyle session is usually the more affordable route.",
+          "My newborn sessions run from $250 to $500 depending on length and the number of edited images. Published Chicago cost guides put typical newborn sessions anywhere from a few hundred dollars for a mini session to well over $1,000 for studio packages with products, so an in-home lifestyle session is usually the more affordable route.",
       },
       {
         question: "Do I need to have a clean house?",
@@ -174,7 +174,7 @@ export const services: Record<string, ServicePage> = {
     shortName: "Family Sessions",
     title: "Skokie Family Photographer, North Shore",
     description:
-      "Natural, relaxed family photography in Skokie, Evanston, Wilmette and Chicago's North Shore. Outdoor and in-home sessions in natural light. From $200.",
+      "Natural, relaxed family photography in Skokie, Evanston, Wilmette and Chicago's North Shore. Outdoor and in-home sessions in natural light. From $250.",
     eyebrow: "Skokie and Chicago North Shore",
     h1: "Family Photography",
     tagline: "Real moments with the people who matter most.",
@@ -234,7 +234,7 @@ export const services: Record<string, ServicePage> = {
     },
     pricing: {
       heading: "Family session pricing",
-      text: `Sessions start at $200 for a 30-minute mini session, perfect for seasonal updates and quick family portraits. The Classic session ($325, 60 minutes) is the most popular choice for families who want more relaxed coverage and time to capture real moments. The Full session ($500, 90 minutes) is ideal for extended families and multigenerational groups. ${pricingNote}`,
+      text: `Sessions start at $250 for a 30-minute mini session, perfect for seasonal updates and quick family portraits. The Classic session ($375, 60 minutes) is the most popular choice for families who want more relaxed coverage and time to capture real moments. The Full session ($500, 90 minutes) is ideal for extended families and multigenerational groups. ${pricingNote}`,
     },
     faqs: [
       {
@@ -245,7 +245,7 @@ export const services: Record<string, ServicePage> = {
       {
         question: "How much do family photos cost?",
         answer:
-          "My family sessions run from $200 for a 30-minute mini to $500 for a 90-minute full session, with edited images and print rights included. Published 2026 cost guides put a typical professional family session in the United States somewhere between about $300 and $750, with big-city studios often higher.",
+          "My family sessions run from $250 for a 30-minute mini to $500 for a 90-minute full session, with edited images and print rights included. Published 2026 cost guides put a typical professional family session in the United States somewhere between about $300 and $750, with big-city studios often higher.",
       },
       {
         question: "My kids won't sit still. Is that okay?",
@@ -310,7 +310,7 @@ export const services: Record<string, ServicePage> = {
     shortName: "Maternity Sessions",
     title: "Skokie Maternity Photographer, North Shore",
     description:
-      "Natural light maternity photography in Skokie, Evanston, Wilmette and Chicago's North Shore. In-home or outdoor, partner and kids welcome. From $200.",
+      "Natural light maternity photography in Skokie, Evanston, Wilmette and Chicago's North Shore. In-home or outdoor, partner and kids welcome. From $250.",
     eyebrow: "Skokie and Chicago North Shore",
     h1: "Maternity Photography",
     tagline: "The waiting, the wonder, and the two of you before you become three.",
@@ -368,7 +368,7 @@ export const services: Record<string, ServicePage> = {
     },
     pricing: {
       heading: "Maternity session pricing",
-      text: `Maternity sessions use the same packages as every other session: $200 for a 30-minute mini, $325 for a 60-minute Classic, and $500 for a 90-minute Full session. ${pricingNote} Ask about pairing a maternity and newborn session.`,
+      text: `Maternity sessions use the same packages as every other session: $250 for a 30-minute mini, $375 for a 60-minute Classic, and $500 for a 90-minute Full session. ${pricingNote} Ask about pairing a maternity and newborn session.`,
     },
     faqs: [
       {
@@ -379,7 +379,7 @@ export const services: Record<string, ServicePage> = {
       {
         question: "How much does a maternity photographer cost in Chicago?",
         answer:
-          "My maternity sessions run from $200 to $500 with edited images and print rights included. Published 2026 cost guides put most professional Chicago maternity sessions between about $500 and $1,200, and the national average between $250 and $700, so a natural light session at home or in a park is the affordable route. See my maternity photoshoot cost guide for the full breakdown.",
+          "My maternity sessions run from $250 to $500 with edited images and print rights included. Published 2026 cost guides put most professional Chicago maternity sessions between about $500 and $1,200, and the national average between $250 and $700, so a natural light session at home or in a park is the affordable route. See my maternity photoshoot cost guide for the full breakdown.",
       },
       {
         question: "What should I wear for maternity photos?",
@@ -437,7 +437,7 @@ export const services: Record<string, ServicePage> = {
     shortName: "Milestone Sessions",
     title: "Baby Milestone Photographer, Skokie",
     description:
-      "Baby milestone, first birthday and cake smash photography in Skokie and Chicago's North Shore. Sitter sessions, first year, graduations. From $200.",
+      "Baby milestone, first birthday and cake smash photography in Skokie and Chicago's North Shore. Sitter sessions, first year, graduations. From $250.",
     eyebrow: "Skokie and Chicago North Shore",
     h1: "Milestone Photography",
     tagline: "Birthdays, first steps, first haircuts, and everything worth pausing for.",
@@ -493,7 +493,7 @@ export const services: Record<string, ServicePage> = {
     },
     pricing: {
       heading: "Milestone session pricing",
-      text: `Most milestone sessions fit the $200 mini (30 minutes) or the $325 Classic (60 minutes). Cake smashes and celebrations with extended family usually suit the Classic. ${pricingNote}`,
+      text: `Most milestone sessions fit the $250 mini (30 minutes) or the $375 Classic (60 minutes). Cake smashes and celebrations with extended family usually suit the Classic. ${pricingNote}`,
     },
     faqs: [
       {
@@ -504,7 +504,7 @@ export const services: Record<string, ServicePage> = {
       {
         question: "How much does a first birthday or cake smash session cost?",
         answer:
-          "A first birthday or cake smash session is usually the $200 mini or the $325 Classic session, with edited images and print rights included. You provide the cake and I bring the rest.",
+          "A first birthday or cake smash session is usually the $250 mini or the $375 Classic session, with edited images and print rights included. You provide the cake and I bring the rest.",
       },
       {
         question: "Do you photograph upsherins and first haircuts?",
@@ -559,7 +559,7 @@ export const services: Record<string, ServicePage> = {
     shortName: "Engagement Sessions",
     title: "Chicago North Shore Engagement Photographer",
     description:
-      "Relaxed engagement photography in Chicago and the North Shore. Garfield Park Conservatory, lakefront and park sessions in natural light. From $200.",
+      "Relaxed engagement photography in Chicago and the North Shore. Garfield Park Conservatory, lakefront and park sessions in natural light. From $250.",
     eyebrow: "Chicago and the North Shore",
     h1: "Engagement Photography",
     tagline: "The two of you, before the whirlwind.",
@@ -615,13 +615,13 @@ export const services: Record<string, ServicePage> = {
     },
     pricing: {
       heading: "Engagement session pricing",
-      text: `Engagement sessions use the standard packages: $200 for a 30-minute mini, $325 for a 60-minute Classic (the most popular for couples), and $500 for a 90-minute Full session with two locations. ${pricingNote}`,
+      text: `Engagement sessions use the standard packages: $250 for a 30-minute mini, $375 for a 60-minute Classic (the most popular for couples), and $500 for a 90-minute Full session with two locations. ${pricingNote}`,
     },
     faqs: [
       {
         question: "How much does an engagement photographer cost in Chicago?",
         answer:
-          "My engagement sessions run from $200 to $500 with edited images and print rights included. Published Chicago guides show a wide range, from a few hundred dollars for a short session to well over $1,000 when bundled with wedding coverage.",
+          "My engagement sessions run from $250 to $500 with edited images and print rights included. Published Chicago guides show a wide range, from a few hundred dollars for a short session to well over $1,000 when bundled with wedding coverage.",
       },
       {
         question: "Where are the best engagement photo locations in Chicago and the North Shore?",
@@ -679,7 +679,7 @@ export const services: Record<string, ServicePage> = {
     shortName: "Mini Sessions",
     title: "Family Mini Sessions, Skokie North Shore",
     description:
-      "30-minute family mini sessions in Skokie, Evanston, Wilmette and Chicago's North Shore. Fall, holiday and spring minis in natural light. $200.",
+      "30-minute family mini sessions in Skokie, Evanston, Wilmette and Chicago's North Shore. Fall, holiday and spring minis in natural light. $250.",
     eyebrow: "Skokie and Chicago North Shore",
     h1: "Mini Sessions",
     tagline: "Thirty minutes, one location, photos you will actually print.",
@@ -734,13 +734,13 @@ export const services: Record<string, ServicePage> = {
     },
     pricing: {
       heading: "Mini session pricing",
-      text: `Mini sessions are $200 for 30 minutes at one location with 10 edited images. ${pricingNote} Need more time or more images? The Classic session is $325 for 60 minutes and 20 images.`,
+      text: `Mini sessions are $250 for 30 minutes at one location with 10 edited images. ${pricingNote} Need more time or more images? The Classic session is $375 for 60 minutes and 20 images.`,
     },
     faqs: [
       {
         question: "How much is a family mini session?",
         answer:
-          "$200 for a 30-minute session at one location with 10 edited digital images, an online gallery and full print rights. There is no travel fee within 10 miles of Skokie.",
+          "$250 for a 30-minute session at one location with 10 edited digital images, an online gallery and full print rights. There is no travel fee within 10 miles of Skokie.",
       },
       {
         question: "Where are mini sessions held?",
@@ -857,7 +857,7 @@ export const services: Record<string, ServicePage> = {
     },
     pricing: {
       heading: "Event pricing",
-      text: "Celebrations are quoted per event based on the hours of coverage and the schedule. Pre-event portrait sessions use the standard session packages, starting at $200. Send me the date and the plan and I will reply with a quote.",
+      text: "Celebrations are quoted per event based on the hours of coverage and the schedule. Pre-event portrait sessions use the standard session packages, starting at $250. Send me the date and the plan and I will reply with a quote.",
     },
     faqs: [
       {
@@ -921,7 +921,7 @@ export const services: Record<string, ServicePage> = {
     shortName: "Proposal Photography",
     title: "Chicago Proposal Photographer, North Shore",
     description:
-      "Surprise proposal photographer in Chicago and the North Shore. Hidden and ready at the spot you choose, then a short portrait session after the yes. From $200.",
+      "Surprise proposal photographer in Chicago and the North Shore. Hidden and ready at the spot you choose, then a short portrait session after the yes. From $250.",
     eyebrow: "Chicago and the North Shore",
     h1: "Proposal Photography",
     tagline: "The question, the answer, and the first minute of forever.",
@@ -934,7 +934,7 @@ export const services: Record<string, ServicePage> = {
         paragraphs: [
           "You tell me the spot, the plan and the timing. I arrive early, blend in with a long lens from a distance, and photograph the walk up, the kneel, the reaction and the first hug without anyone knowing I am there. Once the answer is yes, I step out, say congratulations, and we spend twenty or thirty minutes on relaxed portraits while you are both still glowing.",
           "I photograph proposals throughout Chicago and the North Shore: the lakefront in Evanston and Wilmette, the Chicago Riverwalk and skyline spots, the Garfield Park Conservatory, quiet park corners in Skokie and Glenview, and the places that already mean something to the two of you.",
-          "Proposal coverage uses the same packages as an engagement session, starting at $200, and every package includes edited images in a private gallery with full print rights.",
+          "Proposal coverage uses the same packages as an engagement session, starting at $250, and every package includes edited images in a private gallery with full print rights.",
         ],
       },
       {
@@ -983,13 +983,13 @@ export const services: Record<string, ServicePage> = {
     },
     pricing: {
       heading: "Proposal photography pricing",
-      text: `Proposal coverage uses the standard packages: $200 for a 30-minute mini, $325 for a 60-minute Classic, which is the usual choice because it covers the wait, the moment and the portraits, and $500 for a 90-minute Full session with a second location. ${pricingNote}`,
+      text: `Proposal coverage uses the standard packages: $250 for a 30-minute mini, $375 for a 60-minute Classic, which is the usual choice because it covers the wait, the moment and the portraits, and $500 for a 90-minute Full session with a second location. ${pricingNote}`,
     },
     faqs: [
       {
         question: "How much does a proposal photographer cost in Chicago?",
         answer:
-          "My proposal coverage runs from $200 to $500 with edited images and print rights included. Published Chicago guides put standalone engagement and proposal sessions with an experienced photographer at roughly $450 to $1,200, so a natural light session with me is on the affordable end.",
+          "My proposal coverage runs from $250 to $500 with edited images and print rights included. Published Chicago guides put standalone engagement and proposal sessions with an experienced photographer at roughly $450 to $1,200, so a natural light session with me is on the affordable end.",
       },
       {
         question: "How do you stay hidden during a proposal?",
@@ -1115,7 +1115,7 @@ export const services: Record<string, ServicePage> = {
     },
     pricing: {
       heading: "Extended family session pricing",
-      text: `Most extended family and multigenerational sessions are the $500 Full session: 90 minutes, one location and 30 edited images. Smaller groups of six or fewer usually fit the $325 Classic. ${pricingNote}`,
+      text: `Most extended family and multigenerational sessions are the $500 Full session: 90 minutes, one location and 30 edited images. Smaller groups of six or fewer usually fit the $375 Classic. ${pricingNote}`,
     },
     faqs: [
       {
@@ -1180,7 +1180,7 @@ export const services: Record<string, ServicePage> = {
     shortName: "Maternity + Newborn",
     title: "Maternity and Newborn Photography, Skokie",
     description:
-      "Book maternity and newborn photography together in Skokie and Chicago's North Shore. One photographer, natural light, one story from bump to baby. From $200.",
+      "Book maternity and newborn photography together in Skokie and Chicago's North Shore. One photographer, natural light, one story from bump to baby. From $250.",
     eyebrow: "Skokie and Chicago North Shore",
     h1: "Maternity and Newborn Photography",
     tagline: "The waiting and the arrival, photographed as one story.",
@@ -1193,7 +1193,7 @@ export const services: Record<string, ServicePage> = {
         paragraphs: [
           "Booking maternity and newborn photography together means one photographer, one style, and two galleries that belong to each other: you in your third trimester, and then your baby in the same home a few weeks later. It also means your newborn date is held before the baby arrives, which is the part most parents forget until it is too late.",
           "The maternity session happens between 28 and 34 weeks, outdoors at golden hour or at home. The newborn session happens at home when your baby is about 5 to 14 days old. Both are natural light, both are gently guided, and both include your partner and any older kids.",
-          "There is no separate bundle price. Each session uses the standard packages starting at $200, so you choose the length that fits each stage, and I hold both dates when you book the first.",
+          "There is no separate bundle price. Each session uses the standard packages starting at $250, so you choose the length that fits each stage, and I hold both dates when you book the first.",
         ],
       },
       {
@@ -1238,7 +1238,7 @@ export const services: Record<string, ServicePage> = {
     },
     pricing: {
       heading: "Maternity and newborn pricing",
-      text: `Each session uses the standard packages: $200 for a 30-minute mini, $325 for a 60-minute Classic, and $500 for a 90-minute Full session. Most families choose the Classic for maternity and the Classic or Full for the newborn session. ${pricingNote}`,
+      text: `Each session uses the standard packages: $250 for a 30-minute mini, $375 for a 60-minute Classic, and $500 for a 90-minute Full session. Most families choose the Classic for maternity and the Classic or Full for the newborn session. ${pricingNote}`,
     },
     faqs: [
       {
@@ -1254,7 +1254,7 @@ export const services: Record<string, ServicePage> = {
       {
         question: "How much do maternity and newborn sessions cost together?",
         answer:
-          "Each session runs from $200 to $500 depending on length, so two Classic sessions are $650 and a Classic maternity with a Full newborn session is $825. Edited images and print rights are included in every package.",
+          "Each session runs from $250 to $500 depending on length, so two Classic sessions are $750 and a Classic maternity with a Full newborn session is $875. Edited images and print rights are included in every package.",
       },
       {
         question: "Can both sessions happen at home?",

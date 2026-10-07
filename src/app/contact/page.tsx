@@ -120,7 +120,7 @@ export default function ContactPage() {
                     Quick Facts
                   </h3>
                   <ul className="space-y-2 text-sm text-charcoal-light">
-                    <li>• Sessions start at $200</li>
+                    <li>• Sessions start at $250</li>
                     <li>• 2-3 week turnaround</li>
                     <li>• In-home &amp; outdoor sessions</li>
                     <li>• Natural light photography</li>
@@ -172,7 +172,7 @@ export default function ContactPage() {
                 How much do sessions cost?
               </h3>
               <p className="text-charcoal-light leading-relaxed">
-                Sessions start at $200 for a 30-minute mini and go up to $500 for a 90-minute full session.
+                Sessions start at $250 for a 30-minute mini and go up to $500 for a 90-minute full session.
                 Events are quoted individually. See the full breakdown on the Sessions and Pricing page.
               </p>
             </div>

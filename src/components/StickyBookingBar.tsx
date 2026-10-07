@@ -29,7 +29,7 @@ export default function StickyBookingBar() {
         <p className="text-sm text-charcoal">
           Ready to book?{" "}
           <span className="hidden sm:inline text-charcoal-light">
-            Sessions start at $200
+            Sessions start at $250
           </span>
         </p>
         <div className="flex items-center gap-2 sm:gap-3">

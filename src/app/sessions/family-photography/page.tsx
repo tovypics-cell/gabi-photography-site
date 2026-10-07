@@ -10,7 +10,7 @@ import { site, breadcrumbJsonLd } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Skokie Family Photographer, North Shore",
   description:
-    "Lifestyle family photography in Skokie, Evanston and Chicago's North Shore. Outdoor sessions and in-home family photoshoots in natural light, from $200.",
+    "Lifestyle family photography in Skokie, Evanston and Chicago's North Shore. Outdoor sessions and in-home family photoshoots in natural light, from $250.",
   alternates: {
     canonical: "https://tovyphotography.com/sessions/family-photography",
   },
@@ -68,7 +68,7 @@ export default function FamilyPhotographyPage() {
         addressCountry: "US",
       },
       url: "https://tovyphotography.com",
-      priceRange: "$200-$500",
+      priceRange: "$250-$500",
     },
     areaServed: [
       "Skokie",
@@ -157,7 +157,7 @@ export default function FamilyPhotographyPage() {
       {/* Citable summary */}
       <section className="px-6 pt-16 lg:px-8">
         <div className="mx-auto max-w-3xl space-y-4 text-lg md:text-xl leading-relaxed text-charcoal">
-          <p>Tovy Photography offers lifestyle family photography in Skokie, IL and across Chicago's North Shore, either outdoors at a park or as an in-home family photoshoot in your own house or backyard, for families in Evanston, Wilmette, Lincolnwood, Glenview and Chicago. Sessions are natural light and gently guided, and start at $200 with edited images and full print rights included.</p>
+          <p>Tovy Photography offers lifestyle family photography in Skokie, IL and across Chicago's North Shore, either outdoors at a park or as an in-home family photoshoot in your own house or backyard, for families in Evanston, Wilmette, Lincolnwood, Glenview and Chicago. Sessions are natural light and gently guided, and start at $250 with edited images and full print rights included.</p>
           <p>I photograph lifestyle family sessions, which means no stiff line-ups and no forced smiles. You walk, play and talk to each other, and I photograph what that looks like on a good day.</p>
         </div>
       </section>
@@ -358,9 +358,9 @@ export default function FamilyPhotographyPage() {
               How much does a family photographer cost in Skokie?
             </h3>
             <p className="text-charcoal-light leading-relaxed mb-8">
-              Sessions start at $200 for a 30-minute mini session, perfect for
+              Sessions start at $250 for a 30-minute mini session, perfect for
               seasonal updates and quick family portraits. The Classic session
-              ($325, 60 minutes) is the most popular choice for families who want
+              ($375, 60 minutes) is the most popular choice for families who want
               more relaxed coverage and time to capture real moments. The Full
               session ($500, 90 minutes) is ideal for extended families and
               multigenerational groups. For a wider look at what shapes the
