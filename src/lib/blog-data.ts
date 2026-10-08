@@ -63,21 +63,61 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "when-to-book-newborn-photos-what-to-expect",
-    title: "When to Book Your Newborn Photo Session (and What to Expect)",
+    title: "When to Take Newborn Photos (and When to Book Your Session)",
     excerpt: "Timing is everything with newborn photography. Here's when to book, what happens during the session, and how to prepare so everything goes smoothly.",
     date: "2026-03-23",
     category: "Newborn",
     image: "/photos/newborn-sleeping-headband.jpg",
-    seoTitle: "When to Book Newborn Photos | Tovy Photography",
-    seoDescription: "When to book newborn photos, the best age for the session, and what an in-home newborn session with a Skokie photographer is really like.",
+    seoTitle: "When to Take Newborn Photos: 5 to 14 Days | Tovy Photography",
+    seoDescription: "When to take newborn photos: the first 5 to 14 days after birth. When to book, how old baby should be, and what an in-home Skokie session is like.",
+    faqs: [
+      {
+        question: "When should you take newborn photos?",
+        answer: "Newborn photos are best taken in the first 5 to 14 days after birth. Babies are sleepier and more flexible in that window, so they curl up naturally into peaceful poses.",
+      },
+      {
+        question: "When should I schedule newborn photos?",
+        answer: "Reach out during your third trimester so I can pencil in your due date and hold space for you. When baby arrives, you text me and we lock in the actual date.",
+      },
+      {
+        question: "How old should a baby be for newborn photos?",
+        answer: "For sleepy, curled-up newborn photos, between 5 and 14 days old is ideal. Older babies can still have a beautiful session, it just looks a little different, with more wide eyes and interaction.",
+      },
+      {
+        question: "Can you take newborn photos if my baby is already a few weeks old?",
+        answer: "Yes. If your baby is three weeks, six weeks, or even three months old, we can still do a beautiful session. Instead of curled-up sleepy poses, we lean into wide eyes, tiny smiles, and interaction with parents and siblings.",
+      },
+      {
+        question: "Where do your newborn sessions take place?",
+        answer: "All of my newborn sessions are done in your home, for families in Skokie, Evanston, Lincolnwood, Wilmette, and across Chicago's North Shore. A typical newborn session runs about 1.5 to 2 hours, with plenty of pauses for feeding and changes.",
+      },
+      {
+        question: "How much does a newborn photo session cost?",
+        answer: "My sessions start at $250. You can see every package on my sessions and pricing page.",
+      },
+    ],
     content: `
+<p>The best time to take newborn photos is in the first 5 to 14 days after birth, and the best time to book them is during your third trimester. I'm Gabi, an in-home <a href="/sessions/newborn-photography">newborn photographer in Skokie</a> serving families across Chicago's North Shore, and my sessions start at $250.</p>
+
+<h3>When should you take newborn photos?</h3>
+
+<p>Take newborn photos in the first 5 to 14 days after birth. That is when babies are sleepiest and curl up most easily into natural poses, like in this <a href="/gallery/newborn/sweet-baby-girl-newborn-skokie">sweet baby girl newborn session in Skokie</a>.</p>
+
+<h3>When should you schedule newborn photos?</h3>
+
+<p>Schedule newborn photos during your third trimester, then confirm the exact date once baby arrives. A quick message with your due date is all I need to hold space for you.</p>
+
+<h3>How old should a baby be for newborn photos?</h3>
+
+<p>For sleepy, curled-up newborn photos, your baby should be between 5 and 14 days old. Older babies can still have a beautiful session, it just looks a little different, which I explain below.</p>
+
 <p>If you're expecting or just welcomed a new baby, you've probably been thinking about newborn photos. When should you book? What actually happens during a session? Do you need to have everything together first? As a newborn photographer in Skokie serving families across Chicago's North Shore, these are the questions I hear most. Let me walk you through everything.</p>
 
 <h2>When Should You Book a Newborn Photographer?</h2>
 
-<p>Most of my clients reach out either in their <strong>third trimester</strong> or <strong>once baby is already here</strong> — and both are totally fine. I get it, there's a lot going on and booking a photo session isn't always top of mind when you're prepping for a new baby.</p>
+<p>Most of my clients reach out either in their <strong>third trimester</strong> or <strong>once baby is already here</strong>, and both are totally fine. I get it, there's a lot going on and booking a photo session isn't always top of mind when you're prepping for a new baby.</p>
 
-<p>That said, newborn sessions are best done in the <strong>first 5 to 14 days</strong> after birth. During this window, babies are sleepier, more flexible, and tend to curl up naturally into those peaceful poses you see in newborn photos. So if you can, a quick message during your third trimester lets me pencil in your due date and hold space for you. Then when baby arrives, you just text me and we lock in the actual date. No pressure, no deposits — just a heads up so I'm ready when you are.</p>
+<p>That said, newborn sessions are best done in the <strong>first 5 to 14 days</strong> after birth. During this window, babies are sleepier, more flexible, and tend to curl up naturally into those peaceful poses you see in newborn photos. So if you can, a quick message during your third trimester lets me pencil in your due date and hold space for you. Then when baby arrives, you just text me and we lock in the actual date. No pressure, no deposits, just a heads up so I'm ready when you are.</p>
 
 <h2>What If My Baby Is Already Here?</h2>
 
@@ -92,7 +132,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
 <li><strong>I come to you.</strong> I'll arrive with everything I need. You don't need to set anything up or prep your home beyond normal tidying.</li>
 <li><strong>We start with family and sibling photos.</strong> Older kids have shorter attention spans, so I like to get their photos done first while they're still excited and cooperative.</li>
-<li><strong>Then we focus on baby.</strong> This is the calm, quiet part. We'll work near the best natural light in your home, usually by a large window. I'll gently guide baby into natural positions — nothing forced, nothing uncomfortable.</li>
+<li><strong>Then we focus on baby.</strong> This is the calm, quiet part. We'll work near the best natural light in your home, usually by a large window. I'll gently guide baby into natural positions. Nothing forced, nothing uncomfortable.</li>
 <li><strong>We work around baby's schedule.</strong> If baby needs to eat, we pause. If baby needs to be changed, we pause. There's no rush. A typical newborn session runs about 1.5 to 2 hours, and a good chunk of that is just giving baby what they need.</li>
 <li><strong>Parent and detail shots.</strong> Those tiny fingers wrapped around your hand. The way baby fits perfectly against your chest. The nursery you spent months putting together. These are the details you'll forget faster than you think, and they make some of the most meaningful photos.</li>
 </ul>
@@ -105,17 +145,17 @@ export const blogPosts: BlogPost[] = [
 <li><strong>Feed baby right before the session.</strong> A full baby is a sleepy baby, and sleepy babies photograph beautifully.</li>
 <li><strong>Keep the house warm.</strong> Newborns lose heat quickly, especially during skin-to-skin and diaper-only shots. I usually suggest setting the thermostat a few degrees warmer than normal.</li>
 <li><strong>Wear simple, neutral clothing.</strong> Soft whites, creams, and light grays work beautifully and keep the focus on baby. Check out my <a href="/blog/what-to-wear-family-photo-session">what to wear guide</a> for more ideas.</li>
-<li><strong>Don't worry about your home being perfect.</strong> I'm only photographing in one or two spots with the best light. The rest of your house can look however it looks — I promise I won't judge. We all have a pile of laundry somewhere.</li>
+<li><strong>Don't worry about your home being perfect.</strong> I'm only photographing in one or two spots with the best light. The rest of your house can look however it looks. I promise I won't judge. We all have a pile of laundry somewhere.</li>
 <li><strong>Have backup outfits for baby.</strong> Blowouts happen. Spit-up happens. Having a couple of extra onesies or swaddles ready saves time.</li>
 </ul>
 
 <h2>What About Siblings?</h2>
 
-<p>If you have older kids, include them. Sibling photos with a new baby are some of the most precious images from a newborn session. I keep things playful and low-pressure, and I never force a child to hold the baby or smile for the camera. The real moments, like a toddler gently touching baby's head or peeking into the bassinet, are always better than a posed shot. Don't just take my word for it — <a href="/testimonials">hear what other families have said</a> about their experience.</p>
+<p>If you have older kids, include them. Sibling photos with a new baby are some of the most precious images from a newborn session. I keep things playful and low-pressure, and I never force a child to hold the baby or smile for the camera. The real moments, like a toddler gently touching baby's head or peeking into the bassinet, are always better than a posed shot. Don't just take my word for it. <a href="/testimonials">hear what other families have said</a> about their experience.</p>
 
 <h2>When Will I Get My Photos?</h2>
 
-<p>Your full gallery of edited images will be ready within 2 to 3 weeks after your session. Every photo is carefully edited for warmth, tone, and natural skin tones. I want your images to feel real and timeless — not overly filtered or trendy.</p>
+<p>Your full gallery of edited images will be ready within 2 to 3 weeks after your session. Every photo is carefully edited for warmth, tone, and natural skin tones. I want your images to feel real and timeless, not overly filtered or trendy.</p>
 
 <h2>How Much Does a Newborn Session Cost?</h2>
 
