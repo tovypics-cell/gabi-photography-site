@@ -160,12 +160,13 @@
         "file": "src/app/about/page.tsx"
       },
       "sourceDraft": null,
-      "status": "in_review",
+      "status": "published",
       "branch": "content/rewrite-about",
       "pr": 22,
       "updatedAt": "2026-10-05",
       "notes": "Add a citable two-sentence summary under the H1 (who Gabi is, where she is based, what she photographs, starting price). Add three literal-question H3s: Who is the photographer behind Tovy Photography, What areas do you serve, What is your photography style. Render a FAQ with FAQPage schema the way the newborn page does. The hero must stay solid rose pink.",
-      "phase": 0
+      "phase": 0,
+      "publishedAt": "2026-10-06"
     },
     {
       "slug": "rewrite-when-to-book-newborn-photos",
