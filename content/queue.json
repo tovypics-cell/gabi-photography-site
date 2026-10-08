@@ -179,7 +179,7 @@
       "sourceDraft": null,
       "status": "in_review",
       "branch": "content/rewrite-when-to-book-newborn-photos",
-      "pr": null,
+      "pr": 24,
       "updatedAt": "2026-10-08",
       "notes": "Blog post in blog-data.ts. Make the first paragraph the direct answer (5 to 14 days; book in the third trimester). Add H3s for 'When to take newborn photos', 'When to schedule newborn photos', 'How old should baby be for newborn photos'. Add a faqs array. Keep Gabi's paragraphs.",
       "phase": 0
