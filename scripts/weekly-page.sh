@@ -160,6 +160,18 @@ git pull -q --ff-only origin "$BASE"
 [ -f "$QUEUE" ] && [ -f "$PROMPT_FILE" ] || die "$QUEUE or $PROMPT_FILE missing on $BASE"
 BASE_SHA_REMOTE="$(git rev-parse "origin/$BASE")"
 
+# ---------- pricing consistency on main ----------
+# Every price, session length and image count must match the pricing page. Gabi edits
+# prices directly, so main can drift between runs: tell Omer, then keep going.
+STAGE="pricing check"
+MAIN_PRICING_OK=1
+pricing_out="$(node scripts/check-pricing.mjs 2>&1)" || {
+  MAIN_PRICING_OK=0
+  log "pricing check fails on $BASE:"; printf '%s\n' "$pricing_out"
+  notify "Tovy site: prices on some pages no longer match the pricing page. Fix with npm run check:pricing.
+$(printf '%s' "$pricing_out" | head -c 3000)"
+}
+
 # ---------- mark merged pages as published ----------
 STAGE="mark-published"
 /bin/bash scripts/mark-published.sh
@@ -232,7 +244,7 @@ SUMMARY="$RUN_DIR/summary.json"
 log "running claude (transcript: $REPO/$RUN_DIR/claude.log)"
 "$CLAUDE_BIN" -p \
   --permission-mode acceptEdits \
-  --allowedTools "Read,Edit,Write,WebSearch,WebFetch,Bash(git *),Bash(npm run build),mcp__openseo__get_keyword_metrics,mcp__openseo__get_serp_results,mcp__openseo__get_project_context" \
+  --allowedTools "Read,Edit,Write,WebSearch,WebFetch,Bash(git *),Bash(npm run build),Bash(npm run check:pricing),mcp__openseo__get_keyword_metrics,mcp__openseo__get_serp_results,mcp__openseo__get_project_context" \
   --max-turns 120 \
   < "$RUN_DIR/prompt.md" > "$RUN_DIR/claude.log" 2>&1 \
   || die "claude exited with an error (see $RUN_DIR/claude.log)"
@@ -260,6 +272,13 @@ fi
 
 if git diff "$BASE...HEAD" -U0 -- src content | grep '^+' | grep -v '^+++' | grep -q $'\xe2\x80\x94'; then
   die "new content contains an em dash (brand rule). Fix on $BRANCH, then open the PR by hand."
+fi
+
+if ! node scripts/check-pricing.mjs > "$RUN_DIR/pricing.log" 2>&1; then
+  if [ "$MAIN_PRICING_OK" = 1 ]; then
+    die "new content does not match the pricing page (see $RUN_DIR/pricing.log). Fix on $BRANCH, then open the PR by hand."
+  fi
+  log "pricing check still failing, as it was on $BASE before this run (already reported)"
 fi
 
 log "verifying build"

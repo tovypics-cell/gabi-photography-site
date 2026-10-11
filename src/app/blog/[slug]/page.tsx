@@ -39,6 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://tovyphotography.com/blog/${slug}`,
       type: "article",
       publishedTime: post.date,
+      modifiedTime: post.updated ?? post.date,
       authors: ["Gabi Tovy"],
       ...(post.image && { images: [post.image] }),
     },
@@ -64,6 +65,7 @@ export default async function BlogPostPage({ params }: Props) {
     headline: post.title,
     description: post.seoDescription || post.excerpt,
     datePublished: post.date,
+    dateModified: post.updated ?? post.date,
     author: {
       "@type": "Person",
       name: "Gabi Tovy",

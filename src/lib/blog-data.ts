@@ -3,6 +3,7 @@ export interface BlogPost {
   title: string;
   excerpt: string;
   date: string; // YYYY-MM-DD
+  updated?: string; // YYYY-MM-DD, set when the post is rewritten; drives sitemap lastmod
   category: string;
   image: string | null; // path to featured image, null for placeholder
   imagePosition?: string; // CSS object-position for cover crop (e.g. "center bottom")
@@ -66,6 +67,7 @@ export const blogPosts: BlogPost[] = [
     title: "When to Take Newborn Photos (and When to Book Your Session)",
     excerpt: "Timing is everything with newborn photography. Here's when to book, what happens during the session, and how to prepare so everything goes smoothly.",
     date: "2026-03-23",
+    updated: "2026-10-11",
     category: "Newborn",
     image: "/photos/newborn-sleeping-headband.jpg",
     seoTitle: "When to Take Newborn Photos: 5 to 14 Days | Tovy Photography",
@@ -159,7 +161,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>How Much Does a Newborn Session Cost?</h2>
 
-<p>My newborn sessions start at $250 for a one-hour session with 30+ edited images, and go up to $375 for the full 1.5-hour session with 45+ images. I also offer mini sessions and custom packages. You can see all the details on my <a href="/sessions">sessions and pricing page</a>.</p>
+<p>My one-hour newborn session is $375 with 25+ edited images, and the full 1.5-hour session is $500 with 40+ images. I also offer mini sessions and custom packages. You can see all the details on my <a href="/sessions">sessions and pricing page</a>.</p>
 
 <h2>Ready to Book?</h2>
 
@@ -344,6 +346,7 @@ export const blogPosts: BlogPost[] = [
     title: "Maternity Photos: When to Book, What to Wear, and Everything You Need to Know",
     excerpt: "Wondering about maternity photos? Here's everything you need to know about timing, outfit ideas, what the session looks like, and why it's worth it.",
     date: "2026-03-26",
+    updated: "2026-10-11",
     category: "Maternity",
     image: "/photos/maternity-side-profile-bw.jpg",
     imagePosition: "center 70%",
@@ -403,7 +406,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>How Much Does a Maternity Session Cost?</h2>
 
-<p>The most popular option for maternity is the one-hour session with 30+ edited images. I have a few different packages depending on what you're looking for. Check my <a href="/sessions">sessions page</a> for all the details.</p>
+<p>The most popular option for maternity is the one-hour session with 25+ edited images. I have a few different packages depending on what you're looking for. Check my <a href="/sessions">sessions page</a> for all the details.</p>
 
 <p>Your full gallery will be ready within 2 to 3 weeks, carefully edited for natural warmth and soft, timeless tones.</p>
 
