@@ -14,7 +14,7 @@ export const legacyLocationData: Record<string, LegacyLocationData> = {
     name: "Skokie",
     title: "Skokie Family & Newborn Photographer — Tovy Photography",
     metaDescription:
-      "Tovy Photography is a Skokie-based family and newborn photographer. Capturing authentic moments with natural light in Skokie, IL. Sessions start at $180.",
+      "Tovy Photography is a Skokie-based family and newborn photographer. Capturing authentic moments with natural light in Skokie, IL. Sessions start at $250.",
     h1: "Skokie Family & Newborn Photographer",
     heroLabel: "Skokie Hero Photo",
     content: [

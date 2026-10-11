@@ -23,7 +23,7 @@ The run parameters are appended at the bottom of this prompt: `SLUG`, `TYPE`, `P
 
 ## Step 2: Gather facts before writing
 
-- **Prices** come only from `src/lib/site.ts` (`site.pricing`) and the Pricing section of `CLAUDE.md`. Mini $200, Classic $325, Full $500, Tailored custom. Do not quote any other Tovy price.
+- **Prices** come only from the pricing page, the `packages` list in `src/app/sessions/page.tsx` (price, minutes and image count per package), which `site.pricing` in `src/lib/site.ts` mirrors. Read them there every run; do not rely on numbers from memory or from older pages. Tailored is custom. Do not quote any other Tovy price. Before you commit, run `npm run check:pricing`; it must pass.
 - **Places and session types Gabi has really shot** come only from `src/lib/gallery-data.ts`. Read it and list the real sessions, their types, and their locations. Do not present a session type (twins, proposals, seniors, and so on) as something she has done unless a gallery shows it. You may say "I photographed" or "a session I shot at" only for those. For any other town or venue, describe the place factually and speak in the future tense ("we can meet at"), never claim past experience.
 - **Proof links** must point to real gallery pages: `/gallery/<category>/<slug>` built from `gallery-data.ts`.
 - **Images** must already exist under `public/photos/`. Open each one you pick with Read and confirm it fits the topic. A maternity page needs a pregnancy photo, a newborn page needs a newborn. If nothing fits, use the closest honest option and say so in the summary `notes`.
@@ -31,7 +31,7 @@ The run parameters are appended at the bottom of this prompt: `SLUG`, `TYPE`, `P
 
 - **Keyword check (when OpenSEO tools are available).** Call `mcp__openseo__get_keyword_metrics` once with `PRIMARY_KEYWORD` plus up to five close variants you plan to use in headings (projectId `7b5ef095-2c80-4041-a2b7-1fdc3bf07e77`, `includeMonthlyTrends` false). Use the result to pick the exact phrasing for the H1, title and question headings: prefer the variant with the most volume that still reads naturally. Record what you found in the summary under `keywordMetrics` as `[{keyword, volume, difficulty}]`. Never put search volumes on the page itself. If the tool is not available, skip this step; do not block on it.
 
-**Numbers already in Gabi's copy are hers.** On a `rewrite`, a duration, count or fact that is already on the page (for example "sessions run 1.5 to 2 hours") came from Gabi and stays. Do not replace it with package lengths and do not delete it. Only numbers *you* add must come from `site.pricing` or a fetched source.
+**Numbers already in Gabi's copy are hers.** On a `rewrite`, a duration, count or fact that is already on the page (for example "sessions run 1.5 to 2 hours") came from Gabi and stays. Do not replace it with package lengths and do not delete it. The one exception: a Tovy price, package length or image count that disagrees with the pricing page is out of date, so correct it to match (`npm run check:pricing` lists these). Only numbers *you* add must come from `site.pricing` or a fetched source.
 
 **Local titles stay local.** When rewriting a service page, keep the title pattern "<Town> <Service> Photographer, <Area>" (for example "Skokie Newborn Photographer, North Shore"). Work the primary keyword into the H1 subtitle, the citable summary and the question headings instead. Blog posts and guides may lead with the keyword.
 

@@ -17,8 +17,8 @@ export const site = {
   geo: { latitude: 42.0334, longitude: -87.7334 },
   // Published package prices. Update here and everything downstream follows.
   pricing: {
-    mini: 200,
-    classic: 325,
+    mini: 250,
+    classic: 375,
     full: 500,
     travelFee: 50,
     travelRadiusMiles: 10,
