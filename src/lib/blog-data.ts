@@ -3,6 +3,7 @@ export interface BlogPost {
   title: string;
   excerpt: string;
   date: string; // YYYY-MM-DD
+  updated?: string; // YYYY-MM-DD, set when the post is rewritten; drives sitemap lastmod
   category: string;
   image: string | null; // path to featured image, null for placeholder
   imagePosition?: string; // CSS object-position for cover crop (e.g. "center bottom")
@@ -66,6 +67,7 @@ export const blogPosts: BlogPost[] = [
     title: "When to Take Newborn Photos (and When to Book Your Session)",
     excerpt: "Timing is everything with newborn photography. Here's when to book, what happens during the session, and how to prepare so everything goes smoothly.",
     date: "2026-03-23",
+    updated: "2026-10-08",
     category: "Newborn",
     image: "/photos/newborn-sleeping-headband.jpg",
     seoTitle: "When to Take Newborn Photos: 5 to 14 Days | Tovy Photography",

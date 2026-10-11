@@ -63,6 +63,7 @@ The sitemap reads all three files, so do not edit `src/app/sitemap.ts`.
 **Rewriting an existing page (`TYPE` = `rewrite`).** The goal is to make a page that already exists answer its question directly for search engines and AI assistants, without changing what Gabi wrote or how the page looks.
 
 - Keep the URL, the file, the layout, the images and every design element. You are editing copy and metadata, not redesigning.
+- For a blog post, keep its `date` as is and set `updated` to `TODAY` (add the field right after `date` if it is missing). The sitemap and the article schema read `updated`, which is how Google learns the page changed.
 - Keep Gabi's sentences wherever they already work. Add, tighten and reorder; do not replace her voice with yours. If the queue item lists `keep` phrases, they must survive verbatim.
 - Add a two-sentence citable summary directly under the H1 (or as the first paragraph of a blog post) that says who, what, where and the starting price in plain words. Static service pages already have a "Citable summary" section; update it rather than adding a second one.
 - Turn the questions people actually search into literal `<h3>` headings with the direct answer in the first sentence. Aim for 3 to 6 of them. For a blog post, add or update the `faqs` array so it matches those questions. For a static page under `src/app/`, update the `faqs` constant the page already has, or add one and render it the same way the newborn page does.
