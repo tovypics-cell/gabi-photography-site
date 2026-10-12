@@ -131,7 +131,10 @@ export default async function BlogPostPage({ params }: Props) {
               [&_h3]:font-[family-name:var(--font-cormorant)] [&_h3]:text-charcoal [&_h3]:text-xl [&_h3]:md:text-2xl [&_h3]:mt-8 [&_h3]:mb-3
               [&_p]:mb-6 [&_a]:text-sage-dark [&_a]:underline
               [&_img]:rounded-sm [&_img]:my-8
-              [&_ul]:my-4 [&_ul]:list-disc [&_ul]:pl-6 [&_li]:my-2"
+              [&_ul]:my-4 [&_ul]:list-disc [&_ul]:pl-6 [&_li]:my-2
+              [&_table]:w-full [&_table]:my-8 [&_table]:border-collapse [&_table]:text-sm [&_table]:md:text-base
+              [&_th]:text-left [&_th]:font-medium [&_th]:text-charcoal [&_th]:border-b [&_th]:border-charcoal/20 [&_th]:py-3 [&_th]:pr-4
+              [&_td]:border-b [&_td]:border-charcoal/10 [&_td]:py-3 [&_td]:pr-4"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 

@@ -76,9 +76,10 @@ export const seoBlogPosts: BlogPost[] = [
     excerpt:
       "What family photos cost in Skokie and the North Shore, what the national averages look like in 2026, and how to compare packages that are structured differently.",
     date: "2026-09-16",
+    updated: "2026-10-11",
     category: "Tips",
     image: "/photos/family-plaza-swinging.jpg",
-    seoTitle: "How Much Do Family Photos Cost? | Tovy Photography",
+    seoTitle: "Family Photography Prices and Costs | Tovy Photography",
     seoDescription:
       "How much do family photos cost? 2026 guides put a typical session at $300 to $750. My Skokie and North Shore family sessions run $250 to $500, images included.",
     faqs: [
@@ -103,6 +104,23 @@ export const seoBlogPosts: BlogPost[] = [
 
 <p>That range is wide because family photographers structure pricing in very different ways. Here is how to read it.</p>
 
+<h2>Family photography prices in Skokie and the North Shore</h2>
+
+<table>
+<thead>
+<tr><th>Session</th><th>Time</th><th>Edited images</th><th>Price</th></tr>
+</thead>
+<tbody>
+<tr><td>Mini</td><td>30 minutes</td><td>10+</td><td>$250</td></tr>
+<tr><td>Classic</td><td>60 minutes</td><td>25+</td><td>$375</td></tr>
+<tr><td>Full</td><td>90 minutes</td><td>40+</td><td>$500</td></tr>
+</tbody>
+</table>
+
+<p>Every package includes a private online gallery and full print rights. There is no travel fee within 10 miles of Skokie.</p>
+
+<img src="/photos/glickman-family/05-family-walking-plaza.jpg" alt="Parents swinging their toddler between them while his brother and sister run across a winter plaza during a family session in Skokie" loading="lazy" />
+
 <h2>What the 2026 cost guides say</h2>
 
 <p>Across several published pricing guides, a standard family session includes 60 to 90 minutes of the photographer's time, one location, direction for a group of three to six people, and a gallery of edited digital files. Entry-level photographers charge roughly $150 to $300 for that. Mid-range photographers charge $400 to $800. Studios with hair and makeup, wardrobe and albums often land between $1,000 and $3,000. Larger cities run about 25 to 40 percent above the national average.</p>
@@ -122,6 +140,8 @@ export const seoBlogPosts: BlogPost[] = [
 <p>The Mini is $250 for 30 minutes at one location with 10+ edited images. The Classic is $375 for 60 minutes and 25+ images, and it is the most popular choice for families with young kids because it leaves room to play. The Full is $500 for 90 minutes and 40+ images, the right fit for extended family and multigenerational groups. Every package includes a private online gallery and full print rights. Wardrobe guidance is included with the Classic and Full sessions.</p>
 
 <p>Details and what each package includes are on the <a href="/sessions">Sessions and Pricing page</a>. You can read about how sessions work on the <a href="/sessions/family-photography">family photography page</a>.</p>
+
+<img src="/photos/keay-nature-center-wilmette-family-session/02.jpg" alt="Family laughing together on a blanket in front of tall grasses at Keay Nature Center in Wilmette" loading="lazy" />
 
 <h2>How to compare photographers fairly</h2>
 
