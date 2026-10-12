@@ -338,6 +338,8 @@ export const blogPosts: BlogPost[] = [
 
 <p>Every family is different. When you book with me, we'll talk through what feels right based on your kids' ages, the season, and the kind of photos you're hoping for. I always have a recommendation ready.</p>
 
+<p>If you would like lakefront or garden options farther north, my guide to <a href="/blog/outdoor-family-photo-locations-north-shore-chicago">outdoor family photo locations on Chicago's North Shore</a> covers Glencoe, Highland Park and Winnetka.</p>
+
 <p>Spring books up fast — the weather window between "still cold" and "too hot and humid" goes quicker than you'd think in Chicago. <a href="/contact">Get in touch</a> and let's plan your spring family session in Skokie, Evanston, or anywhere across Chicago's North Shore.</p>
 `,
   },
@@ -422,42 +424,113 @@ export const blogPosts: BlogPost[] = [
     title: "The Best Outdoor Family Photo Locations on Chicago's North Shore",
     excerpt: "From Glencoe beaches and the Chicago Botanic Garden to Fort Sheridan, Gillson Park, and quieter spots in Evanston and Skokie, here are the outdoor family photo locations I return to again and again across Chicago's North Shore.",
     date: "2026-06-15",
+    updated: "2026-10-12",
     category: "Locations",
     image: "/photos/north-shore-family-tall-grasses.jpg",
     seoTitle: "Outdoor Family Photo Locations, North Shore | Tovy Photography",
-    seoDescription: "The best outdoor family photo locations on Chicago's North Shore, from lakefront beaches to wooded trails, with the light and timing that make each one work.",
+    seoDescription: "Outdoor family photo locations on Chicago's North Shore, from Glencoe Beach to Gillson Park, with the best light for each. Sessions start at $250.",
+    faqs: [
+      {
+        question: "What are the best outdoor family photo locations on Chicago's North Shore?",
+        answer: "Glencoe Beach, the Chicago Botanic Garden, Fort Sheridan in Highland Park, Gillson Park in Wilmette and the Winnetka lakefront are all beautiful choices. Closer to Skokie, the Evanston lakefront, the Northwestern campus and the Skokie Northshore Sculpture Park work well for families who want to stay local.",
+      },
+      {
+        question: "Where should we take family photos in Wilmette?",
+        answer: "Gillson Park is the pick for beach, lawns and mature trees in one place, and Keay Nature Center is a quiet wooded option with trails and tall grasses. I photographed a family session at Keay Nature Center, and you can see it in my family gallery.",
+      },
+      {
+        question: "Do you need a permit for family photos at the Chicago Botanic Garden?",
+        answer: "Yes. The Chicago Botanic Garden asks photographers to get a permit in advance for posed sessions, including family portraits. If we choose the garden, I plan the permit with you ahead of time.",
+      },
+      {
+        question: "What time of day is best for outdoor family photos?",
+        answer: "Golden hour is best: the hour after sunrise or the 90 minutes before sunset. The light is soft and warm, and nobody has to squint. Bright overcast days also work well at almost any hour.",
+      },
+      {
+        question: "Is there a travel fee for North Shore photo locations?",
+        answer: "Sessions within 10 miles of Skokie are included. A $50 travel fee applies to locations beyond that, and I am happy to check any spot you have in mind.",
+      },
+      {
+        question: "How much does an outdoor family photo session cost?",
+        answer: "My sessions start at $250 for a 30-minute Mini Session with 10+ edited images. The Classic Session is $375 for 60 minutes and 25+ images, and the Full Session is $500 for 90 minutes and 40+ images.",
+      },
+    ],
     content: `
+<p>The best outdoor family photo locations on Chicago's North Shore are Glencoe Beach and the Chicago Botanic Garden, Fort Sheridan in Highland Park, Gillson Park in Wilmette, the Winnetka lakefront, and, closer to Skokie, the Evanston lakefront and the Skokie Northshore Sculpture Park. I'm Gabi, a Skokie <a href="/sessions/family-photography">family photographer</a> serving the North Shore, and my outdoor family sessions start at $250.</p>
+
 <p>One of the questions I get asked most often is some version of "where should we actually take our pictures?" And I love it, because choosing the right spot is half the magic. As a Skokie-based photographer, I spend a lot of my time scouting outdoor family photo locations across Chicago's North Shore, and I've built a detailed mental map of the spots that photograph beautifully in every season, and the ones that look gorgeous in person but turn into a sea of harsh shadows and parking headaches the moment you show up with three kids and a stroller.</p>
 
 <p>So let me save you the trial and error. These are the outdoor family photo locations I return to again and again, why they work, and how to get the most out of each one.</p>
+
+<h3>Where should we take outdoor family photos on the North Shore?</h3>
+
+<p>Choose the lakefront for open water and sky, the Chicago Botanic Garden for variety in one place, and wooded spots like Fort Sheridan or Keay Nature Center for a relaxed, natural feel. Each one is below, with the light that suits it best.</p>
 
 <h2>What Makes a Great Outdoor Family Photo Location</h2>
 
 <p>Before we get into specific spots, it helps to know what I'm actually looking for when I scout. A great location gives us a few different "scenes" within a short walk, so we're not marching tired toddlers half a mile between shots. It has soft, open shade or a tree line that filters the light, which keeps everyone from squinting. And it has a backdrop that feels like <em>you</em>, whether that's the drama of Lake Michigan or the cozy texture of a tree-lined path.</p>
 
-<p>The other thing I weigh constantly is timing. Even the most beautiful location on the North Shore looks flat and washed out at noon. The hour after sunrise and the 90 minutes before sunset, what we call golden hour, are when these places truly come alive.</p>
+<p>The other thing I weigh constantly is timing. Even the most beautiful location on the North Shore looks flat and washed out at noon. The hour after sunrise and the 90 minutes before sunset, what we call golden hour, are when these places truly come alive. My guide to <a href="/blog/best-time-of-day-outdoor-family-photos">the best time of day for outdoor family photos</a> walks through how that window shifts with the seasons.</p>
 
 <h2>Glencoe: Beach Drama Meets Garden Variety</h2>
 
+<h3>Is Glencoe Beach a good place for family photos?</h3>
+
+<p>Yes, Glencoe Beach is a lovely choice if you want Lake Michigan, open sand and a wide horizon behind your family.</p>
+
 <p>If I had to pick the single most versatile area for outdoor family photo locations on the North Shore, Glencoe would be at the top of my list. Glencoe Beach gives us those striking Lake Michigan backdrops, open water, soft sand, and a horizon that makes images feel cinematic. It's especially lovely in summer when the light skims across the water in the evening, and it works beautifully for everything from maternity sessions to big extended-family gatherings.</p>
+
+<p><strong>Best light:</strong> Evening golden hour, when the low sun skims across the water and the sand turns warm. Sunrise over the lake is beautiful too, and the beach is quiet that early.</p>
+
+<h3>Can you take family photos at the Chicago Botanic Garden?</h3>
+
+<p>Yes, with a photography permit arranged in advance. The garden's <a href="https://www.chicagobotanic.org/photography">photography guidelines</a> ask for a permit for posed sessions, including family portraits, so we plan that together before the day.</p>
 
 <p>A few minutes away, the Chicago Botanic Garden offers an entirely different mood. English gardens, birch groves, prairie grasses, and those iconic Japanese garden bridges mean we can create real variety without driving all over town. It's one of the few places where a single session can feel like three completely different shoots.</p>
 
+<p><strong>Best light:</strong> Golden hour for the warmest tones. The trees and garden rooms give open shade, so a bright overcast day works well here too.</p>
+
 <h2>Highland Park and Fort Sheridan: Quiet, Natural, Free</h2>
+
+<h3>Is Fort Sheridan good for family photos?</h3>
+
+<p>Yes, Fort Sheridan is a great fit for families who want woods, open grass and a quiet beach without a polished garden look.</p>
 
 <p>A little farther north, Highland Park and the Fort Sheridan area are some of my favorite under-the-radar outdoor family photo locations. Fort Sheridan gives us a wonderful mix, wooded paths, open fields of grass, and a peaceful stretch of beach that doesn't have the city skyline crowding the background. Parking is easy and free, dogs are welcome, and on a weekday evening you can often have whole stretches of it nearly to yourselves. For families who want a relaxed, nature-forward feel rather than a polished garden look, this is the one I recommend.</p>
 
+<p><strong>Best light:</strong> Evening golden hour. The wooded paths fall into shade before the beach does, so we can start in the trees and finish by the water.</p>
+
 <h2>Winnetka and Wilmette: Classic North Shore Charm</h2>
+
+<h3>Where should we take family photos in Wilmette?</h3>
+
+<p>Gillson Park is the Wilmette spot for beach, lawns and mature trees in one place, and Keay Nature Center is a quieter wooded option. You can see what Keay looks like in this <a href="/gallery/family/keay-nature-center-wilmette-family-session">family session I photographed at Keay Nature Center in Wilmette</a>.</p>
 
 <p>For families who love a more timeless, storybook aesthetic, the lakefront parks in Winnetka and the Gillson Park area in Wilmette are hard to beat. Gillson Park in particular packs a remarkable amount of variety into one place: sandy beach, grassy hills, mature trees, and quiet little nooks that feel tucked away even on a busy summer weekend. It's a favorite of mine for milestone sessions and first-birthday shoots, because there's always somewhere shady for little ones to take a breather.</p>
 
+<p><strong>Best light:</strong> Evening golden hour, with the mature trees as open shade if we start a little earlier.</p>
+
+<h3>Are Winnetka's lakefront parks good for family photos?</h3>
+
+<p>Yes, Winnetka's lakefront parks suit families who want a timeless, classic look with water views.</p>
+
 <p>Winnetka's lakefront, meanwhile, has that effortless North Shore elegance, manicured greenery, gentle bluffs, and water views that elevate even the simplest of family portraits.</p>
 
+<p><strong>Best light:</strong> Golden hour, when the low sun brings out the texture of the bluffs and greenery.</p>
+
 <h2>Close to Home: Evanston, Skokie, and Lincolnwood</h2>
+
+<h3>Where can we take outdoor family photos near Skokie and Evanston?</h3>
+
+<p>The Evanston lakefront, the Northwestern campus and the Skokie Northshore Sculpture Park are all good outdoor family photo locations within a short drive of Skokie.</p>
 
 <p>You don't have to drive far to find beautiful outdoor family photo locations, and I always remind my clients of that. Right here near home, Evanston's lakefront and the Northwestern campus area offer dramatic water views, leafy quads, and architecture that adds a sophisticated edge. The Skokie Northshore Sculpture Park is a fun, slightly unexpected backdrop full of texture and visual interest, and it's wonderfully convenient for families based in <a href="/locations/skokie">Skokie</a> or <a href="/locations/lincolnwood">Lincolnwood</a> who'd rather keep things low-key and local.</p>
 
 <p>These closer-to-home spots are also my go-to recommendation for newborn families who'd prefer not to travel far, or for anyone squeezing a session into a busy weeknight before the kids melt down. If you're newer to the area, my post on <a href="/blog/best-family-photo-locations-skokie-north-shore">spring family photo locations in Skokie &amp; the North Shore</a> goes deeper on some of these closer-to-home spots.</p>
+
+<p><strong>Best light:</strong> Sunrise on the Evanston lakefront, when the light comes up over the water, and late afternoon into golden hour for the campus and the Sculpture Park.</p>
+
+<p>Planning for autumn? My <a href="/blog/fall-family-photos-guide">fall family photoshoot guide</a> covers the wooded spots that hold their color longest and when to book.</p>
 
 <h2>How I Help You Choose the Right One</h2>
 
