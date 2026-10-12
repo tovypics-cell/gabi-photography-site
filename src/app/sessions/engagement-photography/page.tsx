@@ -68,7 +68,7 @@ export default function EngagementPhotographyPage() {
         addressCountry: "US",
       },
       url: "https://tovyphotography.com",
-      priceRange: "$250-$500",
+      priceRange: "$250-$550",
     },
     areaServed: [
       "Skokie",
@@ -318,7 +318,7 @@ export default function EngagementPhotographyPage() {
               minutes) which gives us time to explore a location and capture the
               full range: wide shots, close-ups, candid moments, and those
               portraits you&apos;ll actually want to frame. The Full session
-              ($500, 90 minutes) is perfect if you want to include a second
+              ($550, 90 minutes) is perfect if you want to include a second
               location or a wardrobe change.
             </p>
             <Link

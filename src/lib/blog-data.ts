@@ -161,7 +161,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>How Much Does a Newborn Session Cost?</h2>
 
-<p>My one-hour newborn session is $375 with 25+ edited images, and the full 1.5-hour session is $500 with 40+ images. I also offer mini sessions and custom packages. You can see all the details on my <a href="/sessions">sessions and pricing page</a>.</p>
+<p>My one-hour newborn session is $375 with 25+ edited images, and the full 1.5-hour session is $550 with 40+ images. I also offer mini sessions and custom packages. You can see all the details on my <a href="/sessions">sessions and pricing page</a>.</p>
 
 <h2>Ready to Book?</h2>
 

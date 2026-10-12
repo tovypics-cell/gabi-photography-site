@@ -68,7 +68,7 @@ const proofBarMitzvah: ProofItem = {
 // FAQ builders keep answers consistent across towns while staying specific.
 const faqCost = (town: string): Faq => ({
   question: `How much does a family photographer in ${town} cost?`,
-  answer: `My sessions start at $250 for a 30-minute mini session and go up to $500 for a 90-minute full session. Every package includes professionally edited images in a private online gallery with full print rights. Sessions within 10 miles of Skokie carry no travel fee.`,
+  answer: `My sessions start at $250 for a 30-minute mini session and go up to $550 for a 90-minute full session. Every package includes professionally edited images in a private online gallery with full print rights. Sessions within 10 miles of Skokie carry no travel fee.`,
 });
 const faqInHome = (town: string): Faq => ({
   question: `Do you photograph in-home sessions in ${town}?`,
@@ -631,7 +631,7 @@ export const locationPages: Record<string, LocationPage> = {
       {
         question: "How much does a family photographer in Highland Park cost?",
         answer:
-          "My sessions start at $250 for a 30-minute mini session and go up to $500 for a 90-minute full session, plus a $50 travel fee for Highland Park because it is beyond 10 miles from Skokie. Every package includes edited images in a private online gallery with full print rights.",
+          "My sessions start at $250 for a 30-minute mini session and go up to $550 for a 90-minute full session, plus a $50 travel fee for Highland Park because it is beyond 10 miles from Skokie. Every package includes edited images in a private online gallery with full print rights.",
       },
       faqInHome("Highland Park"),
       {

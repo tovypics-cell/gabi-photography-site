@@ -94,7 +94,7 @@ const packages = [
   },
   {
     name: "Full Session",
-    price: "$500",
+    price: "$550",
     features: [
       { text: "90-minute session", highlight: true },
       { text: "One location" },
