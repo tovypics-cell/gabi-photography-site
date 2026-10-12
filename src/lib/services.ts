@@ -98,7 +98,7 @@ export const services: Record<string, ServicePage> = {
     },
     pricing: {
       heading: "Newborn session pricing",
-      text: `Sessions start at $250 for a mini session and go up to $500 for a full session with extended coverage and more edited images. ${pricingNote}`,
+      text: `Sessions start at $250 for a mini session and go up to $550 for a full session with extended coverage and more edited images. ${pricingNote}`,
     },
     faqs: [
       {
@@ -109,7 +109,7 @@ export const services: Record<string, ServicePage> = {
       {
         question: "How much does newborn photography cost in the Chicago area?",
         answer:
-          "My newborn sessions run from $250 to $500 depending on length and the number of edited images. Published Chicago cost guides put typical newborn sessions anywhere from a few hundred dollars for a mini session to well over $1,000 for studio packages with products, so an in-home lifestyle session is usually the more affordable route.",
+          "My newborn sessions run from $250 to $550 depending on length and the number of edited images. Published Chicago cost guides put typical newborn sessions anywhere from a few hundred dollars for a mini session to well over $1,000 for studio packages with products, so an in-home lifestyle session is usually the more affordable route.",
       },
       {
         question: "Do I need to have a clean house?",
@@ -234,7 +234,7 @@ export const services: Record<string, ServicePage> = {
     },
     pricing: {
       heading: "Family session pricing",
-      text: `Sessions start at $250 for a 30-minute mini session, perfect for seasonal updates and quick family portraits. The Classic session ($375, 60 minutes) is the most popular choice for families who want more relaxed coverage and time to capture real moments. The Full session ($500, 90 minutes) is ideal for extended families and multigenerational groups. ${pricingNote}`,
+      text: `Sessions start at $250 for a 30-minute mini session, perfect for seasonal updates and quick family portraits. The Classic session ($375, 60 minutes) is the most popular choice for families who want more relaxed coverage and time to capture real moments. The Full session ($550, 90 minutes) is ideal for extended families and multigenerational groups. ${pricingNote}`,
     },
     faqs: [
       {
@@ -245,7 +245,7 @@ export const services: Record<string, ServicePage> = {
       {
         question: "How much do family photos cost?",
         answer:
-          "My family sessions run from $250 for a 30-minute mini to $500 for a 90-minute full session, with edited images and print rights included. Published 2026 cost guides put a typical professional family session in the United States somewhere between about $300 and $750, with big-city studios often higher.",
+          "My family sessions run from $250 for a 30-minute mini to $550 for a 90-minute full session, with edited images and print rights included. Published 2026 cost guides put a typical professional family session in the United States somewhere between about $300 and $750, with big-city studios often higher.",
       },
       {
         question: "My kids won't sit still. Is that okay?",
@@ -368,7 +368,7 @@ export const services: Record<string, ServicePage> = {
     },
     pricing: {
       heading: "Maternity session pricing",
-      text: `Maternity sessions use the same packages as every other session: $250 for a 30-minute mini, $375 for a 60-minute Classic, and $500 for a 90-minute Full session. ${pricingNote} Ask about pairing a maternity and newborn session.`,
+      text: `Maternity sessions use the same packages as every other session: $250 for a 30-minute mini, $375 for a 60-minute Classic, and $550 for a 90-minute Full session. ${pricingNote} Ask about pairing a maternity and newborn session.`,
     },
     faqs: [
       {
@@ -379,7 +379,7 @@ export const services: Record<string, ServicePage> = {
       {
         question: "How much does a maternity photographer cost in Chicago?",
         answer:
-          "My maternity sessions run from $250 to $500 with edited images and print rights included. Published 2026 cost guides put most professional Chicago maternity sessions between about $500 and $1,200, and the national average between $250 and $700, so a natural light session at home or in a park is the affordable route. See my maternity photoshoot cost guide for the full breakdown.",
+          "My maternity sessions run from $250 to $550 with edited images and print rights included. Published 2026 cost guides put most professional Chicago maternity sessions between about $500 and $1,200, and the national average between $250 and $700, so a natural light session at home or in a park is the affordable route. See my maternity photoshoot cost guide for the full breakdown.",
       },
       {
         question: "What should I wear for maternity photos?",
@@ -615,13 +615,13 @@ export const services: Record<string, ServicePage> = {
     },
     pricing: {
       heading: "Engagement session pricing",
-      text: `Engagement sessions use the standard packages: $250 for a 30-minute mini, $375 for a 60-minute Classic (the most popular for couples), and $500 for a 90-minute Full session with two locations. ${pricingNote}`,
+      text: `Engagement sessions use the standard packages: $250 for a 30-minute mini, $375 for a 60-minute Classic (the most popular for couples), and $550 for a 90-minute Full session with two locations. ${pricingNote}`,
     },
     faqs: [
       {
         question: "How much does an engagement photographer cost in Chicago?",
         answer:
-          "My engagement sessions run from $250 to $500 with edited images and print rights included. Published Chicago guides show a wide range, from a few hundred dollars for a short session to well over $1,000 when bundled with wedding coverage.",
+          "My engagement sessions run from $250 to $550 with edited images and print rights included. Published Chicago guides show a wide range, from a few hundred dollars for a short session to well over $1,000 when bundled with wedding coverage.",
       },
       {
         question: "Where are the best engagement photo locations in Chicago and the North Shore?",
@@ -983,13 +983,13 @@ export const services: Record<string, ServicePage> = {
     },
     pricing: {
       heading: "Proposal photography pricing",
-      text: `Proposal coverage uses the standard packages: $250 for a 30-minute mini, $375 for a 60-minute Classic, which is the usual choice because it covers the wait, the moment and the portraits, and $500 for a 90-minute Full session with a second location. ${pricingNote}`,
+      text: `Proposal coverage uses the standard packages: $250 for a 30-minute mini, $375 for a 60-minute Classic, which is the usual choice because it covers the wait, the moment and the portraits, and $550 for a 90-minute Full session with a second location. ${pricingNote}`,
     },
     faqs: [
       {
         question: "How much does a proposal photographer cost in Chicago?",
         answer:
-          "My proposal coverage runs from $250 to $500 with edited images and print rights included. Published Chicago guides put standalone engagement and proposal sessions with an experienced photographer at roughly $450 to $1,200, so a natural light session with me is on the affordable end.",
+          "My proposal coverage runs from $250 to $550 with edited images and print rights included. Published Chicago guides put standalone engagement and proposal sessions with an experienced photographer at roughly $450 to $1,200, so a natural light session with me is on the affordable end.",
       },
       {
         question: "How do you stay hidden during a proposal?",
@@ -1066,7 +1066,7 @@ export const services: Record<string, ServicePage> = {
         paragraphs: [
           "Extended family sessions are for the times everyone is in town: grandparents visiting, cousins together for a holiday, a reunion, a milestone birthday. We start with the whole group while everyone is fresh, then work through the smaller groupings that families actually frame: each household, the grandparents with every grandchild, the siblings, the cousins.",
           "I photograph large family groups outdoors at North Shore parks and beaches, in backyards, and inside homes when the group fits. Sessions are natural light and gently guided, so the photos look like your family on a good day rather than a line-up.",
-          "Extended family sessions are the 90-minute Full session, $500, with 40+ edited images and full print rights included. Groups of six or fewer usually fit the 60-minute Classic.",
+          "Extended family sessions are the 90-minute Full session, $550, with 40+ edited images and full print rights included. Groups of six or fewer usually fit the 60-minute Classic.",
         ],
       },
       {
@@ -1115,13 +1115,13 @@ export const services: Record<string, ServicePage> = {
     },
     pricing: {
       heading: "Extended family session pricing",
-      text: `Most extended family and multigenerational sessions are the $500 Full session: 90 minutes, one location and 40+ edited images. Smaller groups of six or fewer usually fit the $375 Classic. ${pricingNote}`,
+      text: `Most extended family and multigenerational sessions are the $550 Full session: 90 minutes, one location and 40+ edited images. Smaller groups of six or fewer usually fit the $375 Classic. ${pricingNote}`,
     },
     faqs: [
       {
         question: "How much does an extended family photoshoot cost?",
         answer:
-          "My extended family sessions are $500 for the 90-minute Full session with 40+ edited images and full print rights. Published 2026 cost guides put typical professional family sessions in the United States between about $300 and $750, and large groups with multiple households usually sit toward the top of that.",
+          "My extended family sessions are $550 for the 90-minute Full session with 40+ edited images and full print rights. Published 2026 cost guides put typical professional family sessions in the United States between about $300 and $750, and large groups with multiple households usually sit toward the top of that.",
       },
       {
         question: "How many people can be in an extended family session?",
@@ -1238,7 +1238,7 @@ export const services: Record<string, ServicePage> = {
     },
     pricing: {
       heading: "Maternity and newborn pricing",
-      text: `Each session uses the standard packages: $250 for a 30-minute mini, $375 for a 60-minute Classic, and $500 for a 90-minute Full session. Most families choose the Classic for maternity and the Classic or Full for the newborn session. ${pricingNote}`,
+      text: `Each session uses the standard packages: $250 for a 30-minute mini, $375 for a 60-minute Classic, and $550 for a 90-minute Full session. Most families choose the Classic for maternity and the Classic or Full for the newborn session. ${pricingNote}`,
     },
     faqs: [
       {
@@ -1254,7 +1254,7 @@ export const services: Record<string, ServicePage> = {
       {
         question: "How much do maternity and newborn sessions cost together?",
         answer:
-          "Each session runs from $250 to $500 depending on length, so two Classic sessions are $750 and a Classic maternity with a Full newborn session is $875. Edited images and print rights are included in every package.",
+          "Each session runs from $250 to $550 depending on length, so two Classic sessions are $750 and a Classic maternity with a Full newborn session is $925. Edited images and print rights are included in every package.",
       },
       {
         question: "Can both sessions happen at home?",

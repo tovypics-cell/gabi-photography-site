@@ -19,12 +19,12 @@ export const site = {
   pricing: {
     mini: 250,
     classic: 375,
-    full: 500,
+    full: 550,
     travelFee: 50,
     travelRadiusMiles: 10,
     extraTimePer15Min: 100,
   },
-  priceRange: "$250-$500",
+  priceRange: "$250-$550",
   tagline: "Seeing the good in your world",
 };
 
