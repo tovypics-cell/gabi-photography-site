@@ -194,8 +194,10 @@
         "file": "src/lib/blog-data.ts"
       },
       "sourceDraft": null,
-      "status": "queued",
+      "status": "in_review",
+      "branch": "content/rewrite-outdoor-family-locations",
       "pr": null,
+      "updatedAt": "2026-10-12",
       "notes": "Blog post. Answer-first opener, H3 per location, best-light notes, faqs array. Cross-link with the fall guide and the Skokie locations post.",
       "phase": 0
     },

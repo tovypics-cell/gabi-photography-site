@@ -425,6 +425,8 @@ export const seoBlogPosts: BlogPost[] = [
 
 <p>You can see what a wooded North Shore session looks like in this <a href="/gallery/family/keay-nature-center-wilmette-family-session">family session at Keay Nature Center in Wilmette</a>.</p>
 
+<p>For lakefront and garden options from Evanston up to Highland Park, see my guide to <a href="/blog/outdoor-family-photo-locations-north-shore-chicago">outdoor family photo locations on the North Shore</a>.</p>
+
 <p>If the weather doesn't cooperate, an in-home session is always a warm, easy backup. No jackets to coordinate, no waiting out rain, just your family being yourselves in the space you already know.</p>
 
 <h2>Timing your fall session for the best light</h2>
