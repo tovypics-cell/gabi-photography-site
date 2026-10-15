@@ -213,7 +213,7 @@
       "sourceDraft": null,
       "status": "in_review",
       "branch": "content/rewrite-engagement-locations",
-      "pr": null,
+      "pr": 33,
       "updatedAt": "2026-10-15",
       "notes": "Blog post. Answer-first opener, H3 per location, permit notes, faqs array. Link to /sessions/engagement-photography and /sessions/proposal-photography.",
       "phase": 0
