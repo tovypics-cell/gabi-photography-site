@@ -211,8 +211,10 @@
         "file": "src/lib/blog-data.ts"
       },
       "sourceDraft": null,
-      "status": "queued",
+      "status": "in_review",
+      "branch": "content/rewrite-engagement-locations",
       "pr": null,
+      "updatedAt": "2026-10-15",
       "notes": "Blog post. Answer-first opener, H3 per location, permit notes, faqs array. Link to /sessions/engagement-photography and /sessions/proposal-photography.",
       "phase": 0
     },

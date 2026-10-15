@@ -590,14 +590,43 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "engagement-photo-locations-north-shore-chicago",
-    title: "The Best Engagement Photo Locations on Chicago's North Shore",
+    title: "The Best Places for Engagement Photos in Chicago and the North Shore",
     excerpt: "You don't have to head downtown for stunning engagement photos. From Grosse Point Lighthouse and Gillson Park to the Chicago Botanic Garden and quiet Rosewood Beach, here are my favorite North Shore spots, and exactly why each one works.",
     date: "2026-07-20",
+    updated: "2026-10-15",
     category: "Locations",
     image: "/photos/engagement-ring-hands-reaching.jpg",
-    seoTitle: "Engagement Photo Spots on the North Shore | Tovy Photography",
-    seoDescription: "Engagement photo locations on Chicago's North Shore: lakefront, gardens, woods and neighborhood spots, with timing tips from a Skokie photographer.",
+    seoTitle: "Chicago Engagement Photo Locations | Tovy Photography",
+    seoDescription: "The best places for engagement photos in Chicago and the North Shore, from Gillson Park to the Botanic Garden, with permit notes for each spot.",
+    faqs: [
+      {
+        question: "What are the best places for engagement photos in Chicago?",
+        answer: "Outside downtown, my favorites are Grosse Point Lighthouse and the Northwestern Lakefill in Evanston, Gillson Park in Wilmette, the Chicago Botanic Garden in Glencoe and Rosewood Beach in Highland Park. In the city, Garfield Park Conservatory is a lush, weather-proof option, and I photographed an engagement session there.",
+      },
+      {
+        question: "Do you need a permit for engagement photos at the Chicago Botanic Garden?",
+        answer: "Yes. The Chicago Botanic Garden asks photographers to get a permit in advance for formal, posed photography, and engagements are on its list. If we choose the garden, I plan the permit with you before the day.",
+      },
+      {
+        question: "Do you need a permit for engagement photos at Garfield Park Conservatory?",
+        answer: "Yes. The conservatory requires a photo permit from the Chicago Park District for engagement photos, and it does not issue permits on site. We secure it ahead of time so the session day stays easy.",
+      },
+      {
+        question: "Can you take engagement photos at the Baha'i House of Worship?",
+        answer: "Yes, but only in the outer gardens at the corner of Sheridan Road and Linden Avenue. The House of Worship does not allow engagement shoots in its main gardens, and clothing changes are not permitted on the property, so we arrive dressed for that part of the session.",
+      },
+      {
+        question: "Can we take engagement photos at Gillson Park in Wilmette?",
+        answer: "Yes. The Wilmette Park District asks photographers running paid sessions to get a Commercial Use Permit before the shoot, and I take care of that when we plan a session there.",
+      },
+      {
+        question: "How much does an engagement photo session cost?",
+        answer: "My engagement sessions start at $250 for a 30-minute Mini Session with 10+ edited images. The Classic Session is $375 for 60 minutes and 25+ images, and the Full Session is $500 for 90 minutes and 40+ images.",
+      },
+    ],
     content: `
+<p>The best places for engagement photos in Chicago, if you would rather skip the downtown crowds, are on the North Shore: Grosse Point Lighthouse and the Northwestern Lakefill in Evanston, Gillson Park in Wilmette, the Chicago Botanic Garden in Glencoe and Rosewood Beach in Highland Park, with Garfield Park Conservatory as my pick inside the city. I'm Gabi, a Skokie <a href="/sessions/engagement-photography">engagement photographer</a> serving Chicago and the North Shore, and my sessions start at $250.</p>
+
 <p>When couples ask me where to take their engagement photos, they almost always assume we need to head downtown. The Chicago skyline is gorgeous, no argument there, but as a photographer based in Skokie, I'm going to let you in on something: some of the most beautiful engagement photo locations in the Chicago area are right here on the North Shore, and most of them come without the crowds, the parking headaches, or the twelve other couples waiting for the same spot.</p>
 
 <p>If you want lakefront light, historic architecture, and gardens that look straight out of a storybook, the North Shore delivers. Here are the spots I recommend most often, and exactly why each one works.</p>
@@ -610,29 +639,61 @@ export const blogPosts: BlogPost[] = [
 
 <h2>My Favorite Engagement Photo Locations, Town by Town</h2>
 
-<h3>Grosse Point Lighthouse and Lighthouse Beach, Evanston</h3>
+<p>A quick note on permits before we start: rules differ by place, and a few of these spots need one. I've added a permit note under each location, and when we plan your session I check the current rules and handle the paperwork with you.</p>
+
+<h3>Is Grosse Point Lighthouse in Evanston a good place for engagement photos?</h3>
+
+<p>Yes, Grosse Point Lighthouse and Lighthouse Beach are one of the most romantic engagement photo spots near Chicago.</p>
 
 <p>This is the spot I suggest when couples tell me they want something that feels romantic and timeless. The lighthouse itself gives you that classic, storybook backdrop, and the surrounding gardens bloom beautifully from late spring through early fall. Walk five minutes and you're on the beach with open water behind you. I like to time sessions here for the last 90 minutes before sunset, when the light turns the sand and the lighthouse brick a warm honey color.</p>
 
-<h3>Northwestern University Lakefill, Evanston</h3>
+<p><strong>Permit note:</strong> The lighthouse grounds are cared for by the Evanston Lighthouse Park District, so I confirm any photography rules with the district and the city before we book.</p>
+
+<h3>Where can you get the Chicago skyline in engagement photos without going downtown?</h3>
+
+<p>The Northwestern University Lakefill in Evanston is the place to go for the skyline without the downtown crowds.</p>
 
 <p>The Lakefill is one of the only places in the suburbs where you can get the downtown Chicago skyline in your photos. It sits far enough south along the lake that the city appears right on the horizon. So if you want that skyline without actually going downtown, this is my go-to. Bonus: the campus itself has stone archways and ivy that photograph beautifully, especially in autumn.</p>
 
-<h3>Gillson Park, Wilmette</h3>
+<p><strong>Permit note:</strong> Northwestern is a private campus, and the university asks for permission before commercial photography on its property, so I check with the university ahead of a session there.</p>
+
+<h3>Is Gillson Park in Wilmette good for engagement photos?</h3>
+
+<p>Yes, Gillson Park is my favorite all-in-one engagement spot, with beach, lagoon, lawns and the Baha'i House of Worship next door.</p>
 
 <p>If I could only shoot engagement sessions in one park for the rest of my career, it might be Gillson. It has everything: a wide sandy beach, a tree-lined lagoon, open lawns, and winding paths under mature willows. It's also right next to the Baha'i House of Worship, whose white lacework dome makes one of the most striking architectural backdrops anywhere in Chicagoland. Many couples don't realize the temple gardens are open to visitors. A few frames there and your gallery instantly feels like a destination shoot.</p>
 
-<h3>Chicago Botanic Garden, Glencoe</h3>
+<p><strong>Permit note:</strong> The Wilmette Park District asks photographers running paid sessions to get a Commercial Use Permit before the shoot, and I take care of it. At the Baha'i House of Worship, the <a href="https://www.bahai.us/bahai-temple-welcome/bahai-temple/photography-at-the-bahai-house-of-worship/">photography guidelines</a> allow engagement photos only in the outer gardens at Sheridan Road and Linden Avenue, not in the main gardens. Clothing changes are not allowed on the property, so we arrive dressed for that part of the session.</p>
+
+<h3>Do you need a permit for engagement photos at the Chicago Botanic Garden?</h3>
+
+<p>Yes, the Chicago Botanic Garden in Glencoe asks for a photography permit in advance for posed sessions, and its <a href="https://www.chicagobotanic.org/photography">photography guidelines</a> list engagements by name.</p>
 
 <p>This one requires a photography permit, so plan ahead, but it's worth every bit of the paperwork. With 385 acres of themed gardens, there's a backdrop for every season and every style: the rose garden in June, the Japanese garden's quiet bridges, the waterfall garden, the English walled garden. When couples want a "garden party" feel or plan to dress up a bit more formally, this is where I send them. If you love that lush conservatory look, take a peek at this <a href="/blog/garfield-park-conservatory-engagement-photos-chicago">Garfield Park Conservatory engagement session</a> for a feel of how greenery photographs.</p>
 
-<h3>Rosewood Beach, Highland Park</h3>
+<h3>Is Garfield Park Conservatory good for engagement photos?</h3>
+
+<p>Yes, Garfield Park Conservatory is one of the best places for engagement photos inside Chicago, especially if you want greenery that doesn't depend on the weather.</p>
+
+<p>This is the one location on this list where I can show you a full session. You can see the <a href="/gallery/milestone/garfield-park-conservatory-engagement">Garfield Park Conservatory engagement gallery</a> I photographed, with its greenhouse light, bench portraits and ring details.</p>
+
+<p><strong>Permit note:</strong> The <a href="https://garfieldconservatory.org/visit/photography-at-the-conservatory/">conservatory's photography page</a> requires a Chicago Park District photo permit for engagement photos, and permits are not issued on site, so we secure it ahead of time.</p>
+
+<h3>Is Rosewood Beach in Highland Park good for engagement photos?</h3>
+
+<p>Yes, Rosewood Beach is the pick for couples who want a quiet, private-feeling stretch of lakefront.</p>
 
 <p>Rosewood is a quieter, more intimate beach than the bigger lakefront parks, tucked below wooded bluffs. The boardwalk that runs along the shore gives us leading lines and texture, and because it's less trafficked, it feels like a private stretch of coastline. It's my pick for couples who want their session to feel like just the two of them, because up here, it usually is.</p>
 
-<h3>Downtown Highland Park and the Ravinia District</h3>
+<p><strong>Permit note:</strong> Rosewood is run by the Park District of Highland Park, which has its own photography permit application, so I confirm the rules with the district before we book.</p>
+
+<h3>Where can you take engagement photos in a town setting instead of a beach?</h3>
+
+<p>Downtown Highland Park and the Ravinia District are my suggestion for couples who want streetscapes and storefronts rather than sand and water.</p>
 
 <p>Not every couple is a beach couple, and that's okay. If your idea of a perfect date is coffee, a bookstore, and a stroll past storefronts, downtown Highland Park has charming brick streetscapes and murals that make for relaxed, editorial-feeling photos. It's a great option for an "everyday us" session, the kind of photos that look like a really well-documented Saturday together.</p>
+
+<p>Planning a proposal at one of these spots first? My <a href="/sessions/proposal-photography">proposal photography</a> page explains how I stay hidden until the yes, then turn the moment into a short portrait session.</p>
 
 <h2>When Should You Schedule Your North Shore Engagement Session?</h2>
 
