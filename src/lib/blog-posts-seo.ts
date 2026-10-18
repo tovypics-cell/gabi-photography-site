@@ -76,9 +76,10 @@ export const seoBlogPosts: BlogPost[] = [
     excerpt:
       "What family photos cost in Skokie and the North Shore, what the national averages look like in 2026, and how to compare packages that are structured differently.",
     date: "2026-09-16",
+    updated: "2026-10-11",
     category: "Tips",
     image: "/photos/family-plaza-swinging.jpg",
-    seoTitle: "How Much Do Family Photos Cost? | Tovy Photography",
+    seoTitle: "Family Photography Prices and Costs | Tovy Photography",
     seoDescription:
       "How much do family photos cost? 2026 guides put a typical session at $300 to $750. My Skokie and North Shore family sessions run $250 to $550, images included.",
     faqs: [
@@ -103,6 +104,23 @@ export const seoBlogPosts: BlogPost[] = [
 
 <p>That range is wide because family photographers structure pricing in very different ways. Here is how to read it.</p>
 
+<h2>Family photography prices in Skokie and the North Shore</h2>
+
+<table>
+<thead>
+<tr><th>Session</th><th>Time</th><th>Edited images</th><th>Price</th></tr>
+</thead>
+<tbody>
+<tr><td>Mini</td><td>30 minutes</td><td>10+</td><td>$250</td></tr>
+<tr><td>Classic</td><td>60 minutes</td><td>25+</td><td>$375</td></tr>
+<tr><td>Full</td><td>90 minutes</td><td>40+</td><td>$500</td></tr>
+</tbody>
+</table>
+
+<p>Every package includes a private online gallery and full print rights. There is no travel fee within 10 miles of Skokie.</p>
+
+<img src="/photos/glickman-family/05-family-walking-plaza.jpg" alt="Parents swinging their toddler between them while his brother and sister run across a winter plaza during a family session in Skokie" loading="lazy" />
+
 <h2>What the 2026 cost guides say</h2>
 
 <p>Across several published pricing guides, a standard family session includes 60 to 90 minutes of the photographer's time, one location, direction for a group of three to six people, and a gallery of edited digital files. Entry-level photographers charge roughly $150 to $300 for that. Mid-range photographers charge $400 to $800. Studios with hair and makeup, wardrobe and albums often land between $1,000 and $3,000. Larger cities run about 25 to 40 percent above the national average.</p>
@@ -122,6 +140,8 @@ export const seoBlogPosts: BlogPost[] = [
 <p>The Mini is $250 for 30 minutes at one location with 10+ edited images. The Classic is $375 for 60 minutes and 25+ images, and it is the most popular choice for families with young kids because it leaves room to play. The Full is $550 for 90 minutes and 40+ images, the right fit for extended family and multigenerational groups. Every package includes a private online gallery and full print rights. Wardrobe guidance is included with the Classic and Full sessions.</p>
 
 <p>Details and what each package includes are on the <a href="/sessions">Sessions and Pricing page</a>. You can read about how sessions work on the <a href="/sessions/family-photography">family photography page</a>.</p>
+
+<img src="/photos/keay-nature-center-wilmette-family-session/02.jpg" alt="Family laughing together on a blanket in front of tall grasses at Keay Nature Center in Wilmette" loading="lazy" />
 
 <h2>How to compare photographers fairly</h2>
 
@@ -404,6 +424,8 @@ export const seoBlogPosts: BlogPost[] = [
 <p>Look for spots with mature trees, since they tend to hold their color the longest. Harms Woods, right on the Skokie and Glenview border, is one I recommend often once the leaves start turning. The tall trees and wide trails give that layered, golden forest look. Keay Nature Center in Wilmette and Emily Oaks Nature Center in Skokie are two more favorites, both with canopy trails that filter the light beautifully in October. I wrote more about these and a few other spots in my guide to <a href="/blog/best-family-photo-locations-skokie-north-shore">family photo locations in Skokie and the North Shore</a>.</p>
 
 <p>You can see what a wooded North Shore session looks like in this <a href="/gallery/family/keay-nature-center-wilmette-family-session">family session at Keay Nature Center in Wilmette</a>.</p>
+
+<p>For lakefront and garden options from Evanston up to Highland Park, see my guide to <a href="/blog/outdoor-family-photo-locations-north-shore-chicago">outdoor family photo locations on the North Shore</a>.</p>
 
 <p>If the weather doesn't cooperate, an in-home session is always a warm, easy backup. No jackets to coordinate, no waiting out rain, just your family being yourselves in the space you already know.</p>
 
