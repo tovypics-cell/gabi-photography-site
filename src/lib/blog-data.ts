@@ -452,7 +452,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "How much does an outdoor family photo session cost?",
-        answer: "My sessions start at $250 for a 30-minute Mini Session with 10+ edited images. The Classic Session is $375 for 60 minutes and 25+ images, and the Full Session is $500 for 90 minutes and 40+ images.",
+        answer: "My sessions start at $250 for a 30-minute Mini Session with 10+ edited images. The Classic Session is $375 for 60 minutes and 25+ images, and the Full Session is $550 for 90 minutes and 40+ images.",
       },
     ],
     content: `
@@ -621,7 +621,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "How much does an engagement photo session cost?",
-        answer: "My engagement sessions start at $250 for a 30-minute Mini Session with 10+ edited images. The Classic Session is $375 for 60 minutes and 25+ images, and the Full Session is $500 for 90 minutes and 40+ images.",
+        answer: "My engagement sessions start at $250 for a 30-minute Mini Session with 10+ edited images. The Classic Session is $375 for 60 minutes and 25+ images, and the Full Session is $550 for 90 minutes and 40+ images.",
       },
     ],
     content: `
