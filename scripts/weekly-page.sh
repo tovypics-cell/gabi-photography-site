@@ -244,7 +244,7 @@ SUMMARY="$RUN_DIR/summary.json"
 log "running claude (transcript: $REPO/$RUN_DIR/claude.log)"
 "$CLAUDE_BIN" -p \
   --permission-mode acceptEdits \
-  --allowedTools "Read,Edit,Write,WebSearch,WebFetch,Bash(git *),Bash(npm run build),Bash(npm run check:pricing),mcp__openseo__get_keyword_metrics,mcp__openseo__get_serp_results,mcp__openseo__get_project_context" \
+  --allowedTools "Read,Edit,Write,WebSearch,WebFetch,Bash(git *),Bash(npm run build),Bash(npm run check:pricing),Bash(npm run check:headings),mcp__openseo__get_keyword_metrics,mcp__openseo__get_serp_results,mcp__openseo__get_project_context" \
   --max-turns 120 \
   < "$RUN_DIR/prompt.md" > "$RUN_DIR/claude.log" 2>&1 \
   || die "claude exited with an error (see $RUN_DIR/claude.log)"
@@ -279,6 +279,10 @@ if ! node scripts/check-pricing.mjs > "$RUN_DIR/pricing.log" 2>&1; then
     die "new content does not match the pricing page (see $RUN_DIR/pricing.log). Fix on $BRANCH, then open the PR by hand."
   fi
   log "pricing check still failing, as it was on $BASE before this run (already reported)"
+fi
+
+if ! node scripts/check-headings.mjs > "$RUN_DIR/headings.log" 2>&1; then
+  die "heading levels skip in a blog post (see $RUN_DIR/headings.log). Fix on $BRANCH, then open the PR by hand."
 fi
 
 log "verifying build"
