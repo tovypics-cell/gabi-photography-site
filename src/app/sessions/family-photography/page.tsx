@@ -68,7 +68,7 @@ export default function FamilyPhotographyPage() {
         addressCountry: "US",
       },
       url: "https://tovyphotography.com",
-      priceRange: "$250-$500",
+      priceRange: "$250-$550",
     },
     areaServed: [
       "Skokie",
@@ -362,7 +362,7 @@ export default function FamilyPhotographyPage() {
               seasonal updates and quick family portraits. The Classic session
               ($375, 60 minutes) is the most popular choice for families who want
               more relaxed coverage and time to capture real moments. The Full
-              session ($500, 90 minutes) is ideal for extended families and
+              session ($550, 90 minutes) is ideal for extended families and
               multigenerational groups. For a wider look at what shapes the
               price, read my{" "}
               <Link

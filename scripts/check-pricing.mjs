@@ -48,7 +48,9 @@ const travelFee = num("travelFee"), extraTime = num("extraTimePer15Min");
 // Allowed dollar amounts in Gabi's own sentences: package prices, the add-on fees,
 // and two-session bundles (for example "two Classic sessions are $750").
 const allowed = new Set([...prices, travelFee, extraTime].filter(Boolean));
-for (const a of prices) for (const b of prices) allowed.add(a + b);
+const bundles = new Set();
+for (const a of prices) for (const b of prices) bundles.add(a + b);
+const BUNDLE = /\b(two (\w+ )?sessions|both sessions|combined|together)\b/i;
 const allowedImages = new Set(packages.map((p) => p.images));
 
 // ---------- scan the site text ----------
@@ -63,7 +65,7 @@ const files = [];
   }
 })("src");
 
-const OURS = /\b(my|I|I'm|I've|Tovy|Mini|Classic|Full session|sessions? (start|run|are|is)|start(s)? at|from \$)/;
+const OURS = /\b(my|I|I'm|I've|Tovy|Mini|Classic|Full|sessions? (start|run|are|is)|start(s)? at|from \$)/;
 const THEIRS = /\b(guides?|published|average|according|studios?|photographers? (charge|who|with)|charges|market|national|tiers?|Thumbtack|survey|budget sessions?)\b/i;
 const DURATION = [
   [/\b30-minute|\b30 minutes|half-hour/i, 30],
@@ -81,7 +83,10 @@ for (const file of files) {
   }
   // sentence pass. Inline tags (links, bold) are blanked out so a sentence that
   // cites a guide inside a link stays one sentence; offsets are kept for line numbers.
-  const text = src.replace(/<\/?(a|strong|em|b|i|span)\b[^>]*>/g, (t) => " ".repeat(t.length));
+  // JSX copy wraps across lines; join wrapped lines (same length, so offsets still hold).
+  const text = src
+    .replace(/<\/?(a|strong|em|b|i|span)\b[^>]*>/g, (t) => " ".repeat(t.length))
+    .replace(/([A-Za-z0-9,;($)])\n(?=[ \t]+[A-Za-z0-9($])/g, "$1 ");
   const re = /(?:[^.!?\n<>]|\.(?=\d))+(?:[.!?]|(?=<)|\n|$)/g;
   for (const m of text.matchAll(re)) {
     const s = m[0];
@@ -91,7 +96,7 @@ for (const file of files) {
     // "N+ images" is always Gabi's own claim; dollar amounts only count in sentences about her sessions
     for (const d of OURS.test(s) ? s.matchAll(/\$(\d[\d,]*)/g) : []) {
       const v = +d[1].replace(/,/g, "");
-      if (!allowed.has(v)) { flag(file, line, `$${v} is not a current price (pricing page: ${prices.map((p) => "$" + p).join(" / ")})`, s); continue; }
+      if (!allowed.has(v) && !(bundles.has(v) && BUNDLE.test(s))) { flag(file, line, `$${v} is not a current price (pricing page: ${prices.map((p) => "$" + p).join(" / ")})`, s); continue; }
     }
     // a package price and a session length in the same clause must belong to the same package
     for (const clause of s.split(/,|;|\band\b|\bto\b|\bor\b/)) {
