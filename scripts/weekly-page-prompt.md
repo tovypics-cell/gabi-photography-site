@@ -45,6 +45,7 @@ The run parameters are appended at the bottom of this prompt: `SLUG`, `TYPE`, `P
 
 - The first sentence of the page answers the primary keyword's question directly, in plain words. No wind-up.
 - Use the literal questions people type as `<h3>` headings, for example `<h3>How much does a newborn photographer cost in Skokie?</h3>`. The first sentence under each H3 is a direct answer. Supporting detail comes after.
+- Every `<h3>` sits under an `<h2>`. A post body starts at `<h2>` and never skips a level, so a question heading that comes before the first `<h2>` is itself an `<h2>`. Run `npm run check:headings` before committing.
 - Include 4 to 6 FAQs in the entry's `faqs` array. Each question is a literal search question. Each answer is two or three sentences and matches what the page body says. The page templates turn `faqs` into FAQPage JSON-LD automatically, so do not hand-write schema.
 - Put `PRIMARY_KEYWORD` naturally in the slug, the title or h1, `seoTitle` or `title`, the description, the first paragraph, and at least one heading. Do not stuff it.
 

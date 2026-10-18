@@ -101,7 +101,7 @@ export const blogPosts: BlogPost[] = [
     content: `
 <p>The best time to take newborn photos is in the first 5 to 14 days after birth, and the best time to book them is during your third trimester. I'm Gabi, an in-home <a href="/sessions/newborn-photography">newborn photographer in Skokie</a> serving families across Chicago's North Shore, and my sessions start at $250.</p>
 
-<h3>When should you take newborn photos?</h3>
+<h2>When should you take newborn photos?</h2>
 
 <p>Take newborn photos in the first 5 to 14 days after birth. That is when babies are sleepiest and curl up most easily into natural poses, like in this <a href="/gallery/newborn/sweet-baby-girl-newborn-skokie">sweet baby girl newborn session in Skokie</a>.</p>
 
@@ -462,7 +462,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>So let me save you the trial and error. These are the outdoor family photo locations I return to again and again, why they work, and how to get the most out of each one.</p>
 
-<h3>Where should we take outdoor family photos on the North Shore?</h3>
+<h2>Where should we take outdoor family photos on the North Shore?</h2>
 
 <p>Choose the lakefront for open water and sky, the Chicago Botanic Garden for variety in one place, and wooded spots like Fort Sheridan or Keay Nature Center for a relaxed, natural feel. Each one is below, with the light that suits it best.</p>
 
