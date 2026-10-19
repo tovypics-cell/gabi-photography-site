@@ -211,12 +211,13 @@
         "file": "src/lib/blog-data.ts"
       },
       "sourceDraft": null,
-      "status": "in_review",
+      "status": "published",
       "branch": "content/rewrite-engagement-locations",
       "pr": 33,
       "updatedAt": "2026-10-15",
       "notes": "Blog post. Answer-first opener, H3 per location, permit notes, faqs array. Link to /sessions/engagement-photography and /sessions/proposal-photography.",
-      "phase": 0
+      "phase": 0,
+      "publishedAt": "2026-10-15"
     },
     {
       "slug": "rewrite-maternity-photography",
