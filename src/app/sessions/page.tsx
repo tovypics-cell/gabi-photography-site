@@ -4,14 +4,14 @@ import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Sessions and Pricing",
+  title: "Sessions and Pricing, Family Photos and Headshots in Skokie",
   description:
-    "Family, newborn, maternity, milestone, mini session and event photography from $250. In-home and on-location sessions in Skokie and the North Shore.",
+    "Family, newborn, maternity, milestone and event photography from $250, plus headshots on request. Sessions in Skokie and the North Shore.",
   alternates: {
     canonical: "https://tovyphotography.com/sessions",
   },
   openGraph: {
-    title: "Sessions & Pricing — Tovy Photography",
+    title: "Sessions & Pricing | Tovy Photography",
     description:
       "Photography packages starting at $250. Family, newborn, milestone, and event sessions in Skokie, IL.",
     url: "https://tovyphotography.com/sessions",
@@ -29,24 +29,24 @@ const sessions: {
   {
     name: "Newborn Session",
     description:
-      "I'll come right to your door so you can stay cozy with your new little one. No packing up the diaper bag, no stress. Just calm, gentle, naturally guided moments — all the tiny details and deep love you'll want to remember forever.",
-    alt: "In-home newborn photographer Skokie IL — peaceful sleeping baby with headband in natural light",
+      "I'll come right to your door so you can stay cozy with your new little one. No packing up the diaper bag, no stress. Just calm, gentle, naturally guided moments, all the tiny details and deep love you'll want to remember forever.",
+    alt: "In-home newborn photographer Skokie IL, peaceful sleeping baby with headband in natural light",
     src: "/photos/newborn-sleeping-headband.jpg",
     learnMoreHref: "/sessions/newborn-photography",
   },
   {
     name: "Family Session",
     description:
-      "I'll come to you — at home in Skokie, at a favorite park in Evanston, wherever your family feels most like yourselves. Expect gentle guidance, a lot of laughing, and real connection captured in natural light.",
-    alt: "Skokie family photographer — parents swinging toddler on brick plaza during outdoor family session",
+      "I'll come to you, at home in Skokie, at a favorite park in Evanston, wherever your family feels most like yourselves. Expect gentle guidance, a lot of laughing, and real connection captured in natural light.",
+    alt: "Skokie family photographer, parents swinging toddler on brick plaza during outdoor family session",
     src: "/photos/family-plaza-swinging.jpg",
     learnMoreHref: "/sessions/family-photography",
   },
   {
     name: "Milestone Session",
     description:
-      "Engagements, birthdays, maternity, first steps, graduations — the moments that mark how far you've come. Same playful, relaxed energy whether I'm at your kitchen table or meeting you at your favorite North Shore spot.",
-    alt: "Garfield Park Conservatory engagement photography in Chicago — milestone session portrait on bench",
+      "Engagements, birthdays, maternity, first steps, graduations. The moments that mark how far you've come. Same playful, relaxed energy whether I'm at your kitchen table or meeting you at your favorite North Shore spot.",
+    alt: "Garfield Park Conservatory engagement photography in Chicago, milestone session portrait on bench",
     src: "/photos/garfield-park-conservatory-engagement/cover-bench.jpg",
     learnMoreHref: "/sessions/engagement-photography",
     learnMoreLabel: "learn more about engagement sessions",
@@ -55,7 +55,7 @@ const sessions: {
     name: "Event Session",
     description:
       "Bar Mitzvahs, Upshirins, celebrations big and small. I blend in, keep the energy fun, and capture every detail and real feeling so when you look back, it all comes rushing right back.",
-    alt: "Bar Mitzvah photographer Skokie — boy putting on tallit prayer shawl during ceremony",
+    alt: "Bar Mitzvah photographer Skokie, boy putting on tallit prayer shawl during ceremony",
     src: "/photos/stolberg-bar-mitzvah/10-putting-on-tallit.jpg",
     learnMoreHref: "/sessions/bar-mitzvah-photography",
     learnMoreLabel: "learn more about bar and bat mitzvah coverage",
@@ -90,7 +90,7 @@ const packages = [
     ],
     popular: true,
     description:
-      "The sweet spot \u2014 enough time to relax into the session and capture real moments, plus a quick call beforehand so we can plan everything together.",
+      "The sweet spot, enough time to relax into the session and capture real moments, plus a quick call beforehand so we can plan everything together.",
   },
   {
     name: "Full Session",
@@ -108,7 +108,7 @@ const packages = [
       { text: "One complimentary 8x10 fine art print", highlight: true },
     ],
     description:
-      "The full experience \u2014 extra time, more variety, room for the whole crew, and a beautiful print to take home.",
+      "The full experience, extra time, more variety, room for the whole crew, and a beautiful print to take home.",
   },
   {
     name: "Tailored Session",
@@ -121,11 +121,44 @@ const packages = [
       { text: "Full rights to print and share" },
     ],
     description:
-      "Bar Mitzvahs, Upshirins, celebrations big and small \u2014 let\u2019s chat about your vision.",
+      "Bar Mitzvahs, Upshirins, celebrations big and small. Let\u2019s chat about your vision.",
+  },
+];
+
+const faqs = [
+  {
+    q: "How much does a photo session cost?",
+    a: "Sessions start at $250 for a 30-minute Mini Session with 10+ edited images. The Classic Session is $375 for 60 minutes and 25+ images, and the Full Session is $500 for 90 minutes and 40+ images. Tailored sessions for events and special occasions are quoted on request.",
+  },
+  {
+    q: "Do you offer headshots?",
+    a: "Yes, I take headshots on request for individuals, family members and small business owners in Skokie and the North Shore. Headshots are quoted on request, so tell me who needs them and what they are for and I will send you a quote.",
+  },
+  {
+    q: "Which session should I book?",
+    a: "The Classic Session is the most popular. It gives you enough time to relax into the session, plus a planning call beforehand. If you are not sure, reach out and I will help you choose.",
+  },
+  {
+    q: "Is there a travel fee?",
+    a: "I am based in Skokie, and sessions within 10 miles are included. A $50 travel fee applies for locations beyond that.",
+  },
+  {
+    q: "Can I add more time to my session?",
+    a: "Yes. Additional time beyond your booked session is available at $100 per 15-minute block, subject to availability.",
   },
 ];
 
 export default function SessionsPage() {
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -158,6 +191,10 @@ export default function SessionsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
 
       {/* Hero */}
       <section className="pt-32 pb-20 px-6 lg:px-8 text-center">
@@ -165,9 +202,17 @@ export default function SessionsPage() {
           <h1 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-6xl mb-6 text-charcoal">
             Sessions &amp; Pricing
           </h1>
+          <p className="text-charcoal text-lg leading-relaxed mb-4">
+            I&apos;m Gabi, a Skokie-based photographer offering family, newborn,
+            maternity, milestone and event sessions, plus headshots on request,
+            in Skokie, Evanston, Lincolnwood, Wilmette and across Chicago&apos;s
+            North Shore. Sessions start at $250 for a 30-minute Mini Session
+            with 10+ edited images, and Tailored sessions and headshots are
+            quoted on request.
+          </p>
           <p className="text-charcoal-light text-lg leading-relaxed mb-8">
             Every session is designed to feel relaxed, natural, and fun. Whether
-            it&apos;s your growing family, a new baby, or a milestone moment —
+            it&apos;s your growing family, a new baby, or a milestone moment,
             I&apos;m here to capture it beautifully.
           </p>
           <a
@@ -305,6 +350,41 @@ export default function SessionsPage() {
               </ScrollReveal>
             ))}
           </div>
+          <div className="mx-auto max-w-3xl my-16 border-t border-charcoal/10 pt-12">
+            <h3 className="font-[family-name:var(--font-cormorant)] text-2xl md:text-3xl mb-4 text-charcoal">
+              Do you take headshots near Skokie?
+            </h3>
+            <p className="mb-8 text-charcoal-light leading-relaxed">
+              Yes. If you are looking for a headshot photographer near you in
+              Skokie or the North Shore, I take headshots on request: individual
+              headshots, updated portraits of family members, and headshots for
+              small business owners and their teams. We can meet at your home,
+              your workplace, or an outdoor spot nearby with good natural light.
+            </p>
+            <h3 className="font-[family-name:var(--font-cormorant)] text-2xl md:text-3xl mb-4 text-charcoal">
+              How much do headshots cost?
+            </h3>
+            <p className="text-charcoal-light leading-relaxed">
+              Headshots are quoted on request, because the time and number of
+              people vary. Tell me who needs headshots and what they are for on
+              the{" "}
+              <Link
+                href="/contact"
+                className="text-sage-dark underline underline-offset-4"
+              >
+                contact page
+              </Link>{" "}
+              and I&apos;ll send you a quote. If you would like relaxed photos of
+              the whole family too, take a look at my{" "}
+              <Link
+                href="/sessions/family-photography"
+                className="text-sage-dark underline underline-offset-4"
+              >
+                family photography sessions
+              </Link>
+              .
+            </p>
+          </div>
           <div className="mb-10">
             <p className="text-center text-sm uppercase tracking-wider text-charcoal/60 mb-4">
               Also offering
@@ -330,11 +410,43 @@ export default function SessionsPage() {
             </div>
           </div>
           <p className="text-center text-sm text-charcoal-light mt-10">
-            Based in Skokie. Sessions within 10 miles are included. A $50 travel fee applies for locations beyond that — just ask if you&apos;re not sure!
+            Based in Skokie. Sessions within 10 miles are included. A $50 travel fee applies for locations beyond that. Just ask if you&apos;re not sure!
           </p>
           <p className="text-center text-sm text-charcoal-light mt-3">
             Additional time beyond your booked session is available at $100 per 15-minute block, subject to availability.
           </p>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="px-6 pt-20 md:pt-32 lg:px-8">
+        <div className="mx-auto max-w-3xl">
+          <ScrollReveal animation="fade-up">
+            <h2 className="font-[family-name:var(--font-cormorant)] text-3xl md:text-4xl mb-10 text-charcoal text-center">
+              Common questions about sessions and pricing
+            </h2>
+          </ScrollReveal>
+          <div className="space-y-3">
+            {faqs.map((f, i) => (
+              <ScrollReveal key={i} animation="fade-up" delay={i * 50}>
+                <details className="group border border-charcoal/10 bg-white">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 px-6 py-4 text-charcoal font-medium list-none [&::-webkit-details-marker]:hidden">
+                    {f.q}
+                    <svg
+                      className="h-4 w-4 shrink-0 text-sage transition-transform duration-200 group-open:rotate-180"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <p className="px-6 pb-5 text-charcoal-light leading-relaxed">{f.a}</p>
+                </details>
+              </ScrollReveal>
+            ))}
+          </div>
         </div>
       </section>
 
