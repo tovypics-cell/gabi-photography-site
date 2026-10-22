@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "check:pricing": "node scripts/check-pricing.mjs",
-    "check:headings": "node scripts/check-headings.mjs"
+    "check:headings": "node scripts/check-headings.mjs",
+    "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

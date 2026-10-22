@@ -382,6 +382,10 @@ STAGE="notify"
 prefix=""; [ "$DRY_RUN" = 1 ] && prefix="[Dry run] "
 writer_notes="$(jq -r '.notes // ""' "$SUMMARY")"
 LIVE_URL="https://tovyphotography.com${URL_PATH}"
+# Ask Bing (which also feeds ChatGPT search and Copilot) to crawl the new page now. Not fatal.
+if [ "$MERGED" = 1 ]; then
+  ( sleep 120; node scripts/indexnow.mjs "$LIVE_URL" "https://tovyphotography.com/sitemap.xml" ) >> "$RUN_DIR/indexnow.log" 2>&1 &
+fi
 if [ "$MERGED" = 1 ]; then
   notify "${prefix}Published: $TITLE
 Keyword: $KEYWORD
