@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Script from "next/script";
 import { site } from "@/lib/site";
 import { services } from "@/lib/services";
 import { locationPages } from "@/lib/locations";
@@ -115,6 +116,12 @@ export default function Footer() {
             ))}
           </div>
         </div>
+
+        {/* Google "Add as a preferred source" button (Search Central preferred sources guide) */}
+        <div className="mt-8 flex justify-center">
+          <div google-add-preferred-source-btn="" data-theme="dark"></div>
+        </div>
+        <Script src="https://news.google.com/swg/js/v1/publisher.js" strategy="lazyOnload" />
 
         <div className="mt-8 border-t border-white/10 pt-8 text-center text-xs">
           <p>© {new Date().getFullYear()} Tovy Photography. All rights reserved.</p>
