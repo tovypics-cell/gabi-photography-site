@@ -10,6 +10,7 @@ export const seoBlogPosts: BlogPost[] = [
     excerpt:
       "A plain answer on newborn photography cost in the Chicago area: what published guides show, what my in-home sessions cost, and what you should get for the money.",
     date: "2026-09-17",
+    updated: "2026-10-22",
     category: "Newborn",
     image: "/photos/parents-newborn-window.jpg",
     seoTitle: "Newborn Photography Cost in Chicago | Tovy Photography",
@@ -36,6 +37,23 @@ export const seoBlogPosts: BlogPost[] = [
 <p>Newborn photography in Chicago and the North Shore costs anywhere from a couple of hundred dollars to well over a thousand, depending on whether you book a short in-home session or a full studio package with products. My in-home newborn sessions run from $250 to $500, and every package includes edited images in a private gallery with full print rights.</p>
 
 <p>That is the short answer. Here is what sits behind the range so you can compare photographers fairly.</p>
+
+<h2>Newborn photography prices in Skokie and the North Shore</h2>
+
+<table>
+<thead>
+<tr><th>Session</th><th>Time</th><th>Edited images</th><th>Price</th></tr>
+</thead>
+<tbody>
+<tr><td>Mini</td><td>30 minutes</td><td>10+</td><td>$250</td></tr>
+<tr><td>Classic</td><td>60 minutes</td><td>25+</td><td>$375</td></tr>
+<tr><td>Full</td><td>90 minutes</td><td>40+</td><td>$500</td></tr>
+</tbody>
+</table>
+
+<p>These are in-home sessions. Every package includes a private online gallery with full print rights, and there is no travel fee within 10 miles of Skokie.</p>
+
+<img src="/photos/cooper-family/03-parents-baby-closeup.jpg" alt="Newborn baby girl in a floral headband asleep between her parents during an in-home newborn session in Skokie" loading="lazy" />
 
 <h2>What published cost guides show for Chicago</h2>
 
@@ -297,6 +315,7 @@ export const seoBlogPosts: BlogPost[] = [
     excerpt:
       "Maternity photoshoot cost in Chicago and the North Shore: the 2026 published ranges, what drives them, and what my natural light maternity sessions cost.",
     date: "2026-09-22",
+    updated: "2026-10-22",
     category: "Maternity",
     image: "/photos/family-bed-portrait.jpg",
     seoTitle: "Maternity Photoshoot Cost in Chicago | Tovy Photography",
@@ -328,6 +347,23 @@ export const seoBlogPosts: BlogPost[] = [
 <p>A maternity photoshoot in Chicago costs between $500 and $1,200 for most professional sessions, according to <a href="https://onebighappyphoto.com/maternity-photoshoot-pricing/">One Big Happy Photo's 2026 maternity pricing guide</a>. <a href="https://tovstudiophoto.com/average-cost-of-maternity-photography/">Tov Studio Photo's 2026 cost guide</a> splits Chicago into outdoor sessions at $350 to $600 and boutique studio sessions at $800 to $1,500, with a national average of $250 to $700. My maternity sessions in Skokie and the North Shore run from $250 to $500, and the edited images are included.</p>
 
 <p>Here is what is behind those ranges, so you can compare quotes that are structured differently.</p>
+
+<h2>Maternity photography prices in Skokie and the North Shore</h2>
+
+<table>
+<thead>
+<tr><th>Session</th><th>Time</th><th>Edited images</th><th>Price</th></tr>
+</thead>
+<tbody>
+<tr><td>Mini</td><td>30 minutes</td><td>10+</td><td>$250</td></tr>
+<tr><td>Classic</td><td>60 minutes</td><td>25+</td><td>$375</td></tr>
+<tr><td>Full</td><td>90 minutes</td><td>40+</td><td>$500</td></tr>
+</tbody>
+</table>
+
+<p>Sessions happen outdoors at North Shore parks and beaches or in your home. Every package includes a private online gallery with full print rights, and there is no travel fee within 10 miles of Skokie.</p>
+
+<img src="/photos/maternity-side-profile-bw.jpg" alt="Black and white maternity portrait of an expecting mother in profile, hands resting on her belly" loading="lazy" />
 
 <h2>What the 2026 guides say</h2>
 

@@ -67,7 +67,7 @@ export function localBusinessJsonLd(overrides: Record<string, unknown> = {}) {
       longitude: site.geo.longitude,
     },
     areaServed: serviceAreaNames.map((name) => ({ "@type": "City", name })),
-    sameAs: [site.instagram],
+    sameAs: [site.instagram, "https://www.google.com/maps?cid=1458546516513406671"],
     founder: { "@type": "Person", name: site.photographer },
     ...overrides,
   };
