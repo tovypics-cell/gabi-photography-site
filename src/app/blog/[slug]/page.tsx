@@ -82,6 +82,11 @@ export default async function BlogPostPage({ params }: Props) {
   };
 
   const faqLd = post.faqs && post.faqs.length ? faqJsonLd(post.faqs) : null;
+  const headingText = (post.content.match(/<h[23][^>]*>[\s\S]*?<\/h[23]>/g) ?? [])
+    .map((h) => h.replace(/<[^>]+>/g, "").trim().toLowerCase());
+  const visibleFaqs = (post.faqs ?? []).filter(
+    (f) => !headingText.includes(f.question.trim().toLowerCase())
+  );
 
   return (
     <>
@@ -137,6 +142,24 @@ export default async function BlogPostPage({ params }: Props) {
               [&_td]:border-b [&_td]:border-charcoal/10 [&_td]:py-3 [&_td]:pr-4"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
+
+          {/* FAQ: shown on the page (Google only credits FAQ answers people can see). Questions the
+              post already answers under its own heading are skipped so nothing repeats. */}
+          {visibleFaqs.length > 0 && (
+            <section className="mt-16">
+              <h2 className="font-[family-name:var(--font-cormorant)] text-charcoal text-2xl md:text-3xl mb-6">
+                Common questions
+              </h2>
+              {visibleFaqs.map((f) => (
+                <div key={f.question} className="mb-6">
+                  <h3 className="font-[family-name:var(--font-cormorant)] text-charcoal text-xl md:text-2xl mb-2">
+                    {f.question}
+                  </h3>
+                  <p className="text-charcoal-light leading-relaxed text-base md:text-lg">{f.answer}</p>
+                </div>
+              ))}
+            </section>
+          )}
 
           {/* CTA */}
           <div className="mt-16 p-8 bg-[#E8D5CE]/30 text-center rounded-sm">
