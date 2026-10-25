@@ -3,6 +3,13 @@
 import { useState } from "react";
 import { track } from "@vercel/analytics";
 import { readVisitSource } from "@/lib/visit-source";
+import { site } from "@/lib/site";
+
+const WEB3FORMS_KEY = "3832175e-255f-4f9c-9406-1a460eebe07a";
+
+function fullUrl(path: string) {
+  return path.startsWith("/") ? `https://tovyphotography.com${path}` : path;
+}
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
@@ -22,7 +29,7 @@ export default function ContactForm() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          access_key: "3832175e-255f-4f9c-9406-1a460eebe07a",
+          access_key: WEB3FORMS_KEY,
           subject: `New Inquiry from ${firstName} ${lastName} — Tovy Photography`,
           from_name: "Tovy Photography Website",
           name: `${firstName} ${lastName}`,
@@ -30,18 +37,32 @@ export default function ContactForm() {
           phone: formData.get("phone") || "Not provided",
           session_type: formData.get("sessionType") || "Not specified",
           message: formData.get("message"),
-          "How they found the site": visit.source,
-          "First page they saw": visit.landing.startsWith("/")
-            ? `https://tovyphotography.com${visit.landing}`
-            : visit.landing,
-          "Page right before Contact": visit.before.startsWith("/")
-            ? `https://tovyphotography.com${visit.before}`
-            : visit.before,
-          "First visit": visit.firstVisit,
         }),
       });
       const result = await res.json();
       if (result.success) {
+        // Lead source goes in its own email so it is never quoted back to the client when
+        // Gabi replies to the inquiry. Reply-To is Gabi herself, not the client.
+        try {
+          await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              access_key: WEB3FORMS_KEY,
+              subject: `Private: how ${firstName} ${lastName} found the site`,
+              from_name: "Tovy Photography Website",
+              replyto: site.email,
+              Inquiry: `${firstName} ${lastName}`,
+              "How they found the site": visit.source,
+              "First page they saw": fullUrl(visit.landing),
+              "Page right before Contact": fullUrl(visit.before),
+              "First visit": visit.firstVisit,
+              Note: "Private, for Gabi only. Do not forward to the client.",
+            }),
+          });
+        } catch {
+          /* the inquiry itself already went through */
+        }
         try {
           track("Inquiry", {
             source: visit.source,
