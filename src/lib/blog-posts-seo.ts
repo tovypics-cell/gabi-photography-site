@@ -94,7 +94,7 @@ export const seoBlogPosts: BlogPost[] = [
     excerpt:
       "What family photos cost in Skokie and the North Shore, what the national averages look like in 2026, and how to compare packages that are structured differently.",
     date: "2026-09-16",
-    updated: "2026-10-11",
+    updated: "2026-10-25",
     category: "Tips",
     image: "/photos/family-plaza-swinging.jpg",
     seoTitle: "Family Photography Prices and Costs | Tovy Photography",
@@ -136,6 +136,16 @@ export const seoBlogPosts: BlogPost[] = [
 </table>
 
 <p>Every package includes a private online gallery and full print rights. There is no travel fee within 10 miles of Skokie.</p>
+
+<h3>What is included in every family session?</h3>
+
+<ul>
+<li>Professionally edited images: 10+ with the Mini, 25+ with the Classic, 40+ with the Full</li>
+<li>A private online gallery to view, download and share</li>
+<li>Full print rights, so you can print anywhere you like</li>
+<li>Wardrobe guidance with the Classic and Full sessions</li>
+<li>No travel fee within 10 miles of Skokie</li>
+</ul>
 
 <img src="/photos/glickman-family/05-family-walking-plaza.jpg" alt="Parents swinging their toddler between them while his brother and sister run across a winter plaza during a family session in Skokie" loading="lazy" />
 
