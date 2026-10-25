@@ -211,12 +211,13 @@
         "file": "src/lib/blog-data.ts"
       },
       "sourceDraft": null,
-      "status": "in_review",
+      "status": "published",
       "branch": "content/rewrite-engagement-locations",
       "pr": 33,
       "updatedAt": "2026-10-15",
       "notes": "Blog post. Answer-first opener, H3 per location, permit notes, faqs array. Link to /sessions/engagement-photography and /sessions/proposal-photography.",
-      "phase": 0
+      "phase": 0,
+      "publishedAt": "2026-10-15"
     },
     {
       "slug": "rewrite-maternity-photography",
@@ -253,8 +254,10 @@
         "file": "src/app/sessions/page.tsx"
       },
       "sourceDraft": null,
-      "status": "queued",
+      "status": "in_review",
+      "branch": "content/rewrite-sessions-headshots",
       "pr": null,
+      "updatedAt": "2026-10-19",
       "phase": 0,
       "notes": "Add one short section near the Tailored package: headshots on request (individual, family members, small business), quoted on request. No headshot gallery claims and no price. Do not change any package price, length or image count; npm run check:pricing must pass."
     },
