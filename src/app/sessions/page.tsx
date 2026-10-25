@@ -4,7 +4,7 @@ import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Sessions and Pricing, Family Photos and Headshots in Skokie",
+  title: "Sessions and Pricing in Skokie",
   description:
     "Family, newborn, maternity, milestone and event photography from $250, plus headshots on request. Sessions in Skokie and the North Shore.",
   alternates: {
