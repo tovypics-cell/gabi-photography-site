@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Montserrat } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -7,16 +7,19 @@ import { Suspense } from "react";
 import { Analytics } from "@vercel/analytics/next";
 import VisitSourceTracker from "@/components/VisitSourceTracker";
 
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+// Fonts are bundled in src/app/fonts (SIL Open Font License, from Fontsource) instead of
+// next/font/google, so the build never downloads anything. A Google Fonts network blip
+// failed the content loop's build on 2026-10-19. Same families and weights as before.
+const cormorant = localFont({
+  src: "./fonts/cormorant-garamond-latin-wght-normal.woff2",
+  weight: "300 700",
   variable: "--font-cormorant",
   display: "swap",
 });
 
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+const montserrat = localFont({
+  src: "./fonts/montserrat-latin-wght-normal.woff2",
+  weight: "300 700",
   variable: "--font-montserrat",
   display: "swap",
 });
