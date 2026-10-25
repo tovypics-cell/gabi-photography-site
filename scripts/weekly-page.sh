@@ -222,6 +222,13 @@ if git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then
   die "branch $BRANCH already exists on GitHub (should have been skipped). Merge or close its PR and delete the branch."
 fi
 
+# A failed earlier run can leave the branch behind locally (it never reached GitHub, see the
+# check above). Keep its work under a dated name instead of dying on "branch already exists".
+if git show-ref --verify --quiet "refs/heads/$BRANCH"; then
+  stale="$BRANCH--failed-$(date +%Y%m%d%H%M)"
+  git branch -q -m "$BRANCH" "$stale"
+  log "local branch $BRANCH was left by a failed run; kept it as $stale and starting fresh"
+fi
 git checkout -q -b "$BRANCH"
 if ! git diff --quiet -- "$QUEUE"; then
   git commit -q -m "Queue: mark merged content pages as published" -- "$QUEUE"
@@ -286,7 +293,13 @@ if ! node scripts/check-headings.mjs > "$RUN_DIR/headings.log" 2>&1; then
 fi
 
 log "verifying build"
-npm run build > "$RUN_DIR/build.log" 2>&1 || die "npm run build fails on $BRANCH (see $RUN_DIR/build.log)"
+# next/font downloads Google Fonts during the build, and a network blip fails the whole build
+# (2026-10-19). Retry once before giving up.
+if ! npm run build > "$RUN_DIR/build.log" 2>&1; then
+  log "build failed; retrying once in 60s (see $RUN_DIR/build.log)"
+  sleep 60
+  npm run build > "$RUN_DIR/build.log" 2>&1 || die "npm run build fails on $BRANCH (see $RUN_DIR/build.log)"
+fi
 
 want_status="in_review"; [ "$DRY_RUN" = 1 ] && want_status="queued"
 tmp="$(mktemp)"
