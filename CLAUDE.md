@@ -25,7 +25,7 @@ npx vercel deploy --prod --yes
 No Vercel token is stored anywhere in this repo. Do NOT add one.
 
 ## Content Loop (SEO pages)
-Runs on **Omer's Mac mini**, not on Gabi's MacBook (since 2026-09-22), because OpenSEO and its keyword data live there. A launchd job (`com.tovy.weekly-page`, **Mondays and Thursdays 8:00**) runs `scripts/weekly-page.sh`, which writes the next `"queued"` item from `content/queue.json` with `claude -p` (a new page or a rewrite of an existing one), verifies the build, and opens a PR on a `content/<slug>` branch. Since 2026-10-05 the loop is fully automated: it **merges its own PR as soon as the build passes**, which publishes the page, then tells Gabi by mentioning @tovypics-cell in a comment on the merged PR (GitHub emails the mention to her account, so no mail password is involved), and sends Omer a Telegram with the live link and the writer's notes. Gabi reviews live pages and asks for changes. Set `AUTO_MERGE=0` in the host config to go back to a person merging each PR. Details:
+Runs on **Omer's Mac mini**, not on Gabi's MacBook (since 2026-09-22), because OpenSEO and its keyword data live there. Since 2026-10-25 it runs from its **own clone at `~/.tovy-loop/site`**, which no Claude session uses; do site work in `~/tovy-photography-seo` or a worktree, never in the loop clone. `scripts/weekly-page.sh --check` is a no-write health check (sync, pricing, next item, build). A launchd job (`com.tovy.weekly-page`, **Mondays and Thursdays 8:00**) runs `scripts/weekly-page.sh`, which writes the next `"queued"` item from `content/queue.json` with `claude -p` (a new page or a rewrite of an existing one), verifies the build, and opens a PR on a `content/<slug>` branch. Since 2026-10-05 the loop is fully automated: it **merges its own PR as soon as the build passes**, which publishes the page, then tells Gabi by mentioning @tovypics-cell in a comment on the merged PR (GitHub emails the mention to her account, so no mail password is involved), and sends Omer a Telegram with the live link and the writer's notes. Gabi reviews live pages and asks for changes. Set `AUTO_MERGE=0` in the host config to go back to a person merging each PR. Details:
 - Roadmap and phase order: `content/seo-roadmap.md`. Page list and ground rules: `content/seo-plan.md`. Queue order is the publish order.
 - Writer rules: `scripts/weekly-page-prompt.md` (brand rules, answer-first format, no invented numbers, only sessions and places Gabi has actually photographed, keep her existing copy on rewrites).
 - `scripts/mark-published.sh` flips queue items to `"published"` once their PR is merged. It runs at the start of every run.
@@ -56,7 +56,7 @@ Every contact-form email ends with four lines the visitor never sees: how they f
 
 ## Visual Brand
 - **Colors:** Cream #FAF9F6, Sage #9CA896, Rose #C4A39A, Charcoal #2B2B2B, White #FFFFFF
-- **Fonts:** Cormorant Garamond (display), Montserrat (body)
+- **Fonts:** Cormorant Garamond (display), Montserrat (body), bundled in `src/app/fonts` via next/font/local (no Google Fonts download at build time)
 - **Logo:** Text wordmark "Tovy Photography" in Cormorant Garamond
 
 ## Pricing (source of truth is sessions page code)

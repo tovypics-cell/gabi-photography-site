@@ -10,6 +10,11 @@
 #   scripts/weekly-page.sh --dry-run    full run, but the queue item stays "queued"
 #                                       and the PR is a draft on a --dry-run- branch
 #   scripts/weekly-page.sh --base BR    start from branch BR instead of main
+#   scripts/weekly-page.sh --check      health check only: sync, pricing check, pick the next
+#                                       item and build main. Writes nothing, opens no PR.
+#
+# Runs from its own clone (~/.tovy-loop/site since 2026-10-25) that no Claude session uses,
+# so other work never leaves it on the wrong branch or with stray files.
 #
 # Runs on Omer's Mac mini (OpenSEO available) since 2026-09-22. It can also run on Gabi's
 # MacBook; only one machine should have the launchd agent loaded at a time.
@@ -44,10 +49,12 @@ LOCK="$HOME/.cache/tovy-weekly-page.lock"
 export PATH="$HOME/.local/node/bin:$HOME/.local/bin:$HOME/.npm-global/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 DRY_RUN=0
+CHECK=0
 BASE="main"
 while [ $# -gt 0 ]; do
   case "$1" in
     --dry-run) DRY_RUN=1 ;;
+    --check) CHECK=1 ;;
     --base) BASE="${2:?--base needs a branch}"; shift ;;
     -h|--help) sed -n '2,20p' "$0"; exit 0 ;;
     *) echo "unknown option: $1" >&2; exit 2 ;;
@@ -130,7 +137,7 @@ mkdir -p "$(dirname "$LOCK")"
 mkdir "$LOCK" 2>/dev/null || { log "another run is in progress ($LOCK), exiting"; exit 0; }
 trap finish EXIT
 
-log "==== weekly page run (dry_run=$DRY_RUN base=$BASE) ===="
+log "==== weekly page run (dry_run=$DRY_RUN check=$CHECK base=$BASE) ===="
 STAGE="preflight"
 if [ -z "${CLAUDE_BIN:-}" ]; then
   CLAUDE_BIN="$(ls -d "$HOME/Library/Application Support/Claude/claude-code/"*/claude.app/Contents/MacOS/claude 2>/dev/null | sort -V | tail -1 || true)"
@@ -151,12 +158,25 @@ if [ -n "$(git status --porcelain -- "$QUEUE")" ] && [ -z "$(git status --porcel
   git checkout -q -- "$QUEUE"
   log "discarded a leftover uncommitted $QUEUE from a previous run"
 fi
-[ -z "$(git status --porcelain)" ] || die "working tree has uncommitted changes, not touching it"
+# Self-repair: this clone belongs to the loop, so anything uncommitted here is debris from a
+# crashed run. Keep it in a stash (never delete it), then carry on from a clean tree.
+if [ -n "$(git status --porcelain)" ]; then
+  git stash push -q -u -m "loop preflight $(date '+%Y-%m-%d %H:%M') on $(git branch --show-current)"
+  log "working tree was not clean; stashed it (git stash list) and continuing"
+  notify "Tovy weekly page: found leftover changes in the loop folder and stashed them before running. Nothing was lost; see git stash list in $REPO."
+fi
 
 # ---------- sync base ----------
 STAGE="git sync"
-git checkout -q "$BASE"
-git pull -q --ff-only origin "$BASE"
+git fetch -q origin "$BASE"
+# Local main should never carry its own commits. If it does, keep them on a dated branch,
+# then reset main to GitHub so a stuck checkout can never block a run.
+if [ -n "$(git rev-list "origin/$BASE..$BASE" 2>/dev/null)" ]; then
+  keep="$BASE--local-$(date +%Y%m%d%H%M)"
+  git branch -q "$keep" "$BASE"
+  log "local $BASE had commits not on GitHub; kept them on $keep"
+fi
+git checkout -q -B "$BASE" "origin/$BASE"
 [ -f "$QUEUE" ] && [ -f "$PROMPT_FILE" ] || die "$QUEUE or $PROMPT_FILE missing on $BASE"
 BASE_SHA_REMOTE="$(git rev-parse "origin/$BASE")"
 
@@ -212,6 +232,18 @@ TYPE="$(jq -r .type <<<"$item")"
 KEYWORD="$(jq -r .primaryKeyword <<<"$item")"
 SOURCE_DRAFT="$(jq -r '.sourceDraft // "null"' <<<"$item")"
 log "item: $SLUG ($TYPE) keyword=\"$KEYWORD\" draft=$SOURCE_DRAFT"
+
+if [ "$CHECK" = 1 ]; then
+  STAGE="check build"
+  git checkout -q -- "$QUEUE"
+  if ! npm run build > "$RUN_DIR.check-build.log" 2>&1; then
+    log "check: build failed once; retrying in 60s"
+    sleep 60
+    npm run build > "$RUN_DIR.check-build.log" 2>&1 || die "check: npm run build fails on $BASE (see $REPO/$RUN_DIR.check-build.log)"
+  fi
+  log "check OK: on $BASE at $(git rev-parse --short HEAD), next item $SLUG, build passes"
+  exit 0
+fi
 
 if [ "$DRY_RUN" = 1 ]; then
   BRANCH="content/$SLUG--dry-run-$(date +%Y%m%d%H%M)"
