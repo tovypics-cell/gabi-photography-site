@@ -236,10 +236,11 @@ log "item: $SLUG ($TYPE) keyword=\"$KEYWORD\" draft=$SOURCE_DRAFT"
 if [ "$CHECK" = 1 ]; then
   STAGE="check build"
   git checkout -q -- "$QUEUE"
-  if ! npm run build > "$RUN_DIR.check-build.log" 2>&1; then
+  mkdir -p "$RUN_DIR"   # gitignored, so the check leaves the tree clean
+  if ! npm run build > "$RUN_DIR/check-build.log" 2>&1; then
     log "check: build failed once; retrying in 60s"
     sleep 60
-    npm run build > "$RUN_DIR.check-build.log" 2>&1 || die "check: npm run build fails on $BASE (see $REPO/$RUN_DIR.check-build.log)"
+    npm run build > "$RUN_DIR/check-build.log" 2>&1 || die "check: npm run build fails on $BASE (see $REPO/$RUN_DIR/check-build.log)"
   fi
   log "check OK: on $BASE at $(git rev-parse --short HEAD), next item $SLUG, build passes"
   exit 0
