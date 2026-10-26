@@ -500,6 +500,8 @@ export const blogPosts: BlogPost[] = [
 
 <p><strong>Best light:</strong> Evening golden hour. The wooded paths fall into shade before the beach does, so we can start in the trees and finish by the water.</p>
 
+<p>Bringing your dog? Here is how to plan <a href="/blog/family-photos-with-dog">family photos with your dog</a>.</p>
+
 <h2>Winnetka and Wilmette: Classic North Shore Charm</h2>
 
 <h3>Where should we take family photos in Wilmette?</h3>
