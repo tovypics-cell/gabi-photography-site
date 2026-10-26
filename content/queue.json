@@ -254,12 +254,13 @@
         "file": "src/app/sessions/page.tsx"
       },
       "sourceDraft": null,
-      "status": "in_review",
+      "status": "published",
       "branch": "content/rewrite-sessions-headshots",
-      "pr": null,
+      "pr": 38,
       "updatedAt": "2026-10-19",
       "phase": 0,
-      "notes": "Add one short section near the Tailored package: headshots on request (individual, family members, small business), quoted on request. No headshot gallery claims and no price. Do not change any package price, length or image count; npm run check:pricing must pass."
+      "notes": "Add one short section near the Tailored package: headshots on request (individual, family members, small business), quoted on request. No headshot gallery claims and no price. Do not change any package price, length or image count; npm run check:pricing must pass.",
+      "publishedAt": "2026-10-25"
     },
     {
       "slug": "family-photos-with-dog",
