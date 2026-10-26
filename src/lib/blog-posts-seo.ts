@@ -233,6 +233,8 @@ export const seoBlogPosts: BlogPost[] = [
 
 <p>Home, every time. Toddlers meeting a camera and a new baby in an unfamiliar room is a lot to ask. At home they have their own space to retreat to, and the dog can be in a frame or two.</p>
 
+<p>If your dog will be part of the session, here is how I plan <a href="/blog/family-photos-with-dog">family and newborn photos with a dog</a>.</p>
+
 <h2>Cost</h2>
 
 <p>In-home lifestyle sessions are usually the more affordable option because there is no studio overhead, no props and no product minimums. My in-home newborn sessions run from $250 to $500 with edited images and print rights included. Published Chicago studio packages commonly run from around $400 in session fees to well over $1,000 all-in. Read more in <a href="/blog/newborn-photography-cost-chicago-north-shore">how much newborn photography costs in Chicago</a>.</p>
@@ -717,6 +719,117 @@ export const seoBlogPosts: BlogPost[] = [
 <h2>Let's plan your Hanukkah photos</h2>
 
 <p>The weeks before Hanukkah fill up alongside the rest of the holiday season, so the earlier we talk, the more choice you have. <a href="/contact">Tell me about your family</a>, whether you are picturing a card photo by the window or the real candles on the fourth night, and I will suggest a date, a time and a package.</p>
+`,
+  },
+  {
+    slug: "family-photos-with-dog",
+    title: "Family Photos With Your Dog: How to Plan a Session Everyone Enjoys",
+    excerpt:
+      "Your dog is part of the family, so of course they belong in your family photos. Here is how to get a calm dog, happy kids and photos that look like home, outdoors or in your living room.",
+    date: "2026-10-26",
+    category: "Family",
+    image: "/photos/family-walking-playful.jpg",
+    seoTitle: "Family Photos With Dog: Tips and Ideas | Tovy Photography",
+    seoDescription:
+      "How to plan family photos with your dog: tiring them out first, bringing a helper, where to shoot, newborns and dogs, and what a session costs in Skokie.",
+    faqs: [
+      {
+        question: "Can I bring my dog to our family photo session?",
+        answer:
+          "Yes. Dogs are welcome in my family sessions, because they are part of the family. Tell me about your dog when you book so we can plan the timing and the place around them.",
+      },
+      {
+        question: "How do you get a dog to look at the camera in family photos?",
+        answer:
+          "A tired dog and a treat or squeaky toy held right by the lens do most of the work. A helper standing behind me can call the dog's name at the right moment, so the family can stay relaxed instead of wrangling.",
+      },
+      {
+        question: "Should someone come along to handle the dog?",
+        answer:
+          "It helps a lot. A friend, grandparent or dog walker can hold the leash between frames, hand out treats and take the dog home after the first part of the session, so the rest can focus on the kids.",
+      },
+      {
+        question: "Where should we take family photos with a dog?",
+        answer:
+          "At home is the easiest, since your dog is calm and comfortable there. For outdoor photos, choose a park where dogs are allowed and that is quiet at the time of day we shoot, and check the park's pet rules before the session.",
+      },
+      {
+        question: "Can our dog be in newborn photos?",
+        answer:
+          "Yes, during an in-home newborn session. An adult stays with the dog the whole time, and I photograph the dog beside the baby or with a parent holding the baby, never with the dog leaning over the baby on its own.",
+      },
+      {
+        question: "How much do family photos with a dog cost?",
+        answer:
+          "A dog joins a regular family session, so the packages are the same: $250 for a 30-minute mini with 10+ edited images, $375 for 60 minutes and 25+ images, and $500 for 90 minutes and 40+ images.",
+      },
+    ],
+    content: `
+<p>The best family photos with a dog happen when the dog is tired, someone besides the parents is holding the leash, and the dog gets photographed early in the session, so plan a long walk beforehand, bring a helper and treats, and choose a calm place where dogs are allowed. I am a family photographer in Skokie, and dogs are always welcome in my sessions across Evanston, Wilmette, Lincolnwood and Chicago's North Shore. Here is how I help families plan family photos with their dog that feel easy for everyone, the dog included.</p>
+
+<h2>Can I bring my dog to family photos?</h2>
+
+<h3>Can I bring my dog to our family photo session?</h3>
+
+<p>Yes. Your dog is part of the family, and family photos with them in it are often the ones people love most years later. Tell me about your dog when you book: their age, their energy, how they do around strangers and other dogs. That helps me suggest the right place, the right time of day and the right session length.</p>
+
+<h2>How to prepare your dog for family photos</h2>
+
+<h3>How do I get my dog ready for a family photoshoot?</h3>
+
+<p>Tire them out first. A long walk or a good game of fetch an hour or two before we start makes the biggest difference of anything on this list. A dog who has already run around is far more willing to sit next to you on a blanket.</p>
+
+<ul>
+<li><strong>Bring high-value treats</strong> your dog loves, plus a squeaky toy. I hold them near the lens to get eyes toward the camera.</li>
+<li><strong>Bring water and a bowl</strong>, especially on a warm evening.</li>
+<li><strong>Brush them</strong> the day before, and wipe their eyes and face before we start.</li>
+<li><strong>Choose a simple leash and collar.</strong> A plain leather or neutral leash blends in, and a bright one pulls the eye away from faces.</li>
+<li><strong>Practice "sit" and "stay"</strong> a few times that week, with treats, so it feels like a game on the day.</li>
+</ul>
+
+<h3>How do you get a dog to look at the camera in family photos?</h3>
+
+<p>A tired dog and a treat held right by my lens do most of the work. For the moment I need eyes on the camera, a squeak or the dog's name called by someone standing behind me usually does it. The rest of the time I am not trying to make the dog pose. Some of the sweetest frames are the dog leaning into a child, looking up at a parent, or flopped across everyone's laps.</p>
+
+<h3>Should someone come along to handle the dog?</h3>
+
+<p>Yes, if you can. A friend, grandparent or dog walker can hold the leash between frames, hand out treats and step in when the dog wanders. That way the parents can stay in the photos and actually relax. It also gives you a simple plan: we photograph the dog with the family first, then your helper takes the dog for a walk or home, and we finish with the kids.</p>
+
+<h2>Where to take family photos with a dog</h2>
+
+<h3>Where should we take family photos with a dog?</h3>
+
+<p>At home is the easiest for most dogs. They are calm in their own space, there are no squirrels or other dogs to chase, and the couch, the backyard or the front steps already feel like your family. You can see what an in-home session looks like in this <a href="/gallery/family/west-rogers-park-9-month-family-session">in-home family session in West Rogers Park</a>, all warm window light and real moments on the couch and the floor.</p>
+
+<p>For outdoor family photos with a dog, choose a park where dogs are allowed and that is quiet at the time we shoot. A weekday evening is calmer than a Saturday afternoon. Some nature centers and gardens do not allow pets, so check the park's pet rules before the session and I will do the same. Fort Sheridan in Highland Park is one place where dogs are welcome, with wooded paths, open grass and a quiet stretch of beach. I describe it and other spots in my guide to <a href="/blog/outdoor-family-photo-locations-north-shore-chicago">outdoor family photo locations on the North Shore</a>.</p>
+
+<h3>What time of day is best for family photos with a dog?</h3>
+
+<p>The hour or so before sunset, when the light is soft and warm and the parks are quieter. Plan the dog's walk and dinner around it, so they arrive tired and not hungry enough to be distracted by every smell. I look up the sunset time for your actual date and suggest a start time from there.</p>
+
+<h2>Newborn photos with a dog</h2>
+
+<h3>Can our dog be in newborn photos?</h3>
+
+<p>Yes, and an in-home newborn session is the best way to do it, because your dog is already at home and comfortable. Safety comes first. An adult stays with the dog the whole time, usually on a leash. I photograph the dog lying beside a parent who is holding the baby, or sniffing a tiny foot from a parent's lap, never with the dog leaning over the baby on its own. If your dog is still getting used to the new baby, we keep it to a few frames and let the dog rest in another room for the rest. More on how I photograph new babies at home is on my <a href="/sessions/newborn-photography">newborn photography page</a>.</p>
+
+<h2>What to wear for family photos with a dog</h2>
+
+<h3>What should we wear for family photos with our dog?</h3>
+
+<p>Choose colors that stand apart from your dog's coat, so they do not disappear into a lap. A black lab looks wonderful against cream, oatmeal and soft blue. A golden or tan dog stands out against navy, olive and white. Skip fuzzy knits that hold dog hair, and keep a lint roller in the car. For more on colors and coordinating the whole family, see my guide to <a href="/blog/what-to-wear-family-photo-session">what to wear for family photos</a>.</p>
+
+<h2>What family photos with a dog cost</h2>
+
+<h3>How much do family photos with a dog cost?</h3>
+
+<p>A dog joins a regular family session, so the packages are the same. The Mini is $250 for 30 minutes at one location with 10+ edited images. The Classic is $375 for 60 minutes and 25+ images. The Full is $500 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee.</p>
+
+<p>Most dogs are ready to be done before the kids are. A Mini works well if the photos are mostly about the dog and one or two people. For the whole family, the Classic gives the dog the first part of the session and the kids the rest. The full breakdown is on the <a href="/sessions/family-photography">family photography page</a>.</p>
+
+<h2>Let's plan photos with your whole family</h2>
+
+<p>If your dog is the one who greets everyone at the door, they belong in the pictures. <a href="/contact">Tell me about your family and your dog</a>, and I will suggest a place, a time and a package that works for all of you.</p>
 `,
   },
 ];
