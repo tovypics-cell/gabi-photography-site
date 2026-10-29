@@ -541,6 +541,7 @@ export const services: Record<string, ServicePage> = {
     ],
     related: [
       { label: "View the Milestone Gallery", href: "/gallery/milestone" },
+      { label: "Birthday Party Photography", href: "/sessions/birthday-party-photography" },
       { label: "Newborn Photography", href: "/sessions/newborn-photography" },
       { label: "Engagement Photography", href: "/sessions/engagement-photography" },
       { label: "Sessions and Pricing", href: "/sessions" },
@@ -906,6 +907,7 @@ export const services: Record<string, ServicePage> = {
     related: [
       { label: "View the Event Gallery", href: "/gallery/event" },
       { label: "Milestone Photography", href: "/sessions/milestone-photography" },
+      { label: "Birthday Party Photography", href: "/sessions/birthday-party-photography" },
       { label: "Planning a Hanukkah Photoshoot", href: "/blog/hanukkah-family-photoshoot" },
       { label: "Sessions and Pricing", href: "/sessions" },
     ],
@@ -1296,6 +1298,139 @@ export const services: Record<string, ServicePage> = {
       button: "Hold Both Dates",
     },
     serviceType: "Maternity Photography",
+  },
+
+  "birthday-party-photography": {
+    slug: "birthday-party-photography",
+    shortName: "Birthday Parties",
+    title: "Skokie Birthday Party Photographer, North Shore",
+    description:
+      "Birthday party photographer in Skokie and Chicago's North Shore. Kids parties and milestone birthdays, at home or at a venue. Quoted per event.",
+    eyebrow: "Skokie and Chicago North Shore",
+    h1: "Birthday Party Photography",
+    tagline: "The candles, the grandparents, the frosting. All of it, while you get to be at the party.",
+    heroImage: "/photos/shilo-upshirin-birthday/10-farm-cake-candles.jpg",
+    heroAlt: "Birthday party photographer, little girl looking at the lit candles on her farm-themed birthday cake",
+    cardBlurb: "Kids parties and milestone birthdays photographed in {town}, at home or at a venue.",
+    intro: [
+      {
+        heading: "What does a birthday party photographer do?",
+        paragraphs: [
+          "A birthday party photographer covers the whole celebration so you can actually be in it: guests arriving, the decorations you planned, the candles, the grandparents, and the small moments you miss while you are hosting. I am a birthday party photographer based in Skokie, and I photograph kids parties and milestone birthdays at home or at a venue across Evanston, Lincolnwood, Wilmette and Chicago's North Shore.",
+          "I photographed Shilo's third birthday, a farm-themed party with her upsherin, her first haircut, in the middle of it. The gallery has the cake and candles, her father cutting the first lock of hair, and her grandmother kissing a frosting-covered cheek. That mix of party and family is what I look for at every birthday.",
+        ],
+      },
+      {
+        heading: "Do you photograph birthday parties at home or at a venue?",
+        paragraphs: [
+          "Both. A party at home is often easiest for little kids, because naps, favorite toys and a quiet room to reset are all close by. A party room, a park pavilion or a restaurant works too. I ask about the space ahead of time so I know where the light is and where the cake table will be.",
+          "Adult milestone birthdays are planned the same way: the room, the people who came, the toast, and a few planned groupings so the photos include everyone who matters.",
+        ],
+      },
+      {
+        heading: "Do I need party coverage or a birthday portrait session?",
+        paragraphs: [
+          "If you want the party itself, the guests and the candles, you want party coverage, which I quote per event. If you mostly want beautiful photos of the birthday child and the family, a short portrait session before or after the party is simpler and uses the standard session packages.",
+          "Some families do both: a few relaxed portraits while everyone is still clean and dressed, then coverage once the guests arrive.",
+        ],
+      },
+    ],
+    includes: {
+      heading: "What you get",
+      items: [
+        { label: "Party coverage", text: "arrivals, decorations, games, the cake and the candles" },
+        { label: "Family groupings", text: "a short list planned in advance so grandparents and cousins are not missed" },
+        { label: "Traditions in the middle of the party", text: "an upsherin, a blessing, a toast, given their own quiet moment" },
+        { label: "Optional portraits", text: "the birthday child and family before or after the guests arrive" },
+        { label: "Professionally edited images", text: "delivered in a private online gallery" },
+        { label: "Full print rights", text: "for albums, thank-you cards and prints" },
+      ],
+    },
+    why: {
+      heading: "What makes birthday party photos work",
+      items: [
+        {
+          title: "The cake is the moment, so we plan around it.",
+          body: "Tell me when the candles will happen, and ask whoever is carrying the cake to wait for a nod from me. I want to be in front of the birthday child, not behind the crowd, when the singing starts.",
+        },
+        {
+          title: "Family photos go first.",
+          body: "Grandparents, siblings and the whole family together are easiest early, before sugar and friends pull everyone in different directions. We build the list ahead of time and get those frames in the first part of the party.",
+        },
+        {
+          title: "Little kids run the schedule.",
+          body: "For a toddler's party, plan it around nap time if you can. I follow the birthday child rather than pose them, and a meltdown in the corner is part of the day, not the end of the photos.",
+        },
+        {
+          title: "Party rooms are often dim.",
+          body: "Basements, halls and restaurants tend to be lit warm and low. I ask about the room in advance, and if there is a window, the cake table goes near it.",
+        },
+        {
+          title: "Traditions inside a party deserve their own plan.",
+          body: "At Shilo's party the first haircut happened in the middle of the celebration. When a tradition is part of the day, it helps to know ahead who will hold the scissors or say the blessing and where the family will gather, so I can be in the right place for it.",
+        },
+      ],
+    },
+    pricing: {
+      heading: "How much does a birthday party photographer cost?",
+      text: `Birthday party coverage is quoted per event as a Tailored session, based on how many hours you want covered and the party schedule. Portraits before or after the party use the standard packages: $300 for a 30-minute mini with 10+ edited images, $425 for a 60-minute Classic with 25+, and $550 for a 90-minute Full session with 40+. ${pricingNote}`,
+    },
+    faqs: [
+      {
+        question: "How much does a birthday party photographer cost?",
+        answer:
+          "I quote party coverage per event, based on the hours and the schedule, so send me the date and the plan and I will reply with a number. If you only want portraits of the birthday child and family, those use my standard sessions from $300 to $550.",
+      },
+      {
+        question: "Do you photograph kids birthday parties?",
+        answer:
+          "Yes. I photographed Shilo's farm-themed third birthday and upsherin, from the first haircut to the cake. I follow the kids rather than pose them, and plan the family photos early, before the party gets busy.",
+      },
+      {
+        question: "Do you photograph adult birthday parties?",
+        answer:
+          "Yes. Adult milestone birthdays are planned like any celebration: a short list of family and friend groupings, the toast or the cake, and the room itself. Coverage is quoted per event.",
+      },
+      {
+        question: "Can you photograph a birthday party at home?",
+        answer:
+          "Yes, and for young kids I often recommend it. Home keeps naps and routines close, and I only need to know where the best window light is and where the cake will be.",
+      },
+      {
+        question: "Where do you photograph birthday parties?",
+        answer:
+          "If you are looking for a birthday photographer near Skokie, I cover Skokie, Evanston, Lincolnwood, Wilmette and throughout Chicago's North Shore, at home or at a venue. Sessions within 10 miles of Skokie carry no travel fee.",
+      },
+    ],
+    proof: [
+      {
+        title: "Birthday party and first haircut celebration",
+        href: "/gallery/milestone/shilo-3rd-birthday-upshirin",
+        blurb: "Shilo's farm-themed third birthday and upsherin.",
+      },
+      {
+        title: "In-home family session in West Rogers Park",
+        href: "/gallery/family/west-rogers-park-9-month-family-session",
+        blurb: "A nine-month milestone celebrated at home.",
+      },
+      {
+        title: "Bar Mitzvah at the synagogue",
+        href: "/gallery/event/stolberg-bar-mitzvah-noam",
+        blurb: "Full celebration coverage, from the ceremony to the party details.",
+      },
+    ],
+    related: [
+      { label: "Milestone Photography", href: "/sessions/milestone-photography" },
+      { label: "Bar and Bat Mitzvahs", href: "/sessions/bar-mitzvah-photography" },
+      { label: "View the Milestone Gallery", href: "/gallery/milestone" },
+      { label: "Sessions and Pricing", href: "/sessions" },
+    ],
+    cta: {
+      heading: "Planning a birthday?",
+      text: "Send me the date, the place and a rough schedule for the party, and I will reply with a quote and a plan for the photos.",
+      button: "Request a Quote",
+    },
+    serviceType: "Birthday Party Photography",
   },
 };
 
