@@ -15,12 +15,12 @@ export const seoBlogPosts: BlogPost[] = [
     image: "/photos/parents-newborn-window.jpg",
     seoTitle: "Newborn Photography Cost in Chicago | Tovy Photography",
     seoDescription:
-      "How much does newborn photography cost in Chicago? Published guides show a few hundred to over $1,000. My in-home newborn sessions run $300 to $500.",
+      "How much does newborn photography cost in Chicago? Published guides show a few hundred to over $1,000. My in-home newborn sessions run $300 to $550.",
     faqs: [
       {
         question: "How much does a newborn photographer cost in Chicago?",
         answer:
-          "Published 2026 cost guides show Chicago newborn sessions from roughly $275 for a mini session to well over $1,000 for studio packages with products. My in-home newborn sessions in Skokie and the North Shore run from $300 to $500 with edited images and print rights included.",
+          "Published 2026 cost guides show Chicago newborn sessions from roughly $275 for a mini session to well over $1,000 for studio packages with products. My in-home newborn sessions in Skokie and the North Shore run from $300 to $550 with edited images and print rights included.",
       },
       {
         question: "What is included in a newborn photography session?",
@@ -34,7 +34,7 @@ export const seoBlogPosts: BlogPost[] = [
       },
     ],
     content: `
-<p>Newborn photography in Chicago and the North Shore costs anywhere from a couple of hundred dollars to well over a thousand, depending on whether you book a short in-home session or a full studio package with products. My in-home newborn sessions run from $300 to $500, and every package includes edited images in a private gallery with full print rights.</p>
+<p>Newborn photography in Chicago and the North Shore costs anywhere from a couple of hundred dollars to well over a thousand, depending on whether you book a short in-home session or a full studio package with products. My in-home newborn sessions run from $300 to $550, and every package includes edited images in a private gallery with full print rights.</p>
 
 <p>That is the short answer. Here is what sits behind the range so you can compare photographers fairly.</p>
 
@@ -46,8 +46,8 @@ export const seoBlogPosts: BlogPost[] = [
 </thead>
 <tbody>
 <tr><td>Mini</td><td>30 minutes</td><td>10+</td><td>$300</td></tr>
-<tr><td>Classic</td><td>60 minutes</td><td>25+</td><td>$400</td></tr>
-<tr><td>Full</td><td>90 minutes</td><td>40+</td><td>$500</td></tr>
+<tr><td>Classic</td><td>60 minutes</td><td>25+</td><td>$425</td></tr>
+<tr><td>Full</td><td>90 minutes</td><td>40+</td><td>$550</td></tr>
 </tbody>
 </table>
 
@@ -73,7 +73,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h2>What my newborn sessions cost</h2>
 
-<p>My newborn sessions happen in your home in Skokie, Evanston, Wilmette, Lincolnwood or anywhere on the North Shore. The Mini is $300 for 30 minutes and 10+ edited images. The Classic is $400 for 60 minutes and 25+ images. The Full is $500 for 90 minutes and 40+ images, which is the right choice when you want unhurried time for siblings and the whole family. Newborn sessions run on the baby's schedule, so I book them with room for feeding and settling.</p>
+<p>My newborn sessions happen in your home in Skokie, Evanston, Wilmette, Lincolnwood or anywhere on the North Shore. The Mini is $300 for 30 minutes and 10+ edited images. The Classic is $425 for 60 minutes and 25+ images. The Full is $550 for 90 minutes and 40+ images, which is the right choice when you want unhurried time for siblings and the whole family. Newborn sessions run on the baby's schedule, so I book them with room for feeding and settling.</p>
 
 <p>You can see the full breakdown on the <a href="/sessions">Sessions and Pricing page</a>, and read more about how in-home newborn sessions work on the <a href="/sessions/newborn-photography">newborn photography page</a>.</p>
 
@@ -99,12 +99,12 @@ export const seoBlogPosts: BlogPost[] = [
     image: "/photos/family-plaza-swinging.jpg",
     seoTitle: "Family Photography Prices and Costs | Tovy Photography",
     seoDescription:
-      "How much do family photos cost? 2026 guides put a typical session at $300 to $750. My Skokie and North Shore family sessions run $300 to $500, images included.",
+      "How much do family photos cost? 2026 guides put a typical session at $300 to $750. My Skokie and North Shore family sessions run $300 to $550, images included.",
     faqs: [
       {
         question: "How much do family photos cost?",
         answer:
-          "Published 2026 cost guides put a typical professional family session in the United States between about $300 and $750, with big-city studios higher. My family sessions in Skokie and the North Shore run from $300 for a 30-minute mini to $500 for a 90-minute full session, edited images and print rights included.",
+          "Published 2026 cost guides put a typical professional family session in the United States between about $300 and $750, with big-city studios higher. My family sessions in Skokie and the North Shore run from $300 for a 30-minute mini to $550 for a 90-minute full session, edited images and print rights included.",
       },
       {
         question: "Is a mini session enough for a family?",
@@ -118,7 +118,7 @@ export const seoBlogPosts: BlogPost[] = [
       },
     ],
     content: `
-<p>A professional family photo session in the United States typically costs between about $300 and $750 in 2026 according to published cost guides, with entry-level sessions starting nearer $150 and studio packages in large cities running well past $1,000. My family sessions in Skokie and Chicago's North Shore run from $300 to $500, and the edited images are included.</p>
+<p>A professional family photo session in the United States typically costs between about $300 and $750 in 2026 according to published cost guides, with entry-level sessions starting nearer $150 and studio packages in large cities running well past $1,000. My family sessions in Skokie and Chicago's North Shore run from $300 to $550, and the edited images are included.</p>
 
 <p>That range is wide because family photographers structure pricing in very different ways. Here is how to read it.</p>
 
@@ -130,8 +130,8 @@ export const seoBlogPosts: BlogPost[] = [
 </thead>
 <tbody>
 <tr><td>Mini</td><td>30 minutes</td><td>10+</td><td>$300</td></tr>
-<tr><td>Classic</td><td>60 minutes</td><td>25+</td><td>$400</td></tr>
-<tr><td>Full</td><td>90 minutes</td><td>40+</td><td>$500</td></tr>
+<tr><td>Classic</td><td>60 minutes</td><td>25+</td><td>$425</td></tr>
+<tr><td>Full</td><td>90 minutes</td><td>40+</td><td>$550</td></tr>
 </tbody>
 </table>
 
@@ -165,7 +165,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h2>What my family sessions cost</h2>
 
-<p>The Mini is $300 for 30 minutes at one location with 10+ edited images. The Classic is $400 for 60 minutes and 25+ images, and it is the most popular choice for families with young kids because it leaves room to play. The Full is $500 for 90 minutes and 40+ images, the right fit for extended family and multigenerational groups. Every package includes a private online gallery and full print rights. Wardrobe guidance is included with the Classic and Full sessions.</p>
+<p>The Mini is $300 for 30 minutes at one location with 10+ edited images. The Classic is $425 for 60 minutes and 25+ images, and it is the most popular choice for families with young kids because it leaves room to play. The Full is $550 for 90 minutes and 40+ images, the right fit for extended family and multigenerational groups. Every package includes a private online gallery and full print rights. Wardrobe guidance is included with the Classic and Full sessions.</p>
 
 <p>Details and what each package includes are on the <a href="/sessions">Sessions and Pricing page</a>. You can read about how sessions work on the <a href="/sessions/family-photography">family photography page</a>.</p>
 
@@ -237,7 +237,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h2>Cost</h2>
 
-<p>In-home lifestyle sessions are usually the more affordable option because there is no studio overhead, no props and no product minimums. My in-home newborn sessions run from $300 to $500 with edited images and print rights included. Published Chicago studio packages commonly run from around $400 in session fees to well over $1,000 all-in. Read more in <a href="/blog/newborn-photography-cost-chicago-north-shore">how much newborn photography costs in Chicago</a>.</p>
+<p>In-home lifestyle sessions are usually the more affordable option because there is no studio overhead, no props and no product minimums. My in-home newborn sessions run from $300 to $550 with edited images and print rights included. Published Chicago studio packages commonly run from around $400 in session fees to well over $1,000 all-in. Read more in <a href="/blog/newborn-photography-cost-chicago-north-shore">how much newborn photography costs in Chicago</a>.</p>
 
 <h2>A simple way to decide</h2>
 
@@ -256,12 +256,12 @@ export const seoBlogPosts: BlogPost[] = [
     image: "/photos/garfield-park-conservatory-engagement/cover-bench.jpg",
     seoTitle: "Engagement Photoshoot Cost in Chicago | Tovy Photography",
     seoDescription:
-      "How much does an engagement photoshoot cost? Chicago guides put standalone sessions at $450 to $1,200. My North Shore engagement sessions run $300 to $500.",
+      "How much does an engagement photoshoot cost? Chicago guides put standalone sessions at $450 to $1,200. My North Shore engagement sessions run $300 to $550.",
     faqs: [
       {
         question: "How much does an engagement photoshoot cost in Chicago?",
         answer:
-          "A 2026 Chicago pricing guide from TWA Photography puts a standalone engagement session with a professional at $450 to $1,200. My engagement sessions in Chicago and the North Shore run from $300 for a 30-minute mini to $500 for a 90-minute session with two locations, edited images and print rights included.",
+          "A 2026 Chicago pricing guide from TWA Photography puts a standalone engagement session with a professional at $450 to $1,200. My engagement sessions in Chicago and the North Shore run from $300 for a 30-minute mini to $550 for a 90-minute session with two locations, edited images and print rights included.",
       },
       {
         question: "Why do engagement photographers charge such different prices?",
@@ -280,7 +280,7 @@ export const seoBlogPosts: BlogPost[] = [
       },
     ],
     content: `
-<p>An engagement photoshoot in Chicago typically costs between $450 and $1,200 for a standalone session with a professional photographer, according to <a href="https://twaphoto.com/engagement-photography-in-chicago-locations-pricing-everything-you-need-to-know-2026/">TWA Photography's 2026 Chicago pricing guide</a>. Nationally the spread is wider. <a href="https://withjoy.com/blog/engagement-photos-cost/">Joy's engagement photo cost guide</a> puts it anywhere from $200 to more than $3,000. My engagement sessions in Chicago and the North Shore run from $300 to $500, and the edited images are included.</p>
+<p>An engagement photoshoot in Chicago typically costs between $450 and $1,200 for a standalone session with a professional photographer, according to <a href="https://twaphoto.com/engagement-photography-in-chicago-locations-pricing-everything-you-need-to-know-2026/">TWA Photography's 2026 Chicago pricing guide</a>. Nationally the spread is wider. <a href="https://withjoy.com/blog/engagement-photos-cost/">Joy's engagement photo cost guide</a> puts it anywhere from $200 to more than $3,000. My engagement sessions in Chicago and the North Shore run from $300 to $550, and the edited images are included.</p>
 
 <p>That is the short answer. Here is what sits behind the numbers so you can compare quotes fairly.</p>
 
@@ -308,7 +308,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h3>How much does Tovy Photography charge for engagement photos?</h3>
 
-<p>Engagement sessions use my standard packages. The Mini is $300 for 30 minutes at one location with 10+ edited images. The Classic is $400 for 60 minutes and 25+ images, and it is what most couples choose. The Full is $500 for 90 minutes and 40+ images with two locations, which works well for a lakefront-plus-neighborhood plan. Every package includes a private online gallery and full print rights, and sessions within 10 miles of Skokie carry no travel fee. Details are on the <a href="/sessions/engagement-photography">engagement photography page</a> and the <a href="/sessions">Sessions and Pricing page</a>.</p>
+<p>Engagement sessions use my standard packages. The Mini is $300 for 30 minutes at one location with 10+ edited images. The Classic is $425 for 60 minutes and 25+ images, and it is what most couples choose. The Full is $550 for 90 minutes and 40+ images with two locations, which works well for a lakefront-plus-neighborhood plan. Every package includes a private online gallery and full print rights, and sessions within 10 miles of Skokie carry no travel fee. Details are on the <a href="/sessions/engagement-photography">engagement photography page</a> and the <a href="/sessions">Sessions and Pricing page</a>.</p>
 
 <h2>What you should get for the money</h2>
 
@@ -332,12 +332,12 @@ export const seoBlogPosts: BlogPost[] = [
     image: "/photos/family-bed-portrait.jpg",
     seoTitle: "Maternity Photoshoot Cost in Chicago | Tovy Photography",
     seoDescription:
-      "How much does a maternity photoshoot cost? Chicago guides put most sessions at $500 to $1,200. My natural light maternity sessions run $300 to $500.",
+      "How much does a maternity photoshoot cost? Chicago guides put most sessions at $500 to $1,200. My natural light maternity sessions run $300 to $550.",
     faqs: [
       {
         question: "How much does a maternity photoshoot cost in Chicago?",
         answer:
-          "One Big Happy Photo's 2026 pricing guide puts most professional Chicago maternity sessions between $500 and $1,200. Tov Studio Photo's 2026 guide puts Chicago outdoor sessions at $350 to $600 and boutique studio sessions at $800 to $1,500. My maternity sessions in Skokie and the North Shore run from $300 to $500 with edited images and print rights included.",
+          "One Big Happy Photo's 2026 pricing guide puts most professional Chicago maternity sessions between $500 and $1,200. Tov Studio Photo's 2026 guide puts Chicago outdoor sessions at $350 to $600 and boutique studio sessions at $800 to $1,500. My maternity sessions in Skokie and the North Shore run from $300 to $550 with edited images and print rights included.",
       },
       {
         question: "What is the average cost of maternity photography in the US?",
@@ -356,7 +356,7 @@ export const seoBlogPosts: BlogPost[] = [
       },
     ],
     content: `
-<p>A maternity photoshoot in Chicago costs between $500 and $1,200 for most professional sessions, according to <a href="https://onebighappyphoto.com/maternity-photoshoot-pricing/">One Big Happy Photo's 2026 maternity pricing guide</a>. <a href="https://tovstudiophoto.com/average-cost-of-maternity-photography/">Tov Studio Photo's 2026 cost guide</a> splits Chicago into outdoor sessions at $350 to $600 and boutique studio sessions at $800 to $1,500, with a national average of $250 to $700. My maternity sessions in Skokie and the North Shore run from $300 to $500, and the edited images are included.</p>
+<p>A maternity photoshoot in Chicago costs between $500 and $1,200 for most professional sessions, according to <a href="https://onebighappyphoto.com/maternity-photoshoot-pricing/">One Big Happy Photo's 2026 maternity pricing guide</a>. <a href="https://tovstudiophoto.com/average-cost-of-maternity-photography/">Tov Studio Photo's 2026 cost guide</a> splits Chicago into outdoor sessions at $350 to $600 and boutique studio sessions at $800 to $1,500, with a national average of $250 to $700. My maternity sessions in Skokie and the North Shore run from $300 to $550, and the edited images are included.</p>
 
 <p>Here is what is behind those ranges, so you can compare quotes that are structured differently.</p>
 
@@ -368,8 +368,8 @@ export const seoBlogPosts: BlogPost[] = [
 </thead>
 <tbody>
 <tr><td>Mini</td><td>30 minutes</td><td>10+</td><td>$300</td></tr>
-<tr><td>Classic</td><td>60 minutes</td><td>25+</td><td>$400</td></tr>
-<tr><td>Full</td><td>90 minutes</td><td>40+</td><td>$500</td></tr>
+<tr><td>Classic</td><td>60 minutes</td><td>25+</td><td>$425</td></tr>
+<tr><td>Full</td><td>90 minutes</td><td>40+</td><td>$550</td></tr>
 </tbody>
 </table>
 
@@ -401,7 +401,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h3>How much does Tovy Photography charge for maternity photos?</h3>
 
-<p>Maternity sessions use my standard packages. The Mini is $300 for 30 minutes at one location with 10+ edited images. The Classic is $400 for 60 minutes and 25+ images, and it is the usual choice because it leaves room for your partner and kids. The Full is $500 for 90 minutes and 40+ images. Wardrobe guidance is included with Classic and Full sessions, every package includes a private online gallery with full print rights, and I photograph outdoors at North Shore parks and beaches or in your home. Details are on the <a href="/sessions/maternity-photography">maternity photography page</a>. Many families pair the maternity session with an in-home newborn session, which is described on the <a href="/sessions/maternity-and-newborn-photography">maternity and newborn page</a>.</p>
+<p>Maternity sessions use my standard packages. The Mini is $300 for 30 minutes at one location with 10+ edited images. The Classic is $425 for 60 minutes and 25+ images, and it is the usual choice because it leaves room for your partner and kids. The Full is $550 for 90 minutes and 40+ images. Wardrobe guidance is included with Classic and Full sessions, every package includes a private online gallery with full print rights, and I photograph outdoors at North Shore parks and beaches or in your home. Details are on the <a href="/sessions/maternity-photography">maternity photography page</a>. Many families pair the maternity session with an in-home newborn session, which is described on the <a href="/sessions/maternity-and-newborn-photography">maternity and newborn page</a>.</p>
 
 <h2>When to book</h2>
 
@@ -447,7 +447,7 @@ export const seoBlogPosts: BlogPost[] = [
       {
         question: "How much does a fall family photoshoot cost?",
         answer:
-          "My family sessions run from $300 for a 30-minute mini session with 10+ edited images to $500 for a 90-minute full session with 40+ images. The Classic session, $400 for 60 minutes and 25+ images, is what most families choose for fall.",
+          "My family sessions run from $300 for a 30-minute mini session with 10+ edited images to $550 for a 90-minute full session with 40+ images. The Classic session, $425 for 60 minutes and 25+ images, is what most families choose for fall.",
       },
     ],
     content: `
@@ -495,7 +495,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h3>How much does a fall family photoshoot cost?</h3>
 
-<p>My family sessions run from $300 for a 30-minute mini session with 10+ edited images, up to $500 for a 90-minute full session with 40+ images. The Classic session, $400 for 60 minutes and 25+ images, is what most families choose for a fall shoot since it gives enough time for both posed and candid moments without rushing anyone. You can see the full breakdown on the <a href="/sessions/family-photography">family photography page</a>.</p>
+<p>My family sessions run from $300 for a 30-minute mini session with 10+ edited images, up to $550 for a 90-minute full session with 40+ images. The Classic session, $425 for 60 minutes and 25+ images, is what most families choose for a fall shoot since it gives enough time for both posed and candid moments without rushing anyone. You can see the full breakdown on the <a href="/sessions/family-photography">family photography page</a>.</p>
 
 <h2>Let's plan your fall session</h2>
 
@@ -532,7 +532,7 @@ export const seoBlogPosts: BlogPost[] = [
       {
         question: "How much do Christmas family photos cost?",
         answer:
-          "My holiday family sessions use my regular packages: $300 for a 30-minute mini with 10+ edited images, $400 for 60 minutes and 25+ images, and $500 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights.",
+          "My holiday family sessions use my regular packages: $300 for a 30-minute mini with 10+ edited images, $425 for 60 minutes and 25+ images, and $550 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights.",
       },
       {
         question: "Is a mini session enough for a Christmas card?",
@@ -598,7 +598,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h3>How much do Christmas family photos cost?</h3>
 
-<p>My holiday family sessions use my regular packages. The Mini is $300 for 30 minutes at one location with 10+ edited images. The Classic is $400 for 60 minutes and 25+ images. The Full is $500 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights, so you can print your cards anywhere you like. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee.</p>
+<p>My holiday family sessions use my regular packages. The Mini is $300 for 30 minutes at one location with 10+ edited images. The Classic is $425 for 60 minutes and 25+ images. The Full is $550 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights, so you can print your cards anywhere you like. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee.</p>
 
 <h3>Is a mini session enough for a Christmas card?</h3>
 
@@ -649,7 +649,7 @@ export const seoBlogPosts: BlogPost[] = [
       {
         question: "How much does a Hanukkah photoshoot cost?",
         answer:
-          "Hanukkah sessions use my regular packages: $300 for a 30-minute mini with 10+ edited images, $400 for 60 minutes and 25+ images, and $500 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights.",
+          "Hanukkah sessions use my regular packages: $300 for a 30-minute mini with 10+ edited images, $425 for 60 minutes and 25+ images, and $550 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights.",
       },
     ],
     content: `
@@ -712,7 +712,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h3>How much does a Hanukkah photoshoot cost?</h3>
 
-<p>My Hanukkah sessions use my regular packages. The Mini is $300 for 30 minutes at one location with 10+ edited images. The Classic is $400 for 60 minutes and 25+ images. The Full is $500 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights, so you can print your cards anywhere you like. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee.</p>
+<p>My Hanukkah sessions use my regular packages. The Mini is $300 for 30 minutes at one location with 10+ edited images. The Classic is $425 for 60 minutes and 25+ images. The Full is $550 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights, so you can print your cards anywhere you like. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee.</p>
 
 <p>For a card photo of an immediate family, a <a href="/sessions/mini-sessions">mini session</a> is often enough. For candlelight on a real night of Hanukkah, or a gathering with grandparents and cousins, the Classic or Full session gives everyone time. The full breakdown is on the <a href="/sessions/family-photography">family photography page</a>. If your family celebrates both Hanukkah and Christmas, my guide to <a href="/blog/christmas-holiday-family-photos">Christmas family photos</a> covers the tree side of the season.</p>
 
@@ -761,7 +761,7 @@ export const seoBlogPosts: BlogPost[] = [
       {
         question: "How much do family photos with a dog cost?",
         answer:
-          "A dog joins a regular family session, so the packages are the same: $300 for a 30-minute mini with 10+ edited images, $400 for 60 minutes and 25+ images, and $500 for 90 minutes and 40+ images.",
+          "A dog joins a regular family session, so the packages are the same: $300 for a 30-minute mini with 10+ edited images, $425 for 60 minutes and 25+ images, and $550 for 90 minutes and 40+ images.",
       },
     ],
     content: `
@@ -823,7 +823,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h3>How much do family photos with a dog cost?</h3>
 
-<p>A dog joins a regular family session, so the packages are the same. The Mini is $300 for 30 minutes at one location with 10+ edited images. The Classic is $400 for 60 minutes and 25+ images. The Full is $500 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee.</p>
+<p>A dog joins a regular family session, so the packages are the same. The Mini is $300 for 30 minutes at one location with 10+ edited images. The Classic is $425 for 60 minutes and 25+ images. The Full is $550 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee.</p>
 
 <p>Most dogs are ready to be done before the kids are. A Mini works well if the photos are mostly about the dog and one or two people. For the whole family, the Classic gives the dog the first part of the session and the kids the rest. The full breakdown is on the <a href="/sessions/family-photography">family photography page</a>.</p>
 

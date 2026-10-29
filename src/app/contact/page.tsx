@@ -172,7 +172,7 @@ export default function ContactPage() {
                 How much do sessions cost?
               </h3>
               <p className="text-charcoal-light leading-relaxed">
-                Sessions start at $300 for a 30-minute mini and go up to $500 for a 90-minute full session.
+                Sessions start at $300 for a 30-minute mini and go up to $550 for a 90-minute full session.
                 Events are quoted individually. See the full breakdown on the Sessions and Pricing page.
               </p>
             </div>

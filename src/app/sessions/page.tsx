@@ -78,7 +78,7 @@ const packages = [
   },
   {
     name: "Classic Session",
-    price: "$400",
+    price: "$425",
     features: [
       { text: "60-minute session", highlight: true },
       { text: "One location" },
@@ -94,7 +94,7 @@ const packages = [
   },
   {
     name: "Full Session",
-    price: "$500",
+    price: "$550",
     features: [
       { text: "90-minute session", highlight: true },
       { text: "One location" },
@@ -128,7 +128,7 @@ const packages = [
 const faqs = [
   {
     q: "How much does a photo session cost?",
-    a: "Sessions start at $300 for a 30-minute Mini Session with 10+ edited images. The Classic Session is $400 for 60 minutes and 25+ images, and the Full Session is $500 for 90 minutes and 40+ images. Tailored sessions for events and special occasions are quoted on request.",
+    a: "Sessions start at $300 for a 30-minute Mini Session with 10+ edited images. The Classic Session is $425 for 60 minutes and 25+ images, and the Full Session is $550 for 90 minutes and 40+ images. Tailored sessions for events and special occasions are quoted on request.",
   },
   {
     q: "Do you offer headshots?",

@@ -161,7 +161,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>How Much Does a Newborn Session Cost?</h2>
 
-<p>My one-hour newborn session is $400 with 25+ edited images, and the full 1.5-hour session is $500 with 40+ images. I also offer mini sessions and custom packages. You can see all the details on my <a href="/sessions">sessions and pricing page</a>.</p>
+<p>My one-hour newborn session is $425 with 25+ edited images, and the full 1.5-hour session is $550 with 40+ images. I also offer mini sessions and custom packages. You can see all the details on my <a href="/sessions">sessions and pricing page</a>.</p>
 
 <h2>Ready to Book?</h2>
 
@@ -452,7 +452,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "How much does an outdoor family photo session cost?",
-        answer: "My sessions start at $300 for a 30-minute Mini Session with 10+ edited images. The Classic Session is $400 for 60 minutes and 25+ images, and the Full Session is $500 for 90 minutes and 40+ images.",
+        answer: "My sessions start at $300 for a 30-minute Mini Session with 10+ edited images. The Classic Session is $425 for 60 minutes and 25+ images, and the Full Session is $550 for 90 minutes and 40+ images.",
       },
     ],
     content: `
@@ -623,7 +623,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "How much does an engagement photo session cost?",
-        answer: "My engagement sessions start at $300 for a 30-minute Mini Session with 10+ edited images. The Classic Session is $400 for 60 minutes and 25+ images, and the Full Session is $500 for 90 minutes and 40+ images.",
+        answer: "My engagement sessions start at $300 for a 30-minute Mini Session with 10+ edited images. The Classic Session is $425 for 60 minutes and 25+ images, and the Full Session is $550 for 90 minutes and 40+ images.",
       },
     ],
     content: `
