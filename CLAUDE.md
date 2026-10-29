@@ -61,8 +61,8 @@ Every contact-form email ends with four lines the visitor never sees: how they f
 
 ## Pricing (source of truth is sessions page code)
 When a price, session length or image count changes on `/sessions` (`src/app/sessions/page.tsx`), also update `site.pricing` in `src/lib/site.ts` and this list, then run `npm run check:pricing`. It lists every page, FAQ and blog post that still quotes the old numbers; fix them all in the same change. The content loop runs this check twice a week and texts Omer if anything drifts.
-- Mini: $250 (30 min, 10+ images)
-- Classic: $375 (60 min, 25+ images) - Most Popular
+- Mini: $300 (30 min, 10+ images)
+- Classic: $400 (60 min, 25+ images) - Most Popular
 - Full: $500 (90 min, 40+ images)
 - Tailored: Custom (events/special occasions)
 
