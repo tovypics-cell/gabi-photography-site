@@ -68,7 +68,7 @@ export default function NewbornPhotographyPage() {
         addressCountry: "US",
       },
       url: "https://tovyphotography.com",
-      priceRange: "$300-$500",
+      priceRange: "$300-$550",
     },
     areaServed: [
       "Skokie",
@@ -326,7 +326,7 @@ export default function NewbornPhotographyPage() {
               How much does newborn photography cost in Skokie?
             </h3>
             <p className="text-charcoal-light leading-relaxed mb-8">
-              Sessions start at $300 for a mini session and go up to $500 for a full
+              Sessions start at $300 for a mini session and go up to $550 for a full
               session with extended coverage and more edited images. Every package
               includes an online gallery and full print rights. For a wider look at
               what shapes the price, read my{" "}

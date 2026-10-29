@@ -63,7 +63,7 @@ const files = [];
   }
 })("src");
 
-const OURS = /\b(my|I|I'm|I've|Tovy|Mini|Classic|Full session|sessions? (start|run|are|is)|start(s)? at|from \$)/;
+const OURS = /\b(my|I|I'm|I've|Tovy|Mini|Classic|Full session|The Full is|sessions? (start|run|are|is)|start(s)? at|from \$)/;
 const THEIRS = /\b(guides?|published|average|according|studios?|photographers? (charge|who|with)|charges|market|national|tiers?|Thumbtack|survey|budget sessions?)\b/i;
 const DURATION = [
   [/\b30-minute|\b30 minutes|half-hour/i, 30],
@@ -78,6 +78,19 @@ for (const file of files) {
     if (+m[1] !== min || +m[2] !== max) {
       flag(file, src.slice(0, m.index).split("\n").length, `priceRange should be "$${min}-$${max}"`, m[0]);
     }
+  }
+  // Package price tables (<td>Classic</td>...<td>$425</td>) and "($425, 60 minutes)" /
+  // "$425 for 60 minutes" phrases. The sentence pass misses these: table cells split at
+  // tags, and a fragment like "($425, 60 minutes) is the most popular" names no package.
+  for (const m of src.matchAll(/<td>(Mini|Classic|Full)<\/td>(?:<td>[^<]*<\/td>)*?<td>\$(\d+)<\/td>/g)) {
+    const pkg = packages.find((p) => p.key === m[1].toLowerCase());
+    if (pkg && +m[2] !== pkg.price) flag(file, src.slice(0, m.index).split("\n").length, `${m[1]} row says $${m[2]}, pricing page says $${pkg.price}`, m[0]);
+  }
+  for (const m of src.matchAll(/\$(\d+)(?:,| for(?: a)?) (30|60|90)[- ]minutes?\b/g)) {
+    const pkg = packages.find((p) => p.minutes === +m[2]);
+    const line = src.slice(0, m.index).split("\n").length;
+    const lineText = src.split("\n")[line - 1];
+    if (pkg && +m[1] !== pkg.price && !THEIRS.test(lineText)) flag(file, line, `$${m[1]} with ${m[2]} minutes, the ${pkg.key} session is $${pkg.price}`, m[0]);
   }
   // sentence pass. Inline tags (links, bold) are blanked out so a sentence that
   // cites a guide inside a link stays one sentence; offsets are kept for line numbers.

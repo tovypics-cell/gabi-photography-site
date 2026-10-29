@@ -68,7 +68,7 @@ export default function EngagementPhotographyPage() {
         addressCountry: "US",
       },
       url: "https://tovyphotography.com",
-      priceRange: "$300-$500",
+      priceRange: "$300-$550",
     },
     areaServed: [
       "Skokie",
@@ -314,11 +314,11 @@ export default function EngagementPhotographyPage() {
             </h2>
             <p className="text-charcoal-light leading-relaxed mb-8">
               Engagement sessions start at $300 for a focused 30-minute mini
-              session. Most couples choose the Classic session ($400, 60
+              session. Most couples choose the Classic session ($425, 60
               minutes) which gives us time to explore a location and capture the
               full range: wide shots, close-ups, candid moments, and those
               portraits you&apos;ll actually want to frame. The Full session
-              ($500, 90 minutes) is perfect if you want to include a second
+              ($550, 90 minutes) is perfect if you want to include a second
               location or a wardrobe change.
             </p>
             <Link

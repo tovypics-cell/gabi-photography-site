@@ -18,13 +18,13 @@ export const site = {
   // Published package prices. Update here and everything downstream follows.
   pricing: {
     mini: 300,
-    classic: 400,
-    full: 500,
+    classic: 425,
+    full: 550,
     travelFee: 50,
     travelRadiusMiles: 10,
     extraTimePer15Min: 100,
   },
-  priceRange: "$300-$500",
+  priceRange: "$300-$550",
   tagline: "Seeing the good in your world",
 };
 
