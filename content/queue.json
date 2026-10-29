@@ -267,12 +267,13 @@
       "type": "guide",
       "primaryKeyword": "family photos with dog",
       "sourceDraft": null,
-      "status": "in_review",
+      "status": "published",
       "plan": 26,
       "phase": 0,
       "branch": "content/family-photos-with-dog",
       "pr": 43,
-      "updatedAt": "2026-10-26"
+      "updatedAt": "2026-10-26",
+      "publishedAt": "2026-10-26"
     },
     {
       "slug": "birthday-party-photography",
