@@ -428,10 +428,6 @@ STAGE="notify"
 prefix=""; [ "$DRY_RUN" = 1 ] && prefix="[Dry run] "
 writer_notes="$(jq -r '.notes // ""' "$SUMMARY")"
 LIVE_URL="https://tovyphotography.com${URL_PATH}"
-# Ask Bing (which also feeds ChatGPT search and Copilot) to crawl the new page now. Not fatal.
-if [ "$MERGED" = 1 ]; then
-  ( sleep 120; node scripts/indexnow.mjs "$LIVE_URL" "https://tovyphotography.com/sitemap.xml" ) >> "$RUN_DIR/indexnow.log" 2>&1 &
-fi
 if [ "$MERGED" = 1 ]; then
   notify "${prefix}Published: $TITLE
 Keyword: $KEYWORD
@@ -454,4 +450,18 @@ $PR_URL"
 fi
 
 git checkout -q "$BASE"
+
+# Ask Bing (which also feeds ChatGPT search and Copilot) to crawl the new page once Vercel has
+# deployed it. Runs in the foreground: launchd kills background children when this script exits,
+# which silently dropped every ping before. Not fatal.
+if [ "$MERGED" = 1 ]; then
+  STAGE="indexnow"
+  sleep 120
+  if node scripts/indexnow.mjs "$LIVE_URL" "https://tovyphotography.com/sitemap.xml" >> "$RUN_DIR/indexnow.log" 2>&1; then
+    log "$(tail -n 1 "$RUN_DIR/indexnow.log")"
+  else
+    log "IndexNow ping failed, not fatal (see .content-run/indexnow.log)"
+  fi
+fi
+
 log "done: $PR_URL"
