@@ -6,14 +6,14 @@ import ScrollReveal from "@/components/ScrollReveal";
 export const metadata: Metadata = {
   title: "Sessions and Pricing in Skokie",
   description:
-    "Family, newborn, maternity, milestone and event photography from $250, plus headshots on request. Sessions in Skokie and the North Shore.",
+    "Family, newborn, maternity, milestone and event photography from $300, plus headshots on request. Sessions in Skokie and the North Shore.",
   alternates: {
     canonical: "https://tovyphotography.com/sessions",
   },
   openGraph: {
     title: "Sessions & Pricing | Tovy Photography",
     description:
-      "Photography packages starting at $250. Family, newborn, milestone, and event sessions in Skokie, IL.",
+      "Photography packages starting at $300. Family, newborn, milestone, and event sessions in Skokie, IL.",
     url: "https://tovyphotography.com/sessions",
   },
 };
@@ -65,7 +65,7 @@ const sessions: {
 const packages = [
   {
     name: "Mini Session",
-    price: "$250",
+    price: "$300",
     features: [
       { text: "30-minute session", highlight: true },
       { text: "One location" },
@@ -78,7 +78,7 @@ const packages = [
   },
   {
     name: "Classic Session",
-    price: "$375",
+    price: "$400",
     features: [
       { text: "60-minute session", highlight: true },
       { text: "One location" },
@@ -128,7 +128,7 @@ const packages = [
 const faqs = [
   {
     q: "How much does a photo session cost?",
-    a: "Sessions start at $250 for a 30-minute Mini Session with 10+ edited images. The Classic Session is $375 for 60 minutes and 25+ images, and the Full Session is $500 for 90 minutes and 40+ images. Tailored sessions for events and special occasions are quoted on request.",
+    a: "Sessions start at $300 for a 30-minute Mini Session with 10+ edited images. The Classic Session is $400 for 60 minutes and 25+ images, and the Full Session is $500 for 90 minutes and 40+ images. Tailored sessions for events and special occasions are quoted on request.",
   },
   {
     q: "Do you offer headshots?",
@@ -206,7 +206,7 @@ export default function SessionsPage() {
             I&apos;m Gabi, a Skokie-based photographer offering family, newborn,
             maternity, milestone and event sessions, plus headshots on request,
             in Skokie, Evanston, Lincolnwood, Wilmette and across Chicago&apos;s
-            North Shore. Sessions start at $250 for a 30-minute Mini Session
+            North Shore. Sessions start at $300 for a 30-minute Mini Session
             with 10+ edited images, and Tailored sessions and headshots are
             quoted on request.
           </p>

@@ -95,11 +95,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "How much does a newborn photo session cost?",
-        answer: "My sessions start at $250. You can see every package on my sessions and pricing page.",
+        answer: "My sessions start at $300. You can see every package on my sessions and pricing page.",
       },
     ],
     content: `
-<p>The best time to take newborn photos is in the first 5 to 14 days after birth, and the best time to book them is during your third trimester. I'm Gabi, an in-home <a href="/sessions/newborn-photography">newborn photographer in Skokie</a> serving families across Chicago's North Shore, and my sessions start at $250.</p>
+<p>The best time to take newborn photos is in the first 5 to 14 days after birth, and the best time to book them is during your third trimester. I'm Gabi, an in-home <a href="/sessions/newborn-photography">newborn photographer in Skokie</a> serving families across Chicago's North Shore, and my sessions start at $300.</p>
 
 <h2>When should you take newborn photos?</h2>
 
@@ -161,7 +161,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>How Much Does a Newborn Session Cost?</h2>
 
-<p>My one-hour newborn session is $375 with 25+ edited images, and the full 1.5-hour session is $500 with 40+ images. I also offer mini sessions and custom packages. You can see all the details on my <a href="/sessions">sessions and pricing page</a>.</p>
+<p>My one-hour newborn session is $400 with 25+ edited images, and the full 1.5-hour session is $500 with 40+ images. I also offer mini sessions and custom packages. You can see all the details on my <a href="/sessions">sessions and pricing page</a>.</p>
 
 <h2>Ready to Book?</h2>
 
@@ -428,7 +428,7 @@ export const blogPosts: BlogPost[] = [
     category: "Locations",
     image: "/photos/north-shore-family-tall-grasses.jpg",
     seoTitle: "Outdoor Family Photo Locations, North Shore | Tovy Photography",
-    seoDescription: "Outdoor family photo locations on Chicago's North Shore, from Glencoe Beach to Gillson Park, with the best light for each. Sessions start at $250.",
+    seoDescription: "Outdoor family photo locations on Chicago's North Shore, from Glencoe Beach to Gillson Park, with the best light for each. Sessions start at $300.",
     faqs: [
       {
         question: "What are the best outdoor family photo locations on Chicago's North Shore?",
@@ -452,11 +452,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "How much does an outdoor family photo session cost?",
-        answer: "My sessions start at $250 for a 30-minute Mini Session with 10+ edited images. The Classic Session is $375 for 60 minutes and 25+ images, and the Full Session is $500 for 90 minutes and 40+ images.",
+        answer: "My sessions start at $300 for a 30-minute Mini Session with 10+ edited images. The Classic Session is $400 for 60 minutes and 25+ images, and the Full Session is $500 for 90 minutes and 40+ images.",
       },
     ],
     content: `
-<p>The best outdoor family photo locations on Chicago's North Shore are Glencoe Beach and the Chicago Botanic Garden, Fort Sheridan in Highland Park, Gillson Park in Wilmette, the Winnetka lakefront, and, closer to Skokie, the Evanston lakefront and the Skokie Northshore Sculpture Park. I'm Gabi, a Skokie <a href="/sessions/family-photography">family photographer</a> serving the North Shore, and my outdoor family sessions start at $250.</p>
+<p>The best outdoor family photo locations on Chicago's North Shore are Glencoe Beach and the Chicago Botanic Garden, Fort Sheridan in Highland Park, Gillson Park in Wilmette, the Winnetka lakefront, and, closer to Skokie, the Evanston lakefront and the Skokie Northshore Sculpture Park. I'm Gabi, a Skokie <a href="/sessions/family-photography">family photographer</a> serving the North Shore, and my outdoor family sessions start at $300.</p>
 
 <p>One of the questions I get asked most often is some version of "where should we actually take our pictures?" And I love it, because choosing the right spot is half the magic. As a Skokie-based photographer, I spend a lot of my time scouting outdoor family photo locations across Chicago's North Shore, and I've built a detailed mental map of the spots that photograph beautifully in every season, and the ones that look gorgeous in person but turn into a sea of harsh shadows and parking headaches the moment you show up with three kids and a stroller.</p>
 
@@ -623,11 +623,11 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "How much does an engagement photo session cost?",
-        answer: "My engagement sessions start at $250 for a 30-minute Mini Session with 10+ edited images. The Classic Session is $375 for 60 minutes and 25+ images, and the Full Session is $500 for 90 minutes and 40+ images.",
+        answer: "My engagement sessions start at $300 for a 30-minute Mini Session with 10+ edited images. The Classic Session is $400 for 60 minutes and 25+ images, and the Full Session is $500 for 90 minutes and 40+ images.",
       },
     ],
     content: `
-<p>The best places for engagement photos in Chicago, if you would rather skip the downtown crowds, are on the North Shore: Grosse Point Lighthouse and the Northwestern Lakefill in Evanston, Gillson Park in Wilmette, the Chicago Botanic Garden in Glencoe and Rosewood Beach in Highland Park, with Garfield Park Conservatory as my pick inside the city. I'm Gabi, a Skokie <a href="/sessions/engagement-photography">engagement photographer</a> serving Chicago and the North Shore, and my sessions start at $250.</p>
+<p>The best places for engagement photos in Chicago, if you would rather skip the downtown crowds, are on the North Shore: Grosse Point Lighthouse and the Northwestern Lakefill in Evanston, Gillson Park in Wilmette, the Chicago Botanic Garden in Glencoe and Rosewood Beach in Highland Park, with Garfield Park Conservatory as my pick inside the city. I'm Gabi, a Skokie <a href="/sessions/engagement-photography">engagement photographer</a> serving Chicago and the North Shore, and my sessions start at $300.</p>
 
 <p>When couples ask me where to take their engagement photos, they almost always assume we need to head downtown. The Chicago skyline is gorgeous, no argument there, but as a photographer based in Skokie, I'm going to let you in on something: some of the most beautiful engagement photo locations in the Chicago area are right here on the North Shore, and most of them come without the crowds, the parking headaches, or the twelve other couples waiting for the same spot.</p>
 
