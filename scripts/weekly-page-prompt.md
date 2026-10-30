@@ -14,7 +14,7 @@ The run parameters are appended at the bottom of this prompt: `SLUG`, `TYPE`, `P
 
 ## Step 1: Load the item
 
-1. Read `content/queue.json`. Find the first item whose `status` is `"queued"`. Its `slug` must equal `SLUG`. If it does not, block with reason `queue mismatch`.
+1. Read `content/queue.json`. Find the item whose `slug` equals `SLUG`. Its `status` must be `"queued"`; if there is no such item, block with reason `queue mismatch`. It does not have to be the first queued item: the script skips items that wait on a gallery or have an open branch, and it takes rewrites on Mondays and new pages on Thursdays.
 2. Read `CLAUDE.md` in full. Its Brand Rules are binding. Then read the Ground rules section of `content/seo-plan.md` and the phase this item belongs to in `content/seo-roadmap.md` (the item's `phase` number), which are binding too.
    If the queue item has a `notes` field, follow it. A note that says "Block unless" is a condition you must check before writing anything.
 3. If `SOURCE_DRAFT` is not `null`, read that file. It is Gabi's draft. Keep her wording and ideas wherever they already meet the rules below. Your job is to shape it, not replace her voice.
@@ -73,6 +73,18 @@ The sitemap reads all three files, so do not edit `src/app/sitemap.ts`.
 - Add two internal links from the page to related pages that exist, and one link to the page from another existing page if it has fewer than two inbound links (check with `grep -r "<url>" src`).
 - Do not touch `Header.tsx`, pricing values, the About page hero color, admin or client-gallery code.
 - In the summary file set `url` to `target.url` and `dataFile` to `target.file`.
+
+**Rewriting a town page (`target.file` is `src/lib/locations.ts`).** Twelve town pages share one template, shared FAQ helpers and the same few proof galleries, so Google sees most of each page as the same text, and they rank for family searches but not for newborn or maternity searches in the town. The rewrite makes the one page named in `target.url` clearly about that town and about all three of her main session types there.
+
+- Edit only that town's entry in `locationPages`. Do not edit the shared helpers (`faqCost`, `faqInHome`, `faqBestTime`, `faqNewbornTiming`, `faqBookAhead`, `faqKids`) or another town's entry: they feed every town page. To change one of those answers for this town, replace the helper call in this town's `faqs` array with a written-out FAQ.
+- Set `updated` on the entry to `TODAY`. The sitemap reads it.
+- `content` covers family, newborn and maternity in this town, one or two paragraphs each: where family sessions work here, what an in-home newborn session in this town looks like, and where maternity photos work here (a beach, a garden, a quiet street, or at home). Keep the existing sentences that already say something specific about the town.
+- `faqs`: 6 to 8 total. At least four must name the town in the question, including one newborn question and one maternity question with the town's name in it (for example "Do you photograph newborns at home in Wilmette?" and "Where can we take maternity photos in Wilmette?"). Keep at most two shared helpers that do not name the town. Keep the town's cost FAQ and its travel-fee facts exactly as they are now.
+- `proof`: lead with real galleries shot in this town or the nearest one (Skokie: Skokie Public Library family, Cooper and Sweet Baby Girl newborns; Wilmette: Keay Nature Center family; West Rogers Park: in-home 9-month family; Chicago: Nemsick newborn, Garfield Park engagement). Do not use the same three galleries as the neighboring towns' entries when another real gallery fits. Add a new `ProofItem` constant if you need a gallery that has none. The blurb describes the gallery truthfully, and for a town she has no gallery in, the proof is labeled by where it was actually shot.
+- `landmarks` and every new place you name must be real places in or next to that town. Check each with WebSearch before using it, and add a one-line permit or access note where the park district has rules for professional photography. Future tense for places she has not shot ("we can meet at").
+- `title` keeps the pattern "<Town> Family and Newborn Photographer" or "<Town> Family, Newborn and Maternity Photographer" if it fits in 60 characters. `h1` stays as it is. `description` names family, newborn and maternity and the town.
+- Do not compete with the homepage or the service pages for their main searches: the Skokie newborn search belongs to `/sessions/newborn-photography` and the homepage. Link to those pages from the town page instead.
+- Add one link to this town page from a related blog post or service page that does not link to it yet, if a reader there would want it (for example the Wilmette page from a post that mentions Gillson Park or Keay Nature Center).
 
 ## Step 4: Link it in
 

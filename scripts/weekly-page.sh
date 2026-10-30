@@ -13,6 +13,10 @@
 #   scripts/weekly-page.sh --check      health check only: sync, pricing check, pick the next
 #                                       item and build main. Writes nothing, opens no PR.
 #
+# Mondays take the first queued rewrite (improve a page that already exists), Thursdays the
+# first queued new page. Either day falls back to queue order when nothing of that kind is
+# available. Other days use plain queue order. TOVY_PREFER=rewrite|new|none overrides.
+#
 # Runs from its own clone (~/.tovy-loop/site since 2026-10-25) that no Claude session uses,
 # so other work never leaves it on the wrong branch or with stray files.
 #
@@ -214,9 +218,19 @@ for slug in $(jq -r '.items[] | select(.status == "queued") | select(.gate != nu
 done
 [ -n "$gate_failed" ] && log "gate not met (no matching gallery yet):$gate_failed"
 skip_all="$(printf '%s\n%s\n%s\n' "$existing_branches" "$blocked_slugs" "$(echo $gate_failed | tr ' ' '\n')")"
-item="$(jq -c --arg skip "$skip_all" '
+case "${TOVY_PREFER:-$(date +%u)}" in
+  rewrite|1) PREFER="rewrite" ;;
+  new|4)     PREFER="new" ;;
+  *)         PREFER="none" ;;
+esac
+item="$(jq -c --arg skip "$skip_all" --arg prefer "$PREFER" '
   ($skip | split("\n") | map(select(length > 0))) as $s
-  | [.items[] | select(.status == "queued") | select((.slug as $x | $s | index($x)) == null)][0] // empty' "$QUEUE")"
+  | [.items[] | select(.status == "queued") | select((.slug as $x | $s | index($x)) == null)] as $q
+  | (if $prefer == "rewrite" then [$q[] | select(.type == "rewrite")]
+     elif $prefer == "new" then [$q[] | select(.type != "rewrite")]
+     else [] end) as $p
+  | ($p[0] // $q[0]) // empty' "$QUEUE")"
+log "today's preference: $PREFER"
 skipped="$(jq -r --arg skip "$existing_branches" '
   ($skip | split("\n") | map(select(length > 0))) as $s
   | [.items[] | select(.status == "queued") | select((.slug as $x | $s | index($x)) != null) | .slug] | join(", ")' "$QUEUE")"

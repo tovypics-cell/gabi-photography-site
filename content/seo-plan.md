@@ -84,7 +84,7 @@ Status key: Live = on main today. Built = in the seo-merge branch. New = to crea
 | 44 | Skokie, Evanston, Lincolnwood, Wilmette | Built (rewritten with FAQs and proof) |
 | 45 | Morton Grove, Glenview, Niles, Northbrook | Built |
 | 46 | Park Ridge, Winnetka, Highland Park, West Rogers Park | Built |
-| 47 | Deerfield, Glencoe, Kenilworth | New (drafts exist) |
+| 47 | Deerfield, Glencoe, Kenilworth | On hold until 44 to 46 are rewritten (2026-10-30) |
 | 48 | Lake Forest, Buffalo Grove, Arlington Heights | New, lowest priority |
 | 49 | Chicago neighborhoods: Lincoln Park, Lakeview, Edgewater, Rogers Park | New, only after real sessions there |
 | 50 | Graduation and senior portraits, Evanston | senior pictures chicago 70; northwestern graduation photos 20 | New |

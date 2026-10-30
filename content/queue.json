@@ -220,32 +220,6 @@
       "publishedAt": "2026-10-15"
     },
     {
-      "slug": "rewrite-maternity-photography",
-      "type": "rewrite",
-      "primaryKeyword": "maternity photographer chicago",
-      "target": {
-        "url": "/sessions/maternity-photography",
-        "file": "src/lib/services.ts"
-      },
-      "sourceDraft": null,
-      "status": "queued",
-      "pr": null,
-      "phase": 0,
-      "gate": "maternity",
-      "notes": "Waits for Gabi's maternity gallery in gallery-data.ts. Build the page around that real session: where and when it was shot, what the session felt like. Also target 'maternity photographer near me' and 'maternity photoshoot' in the summary, one H3 and one FAQ. Link the gallery, /sessions/maternity-and-newborn-photography, /blog/maternity-photoshoot-cost-chicago and /blog/maternity-photos-when-to-book-what-to-wear. Keep every existing FAQ."
-    },
-    {
-      "slug": "maternity-photoshoot-ideas",
-      "type": "guide",
-      "primaryKeyword": "maternity photoshoot ideas",
-      "sourceDraft": null,
-      "status": "queued",
-      "pr": null,
-      "phase": 0,
-      "gate": "maternity",
-      "notes": "Waits for the maternity gallery. Ideas drawn from Gabi's real maternity session first (use its photos), then general ideas framed as suggestions, not claims. Answer-first opener, H3 per idea, faqs array. Link the maternity page and the gallery."
-    },
-    {
       "slug": "rewrite-sessions-headshots",
       "type": "rewrite",
       "primaryKeyword": "headshot photographer near me",
@@ -288,6 +262,46 @@
       "notes": "Also target 'photographer for birthday party' and 'birthday photographer near me'. Proof: the Shilo 3rd birthday and upsherin gallery. Kids parties, adult milestone birthdays, at home or at a venue. Quote per event like the mitzvah page; pre-party portraits use standard packages."
     },
     {
+      "slug": "rewrite-maternity-photography",
+      "type": "rewrite",
+      "primaryKeyword": "maternity photographer chicago",
+      "target": {
+        "url": "/sessions/maternity-photography",
+        "file": "src/lib/services.ts"
+      },
+      "sourceDraft": null,
+      "status": "queued",
+      "pr": null,
+      "phase": 0,
+      "gate": "maternity",
+      "notes": "Waits for Gabi's maternity gallery in gallery-data.ts. Build the page around that real session: where and when it was shot, what the session felt like. Also target 'maternity photographer near me' and 'maternity photoshoot' in the summary, one H3 and one FAQ. Link the gallery, /sessions/maternity-and-newborn-photography, /blog/maternity-photoshoot-cost-chicago and /blog/maternity-photos-when-to-book-what-to-wear. Keep every existing FAQ."
+    },
+    {
+      "slug": "maternity-photoshoot-ideas",
+      "type": "guide",
+      "primaryKeyword": "maternity photoshoot ideas",
+      "sourceDraft": null,
+      "status": "queued",
+      "pr": null,
+      "phase": 0,
+      "gate": "maternity",
+      "notes": "Waits for the maternity gallery. Ideas drawn from Gabi's real maternity session first (use its photos), then general ideas framed as suggestions, not claims. Answer-first opener, H3 per idea, faqs array. Link the maternity page and the gallery."
+    },
+    {
+      "slug": "rewrite-location-highland-park",
+      "type": "rewrite",
+      "status": "queued",
+      "phase": 4,
+      "primaryKeyword": "newborn photographer highland park",
+      "target": {
+        "file": "src/lib/locations.ts",
+        "url": "/locations/highland-park"
+      },
+      "sourceDraft": null,
+      "notes": "Search Console 2026-09-29 to 10-27: the site's best town page (127 impressions, 5 clicks) and about #2.5 for 'family photographer highland park', but #29 for 'newborn photographer highland park' and #31 for 'maternity photographer highland park' (16 impressions). Keep what earns the family ranking (title, intro, Rosewood Beach, ravines, travel-fee lines) and add the newborn and maternity depth. No gallery was shot in Highland Park; the nearest real ones are Keay Nature Center in Wilmette and the Skokie newborns. Follow 'Rewriting a town page' in the writer prompt.",
+      "addedAt": "2026-10-30"
+    },
+    {
       "slug": "first-birthday-photography",
       "type": "service",
       "primaryKeyword": "first birthday photoshoot",
@@ -296,6 +310,20 @@
       "pr": null,
       "phase": 1,
       "notes": "Proof: West Rogers Park 9-month session and Shilo 3rd birthday. Describe cake smash in future tense only, no claim of having shot one. Link to milestone page and newborn page (first-year story)."
+    },
+    {
+      "slug": "rewrite-location-evanston",
+      "type": "rewrite",
+      "status": "queued",
+      "phase": 4,
+      "primaryKeyword": "family photographer evanston",
+      "target": {
+        "file": "src/lib/locations.ts",
+        "url": "/locations/evanston"
+      },
+      "sourceDraft": null,
+      "notes": "Search Console 2026-09-29 to 10-27: the homepage is about #11 for 'family photographer evanston' and this page only #35; 'baby photographer evanston' and 'maternity photographer evanston' also show impressions. No gallery was shot in Evanston; the nearest real ones are the Skokie galleries and Keay Nature Center in Wilmette. Follow 'Rewriting a town page' in the writer prompt.",
+      "addedAt": "2026-10-30"
     },
     {
       "slug": "what-is-an-upsherin",
@@ -308,6 +336,20 @@
       "notes": "Answer-first: what an upsherin is, when it happens (third birthday), what happens (first haircut, peyos, sweets, blessings), how it is photographed. Proof gallery: /gallery/milestone/shilo-3rd-birthday-upshirin. Use the site's spelling 'upsherin' in slug and H1 and mention the 'upshirin' spelling once. This is a 1,000/mo term with zero difficulty."
     },
     {
+      "slug": "rewrite-location-wilmette",
+      "type": "rewrite",
+      "status": "queued",
+      "phase": 4,
+      "primaryKeyword": "newborn photographer wilmette",
+      "target": {
+        "file": "src/lib/locations.ts",
+        "url": "/locations/wilmette"
+      },
+      "sourceDraft": null,
+      "notes": "Google had not discovered this URL as of 2026-10-30 (URL Inspection: unknown to Google). Search Console 2026-09-29 to 10-27: the homepage is about #3.7 for 'newborn photographer wilmette' (11 impressions). Wilmette has a real session: the Keay Nature Center family gallery. Lead the proof with it; 'I photographed' is allowed for it. Gillson Park is queued as its own guide, so mention it in a sentence, not a section. Follow 'Rewriting a town page' in the writer prompt.",
+      "addedAt": "2026-10-30"
+    },
+    {
       "slug": "babys-first-year-photo-plan",
       "type": "guide",
       "primaryKeyword": "newborn and family photoshoot",
@@ -316,6 +358,77 @@
       "pr": null,
       "phase": 1,
       "notes": "Newborn at 5 to 14 days, 3 months, 6 to 9 month sitter, first birthday. Link newborn, milestone, first-birthday and maternity-and-newborn pages. Proof: newborn galleries and the 9-month session."
+    },
+    {
+      "slug": "rewrite-location-winnetka",
+      "type": "rewrite",
+      "status": "queued",
+      "phase": 4,
+      "primaryKeyword": "newborn photographer winnetka",
+      "target": {
+        "file": "src/lib/locations.ts",
+        "url": "/locations/winnetka"
+      },
+      "sourceDraft": null,
+      "notes": "Search Console 2026-09-29 to 10-27: the homepage is about #5 for 'newborn photographer winnetka' (7 impressions) and this page #9; 'maternity photographer winnetka' shows too. No gallery was shot in Winnetka; the nearest real one is Keay Nature Center in Wilmette. Follow 'Rewriting a town page' in the writer prompt.",
+      "addedAt": "2026-10-30"
+    },
+    {
+      "slug": "bar-mitzvah-photographer-cost",
+      "type": "cost",
+      "primaryKeyword": "how much does a bar mitzvah photographer cost",
+      "sourceDraft": null,
+      "status": "queued",
+      "plan": 20,
+      "phase": 2
+    },
+    {
+      "slug": "rewrite-location-northbrook",
+      "type": "rewrite",
+      "status": "queued",
+      "phase": 4,
+      "primaryKeyword": "newborn photographer northbrook",
+      "target": {
+        "file": "src/lib/locations.ts",
+        "url": "/locations/northbrook"
+      },
+      "sourceDraft": null,
+      "notes": "Search Console 2026-09-29 to 10-27: the homepage is about #8 for 'newborn photographer northbrook' and this page about #20. No gallery was shot in Northbrook; the nearest real ones are in Skokie and Wilmette. Follow 'Rewriting a town page' in the writer prompt.",
+      "addedAt": "2026-10-30"
+    },
+    {
+      "slug": "bat-mitzvah-photoshoot-guide",
+      "type": "guide",
+      "primaryKeyword": "bat mitzvah photoshoot",
+      "sourceDraft": null,
+      "status": "queued",
+      "pr": null,
+      "phase": 2,
+      "notes": "Pre-event portrait session for a Bat Mitzvah girl and family: timing, outfits, locations, what to bring. Future tense for Bat Mitzvah specifically; the Bar Mitzvah gallery is the closest proof and may be linked as such."
+    },
+    {
+      "slug": "rewrite-location-skokie",
+      "type": "rewrite",
+      "status": "queued",
+      "phase": 4,
+      "primaryKeyword": "photographer skokie",
+      "target": {
+        "file": "src/lib/locations.ts",
+        "url": "/locations/skokie"
+      },
+      "sourceDraft": null,
+      "notes": "Skokie is home. Search Console 2026-09-29 to 10-27: the homepage is #1 to #3 for 'newborn photographer skokie', 'family photographer skokie' and 'photographer skokie', and /sessions/newborn-photography is titled for the Skokie newborn search. Do not retitle this page to compete with either; make it the page about Skokie places and the real Skokie sessions (Skokie Public Library family, Cooper and Sweet Baby Girl newborns), linking to the homepage and the newborn page. Keep Gabi's legacy sentences word for word. Follow 'Rewriting a town page' in the writer prompt.",
+      "addedAt": "2026-10-30"
+    },
+    {
+      "slug": "bar-mitzvah-photo-timeline",
+      "type": "guide",
+      "primaryKeyword": "bar mitzvah photos",
+      "sourceDraft": null,
+      "status": "queued",
+      "pr": null,
+      "phase": 2,
+      "notes": "A photo timeline for the day: tallit, Torah, family groupings, the party. Built from the Stolberg gallery. Answer 'what photos do you take at a bar mitzvah'."
     },
     {
       "slug": "rewrite-milestone-photography",
@@ -332,13 +445,38 @@
       }
     },
     {
-      "slug": "bar-mitzvah-photographer-cost",
-      "type": "cost",
-      "primaryKeyword": "how much does a bar mitzvah photographer cost",
+      "slug": "gillson-park-family-photos",
+      "type": "guide",
+      "primaryKeyword": "gillson park photos",
       "sourceDraft": null,
       "status": "queued",
-      "plan": 20,
-      "phase": 2
+      "plan": 38,
+      "notes": "Include a permit note. Only claim a session there if gallery-data.ts has one.",
+      "phase": 0
+    },
+    {
+      "slug": "rewrite-location-lincolnwood",
+      "type": "rewrite",
+      "status": "queued",
+      "phase": 4,
+      "primaryKeyword": "newborn photographer lincolnwood",
+      "target": {
+        "file": "src/lib/locations.ts",
+        "url": "/locations/lincolnwood"
+      },
+      "sourceDraft": null,
+      "notes": "Google had not discovered this URL as of 2026-10-30. Search Console 2026-09-29 to 10-27: the homepage is #1 and the newborn page #7 for 'newborn photographer lincolnwood'. No gallery was shot in Lincolnwood; it borders Skokie, so the Skokie galleries are the nearest real proof. Keep Gabi's legacy sentences word for word. Follow 'Rewriting a town page' in the writer prompt.",
+      "addedAt": "2026-10-30"
+    },
+    {
+      "slug": "chicago-botanic-garden-photos-permits",
+      "type": "guide",
+      "primaryKeyword": "chicago botanic garden engagement photos",
+      "sourceDraft": null,
+      "status": "queued",
+      "plan": 39,
+      "notes": "Include the garden's photography permit rules from its official site.",
+      "phase": 0
     },
     {
       "slug": "rewrite-bar-mitzvah-photography",
@@ -355,24 +493,36 @@
       }
     },
     {
-      "slug": "bat-mitzvah-photoshoot-guide",
+      "slug": "chicago-riverwalk-engagement-photos",
       "type": "guide",
-      "primaryKeyword": "bat mitzvah photoshoot",
+      "primaryKeyword": "chicago riverwalk photoshoot",
       "sourceDraft": null,
       "status": "queued",
-      "pr": null,
-      "phase": 2,
-      "notes": "Pre-event portrait session for a Bat Mitzvah girl and family: timing, outfits, locations, what to bring. Future tense for Bat Mitzvah specifically; the Bar Mitzvah gallery is the closest proof and may be linked as such."
+      "plan": 41,
+      "phase": 0
     },
     {
-      "slug": "bar-mitzvah-photo-timeline",
+      "slug": "rewrite-location-glenview",
+      "type": "rewrite",
+      "status": "queued",
+      "phase": 4,
+      "primaryKeyword": "family photographer glenview",
+      "target": {
+        "file": "src/lib/locations.ts",
+        "url": "/locations/glenview"
+      },
+      "sourceDraft": null,
+      "notes": "Google had not discovered this URL as of 2026-10-30. Search Console 2026-09-29 to 10-27: 'family photographer glenview' (homepage #28 to #41), 'newborn photographer glenview' (homepage about #18) and 'maternity photographer glenview' show impressions. No gallery was shot in Glenview; the nearest real ones are in Skokie and Wilmette. Follow 'Rewriting a town page' in the writer prompt.",
+      "addedAt": "2026-10-30"
+    },
+    {
+      "slug": "lincoln-park-conservatory-engagement-photos",
       "type": "guide",
-      "primaryKeyword": "bar mitzvah photos",
+      "primaryKeyword": "lincoln park conservatory engagement photos",
       "sourceDraft": null,
       "status": "queued",
-      "pr": null,
-      "phase": 2,
-      "notes": "A photo timeline for the day: tallit, Torah, family groupings, the party. Built from the Stolberg gallery. Answer 'what photos do you take at a bar mitzvah'."
+      "plan": 42,
+      "phase": 0
     },
     {
       "slug": "rewrite-maternity-when-to-book",
@@ -389,13 +539,38 @@
       "phase": 0
     },
     {
-      "slug": "newborn-photos-with-siblings",
+      "slug": "best-maternity-photo-locations-north-shore",
       "type": "guide",
-      "primaryKeyword": "newborn photos with siblings",
+      "primaryKeyword": "maternity photo locations north shore",
       "sourceDraft": null,
       "status": "queued",
-      "plan": 27,
+      "plan": 43,
+      "notes": "The plan says a draft exists, but it is not on this Mac.",
       "phase": 0
+    },
+    {
+      "slug": "rewrite-location-niles",
+      "type": "rewrite",
+      "status": "queued",
+      "phase": 4,
+      "primaryKeyword": "family photographer niles",
+      "target": {
+        "file": "src/lib/locations.ts",
+        "url": "/locations/niles"
+      },
+      "sourceDraft": null,
+      "notes": "Google had not discovered this URL as of 2026-10-30, so there is no Search Console data. No gallery was shot in Niles; it borders Skokie, so the Skokie galleries are the nearest real proof. Follow 'Rewriting a town page' in the writer prompt.",
+      "addedAt": "2026-10-30"
+    },
+    {
+      "slug": "family-celebration-photography",
+      "type": "service",
+      "primaryKeyword": "event photographer near me",
+      "sourceDraft": null,
+      "status": "queued",
+      "pr": null,
+      "phase": 3,
+      "notes": "Reunions, adult milestone birthdays, baby namings, anniversaries, holiday gatherings. Proof: Bar Mitzvah and upsherin galleries. Quote per event. Do not overlap the mitzvah or birthday pages; link to them."
     },
     {
       "slug": "rewrite-best-family-photo-locations",
@@ -412,6 +587,75 @@
       "phase": 0
     },
     {
+      "slug": "mothers-day-mini-sessions",
+      "type": "guide",
+      "primaryKeyword": "mothers day mini sessions",
+      "sourceDraft": null,
+      "status": "queued",
+      "plan": 32,
+      "phase": 5
+    },
+    {
+      "slug": "rewrite-location-park-ridge",
+      "type": "rewrite",
+      "status": "queued",
+      "phase": 4,
+      "primaryKeyword": "newborn photographer park ridge",
+      "target": {
+        "file": "src/lib/locations.ts",
+        "url": "/locations/park-ridge"
+      },
+      "sourceDraft": null,
+      "notes": "Google had not discovered this URL as of 2026-10-30. Search Console 2026-09-29 to 10-27: the homepage is about #24 for 'newborn photographer park ridge'. No gallery was shot in Park Ridge; the nearest real ones are in Skokie. Keep the page's travel-fee line as written. Follow 'Rewriting a town page' in the writer prompt.",
+      "addedAt": "2026-10-30"
+    },
+    {
+      "slug": "spring-mini-sessions",
+      "type": "guide",
+      "primaryKeyword": "spring mini sessions",
+      "sourceDraft": null,
+      "status": "queued",
+      "plan": 33,
+      "phase": 5
+    },
+    {
+      "slug": "rewrite-engagement-photography",
+      "type": "rewrite",
+      "primaryKeyword": "engagement photographer near me",
+      "sourceDraft": null,
+      "status": "queued",
+      "pr": null,
+      "phase": 3,
+      "notes": "Add an engagement party section (literal H3 'Do you photograph engagement parties?') and an anniversary mention, plus 'near me' phrasing in the summary. Keep the page's own FAQs. File is a static page.",
+      "target": {
+        "url": "/sessions/engagement-photography",
+        "file": "src/app/sessions/engagement-photography/page.tsx"
+      }
+    },
+    {
+      "slug": "newborn-photos-with-siblings",
+      "type": "guide",
+      "primaryKeyword": "newborn photos with siblings",
+      "sourceDraft": null,
+      "status": "queued",
+      "plan": 27,
+      "phase": 0
+    },
+    {
+      "slug": "rewrite-location-morton-grove",
+      "type": "rewrite",
+      "status": "queued",
+      "phase": 4,
+      "primaryKeyword": "family photographer morton grove",
+      "target": {
+        "file": "src/lib/locations.ts",
+        "url": "/locations/morton-grove"
+      },
+      "sourceDraft": null,
+      "notes": "Search Console 2026-09-29 to 10-27: indexed, 42 impressions at about #6 and 2 clicks. No gallery was shot in Morton Grove; it borders Skokie, so the Skokie galleries are the nearest real proof. Follow 'Rewriting a town page' in the writer prompt.",
+      "addedAt": "2026-10-30"
+    },
+    {
       "slug": "what-to-wear-for-maternity-photos",
       "type": "guide",
       "primaryKeyword": "what to wear for maternity photos",
@@ -419,48 +663,6 @@
       "status": "queued",
       "plan": 28,
       "notes": "The live post maternity-photos-when-to-book-what-to-wear overlaps. Go deeper on outfits and link to it.",
-      "phase": 0
-    },
-    {
-      "slug": "rewrite-testimonials",
-      "type": "rewrite",
-      "primaryKeyword": "tovy photography reviews",
-      "target": {
-        "url": "/testimonials",
-        "file": "src/app/testimonials/page.tsx"
-      },
-      "sourceDraft": null,
-      "status": "queued",
-      "pr": null,
-      "notes": "Add a citable summary under the H1 that says what the reviews are from (family, in-home and event sessions in Skokie and Chicago). Add a short 'How to leave a review' line linking to the Google Business Profile if its link is in site.ts, otherwise to /contact. Keep every testimonial verbatim. Keep the Review schema.",
-      "phase": 0
-    },
-    {
-      "slug": "what-to-wear-for-newborn-photos",
-      "type": "guide",
-      "primaryKeyword": "what to wear for newborn photos",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 29,
-      "phase": 0
-    },
-    {
-      "slug": "birth-announcement-photos",
-      "type": "guide",
-      "primaryKeyword": "birth announcement photos",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 34,
-      "phase": 0
-    },
-    {
-      "slug": "how-to-prepare-for-family-photos",
-      "type": "guide",
-      "primaryKeyword": "how to prepare for family photos",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 35,
-      "notes": "Also answer 'how long does a family photo session take' from site.pricing durations. The plan says a draft exists, but it is not on this Mac.",
       "phase": 0
     },
     {
@@ -478,103 +680,69 @@
       "phase": 0
     },
     {
-      "slug": "gillson-park-family-photos",
+      "slug": "what-to-wear-for-newborn-photos",
       "type": "guide",
-      "primaryKeyword": "gillson park photos",
+      "primaryKeyword": "what to wear for newborn photos",
       "sourceDraft": null,
       "status": "queued",
-      "plan": 38,
-      "notes": "Include a permit note. Only claim a session there if gallery-data.ts has one.",
+      "plan": 29,
       "phase": 0
     },
     {
-      "slug": "chicago-botanic-garden-photos-permits",
-      "type": "guide",
-      "primaryKeyword": "chicago botanic garden engagement photos",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 39,
-      "notes": "Include the garden's photography permit rules from its official site.",
-      "phase": 0
-    },
-    {
-      "slug": "chicago-riverwalk-engagement-photos",
-      "type": "guide",
-      "primaryKeyword": "chicago riverwalk photoshoot",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 41,
-      "phase": 0
-    },
-    {
-      "slug": "lincoln-park-conservatory-engagement-photos",
-      "type": "guide",
-      "primaryKeyword": "lincoln park conservatory engagement photos",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 42,
-      "phase": 0
-    },
-    {
-      "slug": "best-maternity-photo-locations-north-shore",
-      "type": "guide",
-      "primaryKeyword": "maternity photo locations north shore",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 43,
-      "notes": "The plan says a draft exists, but it is not on this Mac.",
-      "phase": 0
-    },
-    {
-      "slug": "family-celebration-photography",
-      "type": "service",
-      "primaryKeyword": "event photographer near me",
-      "sourceDraft": null,
-      "status": "queued",
-      "pr": null,
-      "phase": 3,
-      "notes": "Reunions, adult milestone birthdays, baby namings, anniversaries, holiday gatherings. Proof: Bar Mitzvah and upsherin galleries. Quote per event. Do not overlap the mitzvah or birthday pages; link to them."
-    },
-    {
-      "slug": "rewrite-engagement-photography",
+      "slug": "rewrite-location-west-rogers-park",
       "type": "rewrite",
-      "primaryKeyword": "engagement photographer near me",
+      "status": "queued",
+      "phase": 4,
+      "primaryKeyword": "family photographer west rogers park",
+      "target": {
+        "file": "src/lib/locations.ts",
+        "url": "/locations/west-rogers-park"
+      },
+      "sourceDraft": null,
+      "notes": "West Rogers Park has a real session: the in-home 9-month family gallery. Lead the proof with it; 'I photographed' is allowed for it. Search Console 2026-09-29 to 10-27: 3 impressions at about #40. The upsherin and Bar Mitzvah galleries are relevant proof here too; describe them by where they were actually shot. Follow 'Rewriting a town page' in the writer prompt.",
+      "addedAt": "2026-10-30"
+    },
+    {
+      "slug": "birth-announcement-photos",
+      "type": "guide",
+      "primaryKeyword": "birth announcement photos",
+      "sourceDraft": null,
+      "status": "queued",
+      "plan": 34,
+      "phase": 0
+    },
+    {
+      "slug": "rewrite-testimonials",
+      "type": "rewrite",
+      "primaryKeyword": "tovy photography reviews",
+      "target": {
+        "url": "/testimonials",
+        "file": "src/app/testimonials/page.tsx"
+      },
       "sourceDraft": null,
       "status": "queued",
       "pr": null,
-      "phase": 3,
-      "notes": "Add an engagement party section (literal H3 'Do you photograph engagement parties?') and an anniversary mention, plus 'near me' phrasing in the summary. Keep the page's own FAQs. File is a static page.",
-      "target": {
-        "url": "/sessions/engagement-photography",
-        "file": "src/app/sessions/engagement-photography/page.tsx"
-      }
+      "notes": "Add a citable summary under the H1 that says what the reviews are from (family, in-home and event sessions in Skokie and Chicago). Add a short 'How to leave a review' line linking to the Google Business Profile if its link is in site.ts, otherwise to /contact. Keep every testimonial verbatim. Keep the Review schema.",
+      "phase": 0
     },
     {
-      "slug": "mothers-day-mini-sessions",
+      "slug": "how-to-prepare-for-family-photos",
       "type": "guide",
-      "primaryKeyword": "mothers day mini sessions",
+      "primaryKeyword": "how to prepare for family photos",
       "sourceDraft": null,
       "status": "queued",
-      "plan": 32,
-      "phase": 5
-    },
-    {
-      "slug": "spring-mini-sessions",
-      "type": "guide",
-      "primaryKeyword": "spring mini sessions",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 33,
-      "phase": 5
+      "plan": 35,
+      "notes": "Also answer 'how long does a family photo session take' from site.pricing durations. The plan says a draft exists, but it is not on this Mac.",
+      "phase": 0
     },
     {
       "slug": "deerfield",
       "type": "location",
       "primaryKeyword": "deerfield family photographer",
       "sourceDraft": null,
-      "status": "queued",
+      "status": "hold",
       "plan": 47,
-      "notes": "Plan gate: publish once the first 12 town pages show impressions in Search Console.",
+      "notes": "Held 2026-10-30: build no new town pages until the 12 existing ones are rewritten (the rewrite-location-* items) and all 12 show impressions in Search Console. Set status back to queued to release. Plan gate: publish once the first 12 town pages show impressions in Search Console.",
       "phase": 5
     },
     {
@@ -582,9 +750,9 @@
       "type": "location",
       "primaryKeyword": "glencoe family photographer",
       "sourceDraft": null,
-      "status": "queued",
+      "status": "hold",
       "plan": 47,
-      "notes": "Plan gate: publish once the first 12 town pages show impressions in Search Console.",
+      "notes": "Held 2026-10-30: build no new town pages until the 12 existing ones are rewritten (the rewrite-location-* items) and all 12 show impressions in Search Console. Set status back to queued to release. Plan gate: publish once the first 12 town pages show impressions in Search Console.",
       "phase": 5
     },
     {
@@ -592,11 +760,11 @@
       "type": "location",
       "primaryKeyword": "kenilworth family photographer",
       "sourceDraft": null,
-      "status": "queued",
+      "status": "hold",
       "plan": 47,
-      "notes": "Plan gate: publish once the first 12 town pages show impressions in Search Console.",
+      "notes": "Held 2026-10-30: build no new town pages until the 12 existing ones are rewritten (the rewrite-location-* items) and all 12 show impressions in Search Console. Set status back to queued to release. Plan gate: publish once the first 12 town pages show impressions in Search Console.",
       "phase": 5
     }
   ],
-  "note": "Publish order for the content loop, sequenced by content/seo-roadmap.md. Every item is reachable from sessions Gabi has actually photographed. Types: guide, cost, service, location write a new page; rewrite improves an existing page in place. The loop runs Monday and Thursday."
+  "note": "Publish order for the content loop, sequenced by content/seo-roadmap.md. Every item is reachable from sessions Gabi has actually photographed. Types: guide, cost, service, location write a new page; rewrite improves an existing page in place. The loop runs Monday and Thursday: Mondays take the first queued rewrite, Thursdays the first queued new page (either day falls back to queue order). Items with status hold are never picked. 2026-10-30: the 12 town pages were queued for rewrites (rewrite-location-*), national how-to guides moved to the end, and tier-2 towns put on hold."
 }
