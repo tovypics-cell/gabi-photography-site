@@ -9,6 +9,7 @@ export interface ProofItem {
 
 export interface LocationPage {
   slug: string;
+  updated: string; // YYYY-MM-DD of the last real content change; the sitemap's lastmod
   name: string;
   title: string; // 60 chars or less, brand added by the layout template
   description: string; // 155 chars or less
@@ -97,6 +98,7 @@ const faqKids: Faq = {
 export const locationPages: Record<string, LocationPage> = {
   skokie: {
     slug: "skokie",
+    updated: "2026-10-28",
     name: "Skokie",
     title: "Skokie Family and Newborn Photographer",
     description:
@@ -147,6 +149,7 @@ export const locationPages: Record<string, LocationPage> = {
 
   evanston: {
     slug: "evanston",
+    updated: "2026-10-28",
     name: "Evanston",
     title: "Evanston Family and Newborn Photographer",
     description:
@@ -197,6 +200,7 @@ export const locationPages: Record<string, LocationPage> = {
 
   lincolnwood: {
     slug: "lincolnwood",
+    updated: "2026-10-28",
     name: "Lincolnwood",
     title: "Lincolnwood Family and Newborn Photographer",
     description:
@@ -243,6 +247,7 @@ export const locationPages: Record<string, LocationPage> = {
 
   wilmette: {
     slug: "wilmette",
+    updated: "2026-10-28",
     name: "Wilmette",
     title: "Wilmette Family and Newborn Photographer",
     description:
@@ -293,6 +298,7 @@ export const locationPages: Record<string, LocationPage> = {
 
   "morton-grove": {
     slug: "morton-grove",
+    updated: "2026-10-28",
     name: "Morton Grove",
     title: "Morton Grove Family and Newborn Photographer",
     description:
@@ -343,6 +349,7 @@ export const locationPages: Record<string, LocationPage> = {
 
   glenview: {
     slug: "glenview",
+    updated: "2026-10-28",
     name: "Glenview",
     title: "Glenview Family and Newborn Photographer",
     description:
@@ -393,6 +400,7 @@ export const locationPages: Record<string, LocationPage> = {
 
   niles: {
     slug: "niles",
+    updated: "2026-10-28",
     name: "Niles",
     title: "Niles Family and Newborn Photographer",
     description:
@@ -443,6 +451,7 @@ export const locationPages: Record<string, LocationPage> = {
 
   northbrook: {
     slug: "northbrook",
+    updated: "2026-10-28",
     name: "Northbrook",
     title: "Northbrook Family and Newborn Photographer",
     description:
@@ -497,6 +506,7 @@ export const locationPages: Record<string, LocationPage> = {
 
   "park-ridge": {
     slug: "park-ridge",
+    updated: "2026-10-28",
     name: "Park Ridge",
     title: "Park Ridge Family and Newborn Photographer",
     description:
@@ -547,6 +557,7 @@ export const locationPages: Record<string, LocationPage> = {
 
   winnetka: {
     slug: "winnetka",
+    updated: "2026-10-28",
     name: "Winnetka",
     title: "Winnetka Family and Newborn Photographer",
     description:
@@ -597,6 +608,7 @@ export const locationPages: Record<string, LocationPage> = {
 
   "highland-park": {
     slug: "highland-park",
+    updated: "2026-10-28",
     name: "Highland Park",
     title: "Highland Park Family and Newborn Photographer",
     description:
@@ -651,6 +663,7 @@ export const locationPages: Record<string, LocationPage> = {
 
   "west-rogers-park": {
     slug: "west-rogers-park",
+    updated: "2026-10-28",
     name: "West Rogers Park",
     title: "West Rogers Park Family Photographer",
     description:

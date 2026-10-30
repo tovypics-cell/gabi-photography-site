@@ -61,7 +61,8 @@ Her strongest proof and the least competition. Spring mitzvahs are booked in win
 
 ## Phase 4: Always on
 
-- Town pages tier 2 (Deerfield, Glencoe, Kenilworth) once the first 12 show impressions in Search Console.
+- Town page rewrites (queued 2026-10-30 as `rewrite-location-*`, one per Monday): each of the 12 town pages gets town-specific family, newborn and maternity sections, its own FAQs and the nearest real galleries. Search Console showed them ranking only for family searches, and five (Wilmette, Lincolnwood, Glenview, Niles, Park Ridge) unknown to Google.
+- Town pages tier 2 (Deerfield, Glencoe, Kenilworth) are on `hold` until those rewrites are done and all 12 show impressions in Search Console.
 - Seasonal: spring blossoms and Mother's Day minis in February; fall guide refresh in July; holiday guides refresh in September.
 - Rewrites: every page older than six months gets a pass with fresh internal links and new galleries.
 - Links: Chicago North Shore Moms directory, synagogue vendor lists, mohel and doula referral pages, pediatric practices, park district lists.
@@ -69,10 +70,10 @@ Her strongest proof and the least competition. Spring mitzvahs are booked in win
 
 ## How the loop enforces this
 
-- `content/queue.json` is ordered by phase. The runner takes the first queued item whose branch does not already exist.
+- `content/queue.json` is ordered by phase. Mondays the runner takes the first queued `rewrite`, Thursdays the first queued new page, skipping items whose branch already exists; either day falls back to queue order. Items with status `hold` are never picked.
 - Items the writer blocks (missing sources, cannibalization) are recorded locally and skipped until a person edits the queue.
 - The runner still supports a `gate` field (a pattern tested against gallery titles and descriptions) for any future item that should wait for a gallery. No current item uses one.
-- Rewrites stay interleaved with new pages.
+- Rewrites stay interleaved with new pages (Monday and Thursday). National how-to guides (what to wear, preparation, siblings, birth announcements) sit at the end of the queue since 2026-10-30: Pinterest, Reddit and Instagram hold those results, and local and commercial pages convert better.
 
 ## What success looks like
 
