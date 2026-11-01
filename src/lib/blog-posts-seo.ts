@@ -94,7 +94,7 @@ export const seoBlogPosts: BlogPost[] = [
     excerpt:
       "What family photos cost in Skokie and the North Shore, what the national averages look like in 2026, and how to compare packages that are structured differently.",
     date: "2026-09-16",
-    updated: "2026-10-25",
+    updated: "2026-11-01",
     category: "Tips",
     image: "/photos/family-plaza-swinging.jpg",
     seoTitle: "Family Photography Prices and Costs | Tovy Photography",
@@ -115,6 +115,21 @@ export const seoBlogPosts: BlogPost[] = [
         question: "Why do some photographers cost so much more than others?",
         answer:
           "Experience, studio overhead, products such as albums and wall art, and whether images are included or sold separately. Compare what the final number includes, not just the session fee.",
+      },
+      {
+        question: "Do family sessions include the digital files or just prints?",
+        answer:
+          "The digital files. Every package includes professionally edited images in a private online gallery you can download and share, with full print rights, so you can print anywhere you like. Albums and gallery walls are optional, and you can decide on them after you see your gallery.",
+      },
+      {
+        question: "How much do extended family photos cost?",
+        answer:
+          "Most extended family and multigenerational sessions are my $550 Full session: 90 minutes, one location and 40+ edited images, which leaves time for the whole group and every smaller grouping. Groups of six or fewer usually fit the $425 Classic.",
+      },
+      {
+        question: "How long does it take to get family photos back?",
+        answer:
+          "Two to three weeks for most sessions. Your edited images arrive in a private online gallery where you can download and share them. If you are on a holiday card deadline, tell me when you book.",
       },
     ],
     content: `
@@ -171,9 +186,20 @@ export const seoBlogPosts: BlogPost[] = [
 
 <img src="/photos/keay-nature-center-wilmette-family-session/02.jpg" alt="Family laughing together on a blanket in front of tall grasses at Keay Nature Center in Wilmette" loading="lazy" />
 
-<h2>How to compare photographers fairly</h2>
+<h2>Questions to ask before booking a family photographer</h2>
 
-<p>Ask three questions. What is the total for a session plus the number of images I actually want? Are there travel, permit or rush fees? And what does the work look like with real families, not styled shoots? Price matters, but the photos are the thing you keep.</p>
+<p>Price matters, but the photos are the thing you keep. These are the questions worth asking any photographer you are considering, with my answers so you can compare like for like.</p>
+
+<ul>
+<li><strong>What is the total for the session plus the images I want?</strong> With me, the package price is the total: $300, $425 or $550, with the edited images included.</li>
+<li><strong>How many edited images are included?</strong> 10+ with the Mini, 25+ with the Classic and 40+ with the Full.</li>
+<li><strong>Do I get the digital files and the right to print them?</strong> Yes. Every gallery is delivered online with full print rights.</li>
+<li><strong>Are there travel or permit fees?</strong> There is no travel fee within 10 miles of Skokie and $50 beyond that. Some parks require a photography permit, so ask about the location you have in mind.</li>
+<li><strong>How long until we see the photos?</strong> Two to three weeks for most sessions.</li>
+<li><strong>What happens if it rains?</strong> For outdoor sessions I build in a rain date.</li>
+<li><strong>Can we see full galleries from real families, not styled shoots?</strong> Every <a href="/gallery/family">family gallery</a> on this site is a real session, and each gallery page names its location.</li>
+<li><strong>How much does an extended family session cost?</strong> Most multigenerational groups book the $550 Full session. Groups of six or fewer usually fit the $425 Classic. More on the <a href="/sessions/extended-family-photography">extended family photography page</a>.</li>
+</ul>
 
 <h2>Ways to keep the cost reasonable</h2>
 

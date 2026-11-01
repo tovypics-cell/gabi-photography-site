@@ -29,7 +29,7 @@ const categoryMeta: Record<
       "Browse family photography sessions by Tovy Photography. Natural, playful family portraits in Skokie, IL and Chicago's North Shore.",
     h1: "Family Photography",
     intro:
-      "Real connections, real laughter, real love. Family sessions designed to capture your family exactly as you are.",
+      "Real connections, real laughter, real love. Family sessions designed to capture your family exactly as you are. Natural light sessions in Skokie, Wilmette, West Rogers Park and across Chicago's North Shore, at a park or at home.",
     serviceHref: "/sessions/family-photography",
     serviceLabel: "Family Photography",
     about: [
