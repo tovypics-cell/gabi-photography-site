@@ -108,7 +108,7 @@ export default function HeroSlideshow() {
               {/* Text — left side */}
               <div className="relative z-20 py-28 lg:py-36 pr-8">
                 <p className="mb-6 text-sm font-medium uppercase tracking-[0.25em] text-charcoal/50">
-                  Skokie &amp; Chicago North Shore
+                  Skokie Family &amp; Newborn Photographer
                 </p>
                 
                 <h1 className="font-[family-name:var(--font-cormorant)] text-5xl lg:text-6xl xl:text-7xl leading-[0.95] text-white mb-10">
@@ -237,7 +237,7 @@ export default function HeroSlideshow() {
         {/* Text content below image on mobile */}
         <div className="px-6 py-12 text-center" style={{ backgroundColor: "#E8D5CE" }}>
           <p className="mb-3 text-xs font-medium uppercase tracking-[0.25em] text-charcoal/50">
-            Skokie &amp; Chicago North Shore
+            Skokie Family &amp; Newborn Photographer
           </p>
           <p className="font-[family-name:var(--font-cormorant)] text-4xl leading-[1.05] text-charcoal mb-5">
             Seeing the good in <em className="italic">your</em> world

@@ -254,12 +254,13 @@
       "type": "service",
       "primaryKeyword": "birthday party photographer",
       "sourceDraft": null,
-      "status": "in_review",
+      "status": "published",
       "branch": "content/birthday-party-photography",
       "pr": 46,
       "updatedAt": "2026-10-29",
       "phase": 1,
-      "notes": "Also target 'photographer for birthday party' and 'birthday photographer near me'. Proof: the Shilo 3rd birthday and upsherin gallery. Kids parties, adult milestone birthdays, at home or at a venue. Quote per event like the mitzvah page; pre-party portraits use standard packages."
+      "notes": "Also target 'photographer for birthday party' and 'birthday photographer near me'. Proof: the Shilo 3rd birthday and upsherin gallery. Kids parties, adult milestone birthdays, at home or at a venue. Quote per event like the mitzvah page; pre-party portraits use standard packages.",
+      "publishedAt": "2026-10-29"
     },
     {
       "slug": "rewrite-maternity-photography",
@@ -292,13 +293,13 @@
       "type": "rewrite",
       "status": "queued",
       "phase": 4,
-      "primaryKeyword": "newborn photographer highland park",
+      "primaryKeyword": "family photographer highland park",
       "target": {
         "file": "src/lib/locations.ts",
         "url": "/locations/highland-park"
       },
       "sourceDraft": null,
-      "notes": "Search Console 2026-09-29 to 10-27: the site's best town page (127 impressions, 5 clicks) and about #2.5 for 'family photographer highland park', but #29 for 'newborn photographer highland park' and #31 for 'maternity photographer highland park' (16 impressions). Keep what earns the family ranking (title, intro, Rosewood Beach, ravines, travel-fee lines) and add the newborn and maternity depth. No gallery was shot in Highland Park; the nearest real ones are Keay Nature Center in Wilmette and the Skokie newborns. Follow 'Rewriting a town page' in the writer prompt.",
+      "notes": "Search Console 2026-09-29 to 10-27: the site's best town page (127 impressions, 5 clicks) and about #2.5 for 'family photographer highland park', but #29 for 'newborn photographer highland park' and #31 for 'maternity photographer highland park' (16 impressions). Weekly review 2026-11-01: the family query averaged 7.7 for 10-23 to 10-29 (10 impressions), so lead with the family keyword and protect it: keep the title, intro, Rosewood Beach, ravines and travel-fee lines that earn it, then add the newborn and maternity depth below. The local pack for the family query rewards listings, not page length, so do not pad the page. No gallery was shot in Highland Park. The 3 proof cards are all Wilmette and Skokie; lead with the nearest real session (Keay Nature Center in Wilmette) and say plainly it is the closest gallery, then the Skokie newborns. Follow 'Rewriting a town page' in the writer prompt.",
       "addedAt": "2026-10-30"
     },
     {
@@ -322,8 +323,25 @@
         "url": "/locations/evanston"
       },
       "sourceDraft": null,
-      "notes": "Search Console 2026-09-29 to 10-27: the homepage is about #11 for 'family photographer evanston' and this page only #35; 'baby photographer evanston' and 'maternity photographer evanston' also show impressions. No gallery was shot in Evanston; the nearest real ones are the Skokie galleries and Keay Nature Center in Wilmette. Follow 'Rewriting a town page' in the writer prompt.",
+      "notes": "Search Console 2026-09-29 to 10-27: the homepage is about #11 for 'family photographer evanston' and this page only #35; 'baby photographer evanston' and 'maternity photographer evanston' also show impressions. No gallery was shot in Evanston; the nearest real ones are the Skokie galleries and Keay Nature Center in Wilmette. Follow 'Rewriting a town page' in the writer prompt. Weekly review 2026-11-01: the Skokie-located rank tracker had 'family photographer evanston' at #20 on 10-30 and outside the top 40 on 11-01, and Search Console still sends the Evanston family and maternity queries to the homepage (http homepage #11 family, #6 maternity) instead of this page. Make this page the clear answer for Evanston family, newborn and maternity searches, and add the one inbound link from the Skokie page or the family sessions page.",
       "addedAt": "2026-10-30"
+    },
+    {
+      "slug": "rewrite-newborn-photography-2",
+      "type": "rewrite",
+      "status": "queued",
+      "phase": 4,
+      "primaryKeyword": "newborn photographer near me",
+      "target": {
+        "file": "src/app/sessions/newborn-photography/page.tsx",
+        "url": "/sessions/newborn-photography"
+      },
+      "sourceDraft": null,
+      "notes": "Second pass on the newborn page (first rewrite PR #8, 2026-09-30). Search Console 28 days to 10-29: 52 impressions at 18.4. The Skokie-located rank tracker had 'newborn photographer near me' at #21 on 10-30 (this page) and outside the top 40 on 11-01. Search Console sends 'newborn photographer near me' to the Skokie page (5.75) and homepage, and 'newborn photographer lincolnwood' (7.3) to this page. Add a short section on where Gabi comes to you for in-home newborn sessions: the towns within 10 miles of Skokie with no travel fee, Lincolnwood named, and one FAQ a nearby parent would ask ('Do you come to my home in Lincolnwood, Evanston or Wilmette?'). Keep every existing FAQ, the hero and the tagline. Do not compete with the homepage for 'newborn photographer skokie' (homepage ranks #3): keep the title as is.",
+      "keep": [
+        "The tiny details you'll want to remember forever."
+      ],
+      "addedAt": "2026-11-01"
     },
     {
       "slug": "what-is-an-upsherin",
