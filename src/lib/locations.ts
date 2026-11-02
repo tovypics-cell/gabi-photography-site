@@ -50,6 +50,11 @@ const proofWestRogersPark: ProofItem = {
   href: "/gallery/family/west-rogers-park-9-month-family-session",
   blurb: "A nine-month milestone photographed at home, right where the everyday happens.",
 };
+const proofSweetBabyGirl: ProofItem = {
+  title: "Newborn session in Skokie",
+  href: "/gallery/newborn/sweet-baby-girl-newborn-skokie",
+  blurb: "A sweet baby girl at home with her parents, with quiet nursery portraits and a few family moments outside.",
+};
 const proofDowntownNewborn: ProofItem = {
   title: "Downtown Chicago newborn session",
   href: "/gallery/newborn/nemsick-family-welcome-baby-henry",
@@ -608,11 +613,11 @@ export const locationPages: Record<string, LocationPage> = {
 
   "highland-park": {
     slug: "highland-park",
-    updated: "2026-10-28",
+    updated: "2026-11-02",
     name: "Highland Park",
-    title: "Highland Park Family and Newborn Photographer",
+    title: "Highland Park Family, Newborn and Maternity Photographer",
     description:
-      "Highland Park family, newborn and maternity photographer. Rosewood Beach, ravines and in-home sessions in natural light on the North Shore. From $300.",
+      "Family photographer in Highland Park, IL for family, newborn and maternity sessions at Rosewood Beach, the ravines or at home. Sessions from $300.",
     h1: "Highland Park Family Photographer",
     heroLabel: "Highland Park Hero Photo",
     intro: [
@@ -622,9 +627,12 @@ export const locationPages: Record<string, LocationPage> = {
     content: [
       "Highland Park is the North Shore at its most dramatic. Rosewood Beach has a long boardwalk, dunes and a wide stretch of sand. The ravines and woods at Heller Nature Center and Millard Park feel like a forest, and Sunset Woods Park sits right in the middle of town with lawns and old trees for a classic golden hour session.",
       "The Ravinia district and the blocks around Port Clinton Square give you brick, storefronts and a small-town downtown for families who want something other than a park.",
+      "Just north of town, Fort Sheridan has wooded paths, open grass and a quiet stretch of beach without a polished garden look. It is a good fit for families who want the session to feel like an evening walk.",
       "For newborn sessions and quiet family mornings, I come to your Highland Park home. Bright family rooms and nurseries are all the space a newborn session needs, and staying home keeps the baby on schedule.",
+      "An in-home newborn session in Highland Park works the way my Skokie newborn sessions do. I find the brightest window, turn off the overhead lights, and let the baby set the pace. Feeding breaks, a big sibling who wants to help and a nap in the middle are all part of it. Nothing gets set up, so the drive is the only real difference.",
+      "For maternity photos in Highland Park, Rosewood Beach is where I would start. The boardwalk along the bluff and the beach grass give you open, soft light and a long view of the lake, and a flowing dress moves beautifully there at golden hour. If the wind is up, Sunset Woods Park has old trees and a gazebo that feel calmer, and a maternity session at home, in the nursery you are getting ready, is always an option too.",
     ],
-    landmarks: ["Rosewood Beach", "Heller Nature Center", "Sunset Woods Park", "Millard Park", "Ravinia district"],
+    landmarks: ["Rosewood Beach", "Heller Nature Center", "Sunset Woods Park", "Millard Park", "Ravinia district", "Fort Sheridan (just north of town)"],
     why: [
       {
         title: "Rosewood Beach has a season and a permit process.",
@@ -638,6 +646,10 @@ export const locationPages: Record<string, LocationPage> = {
         title: "The drive from Skokie is long enough to matter.",
         body: "Highland Park is past my 10-mile no-fee radius, so a $50 travel fee applies. I mention it up front because I would rather you know before you book.",
       },
+      {
+        title: "Golden hour has to end by sunset in the parks.",
+        body: "The Park District's photography permit covers its parks, including Rosewood Beach and Sunset Woods Park, and park use before sunrise or after sunset needs special permission. I plan evening sessions so we finish as the sun goes down. Fort Sheridan is a Lake County forest preserve, and I check its rules separately.",
+      },
     ],
     faqs: [
       {
@@ -645,18 +657,38 @@ export const locationPages: Record<string, LocationPage> = {
         answer:
           "My sessions start at $300 for a 30-minute mini session and go up to $550 for a 90-minute full session, plus a $50 travel fee for Highland Park because it is beyond 10 miles from Skokie. Every package includes edited images in a private online gallery with full print rights.",
       },
-      faqInHome("Highland Park"),
       {
         question: "Where are the best places for family photos in Highland Park?",
         answer:
           "Rosewood Beach for the lake, boardwalk and dunes, Heller Nature Center and Millard Park for ravines and woods, Sunset Woods Park for a classic lawn and trees session, and the Ravinia district for a downtown feel.",
       },
+      {
+        question: "Do you photograph newborns at home in Highland Park?",
+        answer:
+          "Yes. Newborn sessions in Highland Park happen in your own home, by the brightest window, with the baby setting the pace. Your home does not need to be tidy or styled, and feeding breaks are built in.",
+      },
+      {
+        question: "Where can we take maternity photos in Highland Park?",
+        answer:
+          "Rosewood Beach is my first suggestion, for the boardwalk, beach grass and open view of the lake. Sunset Woods Park is a calmer choice with old trees when the lakefront is windy, and your home or nursery works beautifully too.",
+      },
+      {
+        question: "Do I need a permit for photos at Rosewood Beach in Highland Park?",
+        answer:
+          "Yes. The Park District of Highland Park has a photography permit for its parks, including Rosewood Beach and Sunset Woods Park. I confirm what is required for our date before we book, and I plan the session to finish by sunset.",
+      },
       faqBestTime("Highland Park"),
       faqNewbornTiming,
-      faqBookAhead,
       faqKids,
     ],
-    proof: [proofWilmetteKeay, proofSkokieNewborn, proofSkokieLibrary],
+    proof: [
+      {
+        ...proofWilmetteKeay,
+        blurb: "My closest gallery to Highland Park so far: wooded paths, soft light, and a family that let the kids lead the way.",
+      },
+      proofSweetBabyGirl,
+      proofSkokieNewborn,
+    ],
     nearby: ["winnetka", "northbrook", "wilmette", "glenview"],
     driveNote: "About twenty-five minutes from Skokie. A $50 travel fee applies.",
   },
