@@ -11,6 +11,9 @@ export interface ServicePage {
   tagline: string;
   heroImage: string;
   heroAlt: string;
+  // Optional real photo shown uncropped after the first intro section (e.g. a portrait-shaped
+  // photo that would crop badly as the 4:3 hero).
+  featureImage?: { src: string; alt: string; width: number; height: number };
   cardBlurb: string; // may contain {town}
   intro: { heading: string; paragraphs: string[] }[];
   includes?: { heading: string; items: { label: string; text: string }[] };
@@ -315,7 +318,13 @@ export const services: Record<string, ServicePage> = {
     h1: "Maternity Photography",
     tagline: "The waiting, the wonder, and the two of you before you become three.",
     heroImage: "/photos/family-bed-portrait.jpg",
-    heroAlt: "Chicago North Shore maternity photographer, relaxed in-home natural light session",
+    heroAlt: "Parents with their newborn and two young children on a bed during a relaxed in-home session",
+    featureImage: {
+      src: "/photos/maternity-side-profile-bw.jpg",
+      alt: "Black and white maternity portrait of an expecting mother in profile, one hand on her belly",
+      width: 1200,
+      height: 1800,
+    },
     cardBlurb: "Relaxed maternity photos at home or outdoors around {town}, with your partner and kids if you like.",
     intro: [
       {

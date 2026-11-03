@@ -60,7 +60,7 @@ Every contact-form email ends with four lines the visitor never sees: how they f
 - **Logo:** Text wordmark "Tovy Photography" in Cormorant Garamond
 
 ## Pricing (source of truth is sessions page code)
-When a price, session length or image count changes on `/sessions` (`src/app/sessions/page.tsx`), also update `site.pricing` in `src/lib/site.ts` and this list, then run `npm run check:pricing`. It lists every page, FAQ and blog post that still quotes the old numbers; fix them all in the same change. The content loop runs this check twice a week and texts Omer if anything drifts.
+When a price, session length or image count changes on `/sessions` (`src/app/sessions/page.tsx`), also update `site.pricing` in `src/lib/site.ts` (including `site.pricing.updated`, the date shown as "Prices current as of" on /sessions and on blog posts with `showsPrices: true`) and this list, then run `npm run check:pricing`. It lists every page, FAQ and blog post that still quotes the old numbers; fix them all in the same change. The content loop runs this check twice a week and texts Omer if anything drifts.
 - Mini: $300 (30 min, 10+ images)
 - Classic: $425 (60 min, 25+ images) - Most Popular
 - Full: $550 (90 min, 40+ images)
@@ -131,8 +131,8 @@ When a price, session length or image count changes on `/sessions` (`src/app/ses
 5. Maternity not fully surfaced as its own service category
 6. Cover image references can drift between gallery/homepage/category pages
 7. Homepage JSON-LD hardcodes aggregate rating 5 / 25 reviews - verify accuracy
-8. /og-image.jpg may not exist in public/
-9. Some old copy still contains em dashes
+8. Fixed 2026-11-02: `public/og-image.jpg` (1200x630) is the default share image. Pages that set their own `openGraph` must pass `images` (use `ogImages()` from `src/lib/site.ts`), because a page-level `openGraph` replaces the layout's.
+9. Em dashes were removed from titles, share titles, alt text, headings and gallery copy on 2026-11-02. Client review quotes keep theirs (they are quotes). Some body copy may still have them.
 
 ## Image/Cover Notes
 - When changing covers, audit: gallery page, category page, homepage tile, hero, dedicated cover files
@@ -205,7 +205,8 @@ When a price, session length or image count changes on `/sessions` (`src/app/ses
    - `seoDescription`: more keyword-explicit and conversion-aware than excerpt
    - `date`: YYYY-MM-DD
    - `category`: e.g., Maternity, Family, Newborn, etc.
-   - `image`: path to featured image
+   - `image`: path to featured image, plus `imageAlt` (what the photo shows); `imagePortrait: true` for a tall photo. The template shows it as the post hero unless `content` already has an `<img>`.
+   - `showsPrices: true` if the post quotes package prices
    - `content`: raw HTML string (NOT Markdown). Use `<p>`, `<h2>`, `<h3>`, `<ul>`, `<li>`, `<a href>`
 5. Include 2-4 internal links naturally: matching gallery, /contact, /sessions, /testimonials, related blog posts.
 6. Keyword placement: slug, title, seoTitle, seoDescription, first paragraph, at least one h2.
@@ -263,7 +264,7 @@ When a price, session length or image count changes on `/sessions` (`src/app/ses
 
 1. For galleries: verify slug, title, description, every image alt, coverImage in gallery-data.ts.
 2. For blog posts: verify slug, title, excerpt, seoTitle, seoDescription, image, internal links.
-3. Structured data is auto-generated for blog posts (BlogPosting) and galleries (ImageGallery). Homepage LocalBusiness JSON-LD is hardcoded -- only update for business-level changes.
+3. Structured data is auto-generated for blog posts (BlogPosting) and galleries (ImageGallery). There is ONE business record, `@id` https://tovyphotography.com/#business, and one person record for Gabi, `#gabi`. Build JSON-LD with the helpers in `src/lib/site.ts` (`localBusinessJsonLd`, `serviceJsonLd`, `businessRef`, `personRef`). Never declare a second LocalBusiness (town and service pages use a Service that points to the business).
 4. Sitemap auto-includes blog posts and gallery shoots. Does NOT auto-include new route types.
 5. Post-deploy QA: check page title in browser tab, first paragraph includes topic, featured image resolves, internal links work, page appears in /sitemap.xml.
 

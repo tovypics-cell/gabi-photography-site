@@ -1,7 +1,7 @@
 // /llms.txt: a plain-text summary of the business for AI assistants (ChatGPT, Perplexity,
 // Claude, Gemini) that read it when answering questions about local photographers.
 // Built from the same data as the site, so prices and pages never drift.
-import { site, serviceAreaNames } from "@/lib/site";
+import { site, serviceAreaNames, formatLongDate } from "@/lib/site";
 import { services } from "@/lib/services";
 import { getAllPosts } from "@/lib/blog-data";
 
@@ -26,7 +26,7 @@ export function GET() {
 - Based in: ${site.locality}, ${site.region}
 - Service area: ${serviceAreaNames.join(", ")}
 - Sessions: family, in-home newborn, maternity, milestones and birthdays, engagement and proposal, mini sessions, Bar and Bat Mitzvah and other Jewish life-cycle celebrations, headshots on request
-- Prices: Mini $${p.mini} (30 minutes, 10+ edited images), Classic $${p.classic} (60 minutes, 25+ edited images), Full $${p.full} (90 minutes, 40+ edited images); events are quoted. Every package includes a private online gallery with full print rights.
+- Prices (current as of ${formatLongDate(p.updated)}): Mini $${p.mini} (30 minutes, 10+ edited images), Classic $${p.classic} (60 minutes, 25+ edited images), Full $${p.full} (90 minutes, 40+ edited images); events are quoted. Every package includes a private online gallery with full print rights.
 - Travel: no travel fee within ${p.travelRadiusMiles} miles of ${site.locality}, $${p.travelFee} beyond
 - Booking: ${site.url}/contact
 - Phone: ${site.phoneDisplay}

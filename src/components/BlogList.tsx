@@ -53,19 +53,19 @@ export default function BlogList({ posts, categories }: BlogListProps) {
 
       {/* Post grid */}
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-        {filtered.map((post, index) => (
-          <ScrollReveal
-            key={post.slug}
-            animation="fade-up"
-            delay={(index % 3) * 100}
-          >
+        {filtered.map((post, index) => {
+          // The first row is on screen at load: no fade-in and no lazy loading, so the main
+          // image shows right away (Lighthouse measured /blog's main image at 6.4 s on mobile before this).
+          const aboveFold = index < 3;
+          const card = (
             <Link href={`/blog/${post.slug}`} className="group block">
               <div className="relative aspect-[4/3] overflow-hidden mb-4">
                 {post.image ? (
                   <Image
                     src={post.image}
-                    alt={post.title}
+                    alt={post.imageAlt ?? post.title}
                     fill
+                    priority={aboveFold}
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                     style={post.imagePosition ? { objectPosition: post.imagePosition } : undefined}
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -89,8 +89,15 @@ export default function BlogList({ posts, categories }: BlogListProps) {
                 {post.excerpt}
               </p>
             </Link>
-          </ScrollReveal>
-        ))}
+          );
+          return aboveFold ? (
+            <div key={post.slug}>{card}</div>
+          ) : (
+            <ScrollReveal key={post.slug} animation="fade-up" delay={(index % 3) * 100}>
+              {card}
+            </ScrollReveal>
+          );
+        })}
       </div>
     </>
   );

@@ -6,7 +6,10 @@ export interface BlogPost {
   updated?: string; // YYYY-MM-DD, set when the post is rewritten; drives sitemap lastmod
   category: string;
   image: string | null; // path to featured image, null for placeholder
+  imageAlt?: string; // what the featured image shows (alt text for the card and the post hero)
   imagePosition?: string; // CSS object-position for cover crop (e.g. "center bottom")
+  imagePortrait?: boolean; // tall photo: the post hero shows it uncropped and narrower instead of 4:3
+  showsPrices?: boolean; // quotes package prices: shows "Prices current as of" from site.pricing.updated
   content: string; // HTML content
   seoTitle?: string;
   seoDescription?: string;
@@ -24,6 +27,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-13",
     category: "Locations",
     image: "/photos/garfield-park-conservatory-engagement/cover-bench.jpg",
+    imageAlt: "Engaged couple relaxing on a wooden bench surrounded by ferns at Garfield Park Conservatory in Chicago",
     seoTitle: "Garfield Park Conservatory Engagement Photos | Tovy Photography",
     seoDescription: "Garfield Park Conservatory engagement photos: why the lush indoor setting works so well, what to wear, and how a conservatory session feels.",
     content: `
@@ -70,6 +74,7 @@ export const blogPosts: BlogPost[] = [
     updated: "2026-10-11",
     category: "Newborn",
     image: "/photos/newborn-sleeping-headband.jpg",
+    imageAlt: "Sleeping newborn baby girl in a gold headband, swaddled in a cream blanket",
     seoTitle: "When to Take Newborn Photos: 5 to 14 Days | Tovy Photography",
     seoDescription: "When to take newborn photos: the first 5 to 14 days after birth. When to book, how old baby should be, and what an in-home Skokie session is like.",
     faqs: [
@@ -177,6 +182,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-03-19",
     category: "Tips",
     image: "/photos/family-bed-portrait.jpg",
+    imageAlt: "Parents and three young children, including a newborn, in soft neutral outfits on a white bed",
     seoTitle: "Family Photo Outfits: What to Wear, by Season | Tovy Photography",
     seoDescription: "Family photo outfit ideas for fall, spring, summer, winter and holiday cards, plus what dad and the kids should wear. Coordinate, do not match.",
     faqs: [
@@ -277,54 +283,55 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "best-family-photo-locations-skokie-north-shore",
     title: "8 Beautiful Spring Family Photo Locations in Skokie & the North Shore",
-    excerpt: "Spring is here and it's the perfect time to book a family session! Here are some of the best locations in Skokie, Evanston, and Wilmette — plus a winter option for next time — with tips for the best time to shoot at each one.",
+    excerpt: "Spring is here and it's the perfect time to book a family session! Here are some of the best locations in Skokie, Evanston, and Wilmette, plus a winter option for next time, with tips for the best time to shoot at each one.",
     date: "2026-03-20",
     category: "Locations",
     image: "/photos/spring-blossoms.jpg",
+    imageAlt: "Field of red, blue and white spring wildflowers in a park with tall trees behind",
     seoTitle: "Family Photo Locations in Skokie & North Shore | Tovy Photography",
     seoDescription: "Eight spring family photo locations in Skokie and Chicago's North Shore, with what makes each one work and when the light is best.",
     content: `
 <p>Spring is officially here and after a long Chicago winter, there's no better time to get outside with your family and capture some beautiful photos. The flowers are starting to bloom, the light is getting warmer, and the kids are ready to run. One of the first things families ask me after booking is "where should we shoot?" Here are spots I love and recommend for spring family sessions in Skokie, Evanston, Wilmette, and across the North Shore.</p>
 
-<h2>1. Keay Nature Learning Center — Wilmette</h2>
+<h2>1. Keay Nature Learning Center, Wilmette</h2>
 
-<p>This is a spot I've actually shot at and it's so special. Keay is a quiet, secluded 4.6-acre nature preserve tucked right off Skokie Blvd. It has winding paths, mature trees, and this peaceful feel that's perfect for families with little ones who need space to warm up without crowds or distractions. In spring, everything starts coming back to life here — fresh green leaves, wildflowers popping up along the paths — it's gorgeous.</p>
+<p>This is a spot I've actually shot at and it's so special. Keay is a quiet, secluded 4.6-acre nature preserve tucked right off Skokie Blvd. It has winding paths, mature trees, and this peaceful feel that's perfect for families with little ones who need space to warm up without crowds or distractions. In spring, everything starts coming back to life here: fresh green leaves, wildflowers popping up along the paths. It's gorgeous.</p>
 
 <p><strong>Best time to shoot:</strong> Late afternoon. The tree canopy filters the light beautifully and gives you that warm golden glow.</p>
 
-<h2>2. Gillson Park & Beach — Wilmette</h2>
+<h2>2. Gillson Park & Beach, Wilmette</h2>
 
-<p>If you want that lakefront feel without driving downtown, Gillson Park is a great option. The beach, the open grass, the harbor in the background — it gives you a completely different look than a wooded trail. Once the spring weather settles in, this is one of the first spots that feels like summer is coming. It's perfect for families who want something bright and open, and kids always end up running toward the water which makes for really joyful, natural moments.</p>
+<p>If you want that lakefront feel without driving downtown, Gillson Park is a great option. The beach, the open grass, the harbor in the background. It gives you a completely different look than a wooded trail. Once the spring weather settles in, this is one of the first spots that feels like summer is coming. It's perfect for families who want something bright and open, and kids always end up running toward the water which makes for really joyful, natural moments.</p>
 
 <p><strong>Best time to shoot:</strong> Evening sessions. The sun sets over the lake and creates this soft, warm backlight.</p>
 
-<h2>3. Shakespeare Garden — Evanston</h2>
+<h2>3. Shakespeare Garden, Evanston</h2>
 
-<p>This small garden on Northwestern's campus has a romantic, storybook quality to it — stone walls, climbing vines, seasonal flowers. It's intimate and charming, which makes it a nice choice for smaller families, maternity sessions, or couples. It's compact, so it works better for smaller groups than big extended family sessions.</p>
+<p>This small garden on Northwestern's campus has a romantic, storybook quality to it: stone walls, climbing vines, seasonal flowers. It's intimate and charming, which makes it a nice choice for smaller families, maternity sessions, or couples. It's compact, so it works better for smaller groups than big extended family sessions.</p>
 
 <p><strong>Best time to shoot:</strong> Morning or late afternoon. The stone walls create shade earlier than open parks, so timing matters here.</p>
 
-<h2>4. Emily Oaks Nature Center — Skokie</h2>
+<h2>4. Emily Oaks Nature Center, Skokie</h2>
 
-<p>Emily Oaks has beautiful winding paths through prairie grass and wildflowers, with mature trees that create natural canopies overhead. Spring is one of the best times to shoot here — the prairie starts filling in with fresh greens and early wildflowers, and the light through the budding trees is soft and beautiful. There's enough variety that sessions here look completely different depending on the season and where you wander. It's also quiet and spacious, which is always a plus with young kids.</p>
+<p>Emily Oaks has beautiful winding paths through prairie grass and wildflowers, with mature trees that create natural canopies overhead. Spring is one of the best times to shoot here: the prairie starts filling in with fresh greens and early wildflowers, and the light through the budding trees is soft and beautiful. There's enough variety that sessions here look completely different depending on the season and where you wander. It's also quiet and spacious, which is always a plus with young kids.</p>
 
 <p><strong>Best time to shoot:</strong> Late afternoon, about an hour and a half before sunset when the light filters through the trees.</p>
 
-<h2>5. Ladd Arboretum — Evanston</h2>
+<h2>5. Ladd Arboretum, Evanston</h2>
 
 <p>A bit of a hidden gem along the North Shore Channel. The path is lined with beautiful trees and there's a pedestrian bridge that makes a lovely backdrop. It feels tucked away even though you're in the middle of Evanston, and there's plenty of room for kids to explore without worrying about traffic or big crowds.</p>
 
 <p><strong>Best time to shoot:</strong> Golden hour in spring or summer when the tree canopy is full and the light comes through in patches.</p>
 
-<h2>6. Harms Woods — Skokie / Glenview Border</h2>
+<h2>6. Harms Woods, Skokie/Glenview Border</h2>
 
 <p>For families who want a deep, wooded, natural feel, Harms Woods is worth considering. The tall trees and wide trails create beautiful layered depth in photos. Fall is especially stunning here when the leaves are changing and the forest floor is covered in golden tones. It's a forest preserve so it stays fairly uncrowded. For more on timing and what to wear this time of year, see my guide to <a href="/blog/fall-family-photos-guide">planning a fall family photoshoot</a>.</p>
 
 <p><strong>Best time to shoot:</strong> Afternoon light works well since the tree cover softens even midday sun. Fall is peak season.</p>
 
-<h2>7. Skokie Public Library — Skokie (Rainy Day Backup!)</h2>
+<h2>7. Skokie Public Library, Skokie (Rainy Day Backup!)</h2>
 
-<p>Spring in Chicago means beautiful weather one day and rain the next. If your session lands on a rainy day, don't stress — the Skokie Public Library is a surprisingly gorgeous indoor option. I've done sessions here and the architecture, big windows, and natural light make it work really well for family photos. It's a great reminder that you don't need sunshine to get beautiful photos — sometimes an interesting indoor space works even better. Plus your kids already feel comfortable here.</p>
+<p>Spring in Chicago means beautiful weather one day and rain the next. If your session lands on a rainy day, don't stress. The Skokie Public Library is a surprisingly gorgeous indoor option. I've done sessions here and the architecture, big windows, and natural light make it work really well for family photos. It's a great reminder that you don't need sunshine to get beautiful photos. Sometimes an interesting indoor space works even better. Plus your kids already feel comfortable here.</p>
 
 <p><strong>Best time to shoot:</strong> Weekday mornings when it's quieter. The natural light from the large windows is soft and even.</p>
 
@@ -340,7 +347,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>If you would like lakefront or garden options farther north, my guide to <a href="/blog/outdoor-family-photo-locations-north-shore-chicago">outdoor family photo locations on Chicago's North Shore</a> covers Glencoe, Highland Park and Winnetka.</p>
 
-<p>Spring books up fast — the weather window between "still cold" and "too hot and humid" goes quicker than you'd think in Chicago. <a href="/contact">Get in touch</a> and let's plan your spring family session in Skokie, Evanston, or anywhere across Chicago's North Shore.</p>
+<p>Spring books up fast. The weather window between "still cold" and "too hot and humid" goes quicker than you'd think in Chicago. <a href="/contact">Get in touch</a> and let's plan your spring family session in Skokie, Evanston, or anywhere across Chicago's North Shore.</p>
 `,
   },
   {
@@ -351,7 +358,9 @@ export const blogPosts: BlogPost[] = [
     updated: "2026-10-11",
     category: "Maternity",
     image: "/photos/maternity-side-profile-bw.jpg",
+    imageAlt: "Black and white maternity portrait of an expecting mother in profile, one hand on her belly",
     imagePosition: "center 70%",
+    imagePortrait: true,
     seoTitle: "When to Take Maternity Photos, What to Wear | Tovy Photography",
     seoDescription: "When to schedule maternity photos, what to wear, and how to plan a relaxed natural light session in Skokie and the North Shore.",
     content: `
@@ -427,6 +436,7 @@ export const blogPosts: BlogPost[] = [
     updated: "2026-10-12",
     category: "Locations",
     image: "/photos/north-shore-family-tall-grasses.jpg",
+    imageAlt: "Parents sitting on a blanket with their toddler in front of tall green grasses",
     seoTitle: "Outdoor Family Photo Locations, North Shore | Tovy Photography",
     seoDescription: "Outdoor family photo locations on Chicago's North Shore, from Glencoe Beach to Gillson Park, with the best light for each. Sessions start at $300.",
     faqs: [
@@ -552,6 +562,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-07-03",
     category: "Tips",
     image: "/photos/golden-hour-family-lakeside.jpg",
+    imageAlt: "Family of six standing together by a lake at golden hour, the sun low behind a tree",
     seoTitle: "Best Time of Day for Outdoor Family Photos | Tovy Photography",
     seoDescription: "Wondering the best time of day for outdoor family photos? A Skokie photographer shares golden hour timing, summer tips, and North Shore session advice.",
     content: `
@@ -600,6 +611,7 @@ export const blogPosts: BlogPost[] = [
     updated: "2026-10-15",
     category: "Locations",
     image: "/photos/engagement-ring-hands-reaching.jpg",
+    imageAlt: "Engaged couple reaching for each other's hands, the engagement ring catching the light against dark green leaves",
     seoTitle: "Chicago Engagement Photo Locations | Tovy Photography",
     seoDescription: "The best places for engagement photos in Chicago and the North Shore, from Gillson Park to the Botanic Garden, with permit notes for each spot.",
     faqs: [
