@@ -5,7 +5,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import StickyBookingBar from "@/components/StickyBookingBar";
 import { services } from "@/lib/services";
 import { locationPages } from "@/lib/locations";
-import { site, breadcrumbJsonLd } from "@/lib/site";
+import { site, breadcrumbJsonLd, serviceJsonLd as buildServiceJsonLd, ogImages } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Chicago North Shore Engagement Photographer",
@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     description:
       "Natural, joyful engagement photography in Evanston, Wilmette, Skokie, and across Chicago's North Shore.",
     url: "https://tovyphotography.com/sessions/engagement-photography",
+    images: ogImages("/photos/garfield-park-conservatory-engagement/cover-bench.jpg", "Engagement session at Garfield Park Conservatory in Chicago"),
   },
 };
 
@@ -54,35 +55,15 @@ const faqs = [
 ];
 
 export default function EngagementPhotographyPage() {
-  const serviceJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
+  // Same business record (@id) and 13-town service area as every other page.
+  const serviceJsonLd = buildServiceJsonLd({
+    name: "Engagement photography",
     serviceType: "Engagement Photography",
-    provider: {
-      "@type": "LocalBusiness",
-      name: "Tovy Photography",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Skokie",
-        addressRegion: "IL",
-        addressCountry: "US",
-      },
-      url: "https://tovyphotography.com",
-      priceRange: "$300-$550",
-    },
-    areaServed: [
-      "Skokie",
-      "Evanston",
-      "Wilmette",
-      "Lincolnwood",
-      "Winnetka",
-      "Highland Park",
-      "Northbrook",
-      "Glencoe",
-    ],
+    url: `${site.url}/sessions/engagement-photography`,
     description:
       "Natural, joyful engagement photography in Evanston, Wilmette, Skokie, and across Chicago's North Shore.",
-  };
+    image: `${site.url}/photos/garfield-park-conservatory-engagement/cover-bench.jpg`,
+  });
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -125,7 +106,7 @@ export default function EngagementPhotographyPage() {
         <div className="mx-auto max-w-6xl grid gap-10 md:grid-cols-2 items-center">
           {/* IMAGE 1: Hero engagement photo */}
           <PlaceholderImage
-            alt="engagement photography Chicago North Shore — joyful couple during outdoor engagement session"
+            alt="engagement photography Chicago North Shore, joyful couple during outdoor engagement session"
             className="aspect-[4/5] w-full"
             label="Image 1: Hero engagement photo"
           />
@@ -205,7 +186,7 @@ export default function EngagementPhotographyPage() {
           <ScrollReveal animation="fade-left" delay={150}>
             {/* IMAGE 2: Couple laughing together — outdoor location, natural light */}
             <PlaceholderImage
-              alt="engagement photography session North Shore Chicago — couple laughing together at park"
+              alt="engagement photography session North Shore Chicago, couple laughing together at park"
               className="aspect-[4/5] w-full"
               label="Image 2: Couple laughing outdoors"
             />
@@ -265,7 +246,7 @@ export default function EngagementPhotographyPage() {
           <ScrollReveal animation="fade-right">
             {/* IMAGE 3: Couple at outdoor location — ring detail or walking together */}
             <PlaceholderImage
-              alt="engagement photographer Evanston — couple walking hand in hand at golden hour"
+              alt="engagement photographer Evanston, couple walking hand in hand at golden hour"
               className="aspect-[4/5] w-full"
               label="Image 3: Couple walking or ring detail"
             />

@@ -149,6 +149,19 @@ export default async function ServicePage({ params }: Props) {
                   <p key={j}>{p}</p>
                 ))}
               </div>
+              {i === 0 && data.featureImage && (
+                <figure className="mt-10">
+                  <Image
+                    src={data.featureImage.src}
+                    alt={data.featureImage.alt}
+                    width={data.featureImage.width}
+                    height={data.featureImage.height}
+                    sizes="(max-width: 640px) 100vw, 384px"
+                    className="mx-auto h-auto w-full max-w-sm rounded-sm"
+                    quality={80}
+                  />
+                </figure>
+              )}
             </ScrollReveal>
           ))}
         </div>

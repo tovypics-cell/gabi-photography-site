@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
+import { businessRef, ogImages } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Reviews from Skokie and North Shore Families",
@@ -10,10 +11,11 @@ export const metadata: Metadata = {
     canonical: "https://tovyphotography.com/testimonials",
   },
   openGraph: {
-    title: "Reviews & Testimonials — Tovy Photography",
+    title: "Reviews and Testimonials | Tovy Photography",
     description:
       "Real reviews from families who trusted Tovy Photography to capture their most meaningful moments.",
     url: "https://tovyphotography.com/testimonials",
+    images: ogImages(),
   },
 };
 
@@ -51,8 +53,9 @@ const testimonials = [
 export default function TestimonialsPage() {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: "Tovy Photography",
+    // Same business record as every page (@id), so the reviews attach to it instead of a
+    // second, separate business. reviewCount matches the reviews marked up on this page.
+    ...businessRef(),
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "5",

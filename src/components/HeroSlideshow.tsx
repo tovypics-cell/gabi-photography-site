@@ -11,39 +11,39 @@ const heroSlides: { src: string; alt: string; objectPosition?: string }[] = [
   },
   {
     src: "/photos/boy-curtain-window.jpg",
-    alt: "Little boy peeking out from window blinds — candid childhood photography",
+    alt: "Little boy peeking out from window blinds, candid childhood photography",
   },
   {
     src: "/photos/hero-mom-lift-kiss-bw.jpg",
-    alt: "Black and white photo of mom lifting and kissing her laughing curly-haired daughter by the pond — family photography",
+    alt: "Black and white photo of mom lifting and kissing her laughing curly-haired daughter by the pond, family photography",
   },
   {
     src: "/photos/hero-newborn-window-floral.jpg",
-    alt: "Parents cradling their newborn baby in a floral romper by the window — natural light newborn photography",
+    alt: "Parents cradling their newborn baby in a floral romper by the window, natural light newborn photography",
   },
   {
     src: "/photos/hero-kids-lake-framed.jpg",
-    alt: "Four kids by the lake framed through their parents holding hands — creative family photography",
+    alt: "Four kids by the lake framed through their parents holding hands, creative family photography",
   },
   {
     src: "/photos/hero-boy-laugh-mom-bw.jpg",
-    alt: "Black and white photo of laughing boy sticking his tongue out on mom's lap — playful family photography",
+    alt: "Black and white photo of laughing boy sticking his tongue out on mom's lap, playful family photography",
   },
   {
     src: "/photos/hero-family-four-canopy-2.jpg",
-    alt: "Family of four smiling under a green tree canopy — daughter on dad's shoulders, baby on mom's hip",
+    alt: "Family of four smiling under a green tree canopy, daughter on dad's shoulders, baby on mom's hip",
   },
   {
     src: "/photos/hero-family-kids-lift.jpg",
-    alt: "Parents lifting their laughing toddler and daughter toward the camera in the park — playful family photography",
+    alt: "Parents lifting their laughing toddler and daughter toward the camera in the park, playful family photography",
   },
   {
     src: "/photos/hero-yoga-lake-sunset.jpg",
-    alt: "Dancer's pose yoga portrait by the lake at sunset — lifestyle photography",
+    alt: "Dancer's pose yoga portrait by the lake at sunset, lifestyle photography",
   },
   {
     src: "/photos/hero-newborn-garden-tree.jpg",
-    alt: "Parents cradling their newborn baby girl in the garden — outdoor newborn photography",
+    alt: "Parents cradling their newborn baby girl in the garden, outdoor newborn photography",
   },
   {
     src: "/photos/hero-family-baby-smile.jpg",
@@ -52,15 +52,15 @@ const heroSlides: { src: string; alt: string; objectPosition?: string }[] = [
   },
   {
     src: "/photos/newborn-skyline.jpg",
-    alt: "Newborn baby held by parents with city skyline — newborn photography session",
+    alt: "Newborn baby held by parents with city skyline, newborn photography session",
   },
   {
     src: "/photos/parents-newborn-window.jpg",
-    alt: "Parents holding newborn baby by window — natural light newborn photography",
+    alt: "Parents holding newborn baby by window, natural light newborn photography",
   },
   {
     src: "/photos/hero-lakeside-hug-2.jpg",
-    alt: "Two women hugging lakeside in white dresses at golden hour — candid photography",
+    alt: "Two women hugging lakeside in white dresses at golden hour, candid photography",
   },
 ];
 

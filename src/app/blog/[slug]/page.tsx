@@ -9,7 +9,15 @@ import {
   formatDate,
   blogPosts,
 } from "@/lib/blog-data";
-import { faqJsonLd } from "@/lib/site";
+import {
+  site,
+  faqJsonLd,
+  personRef,
+  businessRef,
+  logoUrl,
+  ogImages,
+  formatLongDate,
+} from "@/lib/site";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -41,7 +49,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: post.date,
       modifiedTime: post.updated ?? post.date,
       authors: ["Gabi Tovy"],
-      ...(post.image && { images: [post.image] }),
+      images: ogImages(post.image, post.imageAlt),
     },
   };
 }
@@ -66,15 +74,8 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.seoDescription || post.excerpt,
     datePublished: post.date,
     dateModified: post.updated ?? post.date,
-    author: {
-      "@type": "Person",
-      name: "Gabi Tovy",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Tovy Photography",
-      url: "https://tovyphotography.com",
-    },
+    author: personRef(),
+    publisher: { ...businessRef(), logo: { "@type": "ImageObject", url: logoUrl } },
     url: `https://tovyphotography.com/blog/${slug}`,
     ...(post.image && {
       image: `https://tovyphotography.com${post.image}`,
@@ -82,6 +83,9 @@ export default async function BlogPostPage({ params }: Props) {
   };
 
   const faqLd = post.faqs && post.faqs.length ? faqJsonLd(post.faqs) : null;
+  // The featured image shows as the hero, except on posts that already place photos in the
+  // article (the cost guides), so the same picture never shows twice.
+  const showHero = Boolean(post.image) && !/<img\s/i.test(post.content);
   const headingText = (post.content.match(/<h[23][^>]*>[\s\S]*?<\/h[23]>/g) ?? [])
     .map((h) => h.replace(/<[^>]+>/g, "").trim().toLowerCase());
   const visibleFaqs = (post.faqs ?? []).filter(
@@ -128,6 +132,30 @@ export default async function BlogPostPage({ params }: Props) {
       {/* Article */}
       <article className="px-6 py-12 md:py-20 lg:px-8">
         <div className="mx-auto max-w-3xl">
+
+          {showHero && post.image && (
+            <figure
+              className={`relative mb-12 w-full overflow-hidden rounded-sm bg-[#E8D5CE]/30 ${
+                post.imagePortrait ? "mx-auto aspect-[2/3] max-w-sm" : "aspect-[4/3]"
+              }`}
+            >
+              <Image
+                src={post.image}
+                alt={post.imageAlt ?? post.title}
+                fill
+                priority
+                sizes={post.imagePortrait ? "(max-width: 640px) 100vw, 384px" : "(max-width: 768px) 100vw, 768px"}
+                className="object-cover"
+                style={post.imagePosition && !post.imagePortrait ? { objectPosition: post.imagePosition } : undefined}
+              />
+            </figure>
+          )}
+
+          {post.showsPrices && (
+            <p className="mb-8 text-xs uppercase tracking-wider text-charcoal-light">
+              Prices current as of {formatLongDate(site.pricing.updated)}
+            </p>
+          )}
 
           {/* Content */}
           <div

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getAllShoots, categories } from "@/lib/gallery-data";
 import ScrollReveal from "@/components/ScrollReveal";
+import { ogImages } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Photo Gallery, Family, Newborn and Milestones",
@@ -12,10 +13,11 @@ export const metadata: Metadata = {
     canonical: "https://tovyphotography.com/gallery",
   },
   openGraph: {
-    title: "Gallery — Tovy Photography",
+    title: "Gallery | Tovy Photography",
     description:
       "Explore our portfolio of family, newborn, milestone, and event photography sessions.",
     url: "https://tovyphotography.com/gallery",
+    images: ogImages(),
   },
 };
 
@@ -61,7 +63,7 @@ export default function GalleryPage() {
                   <div className="relative aspect-[3/4] overflow-hidden mb-4">
                     <Image
                       src={shoot.coverImage!}
-                      alt={`${shoot.title} — ${shoot.category} Photography by Tovy Photography`}
+                      alt={`${shoot.title}, ${shoot.category} Photography by Tovy Photography`}
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"

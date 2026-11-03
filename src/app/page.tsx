@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { localBusinessJsonLd, faqJsonLd } from "@/lib/site";
+import { localBusinessJsonLd, faqJsonLd, ogImages } from "@/lib/site";
 import { services } from "@/lib/services";
 import Link from "next/link";
 import Image from "next/image";
@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     description:
       "Authentic family, newborn, and milestone photography in Skokie, IL. Seeing the good in your world.",
     url: "https://tovyphotography.com",
+    images: ogImages(),
   },
 };
 
@@ -28,7 +29,7 @@ const portfolioImages = [
     category: "Family",
   },
   {
-    alt: "Newborn baby photography — gentle and natural",
+    alt: "Newborn baby photography, gentle and natural",
     category: "Newborn",
   },
   {
@@ -36,15 +37,15 @@ const portfolioImages = [
     category: "Family",
   },
   {
-    alt: "Baby milestone photography — first birthday celebration",
+    alt: "Baby milestone photography, first birthday celebration",
     category: "Milestone",
   },
   {
-    alt: "Mother and child bonding moment — lifestyle photography",
+    alt: "Mother and child bonding moment, lifestyle photography",
     category: "Family",
   },
   {
-    alt: "Children playing outdoors — candid family photography",
+    alt: "Children playing outdoors, candid family photography",
     category: "Family",
   },
 ];
@@ -172,10 +173,10 @@ export default function HomePage() {
           </ScrollReveal>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
             {[
-              { name: "Newborns", href: "/gallery/newborn", alt: "In-home newborn photographer Skokie IL — sleeping baby natural light photography", src: "/photos/newborn-sleeping-headband.jpg" },
-              { name: "Families", href: "/gallery/family", alt: "Skokie in-home family photographer — family portrait on bed with newborn and kids", src: "/photos/family-bed-portrait.jpg" },
-              { name: "Milestones", href: "/gallery/milestone", alt: "Garfield Park Conservatory engagement photography in Chicago — milestone session portrait on bench", src: "/photos/garfield-park-conservatory-engagement/cover-bench.jpg" },
-              { name: "Events", href: "/gallery/event", alt: "Bar Mitzvah photographer Skokie — boy putting on tallit during ceremony", src: "/photos/stolberg-bar-mitzvah/10-putting-on-tallit.jpg" },
+              { name: "Newborns", href: "/gallery/newborn", alt: "In-home newborn photographer Skokie IL, sleeping baby natural light photography", src: "/photos/newborn-sleeping-headband.jpg" },
+              { name: "Families", href: "/gallery/family", alt: "Skokie in-home family photographer, family portrait on bed with newborn and kids", src: "/photos/family-bed-portrait.jpg" },
+              { name: "Milestones", href: "/gallery/milestone", alt: "Garfield Park Conservatory engagement photography in Chicago, milestone session portrait on bench", src: "/photos/garfield-park-conservatory-engagement/cover-bench.jpg" },
+              { name: "Events", href: "/gallery/event", alt: "Bar Mitzvah photographer Skokie, boy putting on tallit during ceremony", src: "/photos/stolberg-bar-mitzvah/10-putting-on-tallit.jpg" },
             ].map((session, index) => (
               <ScrollReveal key={session.name} animation="scale-in" delay={index * 100}>
               <Link
@@ -259,7 +260,7 @@ export default function HomePage() {
             <div className="relative aspect-[3/4] overflow-hidden">
               <Image
                 src="/photos/gabi-portrait.jpg"
-                alt="Gabi Tovy — family and newborn photographer in Skokie IL"
+                alt="Gabi Tovy, family and newborn photographer in Skokie IL"
                 fill
                 className="object-cover object-top"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -275,7 +276,7 @@ export default function HomePage() {
               <p className="mb-4 text-charcoal-light leading-relaxed">
                 I&apos;ve always been the one trailing behind on family walks, too busy
                 capturing moments to keep up. It took becoming a mom to finally pick
-                up my camera for real — and I never looked back.
+                up my camera for real, and I never looked back.
               </p>
               <p className="mb-4 text-charcoal-light leading-relaxed">
                 My sessions are calm, a little playful, and always guided by what makes

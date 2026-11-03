@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
-import { site } from "@/lib/site";
+import { site, personId, businessRef, ogImages } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About Gabi Tovy, Skokie Family Photographer",
@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     description:
       "Meet the photographer behind Tovy Photography. Skokie-based family & newborn photographer capturing real moments with natural light.",
     url: "https://tovyphotography.com/about",
+    images: ogImages("/photos/gabi-portrait.jpg", "Gabi Tovy, the photographer behind Tovy Photography"),
   },
 };
 
@@ -46,13 +47,10 @@ export default function AboutPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": personId,
     name: site.photographer,
     jobTitle: "Family Photographer",
-    worksFor: {
-      "@type": "LocalBusiness",
-      name: site.name,
-      url: site.url,
-    },
+    worksFor: businessRef(),
     description:
       "Skokie-based family and newborn photographer specializing in authentic lifestyle photography.",
     url: "https://tovyphotography.com/about",

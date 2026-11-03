@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getAllPosts, getAllCategories } from "@/lib/blog-data";
 import ScrollReveal from "@/components/ScrollReveal";
 import BlogList from "@/components/BlogList";
+import { personRef, businessRef, ogImages } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Blog, Family and Newborn Photo Tips",
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     description:
       "Photography tips, session guides, and stories from Skokie family photographer Tovy Photography.",
     url: "https://tovyphotography.com/blog",
+    images: ogImages(),
   },
 };
 
@@ -29,10 +31,8 @@ export default function BlogPage() {
     description:
       "Photography tips, session guides, and behind-the-scenes stories from Tovy Photography in Skokie, IL.",
     url: "https://tovyphotography.com/blog",
-    author: {
-      "@type": "Person",
-      name: "Gabi Tovy",
-    },
+    author: personRef(),
+    publisher: businessRef(),
   };
 
   return (

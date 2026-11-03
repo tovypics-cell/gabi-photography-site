@@ -4,7 +4,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import PlaceholderImage from "@/components/PlaceholderImage";
 import { getShootsByCategory, categories } from "@/lib/gallery-data";
-import { faqJsonLd } from "@/lib/site";
+import { faqJsonLd, ogImages } from "@/lib/site";
 
 interface Props {
   params: Promise<{ category: string }>;
@@ -64,10 +64,10 @@ const categoryMeta: Record<
   milestone: {
     title: "Milestone Photo Gallery, Skokie",
     description:
-      "Milestone photography by Tovy Photography. Maternity, first birthdays, graduations, and more in Skokie, IL and Chicago's North Shore.",
+      "Milestone photography by Tovy Photography: birthdays, upsherins, first haircuts and engagements in Skokie, IL and Chicago's North Shore.",
     h1: "Milestone Photography",
     intro:
-      "From maternity glow to first birthdays to graduations — every milestone deserves to be captured beautifully.",
+      "From birthdays and first haircuts to engagements, every milestone deserves to be captured beautifully.",
     serviceHref: "/sessions/milestone-photography",
     serviceLabel: "Milestone Photography",
     about: [
@@ -122,6 +122,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: meta.title,
       description: meta.description,
       url: `https://tovyphotography.com/gallery/${category}`,
+      images: ogImages(
+        getShootsByCategory(category).find((s) => s.coverImage)?.coverImage,
+        meta.h1
+      ),
     },
   };
 }
@@ -176,7 +180,7 @@ export default async function GalleryCategoryPage({ params }: Props) {
                     {shoot.coverImage ? (
                       <Image
                         src={shoot.coverImage}
-                        alt={`${shoot.title} — ${meta.h1} by Tovy Photography`}
+                        alt={`${shoot.title}, ${meta.h1} by Tovy Photography`}
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -185,7 +189,7 @@ export default async function GalleryCategoryPage({ params }: Props) {
                       />
                     ) : (
                       <PlaceholderImage
-                        alt={`${shoot.title} — ${meta.h1}`}
+                        alt={`${shoot.title}, ${meta.h1}`}
                         className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105"
                         label={shoot.title}
                       />

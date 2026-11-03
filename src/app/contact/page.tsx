@@ -1,19 +1,21 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";
+import { ogImages } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Contact — Book Your Photography Session",
+  title: "Contact and Book Your Photography Session",
   description:
     "Ready to capture your family's story? Contact Tovy Photography to book a family, newborn, milestone, or event session in Skokie, IL and Chicago's North Shore.",
   alternates: {
     canonical: "https://tovyphotography.com/contact",
   },
   openGraph: {
-    title: "Contact — Tovy Photography",
+    title: "Contact | Tovy Photography",
     description:
       "Book your photography session with Tovy Photography. Serving Skokie, Evanston, Lincolnwood, Wilmette, and Chicago.",
     url: "https://tovyphotography.com/contact",
+    images: ogImages(),
   },
 };
 
@@ -98,7 +100,7 @@ export default function ContactPage() {
                         <circle cx="12" cy="10" r="3" />
                       </svg>
                       <span>
-                        Skokie, IL — Serving Chicago&apos;s North Shore
+                        Skokie, IL · Serving Chicago&apos;s North Shore
                       </span>
                     </div>
                   </div>

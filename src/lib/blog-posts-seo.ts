@@ -13,6 +13,8 @@ export const seoBlogPosts: BlogPost[] = [
     updated: "2026-10-22",
     category: "Newborn",
     image: "/photos/parents-newborn-window.jpg",
+    imageAlt: "Parents sitting by a bright window holding their newborn baby",
+    showsPrices: true,
     seoTitle: "Newborn Photography Cost in Chicago | Tovy Photography",
     seoDescription:
       "How much does newborn photography cost in Chicago? Published guides show a few hundred to over $1,000. My in-home newborn sessions run $300 to $550.",
@@ -97,6 +99,8 @@ export const seoBlogPosts: BlogPost[] = [
     updated: "2026-11-01",
     category: "Tips",
     image: "/photos/family-plaza-swinging.jpg",
+    imageAlt: "Parents swinging their toddler between them as two kids run ahead across a brick plaza in Skokie",
+    showsPrices: true,
     seoTitle: "Family Photography Prices and Costs | Tovy Photography",
     seoDescription:
       "How much do family photos cost? 2026 guides put a typical session at $300 to $750. My Skokie and North Shore family sessions run $300 to $550, images included.",
@@ -216,6 +220,7 @@ export const seoBlogPosts: BlogPost[] = [
     date: "2026-09-15",
     category: "Newborn",
     image: "/photos/siblings-newborn-bed.jpg",
+    imageAlt: "Two smiling siblings lying on a bed beside their sleeping newborn sister",
     seoTitle: "Newborn Photos at Home vs Studio | Tovy Photography",
     seoDescription:
       "In-home newborn photos or a studio session? Compare comfort, look, siblings, cost and timing, from a Skokie newborn photographer who comes to you.",
@@ -280,6 +285,8 @@ export const seoBlogPosts: BlogPost[] = [
     date: "2026-09-22",
     category: "Tips",
     image: "/photos/garfield-park-conservatory-engagement/cover-bench.jpg",
+    imageAlt: "Engaged couple relaxing on a wooden bench surrounded by ferns at Garfield Park Conservatory in Chicago",
+    showsPrices: true,
     seoTitle: "Engagement Photoshoot Cost in Chicago | Tovy Photography",
     seoDescription:
       "How much does an engagement photoshoot cost? Chicago guides put standalone sessions at $450 to $1,200. My North Shore engagement sessions run $300 to $550.",
@@ -355,7 +362,10 @@ export const seoBlogPosts: BlogPost[] = [
     date: "2026-09-22",
     updated: "2026-10-22",
     category: "Maternity",
-    image: "/photos/family-bed-portrait.jpg",
+    image: "/photos/maternity-side-profile-bw.jpg",
+    imageAlt: "Black and white maternity portrait of an expecting mother in profile, one hand on her belly",
+    imagePosition: "center 70%",
+    showsPrices: true,
     seoTitle: "Maternity Photoshoot Cost in Chicago | Tovy Photography",
     seoDescription:
       "How much does a maternity photoshoot cost? Chicago guides put most sessions at $500 to $1,200. My natural light maternity sessions run $300 to $550.",
@@ -446,6 +456,7 @@ export const seoBlogPosts: BlogPost[] = [
     date: "2026-09-21",
     category: "Family",
     image: "/photos/golden-hour-family-lakeside.jpg",
+    imageAlt: "Family of six standing together by a lake at golden hour, the sun low behind a tree",
     seoTitle: "Fall Family Photoshoot Guide, North Shore | Tovy Photography",
     seoDescription:
       "Planning a fall family photoshoot? A Skokie photographer covers when to book, the best North Shore locations, timing for golden light, and what to wear.",
@@ -536,6 +547,7 @@ export const seoBlogPosts: BlogPost[] = [
     date: "2026-09-29",
     category: "Family",
     image: "/photos/family-bed-session.jpg",
+    imageAlt: "Parents and three young children, including a newborn, smiling together on a bed during an in-home session",
     seoTitle: "Christmas Family Photos, North Shore | Tovy Photography",
     seoDescription:
       "Planning Christmas family photos? A Skokie photographer on when to book for holiday cards, in-home vs outdoor sessions, what to wear, and what it costs.",
@@ -643,6 +655,7 @@ export const seoBlogPosts: BlogPost[] = [
     date: "2026-10-05",
     category: "Family",
     image: "/photos/west-rogers-park-9-month-family/cover-home.jpg",
+    imageAlt: "Parents holding their laughing baby up toward the camera during an in-home family session in West Rogers Park",
     seoTitle: "Hanukkah Photoshoot Ideas and Tips, Skokie | Tovy Photography",
     seoDescription:
       "Planning a Hanukkah photoshoot? A Skokie family photographer on when to book for cards, menorah and candlelight photos, what to wear, and what it costs.",
@@ -755,6 +768,7 @@ export const seoBlogPosts: BlogPost[] = [
     date: "2026-10-26",
     category: "Family",
     image: "/photos/family-walking-playful.jpg",
+    imageAlt: "Family walking across a brick plaza, parents swinging their toddler while two kids run ahead",
     seoTitle: "Family Photos With Dog: Tips and Ideas | Tovy Photography",
     seoDescription:
       "How to plan family photos with your dog: tiring them out first, bringing a helper, where to shoot, newborns and dogs, and what a session costs in Skokie.",
