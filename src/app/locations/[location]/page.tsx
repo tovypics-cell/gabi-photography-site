@@ -8,6 +8,7 @@ import { getShootBySlug } from "@/lib/gallery-data";
 import {
   site,
   localBusinessJsonLd,
+  serviceJsonLd,
   faqJsonLd,
   breadcrumbJsonLd,
 } from "@/lib/site";
@@ -61,23 +62,35 @@ export default async function LocationPage({ params }: Props) {
   if (!data) notFound();
 
   const url = `${site.url}/locations/${location}`;
-  const business = localBusinessJsonLd({
-    "@id": undefined,
+  const hero = heroImages[location] || defaultHero;
+  // One business record (same @id as every page); the town is the Service's area. Before
+  // 2026-11-02 each town page declared its own LocalBusiness, which read as 12 more businesses.
+  const business = localBusinessJsonLd();
+  const service = serviceJsonLd({
+    name: `Family, newborn and maternity photography in ${data.name}`,
+    serviceType: "Family and newborn photography",
     url,
-    description: `Family, newborn, maternity and milestone photographer serving ${data.name}, IL. Natural light sessions at home or on location.`,
-    areaServed: {
-      "@type": "City",
-      name: data.name,
-      containedInPlace: { "@type": "State", name: "Illinois" },
-    },
+    description: `Family, newborn, maternity and milestone photography in ${data.name}, IL. Natural light sessions at home or on location.`,
+    image: `${site.url}${hero}`,
+    areaServed:
+      location === "west-rogers-park"
+        ? {
+            "@type": "Place",
+            name: data.name,
+            containedInPlace: { "@type": "City", name: "Chicago" },
+          }
+        : {
+            "@type": "City",
+            name: data.name,
+            containedInPlace: { "@type": "State", name: "Illinois" },
+          },
   });
   const faq = faqJsonLd(data.faqs);
+  // No /locations hub page exists, so the trail is Home > town.
   const crumbs = breadcrumbJsonLd([
     { name: "Home", url: site.url },
-    { name: "Locations", url: `${site.url}/locations/${location}` },
     { name: data.name, url },
   ]);
-  const hero = heroImages[location] || defaultHero;
   const serviceList = Object.values(services);
 
   return (
@@ -85,6 +98,10 @@ export default async function LocationPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(business) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(service) }}
       />
       <script
         type="application/ld+json"

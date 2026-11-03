@@ -5,7 +5,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import StickyBookingBar from "@/components/StickyBookingBar";
 import { services } from "@/lib/services";
 import { locationPages } from "@/lib/locations";
-import { site, breadcrumbJsonLd } from "@/lib/site";
+import { site, breadcrumbJsonLd, serviceJsonLd as buildServiceJsonLd, ogImages } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Skokie Family Photographer, North Shore",
@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     description:
       "Natural, relaxed family photography in Skokie, Evanston, and Chicago's North Shore. Outdoor and in-home sessions that capture real connection.",
     url: "https://tovyphotography.com/sessions/family-photography",
+    images: ogImages("/photos/family-hero-park-laughing.jpg", "Parents laughing with their two kids during a relaxed outdoor family session"),
   },
 };
 
@@ -54,35 +55,15 @@ const faqs = [
 ];
 
 export default function FamilyPhotographyPage() {
-  const serviceJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
+  // Same business record (@id) and 13-town service area as every other page.
+  const serviceJsonLd = buildServiceJsonLd({
+    name: "Family photography",
     serviceType: "Family Photography",
-    provider: {
-      "@type": "LocalBusiness",
-      name: "Tovy Photography",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Skokie",
-        addressRegion: "IL",
-        addressCountry: "US",
-      },
-      url: "https://tovyphotography.com",
-      priceRange: "$300-$550",
-    },
-    areaServed: [
-      "Skokie",
-      "Evanston",
-      "Wilmette",
-      "Lincolnwood",
-      "Winnetka",
-      "Highland Park",
-      "Northbrook",
-      "Glencoe",
-    ],
+    url: `${site.url}/sessions/family-photography`,
     description:
       "Natural, relaxed family photography in Skokie, Evanston, and Chicago's North Shore. Outdoor and in-home sessions.",
-  };
+    image: `${site.url}/photos/family-hero-park-laughing.jpg`,
+  });
 
   const faqJsonLd = {
     "@context": "https://schema.org",

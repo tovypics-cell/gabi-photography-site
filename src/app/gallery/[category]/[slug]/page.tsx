@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { site, breadcrumbJsonLd } from "@/lib/site";
+import { site, breadcrumbJsonLd, businessRef, personRef, ogImages } from "@/lib/site";
 import PlaceholderImage from "@/components/PlaceholderImage";
 import { getAllShoots, getShootBySlug, getShootsByCategory } from "@/lib/gallery-data";
 
@@ -24,6 +24,18 @@ export async function generateStaticParams() {
   }));
 }
 
+// Meta descriptions max out near 155 characters. Cut at a word boundary and drop a dangling
+// connector, so a cut never ends like "...with a sweet baby girl and."
+function trimDescription(text: string, max = 155): string {
+  if (text.length <= max) return text;
+  const words = text.slice(0, text.lastIndexOf(" ", max - 3)).split(" ");
+  const dangling = new Set(["and", "or", "with", "a", "an", "the", "of", "to", "in", "for", "at", "her", "his", "their", "our", "my"]);
+  while (words.length > 1 && dangling.has(words[words.length - 1].toLowerCase().replace(/[^a-z]/g, ""))) {
+    words.pop();
+  }
+  return words.join(" ").replace(/[,;:]$/, "") + ".";
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { category, slug } = await params;
   const shoot = getShootBySlug(category, slug);
@@ -32,10 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = {
     absolute: shoot.title.length > 45 ? shoot.title : `${shoot.title} | Tovy Photography`,
   };
-  const description =
-    shoot.description.length > 155
-      ? shoot.description.slice(0, shoot.description.lastIndexOf(" ", 152)) + "."
-      : shoot.description;
+  const description = trimDescription(shoot.description);
 
   return {
     title,
@@ -47,7 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       url: `https://tovyphotography.com/gallery/${category}/${slug}`,
-      ...(shoot.coverImage && { images: [shoot.coverImage] }),
+      images: ogImages(shoot.coverImage, shoot.title),
     },
   };
 }
@@ -71,14 +80,17 @@ export default async function ShootPage({ params }: Props) {
     name: shoot.title,
     description: shoot.description,
     url: `https://tovyphotography.com/gallery/${category}/${slug}`,
-    author: {
-      "@type": "Person",
-      name: "Gabi Tovy",
-    },
-    provider: {
-      "@type": "Organization",
-      name: "Tovy Photography",
-    },
+    author: personRef(),
+    provider: businessRef(),
+    // Every photo on the page, so image search and AI tools can read what each one shows.
+    image: shoot.images.filter((img) => img.src).map((img) => ({
+      "@type": "ImageObject",
+      contentUrl: `${site.url}${img.src}`,
+      caption: img.alt,
+      creator: personRef(),
+      creditText: site.name,
+      copyrightNotice: site.name,
+    })),
   };
 
   const serviceHref: Record<string, string> = {

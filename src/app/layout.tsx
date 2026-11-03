@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { Suspense } from "react";
 import { Analytics } from "@vercel/analytics/next";
 import VisitSourceTracker from "@/components/VisitSourceTracker";
+import { defaultOgImage } from "@/lib/site";
 
 // Fonts are bundled in src/app/fonts (SIL Open Font License, from Fontsource) instead of
 // next/font/google, so the build never downloads anything. A Google Fonts network blip
@@ -37,14 +38,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://tovyphotography.com",
     siteName: "Tovy Photography",
-    images: [
-      {
-        url: "https://tovyphotography.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Tovy Photography — Family & Newborn Photographer in Skokie, IL",
-      },
-    ],
+    // public/og-image.jpg. Pages that set their own openGraph replace this block, so they pass
+    // images too (ogImages() in src/lib/site.ts falls back to this same picture).
+    images: [defaultOgImage],
   },
   twitter: {
     card: "summary_large_image",

@@ -5,7 +5,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import StickyBookingBar from "@/components/StickyBookingBar";
 import { services } from "@/lib/services";
 import { locationPages } from "@/lib/locations";
-import { site, breadcrumbJsonLd } from "@/lib/site";
+import { site, breadcrumbJsonLd, serviceJsonLd as buildServiceJsonLd, ogImages } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Skokie Newborn Photographer, North Shore",
@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     description:
       "Gentle, in-home newborn photography in Skokie and Chicago's North Shore. Relaxed sessions for babies 5 to 14 days new.",
     url: "https://tovyphotography.com/sessions/newborn-photography",
+    images: ogImages("/photos/hero-newborn-window-floral.jpg", "Parents cradling their newborn in soft window light during an in-home newborn session"),
   },
 };
 
@@ -54,35 +55,15 @@ const faqs = [
 ];
 
 export default function NewbornPhotographyPage() {
-  const serviceJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
+  // Same business record (@id) and 13-town service area as every other page.
+  const serviceJsonLd = buildServiceJsonLd({
+    name: "In-home newborn photography",
     serviceType: "Newborn Photography",
-    provider: {
-      "@type": "LocalBusiness",
-      name: "Tovy Photography",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Skokie",
-        addressRegion: "IL",
-        addressCountry: "US",
-      },
-      url: "https://tovyphotography.com",
-      priceRange: "$300-$550",
-    },
-    areaServed: [
-      "Skokie",
-      "Evanston",
-      "Wilmette",
-      "Lincolnwood",
-      "Winnetka",
-      "Highland Park",
-      "Northbrook",
-      "Glencoe",
-    ],
+    url: `${site.url}/sessions/newborn-photography`,
     description:
       "Gentle, in-home newborn photography in Skokie and Chicago's North Shore. Relaxed sessions for babies 5 to 14 days new.",
-  };
+    image: `${site.url}/photos/hero-newborn-window-floral.jpg`,
+  });
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -126,7 +107,7 @@ export default function NewbornPhotographyPage() {
           <div className="relative aspect-[4/5] w-full overflow-hidden">
             <Image
               src="/photos/hero-newborn-window-floral.jpg"
-              alt="newborn photography Skokie IL — parents cradling their newborn in soft window light during an in-home session"
+              alt="newborn photography Skokie IL, parents cradling their newborn in soft window light during an in-home session"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"

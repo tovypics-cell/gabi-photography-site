@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
+import { site, serviceJsonLd, ogImages, formatLongDate } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Sessions and Pricing in Skokie",
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     description:
       "Photography packages starting at $300. Family, newborn, milestone, and event sessions in Skokie, IL.",
     url: "https://tovyphotography.com/sessions",
+    images: ogImages(),
   },
 };
 
@@ -158,29 +160,31 @@ export default function SessionsPage() {
     })),
   };
 
+  // Tailored has no fixed price, so its offer is described in words instead of a price.
   const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    provider: {
-      "@type": "LocalBusiness",
-      name: "Tovy Photography",
-    },
-    serviceType: "Photography",
-    areaServed: [
-      { "@type": "City", name: "Skokie" },
-      { "@type": "City", name: "Evanston" },
-      { "@type": "City", name: "Lincolnwood" },
-      { "@type": "City", name: "Wilmette" },
-    ],
+    ...serviceJsonLd({
+      name: "Family, newborn, maternity, milestone and event photography sessions",
+      serviceType: "Photography",
+      url: `${site.url}/sessions`,
+    }),
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Photography Sessions",
-      itemListElement: packages.map((pkg) => ({
-        "@type": "Offer",
-        name: pkg.name,
-        price: pkg.price.replace("$", ""),
-        priceCurrency: "USD",
-      })),
+      itemListElement: packages.map((pkg) =>
+        pkg.price.startsWith("$")
+          ? {
+              "@type": "Offer",
+              name: pkg.name,
+              price: pkg.price.replace("$", ""),
+              priceCurrency: "USD",
+              ...(pkg.description ? { description: pkg.description } : {}),
+            }
+          : {
+              "@type": "Offer",
+              name: pkg.name,
+              description: "Events and special occasions, quoted on request.",
+            }
+      ),
     },
   };
 
@@ -289,6 +293,9 @@ export default function SessionsPage() {
             </h2>
             <p className="text-charcoal-light">
               Simple, transparent pricing. No hidden fees.
+            </p>
+            <p className="mt-2 text-xs uppercase tracking-wider text-charcoal-light">
+              Prices current as of {formatLongDate(site.pricing.updated)}
             </p>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
