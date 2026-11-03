@@ -105,10 +105,9 @@ const packages = [
       { text: "Pre-session planning call" },
       { text: "Location scouting", highlight: true },
       { text: "Extended family and multi-generational groupings welcome", highlight: true },
-      { text: "One complimentary 8x10 fine art print", highlight: true },
     ],
     description:
-      "The full experience, extra time, more variety, room for the whole crew, and a beautiful print to take home.",
+      "The full experience, extra time, more variety, and room for the whole crew.",
   },
   {
     name: "Tailored Session",
