@@ -326,7 +326,7 @@
         "url": "/locations/evanston"
       },
       "sourceDraft": null,
-      "notes": "Search Console 2026-09-29 to 10-27: the homepage is about #11 for 'family photographer evanston' and this page only #35; 'baby photographer evanston' and 'maternity photographer evanston' also show impressions. No gallery was shot in Evanston; the nearest real ones are the Skokie galleries and Keay Nature Center in Wilmette. Follow 'Rewriting a town page' in the writer prompt. Weekly review 2026-11-01: the Skokie-located rank tracker had 'family photographer evanston' at #20 on 10-30 and outside the top 40 on 11-01, and Search Console still sends the Evanston family and maternity queries to the homepage (http homepage #11 family, #6 maternity) instead of this page. Make this page the clear answer for Evanston family, newborn and maternity searches, and add the one inbound link from the Skokie page or the family sessions page.",
+      "notes": "Search Console 2026-09-29 to 10-27: the homepage is about #11 for 'family photographer evanston' and this page only #35; 'baby photographer evanston' and 'maternity photographer evanston' also show impressions. No gallery was shot in Evanston; the nearest real ones are the Skokie galleries and Keay Nature Center in Wilmette. Follow 'Rewriting a town page' in the writer prompt. Weekly review 2026-11-01: the Skokie-located rank tracker had 'family photographer evanston' at #20 on 10-30 and outside the top 40 on 11-01, and Search Console still sends the Evanston family and maternity queries to the homepage (http homepage #11 family, #6 maternity) instead of this page. Make this page the clear answer for Evanston family, newborn and maternity searches, and add the one inbound link from the Skokie page or the family sessions page. AI answers 2026-11-04 (OpenSEO tracker, 'newborn photographer in Evanston IL'): only Gemini named Tovy; ChatGPT, Perplexity and AI Overviews named Erin Drewitz, Kristin Milito, Nicole Jones and Pam Lagger, and cited single-town pages such as agatabrannonphotography.com/evanston-newborn-photographer/ and pamlaggerphotography.com/newborn. Those pages open by saying who they photograph in Evanston, in-home or studio, and what a session includes. Give this page a two-sentence citable summary that answers 'newborn photographer in Evanston' the same way with Gabi's real facts (in-home newborn sessions, distance from Skokie, link to /sessions for prices). Never name or compare other photographers on the page.",
       "addedAt": "2026-10-30"
     },
     {
@@ -340,11 +340,25 @@
         "url": "/sessions/newborn-photography"
       },
       "sourceDraft": null,
-      "notes": "Second pass on the newborn page (first rewrite PR #8, 2026-09-30). Search Console 28 days to 10-29: 52 impressions at 18.4. The Skokie-located rank tracker had 'newborn photographer near me' at #21 on 10-30 (this page) and outside the top 40 on 11-01. Search Console sends 'newborn photographer near me' to the Skokie page (5.75) and homepage, and 'newborn photographer lincolnwood' (7.3) to this page. Add a short section on where Gabi comes to you for in-home newborn sessions: the towns within 10 miles of Skokie with no travel fee, Lincolnwood named, and one FAQ a nearby parent would ask ('Do you come to my home in Lincolnwood, Evanston or Wilmette?'). Keep every existing FAQ, the hero and the tagline. Do not compete with the homepage for 'newborn photographer skokie' (homepage ranks #3): keep the title as is.",
+      "notes": "Second pass on the newborn page (first rewrite PR #8, 2026-09-30). Search Console 28 days to 10-29: 52 impressions at 18.4. The Skokie-located rank tracker had 'newborn photographer near me' at #21 on 10-30 (this page) and outside the top 40 on 11-01. Search Console sends 'newborn photographer near me' to the Skokie page (5.75) and homepage, and 'newborn photographer lincolnwood' (7.3) to this page. Add a short section on where Gabi comes to you for in-home newborn sessions: the towns within 10 miles of Skokie with no travel fee, Lincolnwood named, and one FAQ a nearby parent would ask ('Do you come to my home in Lincolnwood, Evanston or Wilmette?'). Keep every existing FAQ, the hero and the tagline. Do not compete with the homepage for 'newborn photographer skokie' (homepage ranks #3): keep the title as is. AI answers 2026-11-04 (OpenSEO tracker): this page was cited twice for 'best newborn photographer in Skokie IL' (Gemini and AI Overviews named Tovy; ChatGPT and Perplexity did not). For 'in-home newborn photographer on Chicago's North Shore' ChatGPT and Gemini named Tovy. Keep the in-home wording prominent in the first paragraph; the new 'where I come to you' section is what the in-home question asks.",
       "keep": [
         "The tiny details you'll want to remember forever."
       ],
       "addedAt": "2026-11-01"
+    },
+    {
+      "slug": "rewrite-sessions-pricing",
+      "type": "rewrite",
+      "status": "queued",
+      "phase": 4,
+      "primaryKeyword": "how much do family photos cost",
+      "target": {
+        "file": "src/app/sessions/page.tsx",
+        "url": "/sessions"
+      },
+      "sourceDraft": null,
+      "notes": "From the OpenSEO AI tracker 2026-11-04: no AI engine named or cited Tovy for 'how much do family photos cost in Chicago', and only Gemini cited her for newborn and maternity cost. The pages AI cites for these questions are photographers' own pricing pages (abigailjoycephotography.com/prices/family-photo-prices/, thekidographer.com/pricing, jennygrimm.com/pricing, marleneclaytonphoto.com/pricing, taylorlynnstudios.com/pricing) and Thumbtack's Chicago cost page, not blog cost guides. This page is her pricing page already. Make it the citable answer: under the H1 add a two-sentence summary that states what a family session and a newborn session cost and what each includes, using only the packages list on this page (site.pricing mirrors it); add a compact price table if the page does not already have one; add two FAQs, 'How much do family photos cost with Tovy Photography?' and 'How much does newborn photography cost?', each answered from the packages list, with a link to the matching cost guide for outside ranges. Keep the title 'Sessions and Pricing in Skokie', the URL, every package, the 'Prices current as of' line and all existing copy. npm run check:pricing must pass.",
+      "addedAt": "2026-11-04"
     },
     {
       "slug": "what-is-an-upsherin",
@@ -367,7 +381,7 @@
         "url": "/locations/wilmette"
       },
       "sourceDraft": null,
-      "notes": "Google had not discovered this URL as of 2026-10-30 (URL Inspection: unknown to Google). Search Console 2026-09-29 to 10-27: the homepage is about #3.7 for 'newborn photographer wilmette' (11 impressions). Wilmette has a real session: the Keay Nature Center family gallery. Lead the proof with it; 'I photographed' is allowed for it. Gillson Park is queued as its own guide, so mention it in a sentence, not a section. Follow 'Rewriting a town page' in the writer prompt.",
+      "notes": "Google had not discovered this URL as of 2026-10-30 (URL Inspection: unknown to Google). Search Console 2026-09-29 to 10-27: the homepage is about #3.7 for 'newborn photographer wilmette' (11 impressions). Wilmette has a real session: the Keay Nature Center family gallery. Lead the proof with it; 'I photographed' is allowed for it. Gillson Park is queued as its own guide, so mention it in a sentence, not a section. Follow 'Rewriting a town page' in the writer prompt. AI answers 2026-11-04 (OpenSEO tracker): for 'newborn photographer in Winnetka or Wilmette IL' only Gemini named Tovy and AI answers cited joannasopelphotography.com/wilmette-newborn-photographer/ and kristinmilitophotography.com/wilmette-photographer/ three times each; for 'family photographer in Wilmette IL' Gemini named Tovy and tovyphotography.com/locations/wilmette was cited once. The cited pages are single-town pages whose title and first sentence say 'Wilmette newborn photographer'. Make the H1 subtitle and the citable summary answer 'newborn photographer in Wilmette' directly with the Keay Nature Center session as proof. Never name or compare other photographers on the page.",
       "addedAt": "2026-10-30"
     },
     {
@@ -391,7 +405,7 @@
         "url": "/locations/winnetka"
       },
       "sourceDraft": null,
-      "notes": "Search Console 2026-09-29 to 10-27: the homepage is about #5 for 'newborn photographer winnetka' (7 impressions) and this page #9; 'maternity photographer winnetka' shows too. No gallery was shot in Winnetka; the nearest real one is Keay Nature Center in Wilmette. Follow 'Rewriting a town page' in the writer prompt.",
+      "notes": "Search Console 2026-09-29 to 10-27: the homepage is about #5 for 'newborn photographer winnetka' (7 impressions) and this page #9; 'maternity photographer winnetka' shows too. No gallery was shot in Winnetka; the nearest real one is Keay Nature Center in Wilmette. Follow 'Rewriting a town page' in the writer prompt. AI answers 2026-11-04 (OpenSEO tracker, 'newborn photographer in Winnetka or Wilmette IL'): only Gemini named Tovy; tovyphotography.com/locations/winnetka was cited once, next to bethanyhopephoto.com/winnetka-newborn-photographer/. Answer 'newborn photographer in Winnetka' in the first two sentences (in-home sessions, distance from Skokie, link to /sessions for prices). Never name or compare other photographers on the page.",
       "addedAt": "2026-10-30"
     },
     {
@@ -438,7 +452,7 @@
         "url": "/locations/skokie"
       },
       "sourceDraft": null,
-      "notes": "Skokie is home. Search Console 2026-09-29 to 10-27: the homepage is #1 to #3 for 'newborn photographer skokie', 'family photographer skokie' and 'photographer skokie', and /sessions/newborn-photography is titled for the Skokie newborn search. Do not retitle this page to compete with either; make it the page about Skokie places and the real Skokie sessions (Skokie Public Library family, Cooper and Sweet Baby Girl newborns), linking to the homepage and the newborn page. Keep Gabi's legacy sentences word for word. Follow 'Rewriting a town page' in the writer prompt.",
+      "notes": "Skokie is home. Search Console 2026-09-29 to 10-27: the homepage is #1 to #3 for 'newborn photographer skokie', 'family photographer skokie' and 'photographer skokie', and /sessions/newborn-photography is titled for the Skokie newborn search. Do not retitle this page to compete with either; make it the page about Skokie places and the real Skokie sessions (Skokie Public Library family, Cooper and Sweet Baby Girl newborns), linking to the homepage and the newborn page. Keep Gabi's legacy sentences word for word. Follow 'Rewriting a town page' in the writer prompt. AI answers 2026-11-04 (OpenSEO tracker): 'family photographer in Skokie IL' named Tovy on ChatGPT and Gemini and cited the homepage and /about; 'best newborn photographer in Skokie IL' named Tovy on Gemini and AI Overviews only, and the most cited page was bethanyhopephoto.com/skokie-newborn-photographer/. Keep the homepage and the newborn page as the Skokie answers (see above); on this page, add one sentence each that links to them with the anchors 'family photographer in Skokie' and 'newborn photographer in Skokie'.",
       "addedAt": "2026-10-30"
     },
     {
