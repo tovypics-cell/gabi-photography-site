@@ -551,6 +551,7 @@ export const services: Record<string, ServicePage> = {
     related: [
       { label: "View the Milestone Gallery", href: "/gallery/milestone" },
       { label: "Birthday Party Photography", href: "/sessions/birthday-party-photography" },
+      { label: "First Birthday Photoshoot", href: "/sessions/first-birthday-photography" },
       { label: "Newborn Photography", href: "/sessions/newborn-photography" },
       { label: "Engagement Photography", href: "/sessions/engagement-photography" },
       { label: "Sessions and Pricing", href: "/sessions" },
@@ -1430,6 +1431,7 @@ export const services: Record<string, ServicePage> = {
     ],
     related: [
       { label: "Milestone Photography", href: "/sessions/milestone-photography" },
+      { label: "First Birthday Photoshoot", href: "/sessions/first-birthday-photography" },
       { label: "Bar and Bat Mitzvahs", href: "/sessions/bar-mitzvah-photography" },
       { label: "View the Milestone Gallery", href: "/gallery/milestone" },
       { label: "Sessions and Pricing", href: "/sessions" },
@@ -1440,6 +1442,151 @@ export const services: Record<string, ServicePage> = {
       button: "Request a Quote",
     },
     serviceType: "Birthday Party Photography",
+  },
+
+  "first-birthday-photography": {
+    slug: "first-birthday-photography",
+    shortName: "First Birthday Sessions",
+    title: "Skokie First Birthday Photographer, North Shore",
+    description:
+      "A first birthday photoshoot at home or outdoors in Skokie and Chicago's North Shore. Portraits, family photos and an optional cake smash. From $300.",
+    eyebrow: "Skokie and Chicago North Shore",
+    h1: "First Birthday Photography",
+    tagline: "One whole year of them. A first birthday photoshoot that looks like your baby, at home or outdoors.",
+    heroImage: "/photos/west-rogers-park-9-month-family/15.jpg",
+    heroAlt: "Parents laughing and lifting their baby boy above the couch during an in-home session in West Rogers Park",
+    featureImage: {
+      src: "/photos/west-rogers-park-9-month-family/11.jpg",
+      alt: "Smiling baby boy in a knit sweater sitting on a cream blanket held up by his parents at home",
+      width: 1440,
+      height: 2048,
+    },
+    cardBlurb: "A first birthday photoshoot at home in {town} or at a park nearby, with the family and an optional cake smash.",
+    intro: [
+      {
+        heading: "What is a first birthday photoshoot?",
+        paragraphs: [
+          "A first birthday photoshoot is a short, relaxed session around your baby's first birthday: portraits of your one-year-old, photos with parents and siblings, and, if you want it, a cake at the end. I photograph first birthday sessions at home or at a park in Skokie, Evanston, Lincolnwood, Wilmette and Chicago's North Shore, and they start at $300.",
+          "It is not a studio set with a backdrop and a shot list. We work in the room your baby already knows, by the brightest window, and follow whatever they feel like doing that day: crawling, cruising along the couch, pulling every book off the shelf. The photos end up looking like your baby at one, which is the whole point.",
+          "I photographed a nine-month milestone session for a family at home in West Rogers Park: cuddles on the couch, peekaboo through the crib, a blanket held up behind him like a little backdrop. A first birthday session is planned the same way, just a few months older and usually a lot faster.",
+        ],
+      },
+      {
+        heading: "Do you do cake smash photos?",
+        paragraphs: [
+          "Yes, a cake smash can be part of any first birthday session. We do the clean portraits and family photos first, while the outfit is still clean, then bring out the cake for the last part of the session. You bring the cake, I bring a drop cloth, and a bath right afterward is part of the plan.",
+          "Your baby might dive in with both hands, or poke it once and look at you like you have lost your mind. Either one will make a great photo, so there is nothing to get right.",
+        ],
+      },
+      {
+        heading: "Should the first birthday photoshoot be at home or outdoors?",
+        paragraphs: [
+          "Home is usually easiest for a one-year-old: naps stay on schedule, favorite toys are close, and there is a floor to crawl on. Outdoors works beautifully in spring, summer and early fall, at a quiet park with shade and soft grass. We can meet at a park near you, or I will suggest one when we plan.",
+          "If you are also having a party, the session can happen a few days before, so the photos are ready to share and nobody is trying to pose a tired baby in the middle of the celebration. If you want the party itself photographed, that is party coverage, which I plan separately.",
+        ],
+      },
+    ],
+    includes: {
+      heading: "What you get",
+      items: [
+        { label: "At home or outdoors", text: "your living room, your backyard, or a park nearby" },
+        { label: "Baby-led timing", text: "booked around naps and feeds, not the other way around" },
+        { label: "Family frames", text: "parents, siblings and grandparents if they are around" },
+        { label: "Optional cake smash", text: "saved for the end, after the clean portraits" },
+        { label: "Professionally edited images", text: "delivered in a private online gallery" },
+        { label: "Full print rights", text: "for announcements, thank-you cards and the first birthday album" },
+      ],
+    },
+    why: {
+      heading: "What makes first birthday photos work",
+      items: [
+        {
+          title: "The best hour is after a nap and a feed.",
+          body: "A one-year-old who just woke up happy is worth more than any prop. Tell me their schedule and I will book the session around it.",
+        },
+        {
+          title: "Clean first, cake last.",
+          body: "Frosting goes everywhere, fast. Portraits and family photos happen first, then the cake, then the bath.",
+        },
+        {
+          title: "Simple outfits photograph best.",
+          body: "Soft neutral colors and knit textures keep the attention on your baby's face. Skip big logos and anything that needs constant fixing.",
+        },
+        {
+          title: "Walkers move faster than you think.",
+          body: "If your baby has just started walking, we work in one room or a small corner of a park and let them come back to you. A parent nearby to catch and redirect is part of the plan.",
+        },
+        {
+          title: "Same home, same light, one whole year.",
+          body: "If we photographed your newborn session at home, we can come back to the same window. A newborn photo and a first birthday photo taken in the same spot belong next to each other.",
+        },
+      ],
+    },
+    pricing: {
+      heading: "How much does a first birthday photoshoot cost?",
+      text: `First birthday sessions use the standard packages: $300 for a 30-minute mini with 10+ edited images, $425 for a 60-minute Classic with 25+, and $550 for a 90-minute Full session with 40+. A first birthday with a cake smash and family frames usually suits the Classic, because it leaves time for portraits, the cake and a break in between. ${pricingNote}`,
+    },
+    faqs: [
+      {
+        question: "How much does a first birthday photoshoot cost?",
+        answer:
+          "My first birthday sessions run from $300 for a 30-minute mini to $550 for a 90-minute Full session, with edited images and full print rights included. Most families with a cake smash choose the $425 Classic, which gives time for portraits, family photos and the cake.",
+      },
+      {
+        question: "When should we take first birthday photos?",
+        answer:
+          "Any time in the weeks around the birthday works, and a few days before the party is often the easiest. I book the session for the time of day your baby is happiest, usually right after a nap and a feed.",
+      },
+      {
+        question: "Can a first birthday photoshoot be done at home?",
+        answer:
+          "Yes, and I usually recommend it. Home keeps naps on schedule and toys within reach, and I only need one room with a good window.",
+      },
+      {
+        question: "Do you do cake smash photos?",
+        answer:
+          "Yes. A cake smash can be added to any first birthday session. We do the clean portraits and family photos first, then the cake, and you bring the cake while I bring a drop cloth.",
+      },
+      {
+        question: "What should my baby wear for first birthday photos?",
+        answer:
+          "Soft, simple clothes in neutral or warm colors, like a knit sweater or a plain romper. If you are doing a cake smash, bring a second outfit or plan on just a diaper cover for the cake part.",
+      },
+      {
+        question: "Where do you photograph first birthday sessions?",
+        answer:
+          "At homes and parks in Skokie, Evanston, Lincolnwood, Wilmette, West Rogers Park and Chicago's North Shore. Sessions within 10 miles of Skokie carry no travel fee.",
+      },
+    ],
+    proof: [
+      {
+        title: "In-home family session in West Rogers Park",
+        href: "/gallery/family/west-rogers-park-9-month-family-session",
+        blurb: "A nine-month milestone at home: couch cuddles, crib peekaboo and a lot of laughing.",
+      },
+      {
+        title: "Birthday party and first haircut celebration",
+        href: "/gallery/milestone/shilo-3rd-birthday-upshirin",
+        blurb: "Shilo's third birthday and upsherin, from the candles to a frosting-covered kiss from grandma.",
+      },
+      {
+        title: "In-home newborn session in Skokie",
+        href: "/gallery/newborn/cooper-family-welcome-baby-billie",
+        blurb: "Where the first year starts: baby Billie at home by the window light.",
+      },
+    ],
+    related: [
+      { label: "Milestone Photography", href: "/sessions/milestone-photography" },
+      { label: "Newborn Photography", href: "/sessions/newborn-photography" },
+      { label: "Birthday Party Photography", href: "/sessions/birthday-party-photography" },
+      { label: "Sessions and Pricing", href: "/sessions" },
+    ],
+    cta: {
+      heading: "Is a first birthday coming up?",
+      text: "Tell me your baby's birthday, whether you want a cake smash, and whether home or a park feels right. I will suggest a time and a package.",
+      button: "Plan the Session",
+    },
+    serviceType: "Milestone Photography",
   },
 };
 
