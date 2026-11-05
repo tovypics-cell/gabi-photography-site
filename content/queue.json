@@ -364,6 +364,20 @@
       "addedAt": "2026-11-04"
     },
     {
+      "slug": "rewrite-bar-mitzvah-photography",
+      "type": "rewrite",
+      "primaryKeyword": "bat mitzvah photographer",
+      "sourceDraft": null,
+      "status": "queued",
+      "pr": null,
+      "phase": 2,
+      "notes": "Add a Bat Mitzvah section with its own literal H3s (the page currently leans Bar Mitzvah), a Shabbat timing section, and a synagogue portrait section. Keep every FAQ and the Stolberg gallery proof. Title stays 'Bar Mitzvah Photographer, Skokie and Chicago' but the H1 and summary must name Bat Mitzvah too. Moved up 2026-11-05 to follow rewrite-sessions-pricing (about 11-30): spring mitzvahs book in winter, ChatGPT listed Tovy first for 'Bar Mitzvah photographer in Skokie' in the 11-02 AI panel, and this page had no Google impressions in the 28 days to 11-02. Open with a two-sentence summary that answers 'Bar and Bat Mitzvah photographer in Skokie' with Gabi's real facts (the Stolberg Bar Mitzvah, what a session covers, link to /sessions for prices). Never name or compare other photographers.",
+      "target": {
+        "url": "/sessions/bar-mitzvah-photography",
+        "file": "src/lib/services.ts"
+      }
+    },
+    {
       "slug": "what-is-an-upsherin",
       "type": "guide",
       "primaryKeyword": "upsherin",
@@ -515,20 +529,6 @@
       "plan": 39,
       "notes": "Include the garden's photography permit rules from its official site.",
       "phase": 0
-    },
-    {
-      "slug": "rewrite-bar-mitzvah-photography",
-      "type": "rewrite",
-      "primaryKeyword": "bat mitzvah photographer",
-      "sourceDraft": null,
-      "status": "queued",
-      "pr": null,
-      "phase": 2,
-      "notes": "Add a Bat Mitzvah section with its own literal H3s (the page currently leans Bar Mitzvah), a Shabbat timing section, and a synagogue portrait section. Keep every FAQ and the Stolberg gallery proof. Title stays 'Bar Mitzvah Photographer, Skokie and Chicago' but the H1 and summary must name Bat Mitzvah too.",
-      "target": {
-        "url": "/sessions/bar-mitzvah-photography",
-        "file": "src/lib/services.ts"
-      }
     },
     {
       "slug": "chicago-riverwalk-engagement-photos",
