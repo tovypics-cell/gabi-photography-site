@@ -291,7 +291,7 @@
     {
       "slug": "rewrite-location-highland-park",
       "type": "rewrite",
-      "status": "in_review",
+      "status": "published",
       "branch": "content/rewrite-location-highland-park",
       "pr": 50,
       "updatedAt": "2026-11-02",
@@ -303,7 +303,8 @@
       },
       "sourceDraft": null,
       "notes": "Search Console 2026-09-29 to 10-27: the site's best town page (127 impressions, 5 clicks) and about #2.5 for 'family photographer highland park', but #29 for 'newborn photographer highland park' and #31 for 'maternity photographer highland park' (16 impressions). Weekly review 2026-11-01: the family query averaged 7.7 for 10-23 to 10-29 (10 impressions), so lead with the family keyword and protect it: keep the title, intro, Rosewood Beach, ravines and travel-fee lines that earn it, then add the newborn and maternity depth below. The local pack for the family query rewards listings, not page length, so do not pad the page. No gallery was shot in Highland Park. The 3 proof cards are all Wilmette and Skokie; lead with the nearest real session (Keay Nature Center in Wilmette) and say plainly it is the closest gallery, then the Skokie newborns. Follow 'Rewriting a town page' in the writer prompt.",
-      "addedAt": "2026-10-30"
+      "addedAt": "2026-10-30",
+      "publishedAt": "2026-11-02"
     },
     {
       "slug": "first-birthday-photography",
