@@ -34,7 +34,7 @@ Runs on **Omer's Mac mini**, not on Gabi's MacBook (since 2026-09-22), because O
 - To skip or reorder a page, edit `content/queue.json` on a branch and merge it.
 
 ## Inquiry Source Tracking
-Every contact-form email ends with four lines the visitor never sees: how they found the site, the first page they saw, the page right before Contact, and the date of their first visit (remembered 30 days). Code: `src/lib/visit-source.ts`, `src/components/VisitSourceTracker.tsx`, `src/components/ContactForm.tsx`. Vercel Web Analytics is in the layout (`<Analytics />`); it also has to be enabled in the Vercel project settings.
+Each contact-form submission sends two Web3Forms emails. 1) "New Inquiry from <name>": the client's details and message, Reply-To = the client. 2) "Private: how <name> found the site", sent only after the first one is accepted, Reply-To = Gabi: the client's name, email, phone and session type (so the lead is never lost if the inquiry lands in spam), how they found the site, the first page they saw, the page right before Contact, and the date of their first visit (remembered 30 days). The lead source must never go in the inquiry email, because Gabi's replies quote it back to the client. Code: `src/lib/visit-source.ts`, `src/components/VisitSourceTracker.tsx`, `src/components/ContactForm.tsx`. Vercel Web Analytics is in the layout (`<Analytics />`); it also has to be enabled in the Vercel project settings.
 
 ## Brand Identity
 - **Tagline:** "Seeing the good in your world"
