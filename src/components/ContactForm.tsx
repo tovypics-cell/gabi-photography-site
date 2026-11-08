@@ -43,6 +43,9 @@ export default function ContactForm() {
       if (result.success) {
         // Lead source goes in its own email so it is never quoted back to the client when
         // Gabi replies to the inquiry. Reply-To is Gabi herself, not the client.
+        // It also repeats the client's contact details, so a lead can still be reached if
+        // the inquiry email lands in spam. Keys avoid the name "email": Web3Forms would
+        // use a field with that name as the Reply-To.
         try {
           await fetch("https://api.web3forms.com/submit", {
             method: "POST",
@@ -53,6 +56,9 @@ export default function ContactForm() {
               from_name: "Tovy Photography Website",
               replyto: site.email,
               Inquiry: `${firstName} ${lastName}`,
+              "Client email address": formData.get("email"),
+              "Client phone": formData.get("phone") || "Not provided",
+              "Session type": formData.get("sessionType") || "Not specified",
               "How they found the site": visit.source,
               "First page they saw": fullUrl(visit.landing),
               "Page right before Contact": fullUrl(visit.before),
