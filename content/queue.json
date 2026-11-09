@@ -324,7 +324,7 @@
       "type": "rewrite",
       "status": "in_review",
       "branch": "content/rewrite-location-evanston",
-      "pr": null,
+      "pr": 58,
       "updatedAt": "2026-11-09",
       "phase": 4,
       "primaryKeyword": "family photographer evanston",
