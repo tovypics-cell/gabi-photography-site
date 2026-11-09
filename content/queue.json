@@ -322,7 +322,10 @@
     {
       "slug": "rewrite-location-evanston",
       "type": "rewrite",
-      "status": "queued",
+      "status": "in_review",
+      "branch": "content/rewrite-location-evanston",
+      "pr": null,
+      "updatedAt": "2026-11-09",
       "phase": 4,
       "primaryKeyword": "family photographer evanston",
       "target": {
