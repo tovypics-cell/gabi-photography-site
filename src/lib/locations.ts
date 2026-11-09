@@ -1,4 +1,4 @@
-import type { Faq } from "./site";
+import { site, type Faq } from "./site";
 import { legacyLocationData } from "./locations-legacy";
 
 export interface ProofItem {
@@ -154,27 +154,43 @@ export const locationPages: Record<string, LocationPage> = {
 
   evanston: {
     slug: "evanston",
-    updated: "2026-10-28",
+    updated: "2026-11-09",
     name: "Evanston",
-    title: "Evanston Family and Newborn Photographer",
+    title: "Evanston Family, Newborn and Maternity Photographer",
     description:
-      "Evanston family, newborn and maternity photographer. Lakefront, park and in-home sessions in natural light, minutes from Skokie. Sessions from $300.",
+      "Family photographer in Evanston, IL for family, newborn and maternity sessions at home, Ladd Arboretum or the lakefront. Ten minutes from Skokie. From $300.",
     h1: "Evanston Family Photographer",
     heroLabel: legacyLocationData.evanston.heroLabel,
     intro: [
-      "Tovy Photography photographs families, newborns and expecting parents throughout Evanston, from the lakefront beaches to the tree-lined blocks of South Evanston.",
-      "I am based in neighboring Skokie, about ten minutes away, so Evanston sessions carry no travel fee.",
+      "Tovy Photography is a family photographer in Evanston, IL for families, newborns and expecting parents, with newborn sessions in your own Evanston home and family and maternity sessions in natural light at Ladd Arboretum, the Merrick Rose Garden, the Shakespeare Garden or the lakefront.",
+      `I am based in neighboring Skokie, about ten minutes away, so Evanston sessions carry no travel fee, and packages start at $${site.pricing.mini}.`,
     ],
-    content: legacyLocationData.evanston.content.filter((p) => !p.startsWith("Tovy Photography serves")),
-    landmarks: legacyLocationData.evanston.landmarks,
+    content: [
+      "Evanston is one of my favorite places to photograph families. With its beautiful lakefront, tree-lined streets, and charming neighborhoods, this North Shore gem provides endless inspiration for natural, authentic family photography sessions.",
+      "Lighthouse Beach and the Evanston lakefront offer some of the most dramatic photography backdrops on the North Shore. The combination of water, sky, and sand creates a timeless setting for family portraits, especially during the golden hour when the light over Lake Michigan is absolutely breathtaking.",
+      "Beyond the lakefront, Evanston's beautiful parks and green spaces provide lush, natural settings for family sessions. The Shakespeare Garden at Northwestern University is a hidden gem for intimate portraits, while the sprawling grounds of Centennial Park offer room for playful, active family sessions. During fall, the Maple Avenue corridor transforms into a canopy of warm golds and reds, perfect for cozy autumn family photos.",
+      "I serve families throughout Evanston's diverse neighborhoods, from the bustling downtown area near Davis Street to the quiet, tree-lined blocks of South Evanston, and the stately homes along Sheridan Road. Each neighborhood has its own character, and I love incorporating these authentic backdrops into your family's story.",
+      "For a family session in summer, when the city keeps photo shoots off the beach, Ladd Arboretum is where I would start. It runs along the canal on McCormick Boulevard with trees, open grass and the International Friendship Garden, and there is room for toddlers to wander. The Merrick Rose Garden, at Oak Avenue and Lake Street near downtown, is smaller and blooms from May into October, which suits a short mini session.",
+      "Newborn sessions in Evanston happen at home. We stay in whichever room has the softest daylight, the baby eats, sleeps and wakes on their own schedule, and I photograph the family around them as the morning unfolds. Nothing gets set up and nothing needs styling. A condo near downtown, an older apartment in South Evanston or a house a few blocks from the lake all work, because one good window is enough.",
+      "For maternity photos in Evanston, the gardens are my first suggestion. The Shakespeare Garden's hedges and the roses at Merrick give soft, sheltered light from late spring into fall, and a long dress moves beautifully on the garden paths. In spring and fall, Lighthouse Beach adds the lake and a wide open sky. A maternity session at home, in the nursery you are getting ready, is always an option too.",
+    ],
+    landmarks: [
+      "Lighthouse Beach",
+      "Centennial Park",
+      "Shakespeare Garden at Northwestern",
+      "Clark Street Beach",
+      "Ladd Arboretum",
+      "Merrick Rose Garden",
+      "Dawes Park",
+    ],
     why: [
       {
         title: "Lake Michigan wind changes everything.",
-        body: "Lighthouse Beach and Clark Street Beach are stunning, but an onshore breeze turns hair, dresses and toddler moods unpredictable. I check the wind before we commit to the beach and keep Dawes Park or Ladd Arboretum as a sheltered backup.",
+        body: "Lighthouse Beach and Clark Street Beach are stunning, but an onshore breeze turns hair, dresses and toddler moods unpredictable. I check the wind before we commit to the beach and keep the Merrick Rose Garden or Ladd Arboretum as a sheltered backup.",
       },
       {
-        title: "Beach parking is limited in summer.",
-        body: "Evanston beaches have seasonal parking rules and fill up on warm weekends. Sunrise sessions and weekday evenings avoid the crowds, and I will tell you exactly where to park.",
+        title: "The lakefront is off limits for photo shoots all summer.",
+        body: "The City of Evanston does not allow productions of any kind on the beach or along the lakefront from Memorial Day through Labor Day, and it asks for a photo shoot application at least 15 days ahead. I check what applies to our session before we book, and summer sessions move inland or into your home.",
       },
       {
         title: "The lakefront light is strongest at sunset.",
@@ -187,18 +203,41 @@ export const locationPages: Record<string, LocationPage> = {
     ],
     faqs: [
       faqCost("Evanston"),
-      faqInHome("Evanston"),
+      {
+        question: "Do you photograph newborns at home in Evanston?",
+        answer:
+          "Yes. Every newborn session in Evanston happens in your own home, in the room with the best window light, and the baby sets the pace. Your home does not need to be tidy or styled, and Evanston is close enough to Skokie that there is no travel fee.",
+      },
+      {
+        question: "Where can we take maternity photos in Evanston?",
+        answer:
+          "The Shakespeare Garden at Northwestern and the Merrick Rose Garden are my first suggestions, for flowers and soft, sheltered light from late spring into fall. Lighthouse Beach works in spring and fall, and your home or nursery is a lovely choice in any season.",
+      },
       {
         question: "Where are the best places for family photos in Evanston?",
         answer:
-          "Lighthouse Beach for the lake and dunes, Dawes Park and the Clark Street Beach path for lakefront with shade, Ladd Arboretum for woods and a canal, and the Shakespeare Garden at Northwestern for a small, intimate garden setting.",
+          "Lighthouse Beach for the lake and dunes, Dawes Park and the Clark Street Beach path for lakefront with shade, Ladd Arboretum for woods and a canal, and the Shakespeare Garden at Northwestern for a small, intimate garden setting. In summer, Ladd Arboretum, the Merrick Rose Garden and your home are the places to plan around.",
       },
-      faqBestTime("Evanston"),
+      {
+        question: "Can we take family photos on the beach in Evanston in summer?",
+        answer:
+          "Not between Memorial Day and Labor Day. The City of Evanston does not allow productions of any kind on the beach or along the lakefront in that window, so summer sessions go to Ladd Arboretum, the Merrick Rose Garden or your home, and beach sessions happen in spring and fall.",
+      },
+      {
+        question: "What is the best time of day for family photos in Evanston?",
+        answer:
+          "For parks and gardens, the last hour or so before sunset, when the light is soft and warm. On the lakefront, sunrise is worth considering too, because the sun comes up over Lake Michigan and the beach is quiet.",
+      },
       faqNewbornTiming,
-      faqBookAhead,
-      faqKids,
     ],
-    proof: [proofWilmetteKeay, proofSkokieNewborn, proofSkokieLibrary],
+    proof: [
+      {
+        ...proofWilmetteKeay,
+        blurb: "Shot in neighboring Wilmette, my closest family gallery to Evanston: wooded paths, soft light, and kids who set the pace.",
+      },
+      proofSweetBabyGirl,
+      proofWestRogersPark,
+    ],
     nearby: ["skokie", "wilmette", "lincolnwood", "west-rogers-park"],
     driveNote: "About ten minutes from Skokie. No travel fee.",
   },

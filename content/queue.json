@@ -311,17 +311,21 @@
       "type": "service",
       "primaryKeyword": "first birthday photoshoot",
       "sourceDraft": null,
-      "status": "in_review",
+      "status": "published",
       "branch": "content/first-birthday-photography",
       "pr": 54,
       "updatedAt": "2026-11-05",
       "phase": 1,
-      "notes": "Proof: West Rogers Park 9-month session and Shilo 3rd birthday. Describe cake smash in future tense only, no claim of having shot one. Link to milestone page and newborn page (first-year story)."
+      "notes": "Proof: West Rogers Park 9-month session and Shilo 3rd birthday. Describe cake smash in future tense only, no claim of having shot one. Link to milestone page and newborn page (first-year story).",
+      "publishedAt": "2026-11-05"
     },
     {
       "slug": "rewrite-location-evanston",
       "type": "rewrite",
-      "status": "queued",
+      "status": "in_review",
+      "branch": "content/rewrite-location-evanston",
+      "pr": 58,
+      "updatedAt": "2026-11-09",
       "phase": 4,
       "primaryKeyword": "family photographer evanston",
       "target": {
