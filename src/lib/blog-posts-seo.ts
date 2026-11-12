@@ -737,7 +737,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <p>If you want an outdoor card photo, a North Shore park in November gives you bare branches and low, soft light before the deep cold arrives. We can meet at a park close to your home for the card photo and finish with a few frames by the menorah inside.</p>
 
-<p>Family celebrations in the Jewish calendar are some of my favorite things to photograph. I have photographed an <a href="/gallery/milestone/shilo-3rd-birthday-upshirin">upsherin and third birthday</a> and a <a href="/sessions/bar-mitzvah-photography">Bar Mitzvah</a>, and I bring the same care for tradition and family to a Hanukkah session.</p>
+<p>Family celebrations in the Jewish calendar are some of my favorite things to photograph. I have photographed an <a href="/gallery/milestone/shilo-3rd-birthday-upshirin">upsherin and third birthday</a> (here is <a href="/blog/what-is-an-upsherin">what an upsherin is</a> and how I photograph one) and a <a href="/sessions/bar-mitzvah-photography">Bar Mitzvah</a>, and I bring the same care for tradition and family to a Hanukkah session.</p>
 
 <h2>What to wear for Hanukkah family photos</h2>
 
@@ -870,6 +870,130 @@ export const seoBlogPosts: BlogPost[] = [
 <h2>Let's plan photos with your whole family</h2>
 
 <p>If your dog is the one who greets everyone at the door, they belong in the pictures. <a href="/contact">Tell me about your family and your dog</a>, and I will suggest a place, a time and a package that works for all of you.</p>
+`,
+  },
+  {
+    slug: "what-is-an-upsherin",
+    title: "What Is an Upsherin? The First Haircut at Three, and How to Photograph It",
+    excerpt:
+      "An upsherin is a Jewish boy's first haircut, held around his third birthday. Here is what the day means, what happens, and how to plan photos of it.",
+    date: "2026-11-12",
+    category: "Milestone",
+    image: "/photos/shilo-upshirin-birthday/01-first-haircut-family.jpg",
+    imageAlt: "Father cutting the first lock of a three-year-old's long hair at an upsherin while the child sits on mom's lap",
+    imagePortrait: true,
+    showsPrices: true,
+    seoTitle: "What Is an Upsherin? First Haircut at Three | Tovy Photography",
+    seoDescription:
+      "An upsherin is a Jewish boy's first haircut, held around his third birthday. What happens, when it is held, and how I photograph one near Skokie.",
+    faqs: [
+      {
+        question: "What is an upsherin?",
+        answer:
+          "An upsherin is a Jewish boy's first haircut, traditionally held on or near his third birthday. Family and friends gather to cut his hair for the first time, and he begins wearing a kippah and tzitzit. The word is Yiddish for \"to shear off.\"",
+      },
+      {
+        question: "When is an upsherin held?",
+        answer:
+          "Most families hold the upsherin on or close to the boy's third birthday. Some communities hold it earlier or later, and in Israel many families wait for Lag BaOmer. If the birthday falls at a time when haircuts are not customary, your rabbi can help you choose the date.",
+      },
+      {
+        question: "What happens at an upsherin?",
+        answer:
+          "Family and friends take turns cutting a small lock of hair, and the sidelocks, the peyos, are left in place. The boy puts on a kippah and tzitzit, many families have him taste honey from a card of Hebrew letters, and there are blessings, charity and sweets.",
+      },
+      {
+        question: "Why do Jewish boys wait until three for a first haircut?",
+        answer:
+          "The custom follows the Torah's rule that the fruit of a new tree is left alone for its first three years. A child's hair is left to grow the same way, and three is also the age when a boy traditionally begins learning Torah.",
+      },
+      {
+        question: "Is upsherin the same as upshirin or upshernish?",
+        answer:
+          "Yes. Upsherin, upshirin, upsheren and upshernish are all English spellings of the same Yiddish word. Many Sephardic and Israeli families call the first haircut a chalaka.",
+      },
+      {
+        question: "How much does an upsherin photographer cost?",
+        answer:
+          "A small upsherin at home usually fits my Classic session, $425 for 60 minutes with 25+ edited images, or my Full session, $550 for 90 minutes with 40+ images. An upsherin inside a larger party is quoted per event, based on the hours and the schedule.",
+      },
+    ],
+    content: `
+<p>An upsherin is a Jewish boy's first haircut, traditionally held on or near his third birthday, when family and friends gather to cut his hair for the first time and he begins wearing a kippah and tzitzit. The word is Yiddish for "to shear off," and you will also see it spelled upshirin, upsheren or upshernish. I am a family photographer in Skokie, and I have photographed an upsherin and third birthday party. Here is what the day means, what happens at one, and how to plan photos of it.</p>
+
+<img src="/photos/shilo-upshirin-birthday/01-first-haircut-family.jpg" alt="Father cutting the first lock of a three-year-old's long hair at an upsherin while the child sits on mom's lap" loading="lazy" />
+
+<h2>What is an upsherin?</h2>
+
+<p>An upsherin is the celebration of a boy's first haircut. Until then his hair is left to grow, so the day marks a real change: he arrives with long hair and leaves looking like a big boy, with his sidelocks, his first kippah and his first tzitzit. It is a custom, not a law, and families keep it in their own way. Some hold a quiet gathering at home with grandparents. Others fold it into a third birthday party with friends, cake and a full room.</p>
+
+<h3>Is it upsherin, upshirin or upshernish?</h3>
+
+<p>They are all the same thing. The word comes from Yiddish, so there is no single English spelling, and upsherin, upshirin, upsheren and upshernish are all in use. Many Sephardic and Israeli families call the first haircut a chalaka.</p>
+
+<h3>Why do Jewish boys wait until three for a first haircut?</h3>
+
+<p>The custom follows the Torah's rule about fruit trees. In Leviticus, the fruit of a newly planted tree is left alone for its first three years, and many families leave a child's hair alone for the same three years. Three is also the age when a boy traditionally begins learning Torah, which is why the haircut, the kippah, the tzitzit and the first Hebrew letters all arrive together.</p>
+
+<h2>When is an upsherin held?</h2>
+
+<h3>When does an upsherin take place?</h3>
+
+<p>Most families hold the upsherin on or close to the boy's third birthday. Customs vary. Some communities hold it earlier or later, and in Israel many families wait for Lag BaOmer and cut their sons' hair at Meron. Haircuts are traditionally not given during the weeks between Passover and Lag BaOmer, so a boy who turns three in that stretch often has his upsherin on Lag BaOmer. If you are not sure about your date, your rabbi is the right person to ask.</p>
+
+<h2>What happens at an upsherin?</h2>
+
+<h3>What happens at an upsherin ceremony?</h3>
+
+<p>Family and friends take turns cutting a small lock of the boy's hair, and the rest of the day grows around that. Every family does it a little differently, but these are the parts I would expect to see:</p>
+
+<ul>
+<li><strong>The first snips.</strong> Parents, grandparents and guests each cut a small lock. Many families begin at the front of the head.</li>
+<li><strong>The peyos.</strong> The hair at the sides of the head is left in place, long or short, as his sidelocks.</li>
+<li><strong>A kippah and tzitzit.</strong> He puts them on, often for the first time, and wears them from then on.</li>
+<li><strong>Aleph-bet and honey.</strong> In many families the boy says the Hebrew letters from a card and tastes a little honey from each one, so that learning Torah is sweet.</li>
+<li><strong>Blessings and charity.</strong> The people who love him bless him. Some families give charity for the hair that was cut, or let him drop a coin in the tzedakah box for each lock.</li>
+<li><strong>Sweets.</strong> There is usually something sweet for the children, and often a meal or a birthday cake.</li>
+</ul>
+
+<img src="/photos/shilo-upshirin-birthday/07-family-embrace-bw.jpg" alt="Black and white photo of a mother draping tzitzit over her child's shoulders at an upsherin while the father holds the child on his lap" loading="lazy" />
+
+<h2>How is an upsherin photographed?</h2>
+
+<h3>How do you photograph an upsherin?</h3>
+
+<p>I photograph an upsherin quietly and close to the child, without flash and without stopping the ceremony, and I plan for three parts: the long hair before, the haircut itself, and the new look after. At Shilo's upsherin, the first haircut happened in the middle of a farm-themed third birthday party. I photographed Shilo on mom's lap while dad cut the first lock, the tzitzit going on, the cut hair being saved, and later the candles on the cake and a frosting-covered kiss from grandma. You can see the whole day in the <a href="/gallery/milestone/shilo-3rd-birthday-upshirin">upsherin and third birthday gallery</a>.</p>
+
+<p>A three-year-old does not sit still for long, and that is fine. I follow the child and do not pose them. The sideways glance at the scissors is usually the photo parents love most.</p>
+
+<h3>What photos should we get at an upsherin?</h3>
+
+<p>Start with the hair, because it will not look like this again. A short list I like to work from:</p>
+
+<ul>
+<li><strong>The long hair before the first cut</strong>, from the front and from behind, loose or in a ponytail.</li>
+<li><strong>Each person who cuts a lock</strong>, especially parents and grandparents.</li>
+<li><strong>The details</strong>: the scissors, a lock of hair in a hand, the new kippah, the tzitzit, the aleph-bet card and the honey.</li>
+<li><strong>The first look after</strong>, with his peyos showing.</li>
+<li><strong>The family together</strong>, once before the haircut and once after.</li>
+<li><strong>The party</strong>: the table, the cake and the friends who came.</li>
+</ul>
+
+<h3>How should we set up the room for upsherin photos?</h3>
+
+<p>Put the chair near your brightest window, facing the light. Party rooms and basements are often dim, and window light keeps faces clear without flash. Tell me ahead of time who will cut and in what order, and where the kippah and tzitzit will be put on, so I can be in the right place for each one. If the upsherin is part of a birthday party, my <a href="/sessions/birthday-party-photography">birthday party photography page</a> explains how I plan the cake, the family groupings and the rest of the day.</p>
+
+<h2>What an upsherin photographer costs</h2>
+
+<h3>How much does an upsherin photographer cost?</h3>
+
+<p>A small upsherin at home usually fits one of my regular sessions. The Classic is $425 for 60 minutes with 25+ edited images, and the Full is $550 for 90 minutes with 40+ images. If the upsherin is part of a larger party and you want the whole celebration covered, I quote it per event as a Tailored session, based on the hours and the schedule. Every session includes a private online gallery and full print rights. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee. All of my packages are on the <a href="/sessions">sessions and pricing page</a>.</p>
+
+<p>An upsherin is often the first of the family celebrations I get to photograph for a child. Years later comes the next one, and you can read how I approach it on my <a href="/sessions/bar-mitzvah-photography">Bar and Bat Mitzvah photography page</a>.</p>
+
+<h2>Planning an upsherin?</h2>
+
+<p>Mazel tov. <a href="/contact">Tell me the date, the place and who will be there</a>, and I will suggest a session and a simple plan for the photos, so you can be in the moment while the first lock is cut.</p>
 `,
   },
 ];

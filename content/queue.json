@@ -387,8 +387,10 @@
       "type": "guide",
       "primaryKeyword": "upsherin",
       "sourceDraft": null,
-      "status": "queued",
+      "status": "in_review",
+      "branch": "content/what-is-an-upsherin",
       "pr": null,
+      "updatedAt": "2026-11-12",
       "phase": 1,
       "notes": "Answer-first: what an upsherin is, when it happens (third birthday), what happens (first haircut, peyos, sweets, blessings), how it is photographed. Proof gallery: /gallery/milestone/shilo-3rd-birthday-upshirin. Use the site's spelling 'upsherin' in slug and H1 and mention the 'upshirin' spelling once. This is a 1,000/mo term with zero difficulty."
     },
