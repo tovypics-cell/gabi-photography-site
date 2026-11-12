@@ -322,7 +322,7 @@
     {
       "slug": "rewrite-location-evanston",
       "type": "rewrite",
-      "status": "in_review",
+      "status": "published",
       "branch": "content/rewrite-location-evanston",
       "pr": 58,
       "updatedAt": "2026-11-09",
@@ -334,7 +334,8 @@
       },
       "sourceDraft": null,
       "notes": "Search Console 2026-09-29 to 10-27: the homepage is about #11 for 'family photographer evanston' and this page only #35; 'baby photographer evanston' and 'maternity photographer evanston' also show impressions. No gallery was shot in Evanston; the nearest real ones are the Skokie galleries and Keay Nature Center in Wilmette. Follow 'Rewriting a town page' in the writer prompt. Weekly review 2026-11-01: the Skokie-located rank tracker had 'family photographer evanston' at #20 on 10-30 and outside the top 40 on 11-01, and Search Console still sends the Evanston family and maternity queries to the homepage (http homepage #11 family, #6 maternity) instead of this page. Make this page the clear answer for Evanston family, newborn and maternity searches, and add the one inbound link from the Skokie page or the family sessions page. AI answers 2026-11-04 (OpenSEO tracker, 'newborn photographer in Evanston IL'): only Gemini named Tovy; ChatGPT, Perplexity and AI Overviews named Erin Drewitz, Kristin Milito, Nicole Jones and Pam Lagger, and cited single-town pages such as agatabrannonphotography.com/evanston-newborn-photographer/ and pamlaggerphotography.com/newborn. Those pages open by saying who they photograph in Evanston, in-home or studio, and what a session includes. Give this page a two-sentence citable summary that answers 'newborn photographer in Evanston' the same way with Gabi's real facts (in-home newborn sessions, distance from Skokie, link to /sessions for prices). Never name or compare other photographers on the page.",
-      "addedAt": "2026-10-30"
+      "addedAt": "2026-10-30",
+      "publishedAt": "2026-11-09"
     },
     {
       "slug": "rewrite-newborn-photography-2",
@@ -386,8 +387,10 @@
       "type": "guide",
       "primaryKeyword": "upsherin",
       "sourceDraft": null,
-      "status": "queued",
-      "pr": null,
+      "status": "in_review",
+      "branch": "content/what-is-an-upsherin",
+      "pr": 59,
+      "updatedAt": "2026-11-12",
       "phase": 1,
       "notes": "Answer-first: what an upsherin is, when it happens (third birthday), what happens (first haircut, peyos, sweets, blessings), how it is photographed. Proof gallery: /gallery/milestone/shilo-3rd-birthday-upshirin. Use the site's spelling 'upsherin' in slug and H1 and mention the 'upshirin' spelling once. This is a 1,000/mo term with zero difficulty."
     },
