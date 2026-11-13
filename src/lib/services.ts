@@ -28,7 +28,7 @@ export interface ServicePage {
 }
 
 const pricingNote =
-  "Every package includes professionally edited images in a private online gallery with full print rights. A travel fee may apply depending on the location, and I will confirm it before you book.";
+  "Every package includes professionally edited images in a private online gallery with full print rights. A $50 travel fee may apply. If you're curious, just ask!";
 
 export const services: Record<string, ServicePage> = {
   "newborn-photography": {
@@ -753,7 +753,7 @@ export const services: Record<string, ServicePage> = {
       {
         question: "How much is a family mini session?",
         answer:
-          "$300 for a 30-minute session at one location with 10+ edited digital images, an online gallery and full print rights. A travel fee may apply depending on the location, and I will confirm it before you book.",
+          "$300 for a 30-minute session at one location with 10+ edited digital images, an online gallery and full print rights. A $50 travel fee may apply. If you're curious, just ask!",
       },
       {
         question: "Where are mini sessions held?",

@@ -74,7 +74,7 @@ const proofBarMitzvah: ProofItem = {
 // FAQ builders keep answers consistent across towns while staying specific.
 const faqCost = (town: string): Faq => ({
   question: `How much does a family photographer in ${town} cost?`,
-  answer: `My sessions start at $300 for a 30-minute mini session and go up to $550 for a 90-minute full session. Every package includes professionally edited images in a private online gallery with full print rights. A travel fee may apply depending on the location, and I will confirm it before you book.`,
+  answer: `My sessions start at $300 for a 30-minute mini session and go up to $550 for a 90-minute full session. Every package includes professionally edited images in a private online gallery with full print rights. A $50 travel fee may apply. If you're curious, just ask!`,
 });
 const faqInHome = (town: string): Faq => ({
   question: `Do you photograph in-home sessions in ${town}?`,
@@ -504,7 +504,7 @@ export const locationPages: Record<string, LocationPage> = {
     heroLabel: "Northbrook Hero Photo",
     intro: [
       "Tovy Photography photographs families, newborns and expecting parents in Northbrook, IL, in natural light at your home or at Northbrook's parks, prairies and gardens.",
-      "I am based in Skokie, about thirty minutes from Northbrook, and a travel fee applies to Northbrook sessions. I will confirm it before you book.",
+      "I am based in Skokie, about thirty minutes from Northbrook. A $50 travel fee may apply. If you're curious, just ask!",
     ],
     content: [
       "Northbrook gives families a lot of choices. Wood Oaks Green Park and Meadowhill Park have the open lawns and mature trees that make golden hour easy. Techny Prairie Park and Fields has tall grass and long sightlines in late summer, and the Village Green in the downtown has a classic small-town feel with a gazebo and old trees.",
@@ -545,7 +545,7 @@ export const locationPages: Record<string, LocationPage> = {
     ],
     proof: [proofWilmetteKeay, proofSkokieNewborn, proofSkokieLibrary],
     nearby: ["glenview", "winnetka", "highland-park", "wilmette"],
-    driveNote: "About thirty minutes from Skokie. A travel fee applies, and I will confirm it before you book.",
+    driveNote: "About thirty minutes from Skokie.",
   },
 
   "park-ridge": {
@@ -661,7 +661,7 @@ export const locationPages: Record<string, LocationPage> = {
     heroLabel: "Highland Park Hero Photo",
     intro: [
       "Tovy Photography photographs families, newborns and expecting parents in Highland Park, IL, in natural light at the lakefront, in the ravines and woods, or at home.",
-      "I am based in Skokie, about twenty-five minutes away, and a $50 travel fee applies to most Highland Park sessions.",
+      "I am based in Skokie, about twenty-five minutes from Highland Park.",
     ],
     content: [
       "Highland Park is the North Shore at its most dramatic. Rosewood Beach has a long boardwalk, dunes and a wide stretch of sand. The ravines and woods at Heller Nature Center and Millard Park feel like a forest, and Sunset Woods Park sits right in the middle of town with lawns and old trees for a classic golden hour session.",
@@ -682,10 +682,6 @@ export const locationPages: Record<string, LocationPage> = {
         body: "Heller and Millard are beautiful, but the paths down to the water are not stroller friendly. For families with a newborn or a grandparent along, Sunset Woods is the easier choice.",
       },
       {
-        title: "The drive from Skokie is long enough to matter.",
-        body: "Highland Park is more than 10 miles from Skokie, so a $50 travel fee applies. I mention it up front because I would rather you know before you book.",
-      },
-      {
         title: "Golden hour has to end by sunset in the parks.",
         body: "The Park District's photography permit covers its parks, including Rosewood Beach and Sunset Woods Park, and park use before sunrise or after sunset needs special permission. I plan evening sessions so we finish as the sun goes down. Fort Sheridan is a Lake County forest preserve, and I check its rules separately.",
       },
@@ -694,7 +690,7 @@ export const locationPages: Record<string, LocationPage> = {
       {
         question: "How much does a family photographer in Highland Park cost?",
         answer:
-          "My sessions start at $300 for a 30-minute mini session and go up to $550 for a 90-minute full session, plus a $50 travel fee for Highland Park because it is beyond 10 miles from Skokie. Every package includes edited images in a private online gallery with full print rights.",
+          "My sessions start at $300 for a 30-minute mini session and go up to $550 for a 90-minute full session. Every package includes edited images in a private online gallery with full print rights. A $50 travel fee may apply. If you're curious, just ask!",
       },
       {
         question: "Where are the best places for family photos in Highland Park?",
@@ -729,7 +725,7 @@ export const locationPages: Record<string, LocationPage> = {
       proofSkokieNewborn,
     ],
     nearby: ["winnetka", "northbrook", "wilmette", "glenview"],
-    driveNote: "About twenty-five minutes from Skokie. A $50 travel fee applies.",
+    driveNote: "About twenty-five minutes from Skokie.",
   },
 
   "west-rogers-park": {

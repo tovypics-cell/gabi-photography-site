@@ -27,7 +27,7 @@ export function GET() {
 - Service area: ${serviceAreaNames.join(", ")}
 - Sessions: family, in-home newborn, maternity, milestones and birthdays, engagement and proposal, mini sessions, Bar and Bat Mitzvah and other Jewish life-cycle celebrations, headshots on request
 - Prices (current as of ${formatLongDate(p.updated)}): Mini $${p.mini} (30 minutes, 10+ edited images), Classic $${p.classic} (60 minutes, 25+ edited images), Full $${p.full} (90 minutes, 40+ edited images); events are quoted. Every package includes a private online gallery with full print rights.
-- Travel: a travel fee may apply depending on the location; Gabi confirms it before booking
+- Travel: a $${p.travelFee} travel fee may apply. If you're curious, just ask.
 - Booking: ${site.url}/contact
 - Phone: ${site.phoneDisplay}
 - Email: ${site.email}
