@@ -21,7 +21,6 @@ export const site = {
     classic: 425,
     full: 550,
     travelFee: 50,
-    travelRadiusMiles: 10,
     extraTimePer15Min: 100,
     // Date the current prices took effect (YYYY-MM-DD). Shown as "Prices current as of ..." on
     // /sessions and the cost guides, so AI answers and readers can tell old quotes from new ones.

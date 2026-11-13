@@ -141,7 +141,7 @@ const faqs = [
   },
   {
     q: "Is there a travel fee?",
-    a: "I am based in Skokie, and sessions within 10 miles are included. A $50 travel fee applies for locations beyond that.",
+    a: "I am based in Skokie. A $50 travel fee may apply. If you're curious, just ask!",
   },
   {
     q: "Can I add more time to my session?",
@@ -418,7 +418,7 @@ export default function SessionsPage() {
             </div>
           </div>
           <p className="text-center text-sm text-charcoal-light mt-10">
-            Based in Skokie. Sessions within 10 miles are included. A $50 travel fee applies for locations beyond that. Just ask if you&apos;re not sure!
+            Based in Skokie. A $50 travel fee may apply. If you&apos;re curious, just ask!
           </p>
           <p className="text-center text-sm text-charcoal-light mt-3">
             Additional time beyond your booked session is available at $100 per 15-minute block, subject to availability.

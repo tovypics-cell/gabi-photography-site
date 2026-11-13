@@ -53,7 +53,7 @@ export const seoBlogPosts: BlogPost[] = [
 </tbody>
 </table>
 
-<p>These are in-home sessions. Every package includes a private online gallery with full print rights, and there is no travel fee within 10 miles of Skokie.</p>
+<p>These are in-home sessions. Every package includes a private online gallery with full print rights. A $50 travel fee may apply. If you're curious, just ask!</p>
 
 <img src="/photos/cooper-family/03-parents-baby-closeup.jpg" alt="Newborn baby girl in a floral headband asleep between her parents during an in-home newborn session in Skokie" loading="lazy" />
 
@@ -70,7 +70,7 @@ export const seoBlogPosts: BlogPost[] = [
 <li><strong>Session fee versus all-inclusive.</strong> Some photographers charge a lower fee up front and then price each image or product afterward. Others, like me, include the images in the package. Always ask what the number you are quoted actually gets you.</li>
 <li><strong>Length and number of images.</strong> A 30-minute mini with 10+ images costs less than a 90-minute session with 40+ images and sibling photos.</li>
 <li><strong>Products.</strong> Albums, wall art and prints can add several hundred dollars. If you only want digital files, say so.</li>
-<li><strong>Travel.</strong> I include travel within 10 miles of Skokie. Farther than that, a $50 travel fee applies.</li>
+<li><strong>Travel.</strong> A $50 travel fee may apply. If you're curious, just ask!</li>
 </ul>
 
 <h2>What my newborn sessions cost</h2>
@@ -154,7 +154,7 @@ export const seoBlogPosts: BlogPost[] = [
 </tbody>
 </table>
 
-<p>Every package includes a private online gallery and full print rights. There is no travel fee within 10 miles of Skokie.</p>
+<p>Every package includes a private online gallery and full print rights. A $50 travel fee may apply. If you're curious, just ask!</p>
 
 <h3>What is included in every family session?</h3>
 
@@ -163,7 +163,6 @@ export const seoBlogPosts: BlogPost[] = [
 <li>A private online gallery to view, download and share</li>
 <li>Full print rights, so you can print anywhere you like</li>
 <li>Wardrobe guidance with the Classic and Full sessions</li>
-<li>No travel fee within 10 miles of Skokie</li>
 </ul>
 
 <img src="/photos/glickman-family/05-family-walking-plaza.jpg" alt="Parents swinging their toddler between them while his brother and sister run across a winter plaza during a family session in Skokie" loading="lazy" />
@@ -179,7 +178,7 @@ export const seoBlogPosts: BlogPost[] = [
 <li><strong>Images included or sold separately.</strong> Some photographers charge a session fee and then price each image. Others include a set number of edited images. Both are legitimate, but they are not comparable until you add up the total.</li>
 <li><strong>Location.</strong> Studio sessions carry overhead. Outdoor and in-home sessions do not, though a park may require a photography permit.</li>
 <li><strong>Products.</strong> Albums and wall art are wonderful and they are also where a $400 session becomes a $1,500 invoice. Decide in advance whether you want them.</li>
-<li><strong>Travel.</strong> Sessions within 10 miles of Skokie carry no travel fee with me. Beyond that, $50.</li>
+<li><strong>Travel.</strong> A $50 travel fee may apply. If you're curious, just ask!</li>
 </ul>
 
 <h2>What my family sessions cost</h2>
@@ -198,7 +197,7 @@ export const seoBlogPosts: BlogPost[] = [
 <li><strong>What is the total for the session plus the images I want?</strong> With me, the package price is the total: $300, $425 or $550, with the edited images included.</li>
 <li><strong>How many edited images are included?</strong> 10+ with the Mini, 25+ with the Classic and 40+ with the Full.</li>
 <li><strong>Do I get the digital files and the right to print them?</strong> Yes. Every gallery is delivered online with full print rights.</li>
-<li><strong>Are there travel or permit fees?</strong> There is no travel fee within 10 miles of Skokie and $50 beyond that. Some parks require a photography permit, so ask about the location you have in mind.</li>
+<li><strong>Are there travel or permit fees?</strong> A $50 travel fee may apply. If you're curious, just ask! Some parks require a photography permit, so ask about the location you have in mind.</li>
 <li><strong>How long until we see the photos?</strong> Two to three weeks for most sessions.</li>
 <li><strong>What happens if it rains?</strong> For outdoor sessions I build in a rain date.</li>
 <li><strong>Can we see full galleries from real families, not styled shoots?</strong> Every <a href="/gallery/family">family gallery</a> on this site is a real session, and each gallery page names its location.</li>
@@ -207,7 +206,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h2>Ways to keep the cost reasonable</h2>
 
-<p>Book a mini session for yearly updates and save the longer session for the years when something is changing. Pick a park close to home so there is no travel fee. Skip products until you have seen the gallery. And book fall dates early, because the best light of the year is also the busiest.</p>
+<p>Book a mini session for yearly updates and save the longer session for the years when something is changing. Pick a park close to home. Skip products until you have seen the gallery. And book fall dates early, because the best light of the year is also the busiest.</p>
 
 <p>If you are planning family photos in Skokie, Evanston, Wilmette or anywhere on the North Shore, <a href="/contact">tell me about your family</a> and I will suggest the package that fits.</p>
 `,
@@ -341,7 +340,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h3>How much does Tovy Photography charge for engagement photos?</h3>
 
-<p>Engagement sessions use my standard packages. The Mini is $300 for 30 minutes at one location with 10+ edited images. The Classic is $425 for 60 minutes and 25+ images, and it is what most couples choose. The Full is $550 for 90 minutes and 40+ images with two locations, which works well for a lakefront-plus-neighborhood plan. Every package includes a private online gallery and full print rights, and sessions within 10 miles of Skokie carry no travel fee. Details are on the <a href="/sessions/engagement-photography">engagement photography page</a> and the <a href="/sessions">Sessions and Pricing page</a>.</p>
+<p>Engagement sessions use my standard packages. The Mini is $300 for 30 minutes at one location with 10+ edited images. The Classic is $425 for 60 minutes and 25+ images, and it is what most couples choose. The Full is $550 for 90 minutes and 40+ images with two locations, which works well for a lakefront-plus-neighborhood plan. Every package includes a private online gallery and full print rights. A $50 travel fee may apply. If you're curious, just ask! Details are on the <a href="/sessions/engagement-photography">engagement photography page</a> and the <a href="/sessions">Sessions and Pricing page</a>.</p>
 
 <h2>What you should get for the money</h2>
 
@@ -409,7 +408,7 @@ export const seoBlogPosts: BlogPost[] = [
 </tbody>
 </table>
 
-<p>Sessions happen outdoors at North Shore parks and beaches or in your home. Every package includes a private online gallery with full print rights, and there is no travel fee within 10 miles of Skokie.</p>
+<p>Sessions happen outdoors at North Shore parks and beaches or in your home. Every package includes a private online gallery with full print rights. A $50 travel fee may apply. If you're curious, just ask!</p>
 
 <img src="/photos/maternity-side-profile-bw.jpg" alt="Black and white maternity portrait of an expecting mother in profile, hands resting on her belly" loading="lazy" />
 
@@ -430,7 +429,7 @@ export const seoBlogPosts: BlogPost[] = [
 <li><strong>Wardrobe, hair and makeup.</strong> Beautiful, and often the difference between a $400 session and a $1,200 one. If you already have a dress you love, you do not need them.</li>
 <li><strong>Images included or sold separately.</strong> Add up the session fee plus the images you actually want before comparing.</li>
 <li><strong>Length.</strong> A 30-minute session at golden hour covers you and your partner. A 60 or 90-minute session leaves time for older kids and a second outfit.</li>
-<li><strong>Travel.</strong> Sessions within 10 miles of Skokie carry no travel fee with me. Beyond that, $50.</li>
+<li><strong>Travel.</strong> A $50 travel fee may apply. If you're curious, just ask!</li>
 </ul>
 
 <h2>What my maternity sessions cost</h2>
@@ -636,7 +635,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h3>How much do Christmas family photos cost?</h3>
 
-<p>My holiday family sessions use my regular packages. The Mini is $300 for 30 minutes at one location with 10+ edited images. The Classic is $425 for 60 minutes and 25+ images. The Full is $550 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights, so you can print your cards anywhere you like. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee.</p>
+<p>My holiday family sessions use my regular packages. The Mini is $300 for 30 minutes at one location with 10+ edited images. The Classic is $425 for 60 minutes and 25+ images. The Full is $550 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights, so you can print your cards anywhere you like. A $50 travel fee may apply. If you're curious, just ask!</p>
 
 <h3>Is a mini session enough for a Christmas card?</h3>
 
@@ -751,7 +750,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h3>How much does a Hanukkah photoshoot cost?</h3>
 
-<p>My Hanukkah sessions use my regular packages. The Mini is $300 for 30 minutes at one location with 10+ edited images. The Classic is $425 for 60 minutes and 25+ images. The Full is $550 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights, so you can print your cards anywhere you like. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee.</p>
+<p>My Hanukkah sessions use my regular packages. The Mini is $300 for 30 minutes at one location with 10+ edited images. The Classic is $425 for 60 minutes and 25+ images. The Full is $550 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights, so you can print your cards anywhere you like. A $50 travel fee may apply. If you're curious, just ask!</p>
 
 <p>For a card photo of an immediate family, a <a href="/sessions/mini-sessions">mini session</a> is often enough. For candlelight on a real night of Hanukkah, or a gathering with grandparents and cousins, the Classic or Full session gives everyone time. The full breakdown is on the <a href="/sessions/family-photography">family photography page</a>. If your family celebrates both Hanukkah and Christmas, my guide to <a href="/blog/christmas-holiday-family-photos">Christmas family photos</a> covers the tree side of the season.</p>
 
@@ -863,7 +862,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h3>How much do family photos with a dog cost?</h3>
 
-<p>A dog joins a regular family session, so the packages are the same. The Mini is $300 for 30 minutes at one location with 10+ edited images. The Classic is $425 for 60 minutes and 25+ images. The Full is $550 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee.</p>
+<p>A dog joins a regular family session, so the packages are the same. The Mini is $300 for 30 minutes at one location with 10+ edited images. The Classic is $425 for 60 minutes and 25+ images. The Full is $550 for 90 minutes and 40+ images. Every package includes a private online gallery and full print rights. A $50 travel fee may apply. If you're curious, just ask!</p>
 
 <p>Most dogs are ready to be done before the kids are. A Mini works well if the photos are mostly about the dog and one or two people. For the whole family, the Classic gives the dog the first part of the session and the kids the rest. The full breakdown is on the <a href="/sessions/family-photography">family photography page</a>.</p>
 
@@ -987,7 +986,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h3>How much does an upsherin photographer cost?</h3>
 
-<p>A small upsherin at home usually fits one of my regular sessions. The Classic is $425 for 60 minutes with 25+ edited images, and the Full is $550 for 90 minutes with 40+ images. If the upsherin is part of a larger party and you want the whole celebration covered, I quote it per event as a Tailored session, based on the hours and the schedule. Every session includes a private online gallery and full print rights. Sessions within 10 miles of Skokie carry no travel fee, and beyond that there is a $50 travel fee. All of my packages are on the <a href="/sessions">sessions and pricing page</a>.</p>
+<p>A small upsherin at home usually fits one of my regular sessions. The Classic is $425 for 60 minutes with 25+ edited images, and the Full is $550 for 90 minutes with 40+ images. If the upsherin is part of a larger party and you want the whole celebration covered, I quote it per event as a Tailored session, based on the hours and the schedule. Every session includes a private online gallery and full print rights. A $50 travel fee may apply. If you're curious, just ask! All of my packages are on the <a href="/sessions">sessions and pricing page</a>.</p>
 
 <p>An upsherin is often the first of the family celebrations I get to photograph for a child. Years later comes the next one, and you can read how I approach it on my <a href="/sessions/bar-mitzvah-photography">Bar and Bat Mitzvah photography page</a>.</p>
 

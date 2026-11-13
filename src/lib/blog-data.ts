@@ -458,7 +458,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "Is there a travel fee for North Shore photo locations?",
-        answer: "Sessions within 10 miles of Skokie are included. A $50 travel fee applies to locations beyond that, and I am happy to check any spot you have in mind.",
+        answer: "A $50 travel fee may apply. If you're curious, just ask! I am happy to check any spot you have in mind.",
       },
       {
         question: "How much does an outdoor family photo session cost?",
@@ -510,7 +510,7 @@ export const blogPosts: BlogPost[] = [
 
 <p><strong>Best light:</strong> Evening golden hour. The wooded paths fall into shade before the beach does, so we can start in the trees and finish by the water.</p>
 
-<p>If you live in town, my <a href="/locations/highland-park">Highland Park family photographer page</a> covers Rosewood Beach, in-home newborn sessions, maternity spots and the travel fee.</p>
+<p>If you live in town, my <a href="/locations/highland-park">Highland Park family photographer page</a> covers Rosewood Beach, in-home newborn sessions and maternity spots.</p>
 
 <p>Bringing your dog? Here is how to plan <a href="/blog/family-photos-with-dog">family photos with your dog</a>.</p>
 

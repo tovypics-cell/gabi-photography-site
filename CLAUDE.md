@@ -50,6 +50,7 @@ Each contact-form submission sends two Web3Forms emails. 1) "New Inquiry from <n
 - NO "link in bio" phrasing
 - NO freelance-style copy without approval
 - Do NOT claim experience at locations Gabi hasn't actually shot
+- Travel fees are Gabi's call, per booking (rule set 2026-11-13). NEVER write that a town, distance, radius or session has no travel fee, that travel is included or free, or that a fee does or does not apply to a town (no "within 10 miles" radius either). If travel must be mentioned, use exactly Gabi's sentence and nothing more: "A $50 travel fee may apply. If you're curious, just ask!" Every page, including /sessions and the town pages, uses that one sentence. Do not reword it without asking her.
 - Prefer real photos over stock
 - About page hero MUST stay solid rose pink - do not change it
 - Use keyword-rich SEO when publishing galleries

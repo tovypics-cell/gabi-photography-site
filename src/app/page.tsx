@@ -76,7 +76,7 @@ export default function HomePage() {
     {
       question: "Where is Tovy Photography based and where do you photograph?",
       answer:
-        "I am based in Skokie, IL and photograph throughout Chicago's North Shore: Evanston, Wilmette, Lincolnwood, Morton Grove, Glenview, Niles, Northbrook, Park Ridge, Winnetka, Highland Park, West Rogers Park and the city. Sessions within 10 miles of Skokie carry no travel fee.",
+        "I am based in Skokie, IL and photograph throughout Chicago's North Shore: Evanston, Wilmette, Lincolnwood, Morton Grove, Glenview, Niles, Northbrook, Park Ridge, Winnetka, Highland Park, West Rogers Park and the city.",
     },
     {
       question: "How much does a photography session cost?",

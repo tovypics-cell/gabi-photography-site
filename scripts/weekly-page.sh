@@ -328,6 +328,13 @@ if git diff "$BASE...HEAD" -U0 -- src content | grep '^+' | grep -v '^+++' | gre
   die "new content contains an em dash (brand rule). Fix on $BRANCH, then open the PR by hand."
 fi
 
+# Travel fees are Gabi's call (rule set 2026-11-13): new copy may never promise that a town,
+# distance or session has no travel fee or that travel is included.
+if git diff "$BASE...HEAD" -U0 -- src | grep '^+' | grep -v '^+++' \
+  | grep -qiE 'no travel fee|never a travel fee|without a travel fee|no-fee radius|free travel|travel (fee )?is (free|included|waived)|include[sd]? travel|miles (of [a-z ]+ )?(are|is) included|travel fee (applies|is charged|will apply)'; then
+  die "new content makes a travel-fee claim (brand rule: travel fees are Gabi's call; only her one sentence is allowed). Fix on $BRANCH, then open the PR by hand."
+fi
+
 if ! node scripts/check-pricing.mjs > "$RUN_DIR/pricing.log" 2>&1; then
   if [ "$MAIN_PRICING_OK" = 1 ]; then
     die "new content does not match the pricing page (see $RUN_DIR/pricing.log). Fix on $BRANCH, then open the PR by hand."

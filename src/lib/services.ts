@@ -28,7 +28,7 @@ export interface ServicePage {
 }
 
 const pricingNote =
-  "Every package includes professionally edited images in a private online gallery with full print rights. Sessions within 10 miles of Skokie carry no travel fee.";
+  "Every package includes professionally edited images in a private online gallery with full print rights. A $50 travel fee may apply. If you're curious, just ask!";
 
 export const services: Record<string, ServicePage> = {
   "newborn-photography": {
@@ -409,7 +409,7 @@ export const services: Record<string, ServicePage> = {
       {
         question: "Where do you photograph maternity sessions?",
         answer:
-          "Throughout Skokie, Evanston, Wilmette, Lincolnwood, Glenview, Northbrook and the North Shore, outdoors or in your home. Sessions within 10 miles of Skokie carry no travel fee.",
+          "Throughout Skokie, Evanston, Wilmette, Lincolnwood, Glenview, Northbrook and the North Shore, outdoors or in your home.",
       },
     ],
     proof: [
@@ -753,7 +753,7 @@ export const services: Record<string, ServicePage> = {
       {
         question: "How much is a family mini session?",
         answer:
-          "$300 for a 30-minute session at one location with 10+ edited digital images, an online gallery and full print rights. There is no travel fee within 10 miles of Skokie.",
+          "$300 for a 30-minute session at one location with 10+ edited digital images, an online gallery and full print rights. A $50 travel fee may apply. If you're curious, just ask!",
       },
       {
         question: "Where are mini sessions held?",
@@ -896,7 +896,7 @@ export const services: Record<string, ServicePage> = {
       {
         question: "Where do you photograph celebrations?",
         answer:
-          "Skokie, Lincolnwood, West Rogers Park, Evanston, Wilmette, Northbrook and throughout Chicago's North Shore. Sessions within 10 miles of Skokie carry no travel fee.",
+          "Skokie, Lincolnwood, West Rogers Park, Evanston, Wilmette, Northbrook and throughout Chicago's North Shore.",
       },
     ],
     proof: [
@@ -1151,7 +1151,7 @@ export const services: Record<string, ServicePage> = {
       {
         question: "Where do you photograph extended family sessions?",
         answer:
-          "At parks and beaches in Skokie, Evanston, Wilmette, Glenview, Northbrook and across the North Shore, or at a family home. Sessions within 10 miles of Skokie carry no travel fee.",
+          "At parks and beaches in Skokie, Evanston, Wilmette, Glenview, Northbrook and across the North Shore, or at a family home.",
       },
       {
         question: "Can each family get their own photos from the session?",
@@ -1279,7 +1279,7 @@ export const services: Record<string, ServicePage> = {
       {
         question: "Where do you photograph maternity and newborn sessions?",
         answer:
-          "Throughout Skokie, Evanston, Wilmette, Lincolnwood, Glenview, Northbrook and Chicago's North Shore. Sessions within 10 miles of Skokie carry no travel fee.",
+          "Throughout Skokie, Evanston, Wilmette, Lincolnwood, Glenview, Northbrook and Chicago's North Shore.",
       },
     ],
     proof: [
@@ -1412,7 +1412,7 @@ export const services: Record<string, ServicePage> = {
       {
         question: "Where do you photograph birthday parties?",
         answer:
-          "If you are looking for a birthday photographer near Skokie, I cover Skokie, Evanston, Lincolnwood, Wilmette and throughout Chicago's North Shore, at home or at a venue. Sessions within 10 miles of Skokie carry no travel fee.",
+          "If you are looking for a birthday photographer near Skokie, I cover Skokie, Evanston, Lincolnwood, Wilmette and throughout Chicago's North Shore, at home or at a venue.",
       },
     ],
     proof: [
@@ -1559,7 +1559,7 @@ export const services: Record<string, ServicePage> = {
       {
         question: "Where do you photograph first birthday sessions?",
         answer:
-          "At homes and parks in Skokie, Evanston, Lincolnwood, Wilmette, West Rogers Park and Chicago's North Shore. Sessions within 10 miles of Skokie carry no travel fee.",
+          "At homes and parks in Skokie, Evanston, Lincolnwood, Wilmette, West Rogers Park and Chicago's North Shore.",
       },
     ],
     proof: [
