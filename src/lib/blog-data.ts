@@ -458,7 +458,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: "Is there a travel fee for North Shore photo locations?",
-        answer: "Sessions within 10 miles of Skokie are included. A $50 travel fee applies to locations beyond that, and I am happy to check any spot you have in mind.",
+        answer: "A travel fee may apply depending on the location. I confirm it before you book, and I am happy to check any spot you have in mind.",
       },
       {
         question: "How much does an outdoor family photo session cost?",

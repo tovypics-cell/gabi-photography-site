@@ -165,8 +165,7 @@ export default function ContactPage() {
               </h3>
               <p className="text-charcoal-light leading-relaxed">
                 Skokie, Evanston, Lincolnwood, Wilmette, Morton Grove, Glenview, Niles, Northbrook,
-                Park Ridge, Winnetka, Highland Park, West Rogers Park and Chicago. Sessions within 10 miles of
-                Skokie carry no travel fee.
+                Park Ridge, Winnetka, Highland Park, West Rogers Park and Chicago.
               </p>
             </div>
             <div>

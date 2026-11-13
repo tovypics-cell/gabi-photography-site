@@ -74,7 +74,7 @@ const proofBarMitzvah: ProofItem = {
 // FAQ builders keep answers consistent across towns while staying specific.
 const faqCost = (town: string): Faq => ({
   question: `How much does a family photographer in ${town} cost?`,
-  answer: `My sessions start at $300 for a 30-minute mini session and go up to $550 for a 90-minute full session. Every package includes professionally edited images in a private online gallery with full print rights. Sessions within 10 miles of Skokie carry no travel fee.`,
+  answer: `My sessions start at $300 for a 30-minute mini session and go up to $550 for a 90-minute full session. Every package includes professionally edited images in a private online gallery with full print rights. A travel fee may apply depending on the location, and I will confirm it before you book.`,
 });
 const faqInHome = (town: string): Faq => ({
   question: `Do you photograph in-home sessions in ${town}?`,
@@ -112,7 +112,7 @@ export const locationPages: Record<string, LocationPage> = {
     heroLabel: legacyLocationData.skokie.heroLabel,
     intro: [
       "Tovy Photography is a Skokie-based family, newborn and milestone photographer working in natural light, at your home or at a Skokie park.",
-      "Skokie is where I live, so sessions here mean no travel fee, familiar parks, and a photographer who knows which corner of Emily Oaks glows at 6 pm.",
+      "Skokie is where I live, so sessions here mean familiar parks and a photographer who knows which corner of Emily Oaks glows at 6 pm.",
     ],
     content: legacyLocationData.skokie.content.filter((p) => !p.startsWith("Tovy Photography is a Skokie-based")),
     landmarks: legacyLocationData.skokie.landmarks,
@@ -149,7 +149,7 @@ export const locationPages: Record<string, LocationPage> = {
     ],
     proof: [proofSkokieLibrary, proofSkokieNewborn, proofHoffmanNewborn],
     nearby: ["lincolnwood", "evanston", "morton-grove", "niles", "west-rogers-park"],
-    driveNote: "Based in Skokie. No travel fee anywhere in the village.",
+    driveNote: "Based in Skokie.",
   },
 
   evanston: {
@@ -163,7 +163,7 @@ export const locationPages: Record<string, LocationPage> = {
     heroLabel: legacyLocationData.evanston.heroLabel,
     intro: [
       "Tovy Photography is a family photographer in Evanston, IL for families, newborns and expecting parents, with newborn sessions in your own Evanston home and family and maternity sessions in natural light at Ladd Arboretum, the Merrick Rose Garden, the Shakespeare Garden or the lakefront.",
-      `I am based in neighboring Skokie, about ten minutes away, so Evanston sessions carry no travel fee, and packages start at $${site.pricing.mini}.`,
+      `I am based in neighboring Skokie, about ten minutes away, and packages start at $${site.pricing.mini}.`,
     ],
     content: [
       "Evanston is one of my favorite places to photograph families. With its beautiful lakefront, tree-lined streets, and charming neighborhoods, this North Shore gem provides endless inspiration for natural, authentic family photography sessions.",
@@ -206,7 +206,7 @@ export const locationPages: Record<string, LocationPage> = {
       {
         question: "Do you photograph newborns at home in Evanston?",
         answer:
-          "Yes. Every newborn session in Evanston happens in your own home, in the room with the best window light, and the baby sets the pace. Your home does not need to be tidy or styled, and Evanston is close enough to Skokie that there is no travel fee.",
+          "Yes. Every newborn session in Evanston happens in your own home, in the room with the best window light, and the baby sets the pace. Your home does not need to be tidy or styled.",
       },
       {
         question: "Where can we take maternity photos in Evanston?",
@@ -239,7 +239,7 @@ export const locationPages: Record<string, LocationPage> = {
       proofWestRogersPark,
     ],
     nearby: ["skokie", "wilmette", "lincolnwood", "west-rogers-park"],
-    driveNote: "About ten minutes from Skokie. No travel fee.",
+    driveNote: "About ten minutes from Skokie.",
   },
 
   lincolnwood: {
@@ -253,7 +253,7 @@ export const locationPages: Record<string, LocationPage> = {
     heroLabel: legacyLocationData.lincolnwood.heroLabel,
     intro: [
       "Tovy Photography is a family, newborn and milestone photographer serving Lincolnwood, IL, working in natural light at your home or at Lincolnwood's parks.",
-      "Lincolnwood borders Skokie, so I am usually less than ten minutes from your door and there is never a travel fee.",
+      "Lincolnwood borders Skokie, so I am usually less than ten minutes from your door.",
     ],
     content: legacyLocationData.lincolnwood.content,
     landmarks: legacyLocationData.lincolnwood.landmarks,
@@ -286,7 +286,7 @@ export const locationPages: Record<string, LocationPage> = {
     ],
     proof: [proofSkokieNewborn, proofWestRogersPark, proofSkokieLibrary],
     nearby: ["skokie", "west-rogers-park", "evanston", "morton-grove"],
-    driveNote: "Next door to Skokie. No travel fee.",
+    driveNote: "Next door to Skokie.",
   },
 
   wilmette: {
@@ -300,7 +300,7 @@ export const locationPages: Record<string, LocationPage> = {
     heroLabel: legacyLocationData.wilmette.heroLabel,
     intro: [
       "Tovy Photography photographs families, newborns and expecting parents in Wilmette, IL, at Gillson Beach, the Keay Nature Center, and in Wilmette homes.",
-      "I am based in Skokie, about fifteen minutes away, so there is no travel fee for Wilmette sessions.",
+      "I am based in Skokie, about fifteen minutes from Wilmette.",
     ],
     content: legacyLocationData.wilmette.content,
     landmarks: legacyLocationData.wilmette.landmarks,
@@ -337,7 +337,7 @@ export const locationPages: Record<string, LocationPage> = {
     ],
     proof: [proofWilmetteKeay, proofSkokieNewborn, proofSkokieLibrary],
     nearby: ["evanston", "winnetka", "glenview", "skokie"],
-    driveNote: "About fifteen minutes from Skokie. No travel fee.",
+    driveNote: "About fifteen minutes from Skokie.",
   },
 
   "morton-grove": {
@@ -351,7 +351,7 @@ export const locationPages: Record<string, LocationPage> = {
     heroLabel: "Morton Grove Hero Photo",
     intro: [
       "Tovy Photography is a family, newborn and milestone photographer serving Morton Grove, IL, in natural light at your home, at village parks, or in the forest preserves along the North Branch.",
-      "Morton Grove sits right next to Skokie, so I am about ten minutes away and there is no travel fee.",
+      "Morton Grove sits right next to Skokie, so I am about ten minutes away.",
     ],
     content: [
       "Morton Grove is one of the easiest places on the North Shore to photograph a family, because the forest preserves run right through the village. St. Paul Woods, Linne Woods and Miami Woods give you tall trees, a river, open meadows and quiet trails within a few minutes of each other, and none of them feel like a backdrop. They feel like a Sunday walk.",
@@ -388,7 +388,7 @@ export const locationPages: Record<string, LocationPage> = {
     ],
     proof: [proofSkokieLibrary, proofSkokieNewborn, proofWilmetteKeay],
     nearby: ["skokie", "niles", "glenview", "lincolnwood"],
-    driveNote: "About ten minutes from Skokie. No travel fee.",
+    driveNote: "About ten minutes from Skokie.",
   },
 
   glenview: {
@@ -402,7 +402,7 @@ export const locationPages: Record<string, LocationPage> = {
     heroLabel: "Glenview Hero Photo",
     intro: [
       "Tovy Photography photographs families, newborns and expecting parents in Glenview, IL, in natural light at your home or at Glenview's parks and prairies.",
-      "I am based in Skokie, roughly fifteen minutes from most of Glenview, and sessions here carry no travel fee.",
+      "I am based in Skokie, roughly fifteen minutes from most of Glenview.",
     ],
     content: [
       "Glenview has more variety in one village than almost anywhere on the North Shore. The Grove is a historic woodland with a pond and log buildings that feels like a different century. Gallery Park in The Glen has a lake, a boardwalk and long open lawns. Wagner Farm gives you fields and a working farm feel, and the Air Station Prairie is tall grass and big sky in late summer.",
@@ -439,7 +439,7 @@ export const locationPages: Record<string, LocationPage> = {
     ],
     proof: [proofWilmetteKeay, proofSkokieNewborn, proofSkokieLibrary],
     nearby: ["northbrook", "wilmette", "morton-grove", "skokie"],
-    driveNote: "About fifteen minutes from Skokie. No travel fee.",
+    driveNote: "About fifteen minutes from Skokie.",
   },
 
   niles: {
@@ -453,7 +453,7 @@ export const locationPages: Record<string, LocationPage> = {
     heroLabel: "Niles Hero Photo",
     intro: [
       "Tovy Photography is a family, newborn and milestone photographer serving Niles, IL, working in natural light at your home, at Niles parks, or in the forest preserves along the North Branch.",
-      "Niles is about ten minutes from my home base in Skokie, so there is no travel fee.",
+      "Niles is about ten minutes from my home base in Skokie.",
     ],
     content: [
       "Niles is easy to overlook for family photos, and that is part of what makes it work. The forest preserves that run along the river on the village's edge, Bunker Hill and the groves near Caldwell Avenue, are quieter than the better-known North Shore spots and just as green. Jozwiak Park and Oakton Manor Park give you open lawns and playgrounds for families who want a park session close to home.",
@@ -490,7 +490,7 @@ export const locationPages: Record<string, LocationPage> = {
     ],
     proof: [proofSkokieNewborn, proofSkokieLibrary, proofWestRogersPark],
     nearby: ["skokie", "morton-grove", "park-ridge", "lincolnwood"],
-    driveNote: "About ten minutes from Skokie. No travel fee.",
+    driveNote: "About ten minutes from Skokie.",
   },
 
   northbrook: {
@@ -504,7 +504,7 @@ export const locationPages: Record<string, LocationPage> = {
     heroLabel: "Northbrook Hero Photo",
     intro: [
       "Tovy Photography photographs families, newborns and expecting parents in Northbrook, IL, in natural light at your home or at Northbrook's parks, prairies and gardens.",
-      "I am based in Skokie, about twenty minutes from Northbrook, and sessions here carry no travel fee.",
+      "I am based in Skokie, about thirty minutes from Northbrook, and a travel fee applies to Northbrook sessions. I will confirm it before you book.",
     ],
     content: [
       "Northbrook gives families a lot of choices. Wood Oaks Green Park and Meadowhill Park have the open lawns and mature trees that make golden hour easy. Techny Prairie Park and Fields has tall grass and long sightlines in late summer, and the Village Green in the downtown has a classic small-town feel with a gazebo and old trees.",
@@ -545,7 +545,7 @@ export const locationPages: Record<string, LocationPage> = {
     ],
     proof: [proofWilmetteKeay, proofSkokieNewborn, proofSkokieLibrary],
     nearby: ["glenview", "winnetka", "highland-park", "wilmette"],
-    driveNote: "About twenty minutes from Skokie. No travel fee.",
+    driveNote: "About thirty minutes from Skokie. A travel fee applies, and I will confirm it before you book.",
   },
 
   "park-ridge": {
@@ -559,7 +559,7 @@ export const locationPages: Record<string, LocationPage> = {
     heroLabel: "Park Ridge Hero Photo",
     intro: [
       "Tovy Photography is a family, newborn and milestone photographer serving Park Ridge, IL, in natural light at your home, at Park Ridge parks, or in Uptown.",
-      "Park Ridge is about fifteen minutes from my home base in Skokie, so there is no travel fee.",
+      "Park Ridge is about fifteen minutes from my home base in Skokie.",
     ],
     content: [
       "Park Ridge has a small-town feel that photographs beautifully. Hinkley Park and Northwest Park have big lawns and mature trees, Hodges Park sits right next to the historic Uptown blocks, and the streets around the Pickwick Theatre give you brick, awnings and a classic downtown backdrop for families who want something a little different from a park.",
@@ -596,7 +596,7 @@ export const locationPages: Record<string, LocationPage> = {
     ],
     proof: [proofSkokieLibrary, proofSkokieNewborn, proofWestRogersPark],
     nearby: ["niles", "morton-grove", "skokie", "glenview"],
-    driveNote: "About fifteen minutes from Skokie. No travel fee.",
+    driveNote: "About fifteen minutes from Skokie.",
   },
 
   winnetka: {
@@ -610,7 +610,7 @@ export const locationPages: Record<string, LocationPage> = {
     heroLabel: "Winnetka Hero Photo",
     intro: [
       "Tovy Photography photographs families, newborns and expecting parents in Winnetka, IL, in natural light at the lakefront, at the Skokie Lagoons, or at home.",
-      "I am based in Skokie, about twenty minutes from Winnetka, and sessions here carry no travel fee.",
+      "I am based in Skokie, about twenty minutes from Winnetka.",
     ],
     content: [
       "Winnetka has two very different looks, and both are wonderful. The lakefront at Tower Road Beach and Elder Lane Beach gives you bluffs, water and big sky. The Skokie Lagoons and Crow Island Woods on the west side of the village give you still water, tall trees and quiet trails.",
@@ -647,7 +647,7 @@ export const locationPages: Record<string, LocationPage> = {
     ],
     proof: [proofWilmetteKeay, proofSkokieNewborn, proofSkokieLibrary],
     nearby: ["wilmette", "northbrook", "highland-park", "glenview"],
-    driveNote: "About twenty minutes from Skokie. No travel fee.",
+    driveNote: "About twenty minutes from Skokie.",
   },
 
   "highland-park": {
@@ -683,7 +683,7 @@ export const locationPages: Record<string, LocationPage> = {
       },
       {
         title: "The drive from Skokie is long enough to matter.",
-        body: "Highland Park is past my 10-mile no-fee radius, so a $50 travel fee applies. I mention it up front because I would rather you know before you book.",
+        body: "Highland Park is more than 10 miles from Skokie, so a $50 travel fee applies. I mention it up front because I would rather you know before you book.",
       },
       {
         title: "Golden hour has to end by sunset in the parks.",
@@ -743,7 +743,7 @@ export const locationPages: Record<string, LocationPage> = {
     heroLabel: "West Rogers Park Hero Photo",
     intro: [
       "Tovy Photography is a family, newborn and milestone photographer serving West Rogers Park and West Ridge on Chicago's far north side, in natural light at your home or at neighborhood parks.",
-      "West Rogers Park borders Skokie and Lincolnwood, so I am usually less than ten minutes away and there is no travel fee.",
+      "West Rogers Park borders Skokie and Lincolnwood, so I am usually less than ten minutes away.",
     ],
     content: [
       "West Rogers Park is right next door to Skokie, and in-home sessions are the heart of it. Two-flats, courtyard buildings, bungalows and condos all photograph beautifully when you work with the window light. Staying home means the baby naps on schedule, the toddler has their toys, and the photos look like your real life.",
@@ -780,7 +780,7 @@ export const locationPages: Record<string, LocationPage> = {
     ],
     proof: [proofWestRogersPark, proofSkokieNewborn, proofDowntownNewborn],
     nearby: ["skokie", "lincolnwood", "evanston"],
-    driveNote: "Borders Skokie and Lincolnwood. No travel fee.",
+    driveNote: "Borders Skokie and Lincolnwood.",
   },
 };
 
