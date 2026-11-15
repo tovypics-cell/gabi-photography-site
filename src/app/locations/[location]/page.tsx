@@ -92,6 +92,8 @@ export default async function LocationPage({ params }: Props) {
     { name: data.name, url },
   ]);
   const serviceList = Object.values(services);
+  // "an Evanston session", not "a Evanston session".
+  const aTown = `${/^[aeiou]/i.test(data.name) ? "an" : "a"} ${data.name}`;
 
   return (
     <>
@@ -150,12 +152,24 @@ export default async function LocationPage({ params }: Props) {
               <p key={i}>{paragraph}</p>
             ))}
           </div>
+          {data.sections?.map((section) => (
+            <div key={section.heading} className="mt-12">
+              <h2 className="font-[family-name:var(--font-cormorant)] text-2xl md:text-3xl mb-4 text-charcoal">
+                {section.heading}
+              </h2>
+              <div className="space-y-6 text-charcoal-light leading-relaxed">
+                {section.paragraphs.map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
+              </div>
+            </div>
+          ))}
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
               href="/contact"
               className="inline-block bg-charcoal px-8 py-3 text-sm font-medium tracking-wider uppercase text-white transition-colors hover:bg-sage-dark"
             >
-              Book a {data.name} Session
+              Book {aTown} Session
             </Link>
             <Link
               href="/sessions"
@@ -240,7 +254,7 @@ export default async function LocationPage({ params }: Props) {
                   {svc.shortName}
                 </h3>
                 <p className="text-sm text-charcoal-light leading-relaxed">
-                  {svc.cardBlurb.replace("{town}", data.name)}
+                  {svc.cardBlurb.replace("a {town}", aTown).replace("{town}", data.name)}
                 </p>
               </Link>
             ))}
