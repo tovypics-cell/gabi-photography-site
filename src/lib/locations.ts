@@ -17,6 +17,9 @@ export interface LocationPage {
   heroLabel: string;
   intro: string[]; // two citable sentences: who, what, where
   content: string[]; // body paragraphs
+  // Optional H2 subsections shown after `content`, e.g. "Newborn photos in Evanston".
+  // They give the newborn and maternity searches in a town a heading of their own.
+  sections?: { heading: string; paragraphs: string[] }[];
   landmarks: string[];
   why: { title: string; body: string }[]; // what makes sessions here work
   faqs: Faq[];
@@ -154,7 +157,7 @@ export const locationPages: Record<string, LocationPage> = {
 
   evanston: {
     slug: "evanston",
-    updated: "2026-11-09",
+    updated: "2026-11-15",
     name: "Evanston",
     title: "Evanston Family, Newborn and Maternity Photographer",
     description:
@@ -171,8 +174,20 @@ export const locationPages: Record<string, LocationPage> = {
       "Beyond the lakefront, Evanston's beautiful parks and green spaces provide lush, natural settings for family sessions. The Shakespeare Garden at Northwestern University is a hidden gem for intimate portraits, while the sprawling grounds of Centennial Park offer room for playful, active family sessions. During fall, the Maple Avenue corridor transforms into a canopy of warm golds and reds, perfect for cozy autumn family photos.",
       "I serve families throughout Evanston's diverse neighborhoods, from the bustling downtown area near Davis Street to the quiet, tree-lined blocks of South Evanston, and the stately homes along Sheridan Road. Each neighborhood has its own character, and I love incorporating these authentic backdrops into your family's story.",
       "For a family session in summer, when the city keeps photo shoots off the beach, Ladd Arboretum is where I would start. It runs along the canal on McCormick Boulevard with trees, open grass and the International Friendship Garden, and there is room for toddlers to wander. The Merrick Rose Garden, at Oak Avenue and Lake Street near downtown, is smaller and blooms from May into October, which suits a short mini session.",
-      "Newborn sessions in Evanston happen at home. We stay in whichever room has the softest daylight, the baby eats, sleeps and wakes on their own schedule, and I photograph the family around them as the morning unfolds. Nothing gets set up and nothing needs styling. A condo near downtown, an older apartment in South Evanston or a house a few blocks from the lake all work, because one good window is enough.",
-      "For maternity photos in Evanston, the gardens are my first suggestion. The Shakespeare Garden's hedges and the roses at Merrick give soft, sheltered light from late spring into fall, and a long dress moves beautifully on the garden paths. In spring and fall, Lighthouse Beach adds the lake and a wide open sky. A maternity session at home, in the nursery you are getting ready, is always an option too.",
+    ],
+    sections: [
+      {
+        heading: "Newborn photos in Evanston",
+        paragraphs: [
+          "Newborn sessions in Evanston happen at home. We stay in whichever room has the softest daylight, the baby eats, sleeps and wakes on their own schedule, and I photograph the family around them as the morning unfolds. Nothing gets set up and nothing needs styling. A condo near downtown, an older apartment in South Evanston or a house a few blocks from the lake all work, because one good window is enough.",
+        ],
+      },
+      {
+        heading: "Maternity photos in Evanston",
+        paragraphs: [
+          "For maternity photos in Evanston, the gardens are my first suggestion. The Shakespeare Garden's hedges and the roses at Merrick give soft, sheltered light from late spring into fall, and a long dress moves beautifully on the garden paths. In spring and fall, Lighthouse Beach adds the lake and a wide open sky. A maternity session at home, in the nursery you are getting ready, is always an option too.",
+        ],
+      },
     ],
     landmarks: [
       "Lighthouse Beach",

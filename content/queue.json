@@ -333,7 +333,7 @@
         "url": "/locations/evanston"
       },
       "sourceDraft": null,
-      "notes": "Search Console 2026-09-29 to 10-27: the homepage is about #11 for 'family photographer evanston' and this page only #35; 'baby photographer evanston' and 'maternity photographer evanston' also show impressions. No gallery was shot in Evanston; the nearest real ones are the Skokie galleries and Keay Nature Center in Wilmette. Follow 'Rewriting a town page' in the writer prompt. Weekly review 2026-11-01: the Skokie-located rank tracker had 'family photographer evanston' at #20 on 10-30 and outside the top 40 on 11-01, and Search Console still sends the Evanston family and maternity queries to the homepage (http homepage #11 family, #6 maternity) instead of this page. Make this page the clear answer for Evanston family, newborn and maternity searches, and add the one inbound link from the Skokie page or the family sessions page. AI answers 2026-11-04 (OpenSEO tracker, 'newborn photographer in Evanston IL'): only Gemini named Tovy; ChatGPT, Perplexity and AI Overviews named Erin Drewitz, Kristin Milito, Nicole Jones and Pam Lagger, and cited single-town pages such as agatabrannonphotography.com/evanston-newborn-photographer/ and pamlaggerphotography.com/newborn. Those pages open by saying who they photograph in Evanston, in-home or studio, and what a session includes. Give this page a two-sentence citable summary that answers 'newborn photographer in Evanston' the same way with Gabi's real facts (in-home newborn sessions, distance from Skokie, link to /sessions for prices). Never name or compare other photographers on the page.",
+      "notes": "Search Console 2026-09-29 to 10-27: the homepage is about #11 for 'family photographer evanston' and this page only #35; 'baby photographer evanston' and 'maternity photographer evanston' also show impressions. No gallery was shot in Evanston; the nearest real ones are the Skokie galleries and Keay Nature Center in Wilmette. Follow 'Rewriting a town page' in the writer prompt. Weekly review 2026-11-01: the Skokie-located rank tracker had 'family photographer evanston' at #20 on 10-30 and outside the top 40 on 11-01, and Search Console still sends the Evanston family and maternity queries to the homepage (http homepage #11 family, #6 maternity) instead of this page. Make this page the clear answer for Evanston family, newborn and maternity searches, and add the one inbound link from the Skokie page or the family sessions page. AI answers 2026-11-04 (OpenSEO tracker, 'newborn photographer in Evanston IL'): only Gemini named Tovy; ChatGPT, Perplexity and AI Overviews named Erin Drewitz, Kristin Milito, Nicole Jones and Pam Lagger, and cited single-town pages such as agatabrannonphotography.com/evanston-newborn-photographer/ and pamlaggerphotography.com/newborn. Those pages open by saying who they photograph in Evanston, in-home or studio, and what a session includes. Give this page a two-sentence citable summary that answers 'newborn photographer in Evanston' the same way with Gabi's real facts (in-home newborn sessions, distance from Skokie, link to /sessions for prices). Never name or compare other photographers on the page. 2026-11-15: after PR #58 the newborn and maternity paragraphs were moved word for word under 'Newborn photos in Evanston' and 'Maternity photos in Evanston' H2s (new optional `sections` field), and the button now reads 'Book an Evanston Session'. Gabi has no Evanston gallery yet; when her Evanston maternity session is added to gallery-data.ts, put it first in this page's proof.",
       "addedAt": "2026-10-30",
       "publishedAt": "2026-11-09"
     },
@@ -383,6 +383,20 @@
       }
     },
     {
+      "slug": "rewrite-homepage",
+      "type": "rewrite",
+      "status": "queued",
+      "phase": 4,
+      "primaryKeyword": "photographer skokie",
+      "target": {
+        "file": "src/app/page.tsx",
+        "url": "/"
+      },
+      "sourceDraft": null,
+      "notes": "From the 2026-11-15 weekly review. Search Console 28 days to 11-12: the homepage had 194 impressions at 11.7 plus 240 on the old http URL at 8.3, and 19 clicks counting http, the most on the site. Queries: 'photographer skokie' 10.6, 'family photographer skokie' 5.5, 'newborn photographer skokie' 3.8. ADDITIVE ONLY, because this page earns the most clicks: keep the title, the hero slideshow, the eyebrow 'Skokie Family & Newborn Photographer', the H1, every existing section in its current order, every sentence Gabi wrote and every existing FAQ. Add two things near the top of the Intro section, under its first H2: (1) a two-sentence citable answer that says Tovy Photography is a family, newborn and maternity photographer based in Skokie, IL, with in-home and natural light sessions across Skokie, Evanston, Lincolnwood, Wilmette and the North Shore, and that sessions start at site.pricing.mini; (2) one short line linking to /testimonials for client reviews. Do not state a review count or a star rating (the Google count changes and is not in site.ts). Add 'Who is a good family photographer in Skokie?' as a homepage FAQ only if no existing FAQ already answers it. No travel-fee wording beyond Gabi's exact sentence. npm run check:pricing and check:headings must pass.",
+      "addedAt": "2026-11-15"
+    },
+    {
       "slug": "what-is-an-upsherin",
       "type": "guide",
       "primaryKeyword": "upsherin",
@@ -407,6 +421,20 @@
       "sourceDraft": null,
       "notes": "Google had not discovered this URL as of 2026-10-30 (URL Inspection: unknown to Google). Search Console 2026-09-29 to 10-27: the homepage is about #3.7 for 'newborn photographer wilmette' (11 impressions). Wilmette has a real session: the Keay Nature Center family gallery. Lead the proof with it; 'I photographed' is allowed for it. Gillson Park is queued as its own guide, so mention it in a sentence, not a section. Follow 'Rewriting a town page' in the writer prompt. AI answers 2026-11-04 (OpenSEO tracker): for 'newborn photographer in Winnetka or Wilmette IL' only Gemini named Tovy and AI answers cited joannasopelphotography.com/wilmette-newborn-photographer/ and kristinmilitophotography.com/wilmette-photographer/ three times each; for 'family photographer in Wilmette IL' Gemini named Tovy and tovyphotography.com/locations/wilmette was cited once. The cited pages are single-town pages whose title and first sentence say 'Wilmette newborn photographer'. Make the H1 subtitle and the citable summary answer 'newborn photographer in Wilmette' directly with the Keay Nature Center session as proof. Never name or compare other photographers on the page.",
       "addedAt": "2026-10-30"
+    },
+    {
+      "slug": "rewrite-gallery-categories",
+      "type": "rewrite",
+      "status": "queued",
+      "phase": 4,
+      "primaryKeyword": "newborn photos skokie",
+      "target": {
+        "file": "src/app/gallery/[category]/page.tsx",
+        "url": "/gallery/newborn"
+      },
+      "sourceDraft": null,
+      "notes": "From the 2026-11-15 weekly review. Search Console 28 days to 11-12: /gallery/family 43 impressions at 5.2, /gallery/newborn and /gallery/milestone 22 each at 7.0, all with 0 clicks, so the problem is the search snippet, not the rank. Edit only the family, newborn and milestone entries of the category map in this file (leave event alone). For each: rewrite title (60 characters or fewer, brand added by the layout) and description (120 to 155 characters) so the snippet says what the gallery shows, where (Skokie, the North Shore, in-home or outdoor) and that sessions start at site.pricing.mini; the family intro already names towns (PR #49), so leave its intro as is. For newborn and milestone, keep Gabi's intro sentences word for word and append one plain sentence naming where the sessions in that gallery were actually photographed, taken from gallery-data.ts and the entry's own 'about' text (newborn: in-home in Skokie and downtown Chicago; milestone: at home, a family celebration, the Garfield Park Conservatory). Keep h1, about, faqs and serviceHref. Never name a town a gallery was not shot in. In the summary, list the old and new title and description for all three.",
+      "addedAt": "2026-11-15"
     },
     {
       "slug": "babys-first-year-photo-plan",
@@ -452,8 +480,22 @@
         "url": "/locations/northbrook"
       },
       "sourceDraft": null,
-      "notes": "Search Console 2026-09-29 to 10-27: the homepage is about #8 for 'newborn photographer northbrook' and this page about #20. No gallery was shot in Northbrook; the nearest real ones are in Skokie and Wilmette. Follow 'Rewriting a town page' in the writer prompt.",
+      "notes": "Search Console 2026-09-29 to 10-27: the homepage is about #8 for 'newborn photographer northbrook' and this page about #20. No gallery was shot in Northbrook; the nearest real ones are in Skokie and Wilmette. Follow 'Rewriting a town page' in the writer prompt. 2026-11-15 weekly review: Northbrook was the fourth most visited page on Vercel (8 visitors in 7 days) with no Search Console clicks; 'family photographer northbrook' sits at about 16 on this page. The page already out-writes the local pack winner on text, so the gap is proof and newborn coverage: lead 'proof' with the closest real session to Northbrook (none is shot in Northbrook or Glenview; Wilmette's Keay Nature Center family is the nearest), label it by where it was shot, and give newborn and maternity their own `sections` headings ('Newborn photos in Northbrook', 'Maternity photos in Northbrook'). Do not reuse Evanston's proof order.",
       "addedAt": "2026-10-30"
+    },
+    {
+      "slug": "rewrite-mini-sessions",
+      "type": "rewrite",
+      "status": "hold",
+      "phase": 4,
+      "primaryKeyword": "mini sessions skokie",
+      "target": {
+        "file": "src/lib/services.ts",
+        "url": "/sessions/mini-sessions"
+      },
+      "sourceDraft": null,
+      "notes": "HOLD until Gabi gives real winter and spring mini dates and locations; then set status to queued. From the 2026-11-15 weekly review: 58 impressions at 7.9 and 14 clicks in 28 days to 11-12 (24% CTR, the best on the site), so keep the title, H1, all 5 FAQs and every existing sentence. Add only: her real upcoming mini dates and locations (exactly as she gives them, never invented), and one FAQ 'When are your next mini sessions?' answered from those dates. Edit only the 'mini-sessions' entry.",
+      "addedAt": "2026-11-15"
     },
     {
       "slug": "bat-mitzvah-photoshoot-guide",
@@ -811,5 +853,5 @@
       "phase": 5
     }
   ],
-  "note": "Publish order for the content loop, sequenced by content/seo-roadmap.md. Every item is reachable from sessions Gabi has actually photographed. Types: guide, cost, service, location write a new page; rewrite improves an existing page in place. The loop runs Monday and Thursday: Mondays take the first queued rewrite, Thursdays the first queued new page (either day falls back to queue order). Items with status hold are never picked. 2026-10-30: the 12 town pages were queued for rewrites (rewrite-location-*), national how-to guides moved to the end, and tier-2 towns put on hold."
+  "note": "Publish order for the content loop, sequenced by content/seo-roadmap.md. Every item is reachable from sessions Gabi has actually photographed. Types: guide, cost, service, location write a new page; rewrite improves an existing page in place. The loop runs Monday and Thursday: Mondays take the first queued rewrite, Thursdays the first queued new page (either day falls back to queue order). Items with status hold are never picked. 2026-10-30: the 12 town pages were queued for rewrites (rewrite-location-*), national how-to guides moved to the end, and tier-2 towns put on hold. 2026-11-15: rewrite-homepage and rewrite-gallery-categories queued from the weekly review; rewrite-mini-sessions held for Gabi's real mini dates."
 }
