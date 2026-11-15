@@ -331,7 +331,7 @@ fi
 # Travel fees are Gabi's call (rule set 2026-11-13): new copy may never promise that a town,
 # distance or session has no travel fee or that travel is included.
 if git diff "$BASE...HEAD" -U0 -- src | grep '^+' | grep -v '^+++' \
-  | grep -qiE 'no travel fee|never a travel fee|without a travel fee|no-fee radius|free travel|travel (fee )?is (free|included|waived)|include[sd]? travel|miles (of [a-z ]+ )?(are|is) included|travel fee (applies|is charged|will apply)'; then
+  | grep -qiE 'no travel fee|never a travel fee|without a travel fee|no-fee radius|free travel|travel (fee )?is (free|included|waived)|include[sd]? travel|miles (of [a-z ]+ )?(are|is) included|travel fee (applies|is charged|will apply)|within [0-9]+ miles|[0-9]+[- ]mile radius'; then
   die "new content makes a travel-fee claim (brand rule: travel fees are Gabi's call; only her one sentence is allowed). Fix on $BRANCH, then open the PR by hand."
 fi
 

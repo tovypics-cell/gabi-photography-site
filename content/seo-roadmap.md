@@ -6,7 +6,7 @@ Written 2026-09-29 from OpenSEO keyword metrics and live search results; trimmed
 
 Every page is built from sessions Gabi has already photographed and the questions her clients already ask. Nothing is written for a market she is not in. Weddings, senior portraits, sweet 16, quinceañera, gender reveal, twins and Fresh 48 were considered and left off: the demand exists, but she has no proof and it is not her business. If she ever photographs one and wants that work, it goes back on the roadmap then, not before.
 
-What she does: family, newborn, maternity, milestones and birthdays, mini sessions, engagement and proposal, Bar and Bat Mitzvah and the Jewish life-cycle celebrations around them. Where: Skokie and a 10-mile radius across the North Shore. Who books her: North Shore parents, many from the Skokie Jewish community, from pregnancy through the first years and on to the mitzvah.
+What she does: family, newborn, maternity, milestones and birthdays, mini sessions, engagement and proposal, Bar and Bat Mitzvah and the Jewish life-cycle celebrations around them. Where: Skokie and the nearby North Shore towns (travel fees are Gabi's call per booking; never state a radius). Who books her: North Shore parents, many from the Skokie Jewish community, from pregnancy through the first years and on to the mitzvah.
 
 ## Where things stand (2026-11-05)
 

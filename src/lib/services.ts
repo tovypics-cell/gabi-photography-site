@@ -718,7 +718,7 @@ export const services: Record<string, ServicePage> = {
     includes: {
       heading: "What you get",
       items: [
-        { label: "30-minute session", text: "at one location within 10 miles of Skokie" },
+        { label: "30-minute session", text: "at one location" },
         { label: "10+ edited digital images", text: "in a private online gallery" },
         { label: "Full print rights", text: "for cards, prints and sharing" },
         { label: "Location suggestions", text: "I will recommend a spot that fits the season and your family" },
