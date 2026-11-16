@@ -316,7 +316,7 @@
       "type": "service",
       "status": "in_review",
       "branch": "content/christmas-mini-sessions",
-      "pr": null,
+      "pr": 67,
       "updatedAt": "2026-11-15",
       "phase": 5,
       "primaryKeyword": "christmas mini sessions",
