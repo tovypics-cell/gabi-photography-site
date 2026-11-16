@@ -314,7 +314,7 @@
     {
       "slug": "christmas-mini-sessions",
       "type": "service",
-      "status": "in_review",
+      "status": "published",
       "branch": "content/christmas-mini-sessions",
       "pr": 67,
       "updatedAt": "2026-11-15",
@@ -323,7 +323,8 @@
       "sourceDraft": null,
       "notes": "Confirmed by Omer 2026-11-15: Gabi offers maternity, Christmas and holiday, and cake smash sessions. Time-sensitive: publish before December. US monthly searches (OpenSEO, 2026-11-15): christmas mini sessions near me 1,000, holiday mini sessions near me 320, christmas family photos 9,900 (the existing guide /blog/christmas-holiday-family-photos targets that one; do not compete with it, link it). Live Google results near Skokie: 10 of the top 10 are individual photographers' pages. There are no announced dates, place or special price, so do not invent any: no Santa, set, event date, location day or holiday discount. The offer is real and simple: book the 30-minute Mini Session (or a longer package) for Christmas and holiday photos, at your home with the tree and lights or at a park, on a date that works for the family. Prices only from site.pricing / the packages list. Turnaround is two to three weeks, so tell families who want photos for holiday cards to book at least three weeks before their print deadline. Mention Hanukkah family photos in one short section and link /blog/hanukkah-family-photoshoot. Title: Christmas Mini Sessions in Skokie and the North Shore (or close, under 60 characters). Open with a two-sentence answer to 'Christmas mini sessions near me'. FAQs: what a Christmas mini session includes, at home or outdoors, when to book for cards, what to wear (link the outfits guide), price. Link /sessions/mini-sessions and add a link to this page from the Christmas guide and the mini sessions page. Travel: only Gabi's exact sentence. Never name or compare other photographers.",
       "searchVolume": 1000,
-      "addedAt": "2026-11-15"
+      "addedAt": "2026-11-15",
+      "publishedAt": "2026-11-16"
     },
     {
       "slug": "rewrite-maternity-photography",
