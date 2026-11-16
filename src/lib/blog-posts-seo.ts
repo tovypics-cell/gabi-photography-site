@@ -639,7 +639,7 @@ export const seoBlogPosts: BlogPost[] = [
 
 <h3>Is a mini session enough for a Christmas card?</h3>
 
-<p>For an immediate family, yes. Thirty minutes and 10+ edited images gives you a card photo and a few extras to frame. You can read how <a href="/sessions/mini-sessions">mini sessions</a> work. For a new baby, a shy toddler who needs time to warm up, or a big family gathering, the Classic or Full session is the better fit. The full breakdown is on the <a href="/sessions/family-photography">family photography page</a>. If your family lights the menorah too, here is how I plan a <a href="/blog/hanukkah-family-photoshoot">Hanukkah photoshoot</a>.</p>
+<p>For an immediate family, yes. Thirty minutes and 10+ edited images gives you a card photo and a few extras to frame. You can read how <a href="/sessions/mini-sessions">mini sessions</a> work, and how I plan <a href="/sessions/christmas-mini-sessions">Christmas mini sessions</a> at home by the tree or at a park. For a new baby, a shy toddler who needs time to warm up, or a big family gathering, the Classic or Full session is the better fit. The full breakdown is on the <a href="/sessions/family-photography">family photography page</a>. If your family lights the menorah too, here is how I plan a <a href="/blog/hanukkah-family-photoshoot">Hanukkah photoshoot</a>.</p>
 
 <h2>Let's plan your Christmas family photos</h2>
 

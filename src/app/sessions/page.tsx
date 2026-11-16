@@ -400,6 +400,7 @@ export default function SessionsPage() {
                 { href: "/sessions/maternity-photography", label: "Maternity Sessions" },
                 { href: "/sessions/milestone-photography", label: "Milestone Sessions" },
                 { href: "/sessions/mini-sessions", label: "Mini Sessions" },
+                { href: "/sessions/christmas-mini-sessions", label: "Christmas Mini Sessions" },
                 { href: "/sessions/birthday-party-photography", label: "Birthday Parties" },
                 { href: "/sessions/first-birthday-photography", label: "First Birthdays" },
                 { href: "/sessions/bar-mitzvah-photography", label: "Bar and Bat Mitzvahs" },
