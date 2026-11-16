@@ -6,7 +6,7 @@
 # to main. Publishing is a human merging the PR.
 #
 # Usage:
-#   scripts/weekly-page.sh              normal weekly run (launchd, Mondays 9:00)
+#   scripts/weekly-page.sh              normal run (launchd, Mon, Wed and Thu 8:00)
 #   scripts/weekly-page.sh --dry-run    full run, but the queue item stays "queued"
 #                                       and the PR is a draft on a --dry-run- branch
 #   scripts/weekly-page.sh --base BR    start from branch BR instead of main
@@ -14,8 +14,11 @@
 #                                       item and build main. Writes nothing, opens no PR.
 #
 # Mondays take the first queued rewrite (improve a page that already exists), Thursdays the
-# first queued new page. Either day falls back to queue order when nothing of that kind is
-# available. Other days use plain queue order. TOVY_PREFER=rewrite|new|none overrides.
+# first queued new page. Wednesdays (since 2026-11-15) take the next item in queue order that
+# is not a town page (no rewrite-location-* and no new location), so the queue's priority order
+# moves faster while look-alike town pages stay at about one a week. Each day falls back to
+# queue order when nothing of its kind is available. Other days use plain queue order.
+# TOVY_PREFER=rewrite|new|priority|none overrides.
 #
 # Runs from its own clone (~/.tovy-loop/site since 2026-10-25) that no Claude session uses,
 # so other work never leaves it on the wrong branch or with stray files.
@@ -221,6 +224,7 @@ skip_all="$(printf '%s\n%s\n%s\n' "$existing_branches" "$blocked_slugs" "$(echo 
 case "${TOVY_PREFER:-$(date +%u)}" in
   rewrite|1) PREFER="rewrite" ;;
   new|4)     PREFER="new" ;;
+  priority|3) PREFER="priority" ;;
   *)         PREFER="none" ;;
 esac
 item="$(jq -c --arg skip "$skip_all" --arg prefer "$PREFER" '
@@ -228,6 +232,7 @@ item="$(jq -c --arg skip "$skip_all" --arg prefer "$PREFER" '
   | [.items[] | select(.status == "queued") | select((.slug as $x | $s | index($x)) == null)] as $q
   | (if $prefer == "rewrite" then [$q[] | select(.type == "rewrite")]
      elif $prefer == "new" then [$q[] | select(.type != "rewrite")]
+     elif $prefer == "priority" then [$q[] | select((.slug | startswith("rewrite-location-")) | not) | select(.type != "location")]
      else [] end) as $p
   | ($p[0] // $q[0]) // empty' "$QUEUE")"
 log "today's preference: $PREFER"
