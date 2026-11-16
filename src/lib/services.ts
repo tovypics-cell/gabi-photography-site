@@ -796,6 +796,7 @@ export const services: Record<string, ServicePage> = {
     related: [
       { label: "Family Photography", href: "/sessions/family-photography" },
       { label: "Best Family Photo Locations in Skokie", href: "/blog/best-family-photo-locations-skokie-north-shore" },
+      { label: "Christmas Mini Sessions", href: "/sessions/christmas-mini-sessions" },
       { label: "Planning Christmas Family Photos", href: "/blog/christmas-holiday-family-photos" },
       { label: "Planning a Hanukkah Photoshoot", href: "/blog/hanukkah-family-photoshoot" },
       { label: "Sessions and Pricing", href: "/sessions" },
@@ -1591,6 +1592,152 @@ export const services: Record<string, ServicePage> = {
       button: "Plan the Session",
     },
     serviceType: "Milestone Photography",
+  },
+
+  "christmas-mini-sessions": {
+    slug: "christmas-mini-sessions",
+    shortName: "Christmas Mini Sessions",
+    title: "Christmas Mini Sessions in Skokie and the North Shore",
+    description:
+      "Christmas mini sessions in Skokie, Evanston, Wilmette and Chicago's North Shore: 30 minutes at home by the tree or at a park, 10+ edited images, $300.",
+    eyebrow: "Skokie and Chicago North Shore",
+    h1: "Christmas Mini Sessions",
+    tagline: "Thirty minutes by your tree or at a park nearby, and a photo for this year's card.",
+    heroImage: "/photos/family-bed-portrait.jpg",
+    heroAlt: "Parents with a newborn and two young daughters in soft sweaters smiling together on a bed at home",
+    featureImage: {
+      src: "/photos/west-rogers-park-9-month-family/18.jpg",
+      alt: "Mom kissing her smiling baby's cheek while dad laughs and holds him in a knit sweater at home",
+      width: 1415,
+      height: 2048,
+    },
+    cardBlurb: "A 30-minute Christmas or holiday session at home in {town} by the tree, or at a park nearby. Timed for holiday cards.",
+    intro: [
+      {
+        heading: "Where can I book Christmas mini sessions near me?",
+        paragraphs: [
+          "I offer Christmas mini sessions for families in Skokie, Evanston, Wilmette, Lincolnwood and across Chicago's North Shore: 30 minutes at your home by the tree or at a park near you, with 10+ edited images for $300. We pick a date that works for your family, so there is no set mini day to squeeze into.",
+          "A Christmas mini session is my regular Mini Session, planned around the holidays. It is the same natural light and gentle direction I bring to every family session, just shorter, and timed so your gallery arrives before your holiday cards need to go out. If you want more time or more images, the Classic and Full sessions work for Christmas photos too.",
+        ],
+      },
+      {
+        heading: "Should we do Christmas photos at home or outdoors?",
+        paragraphs: [
+          "At home is the coziest choice for most families. We turn the tree lights on, turn the overhead lights off, and work with daylight from your brightest window, so faces stay soft and natural while the tree glows behind you. The kids can be in socks, nobody is cold, and the room does not need to be spotless. I need one bright window and a little clear space near the tree.",
+          "If you would rather be outside, a park near your home in November or early December gives you bare branches, warm dry grass and soft, low light. Outdoor minis in winter stay short and simple, so little ones stay happy, and we can move the date if the weather turns.",
+        ],
+      },
+      {
+        heading: "When should I book Christmas mini sessions for holiday cards?",
+        paragraphs: [
+          "Book at least three weeks before your card print deadline. Galleries are delivered within 2 to 3 weeks, and you will want a few days to choose a favorite and design the card. If you have a firm deadline, tell me when you book and I will plan the session date around it.",
+          "For more on timing, setups and ideas for the whole season, my guide to planning Christmas family photos is linked at the bottom of this page.",
+        ],
+      },
+      {
+        heading: "Do you do Hanukkah family photos too?",
+        paragraphs: [
+          "Yes. A holiday mini works just as well around the menorah as around a tree, and some families do both. My guide to planning a Hanukkah photoshoot, linked below, covers candlelight, timing and what to wear.",
+        ],
+      },
+    ],
+    includes: {
+      heading: "What a Christmas mini session includes",
+      items: [
+        { label: "30-minute session", text: "at your home by the tree or at a park near you" },
+        { label: "10+ edited digital images", text: "in a private online gallery" },
+        { label: "Full print rights", text: "for holiday cards, prints and gifts for grandparents" },
+        { label: "A date that works for you", text: "we pick it together, no set mini day" },
+        { label: "Gallery in 2 to 3 weeks", text: "planned around your card deadline" },
+      ],
+    },
+    why: {
+      heading: "What makes Christmas mini sessions work",
+      items: [
+        {
+          title: "Get the card photo first.",
+          body: "We start with one frame where everyone looks at the camera. Once the card is covered, everyone can relax, and the rest of the session is cuddles, tickles and real moments.",
+        },
+        {
+          title: "Tree lights on, overhead lights off.",
+          body: "Daylight from a window keeps skin tones true, and the tree turns into a warm glow behind you instead of a bright spot.",
+        },
+        {
+          title: "Coordinate, do not match.",
+          body: "Two or three colors like cream, forest green, burgundy and navy, in soft knits, look like the holidays without a single reindeer. Matching pajamas are fun for the last few frames.",
+        },
+        {
+          title: "Thirty minutes suits an immediate family.",
+          body: "For grandparents and cousins, a new baby, or a toddler who needs time to warm up, the Classic or Full session gives everyone room. I will tell you honestly which one fits.",
+        },
+      ],
+    },
+    pricing: {
+      heading: "How much is a Christmas mini session?",
+      text: `A Christmas mini session is $300 for 30 minutes at one location with 10+ edited images. For a bigger family or a slower pace, the Classic is $425 for 60 minutes and 25+ images, and the Full is $550 for 90 minutes and 40+ images. ${pricingNote}`,
+    },
+    faqs: [
+      {
+        question: "What is included in a Christmas mini session?",
+        answer:
+          "A Christmas mini session is 30 minutes at one location, at your home by the tree or at a park near you, with 10+ edited digital images in a private online gallery and full print rights. We pick the date together.",
+      },
+      {
+        question: "How much are Christmas mini sessions?",
+        answer:
+          "My Christmas mini sessions are $300 for 30 minutes and 10+ edited images. If you want more time, the Classic is $425 for 60 minutes and 25+ images, and the Full is $550 for 90 minutes and 40+ images. A $50 travel fee may apply. If you're curious, just ask!",
+      },
+      {
+        question: "Can we do Christmas mini session photos at home?",
+        answer:
+          "Yes, and it is my favorite setup for the holidays. We turn the tree lights on and the overhead lights off and work by your brightest window, so the tree glows softly behind you.",
+      },
+      {
+        question: "When should I book Christmas photos for holiday cards?",
+        answer:
+          "Book at least three weeks before your card print deadline, because galleries are delivered within 2 to 3 weeks. If your deadline is firm, tell me when you book and I will plan the date around it.",
+      },
+      {
+        question: "What should we wear for Christmas mini session photos?",
+        answer:
+          "Pick two or three colors like cream, forest green, burgundy and navy, and let everyone wear them in different pieces. Soft knits photograph beautifully, and big logos and novelty prints are best left for another day.",
+      },
+      {
+        question: "Is a mini session long enough for Christmas photos?",
+        answer:
+          "For an immediate family, yes. Thirty minutes gives you a card photo and a few extras to frame, while extended family, a new baby or a shy toddler usually do better with a 60 or 90-minute session.",
+      },
+    ],
+    proof: [
+      {
+        title: "In-home family session in West Rogers Park",
+        href: "/gallery/family/west-rogers-park-9-month-family-session",
+        blurb: "Not a holiday session, but the same idea at home: window light, the couch and a lot of laughing.",
+      },
+      {
+        title: "Outdoor family session at the Skokie Public Library",
+        href: "/gallery/family/glickman-family-skokie-library",
+        blurb: "Short, relaxed and full of movement, close to home in Skokie.",
+      },
+      {
+        title: "Family session at Keay Nature Center in Wilmette",
+        href: "/gallery/family/keay-nature-center-wilmette-family-session",
+        blurb: "Wooded paths and soft light at a North Shore park.",
+      },
+    ],
+    related: [
+      { label: "Mini Sessions", href: "/sessions/mini-sessions" },
+      { label: "Planning Christmas Family Photos", href: "/blog/christmas-holiday-family-photos" },
+      { label: "What to Wear for Family Photos", href: "/blog/what-to-wear-family-photo-session" },
+      { label: "Planning a Hanukkah Photoshoot", href: "/blog/hanukkah-family-photoshoot" },
+      { label: "Sessions and Pricing", href: "/sessions" },
+    ],
+    cta: {
+      heading: "Want photos for this year's card?",
+      text: "Tell me when your cards need to go out and whether you are picturing the tree at home or a walk in the park. I will suggest a date and a package.",
+      button: "Plan a Christmas Mini",
+    },
+    serviceType: "Family Photography",
   },
 };
 
