@@ -20,6 +20,7 @@ export interface ServicePage {
   why: { heading: string; items: { title: string; body: string }[] };
   pricing: { heading: string; text: string };
   faqs: Faq[];
+  faqHeading?: string; // optional FAQ section heading; defaults to "Common questions about <h1>"
   proof: ProofItem[];
   related: { label: string; href: string }[];
   cta: { heading: string; text: string; button: string };
@@ -312,11 +313,11 @@ export const services: Record<string, ServicePage> = {
   "maternity-photography": {
     slug: "maternity-photography",
     shortName: "Maternity Sessions",
-    title: "Skokie Maternity Photographer, North Shore",
+    title: "Maternity Photographer for Chicago and the North Shore",
     description:
-      "Natural light maternity photography in Skokie, Evanston, Wilmette and Chicago's North Shore. In-home or outdoor, partner and kids welcome. From $300.",
-    eyebrow: "Skokie and Chicago North Shore",
-    h1: "Maternity Photography",
+      "Maternity and pregnancy photographer for Chicago and the North Shore. Natural light sessions at home or outdoors, partner and kids welcome. From $300.",
+    eyebrow: "Chicago, Skokie and the North Shore",
+    h1: "Maternity Photographer for Chicago and the North Shore",
     tagline: "The waiting, the wonder, and the two of you before you become three.",
     heroImage: "/photos/family-bed-portrait.jpg",
     heroAlt: "Parents with their newborn and two young children on a bed during a relaxed in-home session",
@@ -329,11 +330,25 @@ export const services: Record<string, ServicePage> = {
     cardBlurb: "Relaxed maternity photos at home or outdoors around {town}, with your partner and kids if you like.",
     intro: [
       {
+        heading: "Looking for a maternity photographer in Chicago?",
+        paragraphs: [
+          "I am Gabi Amrami of Tovy Photography, a maternity photographer for Chicago and the North Shore based in Skokie, and I offer relaxed, natural light pregnancy sessions at your home or outdoors, with your partner and kids welcome. Sessions run from $300 for 30 minutes and 10+ edited images to $550 for 90 minutes and 40+ images, delivered in a private online gallery with full print rights.",
+          "I have photographed maternity sessions in River North, Skokie and Evanston. Wherever you live in the city or on the North Shore, we will choose the setting together, and if you would like newborn photos that match, you can plan both sessions with me at once.",
+        ],
+      },
+      {
         heading: "What a maternity session feels like",
         paragraphs: [
           "A maternity session with me is not a studio production. It is an hour of slowing down. We walk, we sit, your partner rests a hand on your belly, your toddler climbs into your lap, and I photograph the way you already are with each other.",
           "I photograph maternity sessions outdoors at golden hour in parks around Skokie, Evanston, Wilmette and the North Shore, and at home for parents who want something quieter and more personal. Both work beautifully. The choice usually comes down to how you feel and what you want to remember.",
           "These photos become the first chapter of your baby's story. Many families pair a maternity session with a newborn session a few months later so the two galleries belong together.",
+        ],
+      },
+      {
+        heading: "Where can we take pregnancy photos in Chicago and the North Shore?",
+        paragraphs: [
+          "Pregnancy photos can be taken at your home, in a park near you, or in a garden, and I come to you in Chicago and across the North Shore. At home, we work with daylight from your brightest window, you stay comfortable, and the nursery can be part of the story. It works in every season.",
+          "Outdoors, we can meet at a park close to your home or along the lakefront in the last hour before sunset, when the light is soft and warm. Some parks and gardens have their own rules for professional photography, so we will check the spot you love before the session.",
         ],
       },
       {
@@ -411,7 +426,18 @@ export const services: Record<string, ServicePage> = {
         answer:
           "Throughout Skokie, Evanston, Wilmette, Lincolnwood, Glenview, Northbrook and the North Shore, outdoors or in your home.",
       },
+      {
+        question: "Do you photograph pregnancy and maternity sessions in Chicago?",
+        answer:
+          "Yes. I am based in Skokie and offer maternity sessions in Chicago and across the North Shore, at your home or outdoors in natural light. Sessions run from $300 to $550 depending on the package.",
+      },
+      {
+        question: "How do I find a maternity photographer near me?",
+        answer:
+          "Look for a photographer who comes to you, so the session happens at your home or a park you already love. If you live in Chicago or on the North Shore, tell me your neighborhood or town and your due date, and I will suggest a setting and a time of day.",
+      },
     ],
+    faqHeading: "Common questions about maternity and pregnancy photos in Chicago",
     proof: [
       {
         title: "In-home newborn session in Skokie",
@@ -431,6 +457,8 @@ export const services: Record<string, ServicePage> = {
     ],
     related: [
       { label: "Maternity Photos: When to Book and What to Wear", href: "/blog/maternity-photos-when-to-book-what-to-wear" },
+      { label: "Maternity Photoshoot Cost in Chicago", href: "/blog/maternity-photoshoot-cost-chicago" },
+      { label: "Maternity and Newborn Photography", href: "/sessions/maternity-and-newborn-photography" },
       { label: "Newborn Photography", href: "/sessions/newborn-photography" },
       { label: "Sessions and Pricing", href: "/sessions" },
     ],

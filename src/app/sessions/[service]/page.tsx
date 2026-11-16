@@ -267,7 +267,7 @@ export default async function ServicePage({ params }: Props) {
       <section className="bg-white px-6 py-16 md:py-20 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <h2 className="font-[family-name:var(--font-cormorant)] text-3xl md:text-4xl mb-10 text-charcoal">
-            Common questions about {data.h1.toLowerCase()}
+            {data.faqHeading ?? `Common questions about ${data.h1.toLowerCase()}`}
           </h2>
           <div className="space-y-8">
             {data.faqs.map((f, i) => (
