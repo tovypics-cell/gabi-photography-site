@@ -86,13 +86,15 @@ Her strongest proof and the least competition. Spring mitzvahs are booked in win
 | Page | Type | Target |
 |---|---|---|
 | /sessions/family-celebration-photography | service | event photographer near me 1,600; party photographer 320 |
-| Rewrite /sessions/engagement-photography | rewrite | engagement photographer near me 1,600; add an engagement party section |
+| Rewrite /sessions/engagement-photography | rewrite | engagement photos chicago 390; engagement photographer chicago 260; add an engagement party section (moved up to about 12-28) |
+| Rewrite /sessions/proposal-photography | rewrite | proposal photographer chicago 320; chicago proposal photographer 320 (about 12-14; Search Console already shows it at 47 to 64 for these) |
 | Remaining guides from the plan: siblings, what to wear (maternity, newborn), preparation, locations | guide | see content/seo-plan.md |
 
 ## Phase 4: Always on
 
 - **Town page rewrites** (`rewrite-location-*`, one per Monday). Each opens with a two-sentence answer to "<service> photographer in <town>": who Gabi photographs there, in-home or outdoors, the distance from Skokie, and a link to /sessions for prices. Then town-specific family, newborn and maternity sections, the town's own FAQs and the nearest real gallery. Write for that town: on 11-02, 37 to 49% of each town page's text appeared word for word on 7 or more other town pages (Highland Park was 27% after its rewrite); aim for under 25%. Never name or compare other photographers. Any town page still without Search Console impressions in February gets reviewed for folding into a North Shore page.
 - **The pricing page is the cost answer.** `rewrite-sessions-pricing` gives /sessions a two-sentence summary, a price table and two price FAQs, all from the packages list. The blog cost guides keep the outside price ranges.
+- **Chicago (added 2026-11-15).** Chicago is the biggest market next to Skokie and had no page. A new `/locations/chicago` page (about 11-19) targets family photographer chicago 480, family photos chicago 480, chicago family photographer 390 and the Chicago newborn searches (about 730 combined), written about the North Side next to Skokie, with the West Rogers Park and Garfield Park Conservatory sessions as proof. The proposal and engagement rewrites aim at Chicago searches too. The largest Chicago group, maternity (chicago maternity photographer 1,000, maternity photographer chicago 720, maternity photos chicago 590, maternity photoshoot chicago 590), waits on Gabi's River North maternity photos.
 - **Skokie searches stay with the homepage.** No rewrite retitles a page to compete with the homepage for "newborn photographer skokie" or "family photographer skokie".
 - **Gallery stories.** Each gallery page gets 150 to 250 words in Gabi's words: where, who, and what the session was like. They are the proof pages parents and AI engines look for, and they are thin today (103 to 131 words). The loop does not write these; they need Gabi.
 - **Rewrites:** every page older than six months gets a pass with fresh internal links and new galleries.
@@ -113,6 +115,18 @@ Her strongest proof and the least competition. Spring mitzvahs are booked in win
 - **Facts must agree everywhere,** because AI engines repeat contradictions. Open: the newborn page says sessions run 1.5 to 2 hours while quoting the 30-minute mini price. Prices hold (Phase 0).
 - **Entity links:** `sameAs` lists only Instagram and the Maps listing. Each listing joins it as it goes live.
 - **Already right, keep:** llms.txt built from site data, every AI crawler allowed, answer-first copy with FAQ markup, published prices, IndexNow on every publish.
+
+## Choosing topics by search volume (added 2026-11-15)
+
+- Every open queue item carries `searchVolume`: US monthly Google searches for its primary keyword, from OpenSEO, checked 2026-11-15. `null` means the tool has no number.
+- New items need one of: 100 or more searches a month for a term that fits her work and her real galleries (Chicago terms count), or real Search Console impressions for the page already.
+- Exceptions, on purpose:
+  - Town pages. Volume tools report 0 to 10 for most towns, yet town pages earned 16 of the 75 clicks from 10-05 to 11-14. Search Console is the truth for towns.
+  - Phase 2 Bar and Bat Mitzvah items. Low volume (10 to 390), but strong proof, buyer intent, and ChatGPT already names Tovy first for this.
+- "Near me" terms (newborn photography near me 12,100, maternity photographer near me 9,900, family photographers near me 8,100) are decided by the Maps pack and the Business Profile, not by a page. Pages support them; Phase 0 wins them.
+- National idea and how-to guides (family photo outfits 12,100, family photoshoot ideas 1,600, newborn photoshoot ideas 1,300) are big but rank 70 to 100 in Search Console and do not convert, so they stay at the end of the queue unless they use real galleries.
+- Items under about 50 searches a month that are neither towns nor Phase 2 move to the end of the queue (done 2026-11-15 for the Riverwalk, Lincoln Park Conservatory and Botanic Garden guides).
+- The weekly review refreshes these numbers on the first Sunday of each month and recommends new items.
 
 ## How the loop enforces this
 

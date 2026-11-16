@@ -275,7 +275,8 @@
       "pr": null,
       "phase": 0,
       "gate": "maternity",
-      "notes": "Waits for Gabi's maternity gallery in gallery-data.ts. Build the page around that real session: where and when it was shot, what the session felt like. Also target 'maternity photographer near me' and 'maternity photoshoot' in the summary, one H3 and one FAQ. Link the gallery, /sessions/maternity-and-newborn-photography, /blog/maternity-photoshoot-cost-chicago and /blog/maternity-photos-when-to-book-what-to-wear. Keep every existing FAQ."
+      "notes": "Waits for Gabi's maternity gallery in gallery-data.ts. Build the page around that real session: where and when it was shot, what the session felt like. Also target 'maternity photographer near me' and 'maternity photoshoot' in the summary, one H3 and one FAQ. Link the gallery, /sessions/maternity-and-newborn-photography, /blog/maternity-photoshoot-cost-chicago and /blog/maternity-photos-when-to-book-what-to-wear. Keep every existing FAQ.",
+      "searchVolume": 720
     },
     {
       "slug": "maternity-photoshoot-ideas",
@@ -286,7 +287,8 @@
       "pr": null,
       "phase": 0,
       "gate": "maternity",
-      "notes": "Waits for the maternity gallery. Ideas drawn from Gabi's real maternity session first (use its photos), then general ideas framed as suggestions, not claims. Answer-first opener, H3 per idea, faqs array. Link the maternity page and the gallery."
+      "notes": "Waits for the maternity gallery. Ideas drawn from Gabi's real maternity session first (use its photos), then general ideas framed as suggestions, not claims. Answer-first opener, H3 per idea, faqs array. Link the maternity page and the gallery.",
+      "searchVolume": 12100
     },
     {
       "slug": "rewrite-location-highland-park",
@@ -352,7 +354,8 @@
       "keep": [
         "The tiny details you'll want to remember forever."
       ],
-      "addedAt": "2026-11-01"
+      "addedAt": "2026-11-01",
+      "searchVolume": 6600
     },
     {
       "slug": "rewrite-sessions-pricing",
@@ -366,7 +369,8 @@
       },
       "sourceDraft": null,
       "notes": "From the OpenSEO AI tracker 2026-11-04: no AI engine named or cited Tovy for 'how much do family photos cost in Chicago', and only Gemini cited her for newborn and maternity cost. The pages AI cites for these questions are photographers' own pricing pages (abigailjoycephotography.com/prices/family-photo-prices/, thekidographer.com/pricing, jennygrimm.com/pricing, marleneclaytonphoto.com/pricing, taylorlynnstudios.com/pricing) and Thumbtack's Chicago cost page, not blog cost guides. This page is her pricing page already. Make it the citable answer: under the H1 add a two-sentence summary that states what a family session and a newborn session cost and what each includes, using only the packages list on this page (site.pricing mirrors it); add a compact price table if the page does not already have one; add two FAQs, 'How much do family photos cost with Tovy Photography?' and 'How much does newborn photography cost?', each answered from the packages list, with a link to the matching cost guide for outside ranges. Keep the title 'Sessions and Pricing in Skokie', the URL, every package, the 'Prices current as of' line and all existing copy. npm run check:pricing must pass.",
-      "addedAt": "2026-11-04"
+      "addedAt": "2026-11-04",
+      "searchVolume": 140
     },
     {
       "slug": "rewrite-bar-mitzvah-photography",
@@ -380,7 +384,8 @@
       "target": {
         "url": "/sessions/bar-mitzvah-photography",
         "file": "src/lib/services.ts"
-      }
+      },
+      "searchVolume": 390
     },
     {
       "slug": "rewrite-homepage",
@@ -394,6 +399,22 @@
       },
       "sourceDraft": null,
       "notes": "From the 2026-11-15 weekly review. Search Console 28 days to 11-12: the homepage had 194 impressions at 11.7 plus 240 on the old http URL at 8.3, and 19 clicks counting http, the most on the site. Queries: 'photographer skokie' 10.6, 'family photographer skokie' 5.5, 'newborn photographer skokie' 3.8. ADDITIVE ONLY, because this page earns the most clicks: keep the title, the hero slideshow, the eyebrow 'Skokie Family & Newborn Photographer', the H1, every existing section in its current order, every sentence Gabi wrote and every existing FAQ. Add two things near the top of the Intro section, under its first H2: (1) a two-sentence citable answer that says Tovy Photography is a family, newborn and maternity photographer based in Skokie, IL, with in-home and natural light sessions across Skokie, Evanston, Lincolnwood, Wilmette and the North Shore, and that sessions start at site.pricing.mini; (2) one short line linking to /testimonials for client reviews. Do not state a review count or a star rating (the Google count changes and is not in site.ts). Add 'Who is a good family photographer in Skokie?' as a homepage FAQ only if no existing FAQ already answers it. No travel-fee wording beyond Gabi's exact sentence. npm run check:pricing and check:headings must pass.",
+      "addedAt": "2026-11-15",
+      "searchVolume": null
+    },
+    {
+      "slug": "rewrite-proposal-photography",
+      "type": "rewrite",
+      "status": "queued",
+      "phase": 3,
+      "primaryKeyword": "proposal photographer chicago",
+      "target": {
+        "file": "src/lib/services.ts",
+        "url": "/sessions/proposal-photography"
+      },
+      "sourceDraft": null,
+      "notes": "Added 2026-11-15 from search volume. US monthly searches (OpenSEO): proposal photographer chicago 320, chicago proposal photographer 320, proposal spots chicago 320, best places to propose in chicago 170. Search Console (3 months) already shows this page for about 55 impressions on 'chicago proposal photographer', 'proposal photographer chicago' and 'chicago surprise proposal photographer/photography' at positions 47 to 64, with 0 clicks, so Google ties it to Chicago but ranks it low. gallery-data.ts has no proposal gallery: never say Gabi has photographed a proposal. Write in the future tense: how a hidden-photographer proposal works, timing and light, how to signal, what happens right after, and Chicago and North Shore spots described factually. The Garfield Park Conservatory engagement session is real ('I photographed' allowed for that engagement session only). Add an H2 that answers 'Where to propose in Chicago' and FAQs on cost (from the packages list), hiding, and weather. Keep the title 'Chicago Proposal Photographer, North Shore', the URL and the package. Never name or compare other photographers.",
+      "searchVolume": 320,
       "addedAt": "2026-11-15"
     },
     {
@@ -406,7 +427,8 @@
       "pr": 59,
       "updatedAt": "2026-11-12",
       "phase": 1,
-      "notes": "Answer-first: what an upsherin is, when it happens (third birthday), what happens (first haircut, peyos, sweets, blessings), how it is photographed. Proof gallery: /gallery/milestone/shilo-3rd-birthday-upshirin. Use the site's spelling 'upsherin' in slug and H1 and mention the 'upshirin' spelling once. This is a 1,000/mo term with zero difficulty."
+      "notes": "Answer-first: what an upsherin is, when it happens (third birthday), what happens (first haircut, peyos, sweets, blessings), how it is photographed. Proof gallery: /gallery/milestone/shilo-3rd-birthday-upshirin. Use the site's spelling 'upsherin' in slug and H1 and mention the 'upshirin' spelling once. This is a 1,000/mo term with zero difficulty.",
+      "searchVolume": 1000
     },
     {
       "slug": "rewrite-location-wilmette",
@@ -420,7 +442,23 @@
       },
       "sourceDraft": null,
       "notes": "Google had not discovered this URL as of 2026-10-30 (URL Inspection: unknown to Google). Search Console 2026-09-29 to 10-27: the homepage is about #3.7 for 'newborn photographer wilmette' (11 impressions). Wilmette has a real session: the Keay Nature Center family gallery. Lead the proof with it; 'I photographed' is allowed for it. Gillson Park is queued as its own guide, so mention it in a sentence, not a section. Follow 'Rewriting a town page' in the writer prompt. AI answers 2026-11-04 (OpenSEO tracker): for 'newborn photographer in Winnetka or Wilmette IL' only Gemini named Tovy and AI answers cited joannasopelphotography.com/wilmette-newborn-photographer/ and kristinmilitophotography.com/wilmette-photographer/ three times each; for 'family photographer in Wilmette IL' Gemini named Tovy and tovyphotography.com/locations/wilmette was cited once. The cited pages are single-town pages whose title and first sentence say 'Wilmette newborn photographer'. Make the H1 subtitle and the citable summary answer 'newborn photographer in Wilmette' directly with the Keay Nature Center session as proof. Never name or compare other photographers on the page.",
-      "addedAt": "2026-10-30"
+      "addedAt": "2026-10-30",
+      "searchVolume": null
+    },
+    {
+      "slug": "rewrite-engagement-photography",
+      "type": "rewrite",
+      "primaryKeyword": "engagement photos chicago",
+      "sourceDraft": null,
+      "status": "queued",
+      "pr": null,
+      "phase": 3,
+      "notes": "Add an engagement party section (literal H3 'Do you photograph engagement parties?') and an anniversary mention, plus 'near me' phrasing in the summary. Keep the page's own FAQs. File is a static page. Retargeted 2026-11-15 to Chicago: US monthly searches (OpenSEO) engagement photos chicago 390, engagement photographer chicago 260; 'engagement photographer near me' (3,600) is decided by the Maps pack, not this page. The title already says 'Chicago North Shore Engagement Photographer': keep it. The Garfield Park Conservatory engagement session is real Chicago proof ('I photographed' allowed); lead the Chicago section with it and link the Garfield Park guide. Never name or compare other photographers.",
+      "target": {
+        "url": "/sessions/engagement-photography",
+        "file": "src/app/sessions/engagement-photography/page.tsx"
+      },
+      "searchVolume": 390
     },
     {
       "slug": "rewrite-gallery-categories",
@@ -434,6 +472,18 @@
       },
       "sourceDraft": null,
       "notes": "From the 2026-11-15 weekly review. Search Console 28 days to 11-12: /gallery/family 43 impressions at 5.2, /gallery/newborn and /gallery/milestone 22 each at 7.0, all with 0 clicks, so the problem is the search snippet, not the rank. Edit only the family, newborn and milestone entries of the category map in this file (leave event alone). For each: rewrite title (60 characters or fewer, brand added by the layout) and description (120 to 155 characters) so the snippet says what the gallery shows, where (Skokie, the North Shore, in-home or outdoor) and that sessions start at site.pricing.mini; the family intro already names towns (PR #49), so leave its intro as is. For newborn and milestone, keep Gabi's intro sentences word for word and append one plain sentence naming where the sessions in that gallery were actually photographed, taken from gallery-data.ts and the entry's own 'about' text (newborn: in-home in Skokie and downtown Chicago; milestone: at home, a family celebration, the Garfield Park Conservatory). Keep h1, about, faqs and serviceHref. Never name a town a gallery was not shot in. In the summary, list the old and new title and description for all three.",
+      "addedAt": "2026-11-15",
+      "searchVolume": null
+    },
+    {
+      "slug": "chicago",
+      "type": "location",
+      "status": "queued",
+      "phase": 4,
+      "primaryKeyword": "family photographer chicago",
+      "sourceDraft": null,
+      "notes": "Added 2026-11-15: Chicago is the biggest market next to Skokie and no page targets it. US monthly searches (OpenSEO): family photographer chicago 480, family photos chicago 480, chicago family photographer 390, chicago newborn photographer 260, newborn photographer chicago 260, newborn photography chicago 210. Search Console shows Chicago searches landing on the homepage and session pages at 34 to 42. Build /locations/chicago about Chicago's North Side, the part of the city next to Skokie: in-home newborn and family sessions first, then maternity, each under its own heading (use the `sections` field: 'Newborn photos in Chicago', 'Maternity photos in Chicago'). Real Chicago galleries in gallery-data.ts: the West Rogers Park nine-month family session and the Garfield Park Conservatory engagement session; 'I photographed' is allowed for those two only. Gabi's River North maternity session is not on the site yet, so do not mention it. Describe North Side neighborhoods and parks factually and in the future tense. West Rogers Park keeps its own page: link to it, and add 'chicago' to its `nearby` list and 'west-rogers-park' to this page's. Title and H1 lead with 'Chicago Family Photographer' and mention newborn; open with a two-sentence answer to 'family photographer in Chicago'. Travel: only Gabi's exact sentence. Never name or compare other photographers.",
+      "searchVolume": 480,
       "addedAt": "2026-11-15"
     },
     {
@@ -444,7 +494,8 @@
       "status": "queued",
       "pr": null,
       "phase": 1,
-      "notes": "Newborn at 5 to 14 days, 3 months, 6 to 9 month sitter, first birthday. Link newborn, milestone, first-birthday and maternity-and-newborn pages. Proof: newborn galleries and the 9-month session."
+      "notes": "Newborn at 5 to 14 days, 3 months, 6 to 9 month sitter, first birthday. Link newborn, milestone, first-birthday and maternity-and-newborn pages. Proof: newborn galleries and the 9-month session.",
+      "searchVolume": 3600
     },
     {
       "slug": "rewrite-location-winnetka",
@@ -458,7 +509,8 @@
       },
       "sourceDraft": null,
       "notes": "Search Console 2026-09-29 to 10-27: the homepage is about #5 for 'newborn photographer winnetka' (7 impressions) and this page #9; 'maternity photographer winnetka' shows too. No gallery was shot in Winnetka; the nearest real one is Keay Nature Center in Wilmette. Follow 'Rewriting a town page' in the writer prompt. AI answers 2026-11-04 (OpenSEO tracker, 'newborn photographer in Winnetka or Wilmette IL'): only Gemini named Tovy; tovyphotography.com/locations/winnetka was cited once, next to bethanyhopephoto.com/winnetka-newborn-photographer/. Answer 'newborn photographer in Winnetka' in the first two sentences (in-home sessions, distance from Skokie, link to /sessions for prices). Never name or compare other photographers on the page.",
-      "addedAt": "2026-10-30"
+      "addedAt": "2026-10-30",
+      "searchVolume": null
     },
     {
       "slug": "bar-mitzvah-photographer-cost",
@@ -467,7 +519,8 @@
       "sourceDraft": null,
       "status": "queued",
       "plan": 20,
-      "phase": 2
+      "phase": 2,
+      "searchVolume": 10
     },
     {
       "slug": "rewrite-location-northbrook",
@@ -481,7 +534,8 @@
       },
       "sourceDraft": null,
       "notes": "Search Console 2026-09-29 to 10-27: the homepage is about #8 for 'newborn photographer northbrook' and this page about #20. No gallery was shot in Northbrook; the nearest real ones are in Skokie and Wilmette. Follow 'Rewriting a town page' in the writer prompt. 2026-11-15 weekly review: Northbrook was the fourth most visited page on Vercel (8 visitors in 7 days) with no Search Console clicks; 'family photographer northbrook' sits at about 16 on this page. The page already out-writes the local pack winner on text, so the gap is proof and newborn coverage: lead 'proof' with the closest real session to Northbrook (none is shot in Northbrook or Glenview; Wilmette's Keay Nature Center family is the nearest), label it by where it was shot, and give newborn and maternity their own `sections` headings ('Newborn photos in Northbrook', 'Maternity photos in Northbrook'). Do not reuse Evanston's proof order.",
-      "addedAt": "2026-10-30"
+      "addedAt": "2026-10-30",
+      "searchVolume": null
     },
     {
       "slug": "rewrite-mini-sessions",
@@ -495,7 +549,8 @@
       },
       "sourceDraft": null,
       "notes": "HOLD until Gabi gives real winter and spring mini dates and locations; then set status to queued. From the 2026-11-15 weekly review: 58 impressions at 7.9 and 14 clicks in 28 days to 11-12 (24% CTR, the best on the site), so keep the title, H1, all 5 FAQs and every existing sentence. Add only: her real upcoming mini dates and locations (exactly as she gives them, never invented), and one FAQ 'When are your next mini sessions?' answered from those dates. Edit only the 'mini-sessions' entry.",
-      "addedAt": "2026-11-15"
+      "addedAt": "2026-11-15",
+      "searchVolume": null
     },
     {
       "slug": "bat-mitzvah-photoshoot-guide",
@@ -505,7 +560,8 @@
       "status": "queued",
       "pr": null,
       "phase": 2,
-      "notes": "Pre-event portrait session for a Bat Mitzvah girl and family: timing, outfits, locations, what to bring. Future tense for Bat Mitzvah specifically; the Bar Mitzvah gallery is the closest proof and may be linked as such."
+      "notes": "Pre-event portrait session for a Bat Mitzvah girl and family: timing, outfits, locations, what to bring. Future tense for Bat Mitzvah specifically; the Bar Mitzvah gallery is the closest proof and may be linked as such.",
+      "searchVolume": 20
     },
     {
       "slug": "rewrite-location-skokie",
@@ -519,7 +575,8 @@
       },
       "sourceDraft": null,
       "notes": "Skokie is home. Search Console 2026-09-29 to 10-27: the homepage is #1 to #3 for 'newborn photographer skokie', 'family photographer skokie' and 'photographer skokie', and /sessions/newborn-photography is titled for the Skokie newborn search. Do not retitle this page to compete with either; make it the page about Skokie places and the real Skokie sessions (Skokie Public Library family, Cooper and Sweet Baby Girl newborns), linking to the homepage and the newborn page. Keep Gabi's legacy sentences word for word. Follow 'Rewriting a town page' in the writer prompt. AI answers 2026-11-04 (OpenSEO tracker): 'family photographer in Skokie IL' named Tovy on ChatGPT and Gemini and cited the homepage and /about; 'best newborn photographer in Skokie IL' named Tovy on Gemini and AI Overviews only, and the most cited page was bethanyhopephoto.com/skokie-newborn-photographer/. Keep the homepage and the newborn page as the Skokie answers (see above); on this page, add one sentence each that links to them with the anchors 'family photographer in Skokie' and 'newborn photographer in Skokie'.",
-      "addedAt": "2026-10-30"
+      "addedAt": "2026-10-30",
+      "searchVolume": null
     },
     {
       "slug": "bar-mitzvah-photo-timeline",
@@ -529,7 +586,8 @@
       "status": "queued",
       "pr": null,
       "phase": 2,
-      "notes": "A photo timeline for the day: tallit, Torah, family groupings, the party. Built from the Stolberg gallery. Answer 'what photos do you take at a bar mitzvah'."
+      "notes": "A photo timeline for the day: tallit, Torah, family groupings, the party. Built from the Stolberg gallery. Answer 'what photos do you take at a bar mitzvah'.",
+      "searchVolume": 170
     },
     {
       "slug": "rewrite-milestone-photography",
@@ -543,7 +601,8 @@
       "target": {
         "url": "/sessions/milestone-photography",
         "file": "src/lib/services.ts"
-      }
+      },
+      "searchVolume": 140
     },
     {
       "slug": "gillson-park-family-photos",
@@ -553,7 +612,8 @@
       "status": "queued",
       "plan": 38,
       "notes": "Include a permit note. Only claim a session there if gallery-data.ts has one.",
-      "phase": 0
+      "phase": 0,
+      "searchVolume": 90
     },
     {
       "slug": "rewrite-location-lincolnwood",
@@ -567,26 +627,8 @@
       },
       "sourceDraft": null,
       "notes": "Google had not discovered this URL as of 2026-10-30. Search Console 2026-09-29 to 10-27: the homepage is #1 and the newborn page #7 for 'newborn photographer lincolnwood'. No gallery was shot in Lincolnwood; it borders Skokie, so the Skokie galleries are the nearest real proof. Keep Gabi's legacy sentences word for word. Follow 'Rewriting a town page' in the writer prompt.",
-      "addedAt": "2026-10-30"
-    },
-    {
-      "slug": "chicago-botanic-garden-photos-permits",
-      "type": "guide",
-      "primaryKeyword": "chicago botanic garden engagement photos",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 39,
-      "notes": "Include the garden's photography permit rules from its official site.",
-      "phase": 0
-    },
-    {
-      "slug": "chicago-riverwalk-engagement-photos",
-      "type": "guide",
-      "primaryKeyword": "chicago riverwalk photoshoot",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 41,
-      "phase": 0
+      "addedAt": "2026-10-30",
+      "searchVolume": null
     },
     {
       "slug": "rewrite-location-glenview",
@@ -600,16 +642,8 @@
       },
       "sourceDraft": null,
       "notes": "Google had not discovered this URL as of 2026-10-30. Search Console 2026-09-29 to 10-27: 'family photographer glenview' (homepage #28 to #41), 'newborn photographer glenview' (homepage about #18) and 'maternity photographer glenview' show impressions. No gallery was shot in Glenview; the nearest real ones are in Skokie and Wilmette. Follow 'Rewriting a town page' in the writer prompt.",
-      "addedAt": "2026-10-30"
-    },
-    {
-      "slug": "lincoln-park-conservatory-engagement-photos",
-      "type": "guide",
-      "primaryKeyword": "lincoln park conservatory engagement photos",
-      "sourceDraft": null,
-      "status": "queued",
-      "plan": 42,
-      "phase": 0
+      "addedAt": "2026-10-30",
+      "searchVolume": null
     },
     {
       "slug": "rewrite-maternity-when-to-book",
@@ -623,7 +657,8 @@
       "status": "queued",
       "pr": null,
       "notes": "Blog post in blog-data.ts. First paragraph answers directly (28 to 34 weeks). Add H3s for 'When to take maternity photos', 'What is the best week for maternity photos', 'What to wear for maternity photos'. Add faqs. Keep Gabi's paragraphs.",
-      "phase": 0
+      "phase": 0,
+      "searchVolume": 1300
     },
     {
       "slug": "best-maternity-photo-locations-north-shore",
@@ -633,7 +668,8 @@
       "status": "queued",
       "plan": 43,
       "notes": "The plan says a draft exists, but it is not on this Mac.",
-      "phase": 0
+      "phase": 0,
+      "searchVolume": null
     },
     {
       "slug": "rewrite-location-niles",
@@ -647,7 +683,8 @@
       },
       "sourceDraft": null,
       "notes": "Google had not discovered this URL as of 2026-10-30, so there is no Search Console data. No gallery was shot in Niles; it borders Skokie, so the Skokie galleries are the nearest real proof. Follow 'Rewriting a town page' in the writer prompt.",
-      "addedAt": "2026-10-30"
+      "addedAt": "2026-10-30",
+      "searchVolume": null
     },
     {
       "slug": "family-celebration-photography",
@@ -657,7 +694,8 @@
       "status": "queued",
       "pr": null,
       "phase": 3,
-      "notes": "Reunions, adult milestone birthdays, baby namings, anniversaries, holiday gatherings. Proof: Bar Mitzvah and upsherin galleries. Quote per event. Do not overlap the mitzvah or birthday pages; link to them."
+      "notes": "Reunions, adult milestone birthdays, baby namings, anniversaries, holiday gatherings. Proof: Bar Mitzvah and upsherin galleries. Quote per event. Do not overlap the mitzvah or birthday pages; link to them.",
+      "searchVolume": 1600
     },
     {
       "slug": "rewrite-best-family-photo-locations",
@@ -671,7 +709,8 @@
       "status": "queued",
       "pr": null,
       "notes": "Blog post. Add an answer-first opener listing the locations in one sentence, an H3 per location phrased as a question where natural, permit notes for forest preserves and the Botanic Garden, and a faqs array. Keep the eight locations and Gabi's descriptions.",
-      "phase": 0
+      "phase": 0,
+      "searchVolume": 210
     },
     {
       "slug": "mothers-day-mini-sessions",
@@ -680,7 +719,8 @@
       "sourceDraft": null,
       "status": "queued",
       "plan": 32,
-      "phase": 5
+      "phase": 5,
+      "searchVolume": 210
     },
     {
       "slug": "rewrite-location-park-ridge",
@@ -694,7 +734,8 @@
       },
       "sourceDraft": null,
       "notes": "Google had not discovered this URL as of 2026-10-30. Search Console 2026-09-29 to 10-27: the homepage is about #24 for 'newborn photographer park ridge'. No gallery was shot in Park Ridge; the nearest real ones are in Skokie. Keep the cost FAQ's travel sentence as written and add no other travel-fee claim. Follow 'Rewriting a town page' in the writer prompt.",
-      "addedAt": "2026-10-30"
+      "addedAt": "2026-10-30",
+      "searchVolume": null
     },
     {
       "slug": "spring-mini-sessions",
@@ -703,21 +744,8 @@
       "sourceDraft": null,
       "status": "queued",
       "plan": 33,
-      "phase": 5
-    },
-    {
-      "slug": "rewrite-engagement-photography",
-      "type": "rewrite",
-      "primaryKeyword": "engagement photographer near me",
-      "sourceDraft": null,
-      "status": "queued",
-      "pr": null,
-      "phase": 3,
-      "notes": "Add an engagement party section (literal H3 'Do you photograph engagement parties?') and an anniversary mention, plus 'near me' phrasing in the summary. Keep the page's own FAQs. File is a static page.",
-      "target": {
-        "url": "/sessions/engagement-photography",
-        "file": "src/app/sessions/engagement-photography/page.tsx"
-      }
+      "phase": 5,
+      "searchVolume": 70
     },
     {
       "slug": "newborn-photos-with-siblings",
@@ -726,7 +754,8 @@
       "sourceDraft": null,
       "status": "queued",
       "plan": 27,
-      "phase": 0
+      "phase": 0,
+      "searchVolume": 590
     },
     {
       "slug": "rewrite-location-morton-grove",
@@ -740,7 +769,8 @@
       },
       "sourceDraft": null,
       "notes": "Search Console 2026-09-29 to 10-27: indexed, 42 impressions at about #6 and 2 clicks. No gallery was shot in Morton Grove; it borders Skokie, so the Skokie galleries are the nearest real proof. Follow 'Rewriting a town page' in the writer prompt.",
-      "addedAt": "2026-10-30"
+      "addedAt": "2026-10-30",
+      "searchVolume": null
     },
     {
       "slug": "what-to-wear-for-maternity-photos",
@@ -750,7 +780,8 @@
       "status": "queued",
       "plan": 28,
       "notes": "The live post maternity-photos-when-to-book-what-to-wear overlaps. Go deeper on outfits and link to it.",
-      "phase": 0
+      "phase": 0,
+      "searchVolume": 390
     },
     {
       "slug": "rewrite-best-time-of-day",
@@ -764,7 +795,8 @@
       "status": "queued",
       "pr": null,
       "notes": "Blog post. First sentence gives the answer (60 to 90 minutes before sunset). H3s for 'What time of day is best for outdoor family photos', 'Is morning or evening better', 'What about winter'. faqs array.",
-      "phase": 0
+      "phase": 0,
+      "searchVolume": 20
     },
     {
       "slug": "what-to-wear-for-newborn-photos",
@@ -773,7 +805,8 @@
       "sourceDraft": null,
       "status": "queued",
       "plan": 29,
-      "phase": 0
+      "phase": 0,
+      "searchVolume": 260
     },
     {
       "slug": "rewrite-location-west-rogers-park",
@@ -787,7 +820,8 @@
       },
       "sourceDraft": null,
       "notes": "West Rogers Park has a real session: the in-home 9-month family gallery. Lead the proof with it; 'I photographed' is allowed for it. Search Console 2026-09-29 to 10-27: 3 impressions at about #40. The upsherin and Bar Mitzvah galleries are relevant proof here too; describe them by where they were actually shot. Follow 'Rewriting a town page' in the writer prompt.",
-      "addedAt": "2026-10-30"
+      "addedAt": "2026-10-30",
+      "searchVolume": null
     },
     {
       "slug": "birth-announcement-photos",
@@ -796,7 +830,8 @@
       "sourceDraft": null,
       "status": "queued",
       "plan": 34,
-      "phase": 0
+      "phase": 0,
+      "searchVolume": 210
     },
     {
       "slug": "rewrite-testimonials",
@@ -810,7 +845,8 @@
       "status": "queued",
       "pr": null,
       "notes": "Add a citable summary under the H1 that says what the reviews are from (family, in-home and event sessions in Skokie and Chicago). Add a short 'How to leave a review' line linking to the Google Business Profile if its link is in site.ts, otherwise to /contact. Keep every testimonial verbatim. Keep the Review schema.",
-      "phase": 0
+      "phase": 0,
+      "searchVolume": null
     },
     {
       "slug": "how-to-prepare-for-family-photos",
@@ -820,7 +856,41 @@
       "status": "queued",
       "plan": 35,
       "notes": "Also answer 'how long does a family photo session take' from site.pricing durations. The plan says a draft exists, but it is not on this Mac.",
-      "phase": 0
+      "phase": 0,
+      "searchVolume": 10
+    },
+    {
+      "slug": "chicago-riverwalk-engagement-photos",
+      "type": "guide",
+      "primaryKeyword": "chicago riverwalk photoshoot",
+      "sourceDraft": null,
+      "status": "queued",
+      "plan": 41,
+      "phase": 0,
+      "notes": "Moved to the end 2026-11-15: about 20 US searches a month, and Chicago location guides rank 80 to 100 in Search Console ('chicago engagement photo locations' 83 to 89).",
+      "searchVolume": 20
+    },
+    {
+      "slug": "lincoln-park-conservatory-engagement-photos",
+      "type": "guide",
+      "primaryKeyword": "lincoln park conservatory engagement photos",
+      "sourceDraft": null,
+      "status": "queued",
+      "plan": 42,
+      "phase": 0,
+      "notes": "Moved to the end 2026-11-15: about 30 US searches a month, and Chicago location guides rank 80 to 100 in Search Console ('chicago engagement photo locations' 83 to 89).",
+      "searchVolume": 30
+    },
+    {
+      "slug": "chicago-botanic-garden-photos-permits",
+      "type": "guide",
+      "primaryKeyword": "chicago botanic garden engagement photos",
+      "sourceDraft": null,
+      "status": "queued",
+      "plan": 39,
+      "notes": "Include the garden's photography permit rules from its official site. Moved to the end 2026-11-15: about 50 US searches a month, and Chicago location guides rank 80 to 100 in Search Console ('chicago engagement photo locations' 83 to 89).",
+      "phase": 0,
+      "searchVolume": 50
     },
     {
       "slug": "deerfield",
@@ -830,7 +900,8 @@
       "status": "hold",
       "plan": 47,
       "notes": "Held 2026-10-30: build no new town pages until the 12 existing ones are rewritten (the rewrite-location-* items) and all 12 show impressions in Search Console. Set status back to queued to release. Plan gate: publish once the first 12 town pages show impressions in Search Console.",
-      "phase": 5
+      "phase": 5,
+      "searchVolume": null
     },
     {
       "slug": "glencoe",
@@ -840,7 +911,8 @@
       "status": "hold",
       "plan": 47,
       "notes": "Held 2026-10-30: build no new town pages until the 12 existing ones are rewritten (the rewrite-location-* items) and all 12 show impressions in Search Console. Set status back to queued to release. Plan gate: publish once the first 12 town pages show impressions in Search Console.",
-      "phase": 5
+      "phase": 5,
+      "searchVolume": null
     },
     {
       "slug": "kenilworth",
@@ -850,8 +922,9 @@
       "status": "hold",
       "plan": 47,
       "notes": "Held 2026-10-30: build no new town pages until the 12 existing ones are rewritten (the rewrite-location-* items) and all 12 show impressions in Search Console. Set status back to queued to release. Plan gate: publish once the first 12 town pages show impressions in Search Console.",
-      "phase": 5
+      "phase": 5,
+      "searchVolume": null
     }
   ],
-  "note": "Publish order for the content loop, sequenced by content/seo-roadmap.md. Every item is reachable from sessions Gabi has actually photographed. Types: guide, cost, service, location write a new page; rewrite improves an existing page in place. The loop runs Monday and Thursday: Mondays take the first queued rewrite, Thursdays the first queued new page (either day falls back to queue order). Items with status hold are never picked. 2026-10-30: the 12 town pages were queued for rewrites (rewrite-location-*), national how-to guides moved to the end, and tier-2 towns put on hold. 2026-11-15: rewrite-homepage and rewrite-gallery-categories queued from the weekly review; rewrite-mini-sessions held for Gabi's real mini dates."
+  "note": "Publish order for the content loop, sequenced by content/seo-roadmap.md. Every item is reachable from sessions Gabi has actually photographed. Types: guide, cost, service, location write a new page; rewrite improves an existing page in place. The loop runs Monday and Thursday: Mondays take the first queued rewrite, Thursdays the first queued new page (either day falls back to queue order). Items with status hold are never picked. 2026-10-30: the 12 town pages were queued for rewrites (rewrite-location-*), national how-to guides moved to the end, and tier-2 towns put on hold. 2026-11-15: rewrite-homepage and rewrite-gallery-categories queued from the weekly review; rewrite-mini-sessions held for Gabi's real mini dates. searchVolume = US monthly Google searches for primaryKeyword from OpenSEO get_keyword_metrics (2026-11-15); null means no data (most town terms report 0 to 10, while Search Console shows real town clicks)."
 }
