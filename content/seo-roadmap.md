@@ -53,7 +53,7 @@ Most of this is off the site and owned by Gabi and Omer. It moves Maps and AI an
 3. **Listings, in this order** (copy ready in `~/tovy-seo/listings-prep-2026-10.md`): Thumbtack, Yelp, Facebook Page, Apple Business Connect, then Bing Places by import once Google is verified. Then the pages AI answers cite: Chicago North Shore Moms' photographer resources, the NAPCP directory, the Skokie Chamber directory, and PartySlate for Bar and Bat Mitzvah. Same name, phone and website everywhere, and no street address. Every live profile URL goes into `sameAs` in `src/lib/site.ts`.
 4. **Bing Webmaster Tools.** Import from Search Console and submit the sitemap. It shows the real Bing index count; Copilot and DuckDuckGo answer from that index.
 5. **Prices hold** at the current packages (`site.pricing`) through at least January. If they change, every page that shows a price gets a new `updated` date and an IndexNow ping.
-6. **Done:** Search Console connected (10-18) with the sitemap submitted (10-30); publishing fully automated since 10-05, rewrites on Mondays and new pages on Thursdays; on-site audit fixes (PR #52).
+6. **Done:** Search Console connected (10-18) with the sitemap submitted (10-30); publishing fully automated since 10-05, rewrites on Mondays, new pages on Thursdays and the next priority item on Wednesdays (since 11-15); on-site audit fixes (PR #52).
 7. Existing queue continues: rewrites of her own pages and the older posts. The two maternity items wait on a maternity gallery (gate `maternity`).
 
 ## Phase 1: Milestones and birthdays (October to early January)
@@ -145,13 +145,26 @@ Competition here means who holds Google's top 10 in a live mobile search (Chicag
 
 Proposal and engagement moved ahead of the pricing rewrite because proposals peak from Thanksgiving to Valentine's Day, and a page needs a few weeks to be crawled and settle before demand arrives.
 
+## How often to publish (checked 2026-11-15)
+
+- Google does not reward or punish how often a site publishes. Its spam policies target what gets published at scale: many low-value or unoriginal pages made mainly to rank ("scaled content abuse"), and near-identical city or region pages that funnel visitors to one place ("doorway abuse"). Neither sets a page count or a frequency.
+- Google's people-first content checklist also warns against publishing lots of content across many topics hoping some ranks, leaning heavily on automation, writing outside your real expertise, and changing dates to look fresh.
+- Google has said that site quality affects how fast and how much it crawls, and that publishing more does not speed up indexing.
+- So the pace is set by quality, not by a calendar: three runs a week (Monday, Wednesday, Thursday) from 2026-11-15, each page built from Gabi's real sessions and her words, checked by the build, and indexed through the weekend Search Console requests.
+- Guardrails that come with the faster pace:
+  - Town and neighborhood pages stay at about one a week and must clear the under-25% shared-text bar.
+  - No page for a service Gabi has no proof for, and nothing outside her work.
+  - A rewritten page is left alone for about 4 weeks.
+  - `updated` dates change only with a real content change.
+  - If the weekly review shows pages piling up as "Discovered, currently not indexed", go back to two runs a week.
+
 ## How the loop enforces this
 
-- `content/queue.json` is ordered by phase. Mondays the runner takes the first queued `rewrite`, Thursdays the first queued new page, skipping items whose branch already exists; either day falls back to queue order. Items with status `hold` are never picked.
+- `content/queue.json` is ordered by priority (intent, competition, volume, timing; see "Choosing topics by search volume"). Mondays the runner takes the first queued `rewrite`, Thursdays the first queued new page, Wednesdays the next item of either kind that is not a town page, skipping items whose branch already exists; each day falls back to queue order. Items with status `hold` are never picked.
 - Items the writer blocks (missing sources, cannibalization) are recorded locally and skipped until a person edits the queue.
 - Items with a `gate` (a pattern tested against gallery titles and descriptions) wait until a matching gallery exists. Today the two maternity items use one.
 - Before writing, the writer reads the stored AI answers for the item's question; queue notes carry what the 11-04 baseline found for each queued town and the pricing page.
-- Rewrites stay interleaved with new pages (Monday and Thursday). National how-to guides (what to wear, preparation, siblings, birth announcements) sit at the end of the queue since 2026-10-30: Pinterest, Reddit and Instagram hold those results, and local and commercial pages convert better.
+- Rewrites stay interleaved with new pages (Monday, Wednesday and Thursday). National how-to guides (what to wear, preparation, siblings, birth announcements) sit at the end of the queue since 2026-10-30: Pinterest, Reddit and Instagram hold those results, and local and commercial pages convert better.
 
 ## Open decisions
 
