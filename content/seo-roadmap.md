@@ -86,8 +86,8 @@ Her strongest proof and the least competition. Spring mitzvahs are booked in win
 | Page | Type | Target |
 |---|---|---|
 | /sessions/family-celebration-photography | service | event photographer near me 1,600; party photographer 320 |
-| Rewrite /sessions/engagement-photography | rewrite | engagement photos chicago 390; engagement photographer chicago 260; add an engagement party section (moved up to about 12-28) |
-| Rewrite /sessions/proposal-photography | rewrite | proposal photographer chicago 320; chicago proposal photographer 320 (about 12-14; Search Console already shows it at 47 to 64 for these) |
+| Rewrite /sessions/engagement-photography | rewrite | engagement photos chicago 390; engagement photographer chicago 260; add an engagement party section (moved up to about 11-30) |
+| Rewrite /sessions/proposal-photography | rewrite | proposal photographer chicago 320; chicago proposal photographer 320 (about 11-23; Search Console already shows it at 47 to 64 for these) |
 | Remaining guides from the plan: siblings, what to wear (maternity, newborn), preparation, locations | guide | see content/seo-plan.md |
 
 ## Phase 4: Always on
@@ -127,6 +127,23 @@ Her strongest proof and the least competition. Spring mitzvahs are booked in win
 - National idea and how-to guides (family photo outfits 12,100, family photoshoot ideas 1,600, newborn photoshoot ideas 1,300) are big but rank 70 to 100 in Search Console and do not convert, so they stay at the end of the queue unless they use real galleries.
 - Items under about 50 searches a month that are neither towns nor Phase 2 move to the end of the queue (done 2026-11-15 for the Riverwalk, Lincoln Park Conservatory and Botanic Garden guides).
 - The weekly review refreshes these numbers on the first Sunday of each month and recommends new items.
+
+### Highest intent, lowest competition (checked 2026-11-15)
+
+Competition here means who holds Google's top 10 in a live mobile search (Chicago or Skokie). Keyword difficulty scores came back 0 for nearly every local term, so they say nothing. A top 10 full of individual photographers' sites is beatable; one full of directories (Yelp, Thumbtack, Expertise, Peerspace) is harder.
+
+| Search | US monthly | Top 10 | Status |
+|---|---|---|---|
+| christmas mini sessions near me; holiday mini sessions near me | 1,000; 320 | 10 of 10 photographers | `holiday-mini-sessions-2026` on hold for Gabi's dates |
+| cake smash photographer near me (and photo, photoshoot, photography near me) | 590 (plus 260 to 390 each) | 9 of 10 photographers | `rewrite-first-birthday-cake-smash` on hold for Gabi's yes |
+| engagement photos chicago | 390 | 9 of 10 photographers | Engagement rewrite, about 11-30 |
+| proposal photographer chicago; chicago proposal photographer | 320; 320 | 8 of 10 photographers | Proposal rewrite, about 11-23 |
+| family photographer chicago; family photos chicago | 480; 480 | 7 of 10 photographers | Chicago page, about 11-19 |
+| newborn photographer chicago | 260 | 6 of 10 photographers | Chicago page newborn section |
+| pregnancy photographer chicago; maternity photographer chicago il; maternity photoshoot chicago | 1,000; 720; 590 | 5 to 6 of 10 photographers | Maternity rewrite, gated on Gabi's photos |
+| birthday photoshoot chicago | 50 | 5 of 10 photographers | Skip for now |
+
+Proposal and engagement moved ahead of the pricing rewrite because proposals peak from Thanksgiving to Valentine's Day, and a page needs a few weeks to be crawled and settle before demand arrives.
 
 ## How the loop enforces this
 

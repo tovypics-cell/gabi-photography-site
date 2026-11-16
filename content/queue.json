@@ -275,7 +275,7 @@
       "pr": null,
       "phase": 0,
       "gate": "maternity",
-      "notes": "Waits for Gabi's maternity gallery in gallery-data.ts. Build the page around that real session: where and when it was shot, what the session felt like. Also target 'maternity photographer near me' and 'maternity photoshoot' in the summary, one H3 and one FAQ. Link the gallery, /sessions/maternity-and-newborn-photography, /blog/maternity-photoshoot-cost-chicago and /blog/maternity-photos-when-to-book-what-to-wear. Keep every existing FAQ.",
+      "notes": "Waits for Gabi's maternity gallery in gallery-data.ts. Build the page around that real session: where and when it was shot, what the session felt like. Also target 'maternity photographer near me' and 'maternity photoshoot' in the summary, one H3 and one FAQ. Link the gallery, /sessions/maternity-and-newborn-photography, /blog/maternity-photoshoot-cost-chicago and /blog/maternity-photos-when-to-book-what-to-wear. Keep every existing FAQ. Search volume 2026-11-15 (US monthly, OpenSEO): pregnancy photographer chicago 1,000, maternity photographer chicago il 720, maternity photoshoot chicago 590, maternity photos chicago 590, pregnancy photos chicago 70. Use 'pregnancy' as well as 'maternity' in the H2s and FAQs. Live results: 4 to 5 of the top 10 are directories (Yelp, Expertise, Peerspace), the rest individual photographers.",
       "searchVolume": 720
     },
     {
@@ -358,6 +358,36 @@
       "searchVolume": 6600
     },
     {
+      "slug": "rewrite-proposal-photography",
+      "type": "rewrite",
+      "status": "queued",
+      "phase": 3,
+      "primaryKeyword": "proposal photographer chicago",
+      "target": {
+        "file": "src/lib/services.ts",
+        "url": "/sessions/proposal-photography"
+      },
+      "sourceDraft": null,
+      "notes": "Added 2026-11-15 from search volume. US monthly searches (OpenSEO): proposal photographer chicago 320, chicago proposal photographer 320, proposal spots chicago 320, best places to propose in chicago 170. Search Console (3 months) already shows this page for about 55 impressions on 'chicago proposal photographer', 'proposal photographer chicago' and 'chicago surprise proposal photographer/photography' at positions 47 to 64, with 0 clicks, so Google ties it to Chicago but ranks it low. gallery-data.ts has no proposal gallery: never say Gabi has photographed a proposal. Write in the future tense: how a hidden-photographer proposal works, timing and light, how to signal, what happens right after, and Chicago and North Shore spots described factually. The Garfield Park Conservatory engagement session is real ('I photographed' allowed for that engagement session only). Add an H2 that answers 'Where to propose in Chicago' and FAQs on cost (from the packages list), hiding, and weather. Keep the title 'Chicago Proposal Photographer, North Shore', the URL and the package. Never name or compare other photographers. Moved up 2026-11-15 to about 11-23: highest buying intent on the list (advertisers pay about $7 a click) and proposals peak from Thanksgiving to Valentine's Day. Live Google results (Chicago, mobile): 8 of the top 10 are individual photographers' sites, so a strong page can compete.",
+      "searchVolume": 320,
+      "addedAt": "2026-11-15"
+    },
+    {
+      "slug": "rewrite-engagement-photography",
+      "type": "rewrite",
+      "primaryKeyword": "engagement photos chicago",
+      "sourceDraft": null,
+      "status": "queued",
+      "pr": null,
+      "phase": 3,
+      "notes": "Add an engagement party section (literal H3 'Do you photograph engagement parties?') and an anniversary mention, plus 'near me' phrasing in the summary. Keep the page's own FAQs. File is a static page. Retargeted 2026-11-15 to Chicago: US monthly searches (OpenSEO) engagement photos chicago 390, engagement photographer chicago 260; 'engagement photographer near me' (3,600) is decided by the Maps pack, not this page. The title already says 'Chicago North Shore Engagement Photographer': keep it. The Garfield Park Conservatory engagement session is real Chicago proof ('I photographed' allowed); lead the Chicago section with it and link the Garfield Park guide. Never name or compare other photographers. Moved up 2026-11-15 to about 11-30: live Google results for 'engagement photos chicago' (Chicago, mobile) show 9 of the top 10 as individual photographers' sites, the least directory-heavy result on the list, and the Garfield Park session is real proof.",
+      "target": {
+        "url": "/sessions/engagement-photography",
+        "file": "src/app/sessions/engagement-photography/page.tsx"
+      },
+      "searchVolume": 390
+    },
+    {
       "slug": "rewrite-sessions-pricing",
       "type": "rewrite",
       "status": "queued",
@@ -403,21 +433,6 @@
       "searchVolume": null
     },
     {
-      "slug": "rewrite-proposal-photography",
-      "type": "rewrite",
-      "status": "queued",
-      "phase": 3,
-      "primaryKeyword": "proposal photographer chicago",
-      "target": {
-        "file": "src/lib/services.ts",
-        "url": "/sessions/proposal-photography"
-      },
-      "sourceDraft": null,
-      "notes": "Added 2026-11-15 from search volume. US monthly searches (OpenSEO): proposal photographer chicago 320, chicago proposal photographer 320, proposal spots chicago 320, best places to propose in chicago 170. Search Console (3 months) already shows this page for about 55 impressions on 'chicago proposal photographer', 'proposal photographer chicago' and 'chicago surprise proposal photographer/photography' at positions 47 to 64, with 0 clicks, so Google ties it to Chicago but ranks it low. gallery-data.ts has no proposal gallery: never say Gabi has photographed a proposal. Write in the future tense: how a hidden-photographer proposal works, timing and light, how to signal, what happens right after, and Chicago and North Shore spots described factually. The Garfield Park Conservatory engagement session is real ('I photographed' allowed for that engagement session only). Add an H2 that answers 'Where to propose in Chicago' and FAQs on cost (from the packages list), hiding, and weather. Keep the title 'Chicago Proposal Photographer, North Shore', the URL and the package. Never name or compare other photographers.",
-      "searchVolume": 320,
-      "addedAt": "2026-11-15"
-    },
-    {
       "slug": "what-is-an-upsherin",
       "type": "guide",
       "primaryKeyword": "upsherin",
@@ -444,21 +459,6 @@
       "notes": "Google had not discovered this URL as of 2026-10-30 (URL Inspection: unknown to Google). Search Console 2026-09-29 to 10-27: the homepage is about #3.7 for 'newborn photographer wilmette' (11 impressions). Wilmette has a real session: the Keay Nature Center family gallery. Lead the proof with it; 'I photographed' is allowed for it. Gillson Park is queued as its own guide, so mention it in a sentence, not a section. Follow 'Rewriting a town page' in the writer prompt. AI answers 2026-11-04 (OpenSEO tracker): for 'newborn photographer in Winnetka or Wilmette IL' only Gemini named Tovy and AI answers cited joannasopelphotography.com/wilmette-newborn-photographer/ and kristinmilitophotography.com/wilmette-photographer/ three times each; for 'family photographer in Wilmette IL' Gemini named Tovy and tovyphotography.com/locations/wilmette was cited once. The cited pages are single-town pages whose title and first sentence say 'Wilmette newborn photographer'. Make the H1 subtitle and the citable summary answer 'newborn photographer in Wilmette' directly with the Keay Nature Center session as proof. Never name or compare other photographers on the page.",
       "addedAt": "2026-10-30",
       "searchVolume": null
-    },
-    {
-      "slug": "rewrite-engagement-photography",
-      "type": "rewrite",
-      "primaryKeyword": "engagement photos chicago",
-      "sourceDraft": null,
-      "status": "queued",
-      "pr": null,
-      "phase": 3,
-      "notes": "Add an engagement party section (literal H3 'Do you photograph engagement parties?') and an anniversary mention, plus 'near me' phrasing in the summary. Keep the page's own FAQs. File is a static page. Retargeted 2026-11-15 to Chicago: US monthly searches (OpenSEO) engagement photos chicago 390, engagement photographer chicago 260; 'engagement photographer near me' (3,600) is decided by the Maps pack, not this page. The title already says 'Chicago North Shore Engagement Photographer': keep it. The Garfield Park Conservatory engagement session is real Chicago proof ('I photographed' allowed); lead the Chicago section with it and link the Garfield Park guide. Never name or compare other photographers.",
-      "target": {
-        "url": "/sessions/engagement-photography",
-        "file": "src/app/sessions/engagement-photography/page.tsx"
-      },
-      "searchVolume": 390
     },
     {
       "slug": "rewrite-gallery-categories",
@@ -536,6 +536,32 @@
       "notes": "Search Console 2026-09-29 to 10-27: the homepage is about #8 for 'newborn photographer northbrook' and this page about #20. No gallery was shot in Northbrook; the nearest real ones are in Skokie and Wilmette. Follow 'Rewriting a town page' in the writer prompt. 2026-11-15 weekly review: Northbrook was the fourth most visited page on Vercel (8 visitors in 7 days) with no Search Console clicks; 'family photographer northbrook' sits at about 16 on this page. The page already out-writes the local pack winner on text, so the gap is proof and newborn coverage: lead 'proof' with the closest real session to Northbrook (none is shot in Northbrook or Glenview; Wilmette's Keay Nature Center family is the nearest), label it by where it was shot, and give newborn and maternity their own `sections` headings ('Newborn photos in Northbrook', 'Maternity photos in Northbrook'). Do not reuse Evanston's proof order.",
       "addedAt": "2026-10-30",
       "searchVolume": null
+    },
+    {
+      "slug": "holiday-mini-sessions-2026",
+      "type": "service",
+      "status": "hold",
+      "phase": 5,
+      "primaryKeyword": "christmas mini sessions near me",
+      "sourceDraft": null,
+      "notes": "Added 2026-11-15, on hold until Gabi confirms she is running holiday mini sessions this year and gives real dates, place, length, images and price. Highest buying intent and lowest competition found: christmas mini sessions near me 1,000, holiday mini sessions near me 320 US monthly searches; live Google results near Skokie show 10 of the top 10 as individual photographers' pages, no directories. /sessions/mini-sessions is already the best-converting page (24% click rate). Build one dated event page (or a dated section on /sessions/mini-sessions) and link it from the Christmas and Hanukkah guides. Only real details from Gabi; if she is not running minis this year, close this item.",
+      "searchVolume": 1000,
+      "addedAt": "2026-11-15"
+    },
+    {
+      "slug": "rewrite-first-birthday-cake-smash",
+      "type": "rewrite",
+      "status": "hold",
+      "phase": 1,
+      "primaryKeyword": "cake smash photographer near me",
+      "sourceDraft": null,
+      "target": {
+        "file": "src/lib/services.ts",
+        "url": "/sessions/first-birthday-photography"
+      },
+      "notes": "Added 2026-11-15, on hold until Gabi says she offers cake smash sessions (the 2026-09-29 roadmap left cake smash off because there was no proof). US monthly searches: cake smash photographer near me 590, cake smash photography near me 390, cake smash photo, photoshoot and photos near me 260 each, cake smash photoshoot 2,400. Live Google results near Skokie: 9 of the top 10 are individual photographers' sites. Search Console already showed the first birthday page at about 4 for 'cake smash photographer north shore'. If she offers it: add a cake smash section and FAQs to this page in the future tense (no cake smash gallery exists), keep the title and URL.",
+      "searchVolume": 590,
+      "addedAt": "2026-11-15"
     },
     {
       "slug": "rewrite-mini-sessions",
