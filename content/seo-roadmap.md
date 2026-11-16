@@ -38,7 +38,7 @@ What she does: family, newborn, maternity, milestones and birthdays, mini sessio
 
 | Vertical | Head terms | Proof today |
 |---|---|---|
-| Family, newborn, maternity | family photographer near me 3,600; newborn photographer near me 6,600; maternity photographer near me 9,900; chicago maternity photographer 1,600; chicago newborn photographer 320 | Strong for family and newborn: five galleries. Maternity: no gallery yet, so the two maternity items wait on Gabi's photos |
+| Family, newborn, maternity | family photographer near me 3,600; newborn photographer near me 6,600; maternity photographer near me 9,900; chicago maternity photographer 1,600; chicago newborn photographer 320 | Strong for family and newborn: five galleries. Maternity: offered (confirmed 2026-11-15) and photographed in River North, Skokie and Evanston, but no gallery on the site yet; the pages go ahead without one |
 | Milestones and birthdays | first birthday photoshoot 1,300; birthday party photographer 480; photographer for birthday party 480; first birthday photographer 140; newborn and family photoshoot 3,600 | Good: 9-month milestone, 3rd birthday and upsherin. Birthday party and first birthday pages live |
 | Bar and Bat Mitzvah, Jewish life cycle | bar mitzvah photographer 390; bat mitzvah photographer 390; bar and bat mitzvah photos 170 each; bat mitzvah photoshoot 170; upsherin 1,000; hanukkah photoshoot 260 | Strong: Bar Mitzvah gallery, upsherin gallery. No competitor in the OpenSEO set targets this community |
 | Engagement, proposal, couples | engagement photographer near me 1,600; engagement photographer chicago 480; proposal photographer chicago 320; engagement party photos 110 | Good: Garfield Park engagement gallery |
@@ -54,7 +54,7 @@ Most of this is off the site and owned by Gabi and Omer. It moves Maps and AI an
 4. **Bing Webmaster Tools.** Import from Search Console and submit the sitemap. It shows the real Bing index count; Copilot and DuckDuckGo answer from that index.
 5. **Prices hold** at the current packages (`site.pricing`) through at least January. If they change, every page that shows a price gets a new `updated` date and an IndexNow ping.
 6. **Done:** Search Console connected (10-18) with the sitemap submitted (10-30); publishing fully automated since 10-05, rewrites on Mondays, new pages on Thursdays and the next priority item on Wednesdays (since 11-15); on-site audit fixes (PR #52).
-7. Existing queue continues: rewrites of her own pages and the older posts. The two maternity items wait on a maternity gallery (gate `maternity`).
+7. Existing queue continues: rewrites of her own pages and the older posts. Maternity, Christmas and cake smash are confirmed offerings (Omer, 2026-11-15), so their pages are queued without waiting on new galleries.
 
 ## Phase 1: Milestones and birthdays (October to early January)
 
@@ -66,6 +66,7 @@ Her newborn clients age into these. Real demand, low difficulty, proof in hand.
 | /sessions/first-birthday-photography | service | first birthday photoshoot 1,300; first birthday photographer 140 | Live 11-05 |
 | /blog/what-is-an-upsherin | guide | upsherin 1,000 (she has the gallery; nobody competes) | About 11-12 |
 | /blog/babys-first-year-photo-plan | guide | newborn and family photoshoot 3,600 | About 11-19 |
+| /sessions/cake-smash-photography | service | cake smash photographer near me 590; cake smash photography near me 390; cake smash photoshoot 2,400 | About 11-25 |
 | Rewrite /sessions/milestone-photography | rewrite | add birthday party and first birthday H3s, link the new pages | About 01-04 |
 
 ## Phase 2: Bar and Bat Mitzvah and Jewish life cycle (November to December)
@@ -94,7 +95,7 @@ Her strongest proof and the least competition. Spring mitzvahs are booked in win
 
 - **Town page rewrites** (`rewrite-location-*`, one per Monday). Each opens with a two-sentence answer to "<service> photographer in <town>": who Gabi photographs there, in-home or outdoors, the distance from Skokie, and a link to /sessions for prices. Then town-specific family, newborn and maternity sections, the town's own FAQs and the nearest real gallery. Write for that town: on 11-02, 37 to 49% of each town page's text appeared word for word on 7 or more other town pages (Highland Park was 27% after its rewrite); aim for under 25%. Never name or compare other photographers. Any town page still without Search Console impressions in February gets reviewed for folding into a North Shore page.
 - **The pricing page is the cost answer.** `rewrite-sessions-pricing` gives /sessions a two-sentence summary, a price table and two price FAQs, all from the packages list. The blog cost guides keep the outside price ranges.
-- **Chicago (added 2026-11-15).** Chicago is the biggest market next to Skokie and had no page. A new `/locations/chicago` page (about 11-19) targets family photographer chicago 480, family photos chicago 480, chicago family photographer 390 and the Chicago newborn searches (about 730 combined), written about the North Side next to Skokie, with the West Rogers Park and Garfield Park Conservatory sessions as proof. The proposal and engagement rewrites aim at Chicago searches too. The largest Chicago group, maternity (chicago maternity photographer 1,000, maternity photographer chicago 720, maternity photos chicago 590, maternity photoshoot chicago 590), waits on Gabi's River North maternity photos.
+- **Chicago (added 2026-11-15).** Chicago is the biggest market next to Skokie and had no page. A new `/locations/chicago` page (about 11-19) targets family photographer chicago 480, family photos chicago 480, chicago family photographer 390 and the Chicago newborn searches (about 730 combined), written about the North Side next to Skokie, with the West Rogers Park and Garfield Park Conservatory sessions as proof. The proposal and engagement rewrites aim at Chicago searches too. The largest Chicago group, maternity (chicago maternity photographer 1,000, maternity photographer chicago 720, maternity photos chicago 590, maternity photoshoot chicago 590), is the maternity rewrite (about 11-16), aimed at Chicago and the North Shore.
 - **Skokie searches stay with the homepage.** No rewrite retitles a page to compete with the homepage for "newborn photographer skokie" or "family photographer skokie".
 - **Gallery stories.** Each gallery page gets 150 to 250 words in Gabi's words: where, who, and what the session was like. They are the proof pages parents and AI engines look for, and they are thin today (103 to 131 words). The loop does not write these; they need Gabi.
 - **Rewrites:** every page older than six months gets a pass with fresh internal links and new galleries.
@@ -103,6 +104,7 @@ Her strongest proof and the least competition. Spring mitzvahs are booked in win
 
 ## Phase 5: Seasonal and tier 2
 
+- Christmas mini sessions page (`/sessions/christmas-mini-sessions`), 2026-11-15: christmas mini sessions near me 1,000, holiday mini sessions near me 320. Refresh it each October; add real dates only when Gabi announces them.
 - Mother's Day and spring mini-session guides go live in late January or February, ahead of spring booking.
 - Fall guide refresh in July; holiday guides refresh in September.
 - Town pages tier 2 (Deerfield, Glencoe, Kenilworth) are on `hold` until the 12 town rewrites are done and all 12 show impressions in Search Console.
@@ -134,13 +136,13 @@ Competition here means who holds Google's top 10 in a live mobile search (Chicag
 
 | Search | US monthly | Top 10 | Status |
 |---|---|---|---|
-| christmas mini sessions near me; holiday mini sessions near me | 1,000; 320 | 10 of 10 photographers | `holiday-mini-sessions-2026` on hold for Gabi's dates |
-| cake smash photographer near me (and photo, photoshoot, photography near me) | 590 (plus 260 to 390 each) | 9 of 10 photographers | `rewrite-first-birthday-cake-smash` on hold for Gabi's yes |
+| christmas mini sessions near me; holiday mini sessions near me | 1,000; 320 | 10 of 10 photographers | New page `christmas-mini-sessions`, published 2026-11-15 with an extra run (no dated event; book the Mini Session for holiday photos) |
+| cake smash photographer near me (and photo, photoshoot, photography near me) | 590 (plus 260 to 390 each) | 9 of 10 photographers | New page `cake-smash-photography`, about 11-25 |
 | engagement photos chicago | 390 | 9 of 10 photographers | Engagement rewrite, about 11-30 |
 | proposal photographer chicago; chicago proposal photographer | 320; 320 | 8 of 10 photographers | Proposal rewrite, about 11-23 |
 | family photographer chicago; family photos chicago | 480; 480 | 7 of 10 photographers | Chicago page, about 11-19 |
 | newborn photographer chicago | 260 | 6 of 10 photographers | Chicago page newborn section |
-| pregnancy photographer chicago; maternity photographer chicago il; maternity photoshoot chicago | 1,000; 720; 590 | 5 to 6 of 10 photographers | Maternity rewrite, gated on Gabi's photos |
+| pregnancy photographer chicago; maternity photographer chicago il; maternity photoshoot chicago | 1,000; 720; 590 | 5 to 6 of 10 photographers | Maternity rewrite, about 11-16 |
 | birthday photoshoot chicago | 50 | 5 of 10 photographers | Skip for now |
 
 Proposal and engagement moved ahead of the pricing rewrite because proposals peak from Thanksgiving to Valentine's Day, and a page needs a few weeks to be crawled and settle before demand arrives.
@@ -162,7 +164,7 @@ Proposal and engagement moved ahead of the pricing rewrite because proposals pea
 
 - `content/queue.json` is ordered by priority (intent, competition, volume, timing; see "Choosing topics by search volume"). Mondays the runner takes the first queued `rewrite`, Thursdays the first queued new page, Wednesdays the next item of either kind that is not a town page, skipping items whose branch already exists; each day falls back to queue order. Items with status `hold` are never picked.
 - Items the writer blocks (missing sources, cannibalization) are recorded locally and skipped until a person edits the queue.
-- Items with a `gate` (a pattern tested against gallery titles and descriptions) wait until a matching gallery exists. Today the two maternity items use one.
+- Items with a `gate` (a pattern tested against gallery titles and descriptions) wait until a matching gallery exists. No item uses one since 2026-11-15.
 - Before writing, the writer reads the stored AI answers for the item's question; queue notes carry what the 11-04 baseline found for each queued town and the pricing page.
 - Rewrites stay interleaved with new pages (Monday, Wednesday and Thursday). National how-to guides (what to wear, preparation, siblings, birth announcements) sit at the end of the queue since 2026-10-30: Pinterest, Reddit and Instagram hold those results, and local and commercial pages convert better.
 
@@ -171,7 +173,8 @@ Proposal and engagement moved ahead of the pricing rewrite because proposals pea
 Gabi:
 - Record the Business Profile verification video (Phase 0, item 1).
 - Send the review requests (Phase 0, item 2).
-- Maternity photos from the River North, Skokie and Evanston sessions. Two queued items wait on them, and the maternity page has no maternity photo in its hero.
+- Maternity photos from the River North, Skokie and Evanston sessions. The maternity pages no longer wait on them, but a real gallery would make the maternity rewrite and the ideas guide much stronger, and the maternity page has no maternity photo in its hero.
+- Christmas and cake smash: any real photos from past sessions, and whether she provides the cake, backdrop or props for cake smash. The pages say nothing about either until she does.
 - Newborn sessions: which package they use and how long they run.
 - Which town the Hoffman newborn gallery was in.
 - OK two lines on live pages: the rain date on the family cost guide, and "I confirm what is required for our date before we book" on the Highland Park page.

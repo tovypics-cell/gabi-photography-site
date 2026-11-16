@@ -40,6 +40,7 @@ Each contact-form submission sends two Web3Forms emails. 1) "New Inquiry from <n
 - **Tagline:** "Seeing the good in your world"
 - **Voice:** Warm, emotional but not cheesy, calm, family-centered, natural, grounded, not salesy
 - **Focus:** Family, newborn, milestone, and event photography
+- **Sessions offered (confirmed by Omer 2026-11-15):** maternity, Christmas and holiday sessions, and cake smash, alongside family, newborn, milestones and birthdays, mini sessions, engagement and proposal, and Bar and Bat Mitzvah. Offering a session type is not the same as having a gallery of it: say she offers it, and say she has photographed it only where gallery-data.ts (or a queue note confirmed by Omer) shows it.
 - **Service area:** Skokie, Evanston, Lincolnwood, Wilmette, Chicago North Shore
 - **Email:** tovypics@gmail.com
 - **Instagram:** @tovyphotography

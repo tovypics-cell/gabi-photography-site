@@ -263,34 +263,6 @@
       "publishedAt": "2026-10-29"
     },
     {
-      "slug": "rewrite-maternity-photography",
-      "type": "rewrite",
-      "primaryKeyword": "maternity photographer chicago",
-      "target": {
-        "url": "/sessions/maternity-photography",
-        "file": "src/lib/services.ts"
-      },
-      "sourceDraft": null,
-      "status": "queued",
-      "pr": null,
-      "phase": 0,
-      "gate": "maternity",
-      "notes": "Waits for Gabi's maternity gallery in gallery-data.ts. Build the page around that real session: where and when it was shot, what the session felt like. Also target 'maternity photographer near me' and 'maternity photoshoot' in the summary, one H3 and one FAQ. Link the gallery, /sessions/maternity-and-newborn-photography, /blog/maternity-photoshoot-cost-chicago and /blog/maternity-photos-when-to-book-what-to-wear. Keep every existing FAQ. Search volume 2026-11-15 (US monthly, OpenSEO): pregnancy photographer chicago 1,000, maternity photographer chicago il 720, maternity photoshoot chicago 590, maternity photos chicago 590, pregnancy photos chicago 70. Use 'pregnancy' as well as 'maternity' in the H2s and FAQs. Live results: 4 to 5 of the top 10 are directories (Yelp, Expertise, Peerspace), the rest individual photographers.",
-      "searchVolume": 720
-    },
-    {
-      "slug": "maternity-photoshoot-ideas",
-      "type": "guide",
-      "primaryKeyword": "maternity photoshoot ideas",
-      "sourceDraft": null,
-      "status": "queued",
-      "pr": null,
-      "phase": 0,
-      "gate": "maternity",
-      "notes": "Waits for the maternity gallery. Ideas drawn from Gabi's real maternity session first (use its photos), then general ideas framed as suggestions, not claims. Answer-first opener, H3 per idea, faqs array. Link the maternity page and the gallery.",
-      "searchVolume": 12100
-    },
-    {
       "slug": "rewrite-location-highland-park",
       "type": "rewrite",
       "status": "published",
@@ -340,22 +312,30 @@
       "publishedAt": "2026-11-09"
     },
     {
-      "slug": "rewrite-newborn-photography-2",
-      "type": "rewrite",
+      "slug": "christmas-mini-sessions",
+      "type": "service",
       "status": "queued",
-      "phase": 4,
-      "primaryKeyword": "newborn photographer near me",
+      "phase": 5,
+      "primaryKeyword": "christmas mini sessions",
+      "sourceDraft": null,
+      "notes": "Confirmed by Omer 2026-11-15: Gabi offers maternity, Christmas and holiday, and cake smash sessions. Time-sensitive: publish before December. US monthly searches (OpenSEO, 2026-11-15): christmas mini sessions near me 1,000, holiday mini sessions near me 320, christmas family photos 9,900 (the existing guide /blog/christmas-holiday-family-photos targets that one; do not compete with it, link it). Live Google results near Skokie: 10 of the top 10 are individual photographers' pages. There are no announced dates, place or special price, so do not invent any: no Santa, set, event date, location day or holiday discount. The offer is real and simple: book the 30-minute Mini Session (or a longer package) for Christmas and holiday photos, at your home with the tree and lights or at a park, on a date that works for the family. Prices only from site.pricing / the packages list. Turnaround is two to three weeks, so tell families who want photos for holiday cards to book at least three weeks before their print deadline. Mention Hanukkah family photos in one short section and link /blog/hanukkah-family-photoshoot. Title: Christmas Mini Sessions in Skokie and the North Shore (or close, under 60 characters). Open with a two-sentence answer to 'Christmas mini sessions near me'. FAQs: what a Christmas mini session includes, at home or outdoors, when to book for cards, what to wear (link the outfits guide), price. Link /sessions/mini-sessions and add a link to this page from the Christmas guide and the mini sessions page. Travel: only Gabi's exact sentence. Never name or compare other photographers.",
+      "searchVolume": 1000,
+      "addedAt": "2026-11-15"
+    },
+    {
+      "slug": "rewrite-maternity-photography",
+      "type": "rewrite",
+      "primaryKeyword": "maternity photographer chicago",
       "target": {
-        "file": "src/app/sessions/newborn-photography/page.tsx",
-        "url": "/sessions/newborn-photography"
+        "url": "/sessions/maternity-photography",
+        "file": "src/lib/services.ts"
       },
       "sourceDraft": null,
-      "notes": "Second pass on the newborn page (first rewrite PR #8, 2026-09-30). Search Console 28 days to 10-29: 52 impressions at 18.4. The Skokie-located rank tracker had 'newborn photographer near me' at #21 on 10-30 (this page) and outside the top 40 on 11-01. Search Console sends 'newborn photographer near me' to the Skokie page (5.75) and homepage, and 'newborn photographer lincolnwood' (7.3) to this page. Add a short section on where Gabi comes to you for in-home newborn sessions: the nearby North Shore towns she serves, Lincolnwood named, with no travel-fee claims of any kind, and one FAQ a nearby parent would ask ('Do you come to my home in Lincolnwood, Evanston or Wilmette?'). Keep every existing FAQ, the hero and the tagline. Do not compete with the homepage for 'newborn photographer skokie' (homepage ranks #3): keep the title as is. AI answers 2026-11-04 (OpenSEO tracker): this page was cited twice for 'best newborn photographer in Skokie IL' (Gemini and AI Overviews named Tovy; ChatGPT and Perplexity did not). For 'in-home newborn photographer on Chicago's North Shore' ChatGPT and Gemini named Tovy. Keep the in-home wording prominent in the first paragraph; the new 'where I come to you' section is what the in-home question asks.",
-      "keep": [
-        "The tiny details you'll want to remember forever."
-      ],
-      "addedAt": "2026-11-01",
-      "searchVolume": 6600
+      "status": "queued",
+      "pr": null,
+      "phase": 0,
+      "notes": "Ungated 2026-11-15. Confirmed by Omer 2026-11-15: Gabi offers maternity, Christmas and holiday, and cake smash sessions. No maternity gallery is on the site yet. Gabi has photographed maternity sessions in River North (Chicago), Skokie and Evanston (Omer, 2026-10-11); you may say once, in one plain sentence, that she has photographed maternity sessions in River North, Skokie and Evanston, with no other details about them. Everything else about sessions is in the future tense. Keep the existing pregnancy portrait (featureImage) and every existing FAQ. Aim the page at Chicago and the North Shore: H1 and title should say Maternity Photographer for Chicago and the North Shore, and open with a two-sentence answer to 'maternity photographer in Chicago'. Use 'pregnancy' as well as 'maternity' in H2s and FAQs. Also cover 'maternity photographer near me' in one H3 and one FAQ. Link /sessions/maternity-and-newborn-photography, /blog/maternity-photoshoot-cost-chicago and /blog/maternity-photos-when-to-book-what-to-wear, and the Chicago page /locations/chicago if it exists by then. Never name or compare other photographers. Search volume 2026-11-15 (US monthly, OpenSEO): pregnancy photographer chicago 1,000, maternity photographer chicago il 720, maternity photoshoot chicago 590, maternity photos chicago 590, pregnancy photos chicago 70. Use 'pregnancy' as well as 'maternity' in the H2s and FAQs. Live results: 4 to 5 of the top 10 are directories (Yelp, Expertise, Peerspace), the rest individual photographers.",
+      "searchVolume": 720
     },
     {
       "slug": "rewrite-proposal-photography",
@@ -373,6 +353,17 @@
       "addedAt": "2026-11-15"
     },
     {
+      "slug": "chicago",
+      "type": "location",
+      "status": "queued",
+      "phase": 4,
+      "primaryKeyword": "family photographer chicago",
+      "sourceDraft": null,
+      "notes": "Added 2026-11-15: Chicago is the biggest market next to Skokie and no page targets it. US monthly searches (OpenSEO): family photographer chicago 480, family photos chicago 480, chicago family photographer 390, chicago newborn photographer 260, newborn photographer chicago 260, newborn photography chicago 210. Search Console shows Chicago searches landing on the homepage and session pages at 34 to 42. Build /locations/chicago about Chicago's North Side, the part of the city next to Skokie: in-home newborn and family sessions first, then maternity, each under its own heading (use the `sections` field: 'Newborn photos in Chicago', 'Maternity photos in Chicago'). Real Chicago galleries in gallery-data.ts: the West Rogers Park nine-month family session and the Garfield Park Conservatory engagement session; 'I photographed' is allowed for those two only. Gabi's River North maternity session is not on the site yet, so do not mention it. Describe North Side neighborhoods and parks factually and in the future tense. West Rogers Park keeps its own page: link to it, and add 'chicago' to its `nearby` list and 'west-rogers-park' to this page's. Title and H1 lead with 'Chicago Family Photographer' and mention newborn; open with a two-sentence answer to 'family photographer in Chicago'. Travel: only Gabi's exact sentence. Never name or compare other photographers.",
+      "searchVolume": 480,
+      "addedAt": "2026-11-15"
+    },
+    {
       "slug": "rewrite-engagement-photography",
       "type": "rewrite",
       "primaryKeyword": "engagement photos chicago",
@@ -386,6 +377,35 @@
         "file": "src/app/sessions/engagement-photography/page.tsx"
       },
       "searchVolume": 390
+    },
+    {
+      "slug": "cake-smash-photography",
+      "type": "service",
+      "status": "queued",
+      "phase": 1,
+      "primaryKeyword": "cake smash photographer",
+      "sourceDraft": null,
+      "notes": "Confirmed by Omer 2026-11-15: Gabi offers maternity, Christmas and holiday, and cake smash sessions. US monthly searches (OpenSEO, 2026-11-15): cake smash photographer near me 590, cake smash photography near me 390, cake smash photo, photoshoot and photos near me 260 each, cake smash photoshoot 2,400, first birthday cake smash photoshoot 260. Live Google results near Skokie: 9 of the top 10 are individual photographers' sites. Search Console showed /sessions/first-birthday-photography at about 4 for 'cake smash photographer north shore'. No cake smash gallery exists: never say Gabi has photographed one; write in the future tense. Do not invent who provides the cake, backdrop, props, outfits or cleanup, and no studio: sessions happen at the family's home or outdoors in natural light. Prices only from site.pricing / the packages list; no special cake smash price. Title: Cake Smash Photographer in Skokie and the North Shore (or close, under 60 characters). Open with a two-sentence answer to 'cake smash photographer near me'. Cover how a cake smash session runs (a few clean portraits first, then the cake, then the bath or cleanup moment if the family wants it), the best age (around the first birthday), timing around naps, and what to plan. FAQs: price, at home or outdoors, how messy, how long, when to book. Link /sessions/first-birthday-photography both ways and /sessions/birthday-party-photography. Keep the first birthday page about the milestone and party; this page owns 'cake smash'. Travel: only Gabi's exact sentence. Never name or compare other photographers.",
+      "searchVolume": 590,
+      "addedAt": "2026-11-15"
+    },
+    {
+      "slug": "rewrite-newborn-photography-2",
+      "type": "rewrite",
+      "status": "queued",
+      "phase": 4,
+      "primaryKeyword": "newborn photographer near me",
+      "target": {
+        "file": "src/app/sessions/newborn-photography/page.tsx",
+        "url": "/sessions/newborn-photography"
+      },
+      "sourceDraft": null,
+      "notes": "Second pass on the newborn page (first rewrite PR #8, 2026-09-30). Search Console 28 days to 10-29: 52 impressions at 18.4. The Skokie-located rank tracker had 'newborn photographer near me' at #21 on 10-30 (this page) and outside the top 40 on 11-01. Search Console sends 'newborn photographer near me' to the Skokie page (5.75) and homepage, and 'newborn photographer lincolnwood' (7.3) to this page. Add a short section on where Gabi comes to you for in-home newborn sessions: the nearby North Shore towns she serves, Lincolnwood named, with no travel-fee claims of any kind, and one FAQ a nearby parent would ask ('Do you come to my home in Lincolnwood, Evanston or Wilmette?'). Keep every existing FAQ, the hero and the tagline. Do not compete with the homepage for 'newborn photographer skokie' (homepage ranks #3): keep the title as is. AI answers 2026-11-04 (OpenSEO tracker): this page was cited twice for 'best newborn photographer in Skokie IL' (Gemini and AI Overviews named Tovy; ChatGPT and Perplexity did not). For 'in-home newborn photographer on Chicago's North Shore' ChatGPT and Gemini named Tovy. Keep the in-home wording prominent in the first paragraph; the new 'where I come to you' section is what the in-home question asks.",
+      "keep": [
+        "The tiny details you'll want to remember forever."
+      ],
+      "addedAt": "2026-11-01",
+      "searchVolume": 6600
     },
     {
       "slug": "rewrite-sessions-pricing",
@@ -476,17 +496,6 @@
       "searchVolume": null
     },
     {
-      "slug": "chicago",
-      "type": "location",
-      "status": "queued",
-      "phase": 4,
-      "primaryKeyword": "family photographer chicago",
-      "sourceDraft": null,
-      "notes": "Added 2026-11-15: Chicago is the biggest market next to Skokie and no page targets it. US monthly searches (OpenSEO): family photographer chicago 480, family photos chicago 480, chicago family photographer 390, chicago newborn photographer 260, newborn photographer chicago 260, newborn photography chicago 210. Search Console shows Chicago searches landing on the homepage and session pages at 34 to 42. Build /locations/chicago about Chicago's North Side, the part of the city next to Skokie: in-home newborn and family sessions first, then maternity, each under its own heading (use the `sections` field: 'Newborn photos in Chicago', 'Maternity photos in Chicago'). Real Chicago galleries in gallery-data.ts: the West Rogers Park nine-month family session and the Garfield Park Conservatory engagement session; 'I photographed' is allowed for those two only. Gabi's River North maternity session is not on the site yet, so do not mention it. Describe North Side neighborhoods and parks factually and in the future tense. West Rogers Park keeps its own page: link to it, and add 'chicago' to its `nearby` list and 'west-rogers-park' to this page's. Title and H1 lead with 'Chicago Family Photographer' and mention newborn; open with a two-sentence answer to 'family photographer in Chicago'. Travel: only Gabi's exact sentence. Never name or compare other photographers.",
-      "searchVolume": 480,
-      "addedAt": "2026-11-15"
-    },
-    {
       "slug": "babys-first-year-photo-plan",
       "type": "guide",
       "primaryKeyword": "newborn and family photoshoot",
@@ -536,32 +545,6 @@
       "notes": "Search Console 2026-09-29 to 10-27: the homepage is about #8 for 'newborn photographer northbrook' and this page about #20. No gallery was shot in Northbrook; the nearest real ones are in Skokie and Wilmette. Follow 'Rewriting a town page' in the writer prompt. 2026-11-15 weekly review: Northbrook was the fourth most visited page on Vercel (8 visitors in 7 days) with no Search Console clicks; 'family photographer northbrook' sits at about 16 on this page. The page already out-writes the local pack winner on text, so the gap is proof and newborn coverage: lead 'proof' with the closest real session to Northbrook (none is shot in Northbrook or Glenview; Wilmette's Keay Nature Center family is the nearest), label it by where it was shot, and give newborn and maternity their own `sections` headings ('Newborn photos in Northbrook', 'Maternity photos in Northbrook'). Do not reuse Evanston's proof order.",
       "addedAt": "2026-10-30",
       "searchVolume": null
-    },
-    {
-      "slug": "holiday-mini-sessions-2026",
-      "type": "service",
-      "status": "hold",
-      "phase": 5,
-      "primaryKeyword": "christmas mini sessions near me",
-      "sourceDraft": null,
-      "notes": "Added 2026-11-15, on hold until Gabi confirms she is running holiday mini sessions this year and gives real dates, place, length, images and price. Highest buying intent and lowest competition found: christmas mini sessions near me 1,000, holiday mini sessions near me 320 US monthly searches; live Google results near Skokie show 10 of the top 10 as individual photographers' pages, no directories. /sessions/mini-sessions is already the best-converting page (24% click rate). Build one dated event page (or a dated section on /sessions/mini-sessions) and link it from the Christmas and Hanukkah guides. Only real details from Gabi; if she is not running minis this year, close this item.",
-      "searchVolume": 1000,
-      "addedAt": "2026-11-15"
-    },
-    {
-      "slug": "rewrite-first-birthday-cake-smash",
-      "type": "rewrite",
-      "status": "hold",
-      "phase": 1,
-      "primaryKeyword": "cake smash photographer near me",
-      "sourceDraft": null,
-      "target": {
-        "file": "src/lib/services.ts",
-        "url": "/sessions/first-birthday-photography"
-      },
-      "notes": "Added 2026-11-15, on hold until Gabi says she offers cake smash sessions (the 2026-09-29 roadmap left cake smash off because there was no proof). US monthly searches: cake smash photographer near me 590, cake smash photography near me 390, cake smash photo, photoshoot and photos near me 260 each, cake smash photoshoot 2,400. Live Google results near Skokie: 9 of the top 10 are individual photographers' sites. Search Console already showed the first birthday page at about 4 for 'cake smash photographer north shore'. If she offers it: add a cake smash section and FAQs to this page in the future tense (no cake smash gallery exists), keep the title and URL.",
-      "searchVolume": 590,
-      "addedAt": "2026-11-15"
     },
     {
       "slug": "rewrite-mini-sessions",
@@ -917,6 +900,17 @@
       "notes": "Include the garden's photography permit rules from its official site. Moved to the end 2026-11-15: about 50 US searches a month, and Chicago location guides rank 80 to 100 in Search Console ('chicago engagement photo locations' 83 to 89).",
       "phase": 0,
       "searchVolume": 50
+    },
+    {
+      "slug": "maternity-photoshoot-ideas",
+      "type": "guide",
+      "primaryKeyword": "maternity photoshoot ideas",
+      "sourceDraft": null,
+      "status": "queued",
+      "pr": null,
+      "phase": 0,
+      "notes": "Ungated 2026-11-15 (Confirmed by Omer 2026-11-15: Gabi offers maternity, Christmas and holiday, and cake smash sessions.) and moved to the end of the queue: national idea guides rank 70 to 100 for this site, and this one is image-led while no maternity gallery exists yet. If a maternity gallery lands, move it up and build it from those photos. Ideas framed as suggestions, not claims. Answer-first opener, H3 per idea, faqs array. Link the maternity page.",
+      "searchVolume": 12100
     },
     {
       "slug": "deerfield",
