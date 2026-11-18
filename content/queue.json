@@ -347,7 +347,10 @@
     {
       "slug": "rewrite-proposal-photography",
       "type": "rewrite",
-      "status": "queued",
+      "status": "in_review",
+      "branch": "content/rewrite-proposal-photography",
+      "pr": null,
+      "updatedAt": "2026-11-18",
       "phase": 3,
       "primaryKeyword": "proposal photographer chicago",
       "target": {
