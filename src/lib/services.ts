@@ -965,26 +965,41 @@ export const services: Record<string, ServicePage> = {
     shortName: "Proposal Photography",
     title: "Chicago Proposal Photographer, North Shore",
     description:
-      "Surprise proposal photographer in Chicago and the North Shore. Hidden and ready at the spot you choose, then a short portrait session after the yes. From $300.",
+      "Proposal photographer for Chicago and the North Shore. I stay hidden at the spot you choose, then photograph relaxed portraits after the yes. From $300.",
     eyebrow: "Chicago and the North Shore",
     h1: "Proposal Photography",
     tagline: "The question, the answer, and the first minute of forever.",
     heroImage: "/photos/hero-engagement-lift.jpg",
-    heroAlt: "Chicago proposal photographer, couple celebrating after a surprise proposal in natural light",
+    heroAlt: "Engaged couple embracing under hanging flower baskets at the Garfield Park Conservatory in Chicago",
     cardBlurb: "Surprise proposal coverage in Chicago or near {town}, hidden until the yes, with portraits right after.",
     intro: [
       {
-        heading: "How a surprise proposal session works",
+        heading: "Looking for a proposal photographer in Chicago?",
+        paragraphs: [
+          "I am Gabi Amrami of Tovy Photography, a proposal photographer for Chicago and the North Shore based in Skokie: I stay out of sight at the spot you choose, photograph the question and the answer, then step out for relaxed portraits of the two of you. Proposal coverage uses my standard packages, from $300 for 30 minutes and 10+ edited images to $550 for 90 minutes and 40+ images, delivered in a private online gallery with full print rights.",
+        ],
+      },
+      {
+        heading: "How does a surprise proposal photo session work?",
         paragraphs: [
           "You tell me the spot, the plan and the timing. I arrive early, blend in with a long lens from a distance, and photograph the walk up, the kneel, the reaction and the first hug without anyone knowing I am there. Once the answer is yes, I step out, say congratulations, and we spend twenty or thirty minutes on relaxed portraits while you are both still glowing.",
-          "I photograph proposals throughout Chicago and the North Shore: the lakefront in Evanston and Wilmette, the Chicago Riverwalk and skyline spots, the Garfield Park Conservatory, quiet park corners in Skokie and Glenview, and the places that already mean something to the two of you.",
+          "I can photograph your proposal anywhere in Chicago and on the North Shore: the lakefront in Evanston and Wilmette, the Chicago Riverwalk and skyline spots, the Garfield Park Conservatory, quiet park corners in Skokie and Glenview, and the places that already mean something to the two of you.",
           "Proposal coverage uses the same packages as an engagement session, starting at $300, and every package includes edited images in a private gallery with full print rights.",
         ],
       },
       {
-        heading: "Choosing where to propose",
+        heading: "What time of day is best for a proposal?",
+        paragraphs: [
+          "The last hour before sunset is the best time for an outdoor proposal, because the light is soft and warm on both of your faces and the lake and the skyline start to glow. Sunset comes early in a Chicago winter, so a December proposal often happens in the late afternoon, which is easier to explain to your partner anyway.",
+          "Early morning is the other good choice. The light is gentle, the Riverwalk and the lakefront are quiet, and there are fewer people walking through the moment. Midday sun is the hardest light for faces, so if the plan has to happen at noon, an indoor spot like a conservatory is the better choice.",
+        ],
+      },
+      {
+        heading: "Where to propose in Chicago and the North Shore",
         paragraphs: [
           "The best proposal spots have three things: a clear place for you to stand, somewhere natural for me to be, and good light at the time you plan to arrive. A bench under a tree, the end of a pier, a garden path with a bend in it. Wide open lawns and crowded plazas make hiding harder and the photos busier.",
+          "In the city, the Alfred Caldwell Lily Pool in Lincoln Park is a quiet stone and water garden that is open in the warmer months, and the Lincoln Park Conservancy takes permit bookings there for proposals and photography. The Chicago Riverwalk gives you the river and the skyline, with railings and stairs that make easy places for me to wait. For a cold or rainy day, the Garfield Park Conservatory and the Lincoln Park Conservatory keep the greenery indoors. I photographed an engagement session at the Garfield Park Conservatory, so I know how its glass houses fill a photo with soft, green light.",
+          "On the North Shore, we can meet on the lakefront near the Grosse Point Lighthouse in Evanston, along the beach paths at Gillson Park in Wilmette, or in the gardens of the Chicago Botanic Garden in Glencoe, which requires a photography permit for posed sessions.",
           "If you want ideas, I keep a short list of favorite spots on the North Shore and in the city, and I will scout the exact location before the day.",
         ],
       },
@@ -1027,13 +1042,14 @@ export const services: Record<string, ServicePage> = {
     },
     pricing: {
       heading: "Proposal photography pricing",
-      text: `Proposal coverage uses the standard packages: $300 for a 30-minute mini, $425 for a 60-minute Classic, which is the usual choice because it covers the wait, the moment and the portraits, and $550 for a 90-minute Full session with a second location. ${pricingNote}`,
+      text: `Proposal coverage uses the standard packages: $300 for a 30-minute mini, $425 for a 60-minute Classic, which is the usual choice because it covers the wait, the moment and the portraits, and $550 for a 90-minute Full session with location scouting. A proposal that moves between more than one spot is a Tailored session, priced for your plan. ${pricingNote}`,
     },
+    faqHeading: "Common questions about proposal photography in Chicago",
     faqs: [
       {
         question: "How much does a proposal photographer cost in Chicago?",
         answer:
-          "My proposal coverage runs from $300 to $550 with edited images and print rights included. Published Chicago guides put standalone engagement and proposal sessions with an experienced photographer at roughly $450 to $1,200, so a natural light session with me is on the affordable end.",
+          "My proposal coverage runs from $300 to $550, with edited images in a private online gallery and full print rights included. The $300 Mini is 30 minutes with 10+ images, the $425 Classic is 60 minutes with 25+ images and a planning call, and the $550 Full is 90 minutes with 40+ images and location scouting.",
       },
       {
         question: "How do you stay hidden during a proposal?",
@@ -1054,6 +1070,11 @@ export const services: Record<string, ServicePage> = {
         question: "Where are the best places to propose in Chicago and the North Shore?",
         answer:
           "The lakefront at sunset in Evanston or Wilmette, the Chicago Riverwalk, the Garfield Park Conservatory for an indoor option, and quiet garden paths or benches in North Shore parks. The best spot is one that already means something to you.",
+      },
+      {
+        question: "What happens if it rains on the day of the proposal?",
+        answer:
+          "We plan for it from the start. For an outdoor proposal I hold a covered backup nearby and a rain date, and the Garfield Park Conservatory and the Lincoln Park Conservatory are good all-weather choices. If the forecast turns, I text you that morning and we pick the plan together.",
       },
       {
         question: "How far in advance should I book a proposal photographer?",

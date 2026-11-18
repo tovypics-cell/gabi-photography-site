@@ -335,18 +335,22 @@
         "file": "src/lib/services.ts"
       },
       "sourceDraft": null,
-      "status": "in_review",
+      "status": "published",
       "branch": "content/rewrite-maternity-photography",
       "pr": 68,
       "updatedAt": "2026-11-16",
       "phase": 0,
       "notes": "Ungated 2026-11-15. Confirmed by Omer 2026-11-15: Gabi offers maternity, Christmas and holiday, and cake smash sessions. No maternity gallery is on the site yet. Gabi has photographed maternity sessions in River North (Chicago), Skokie and Evanston (Omer, 2026-10-11); you may say once, in one plain sentence, that she has photographed maternity sessions in River North, Skokie and Evanston, with no other details about them. Everything else about sessions is in the future tense. Keep the existing pregnancy portrait (featureImage) and every existing FAQ. Aim the page at Chicago and the North Shore: H1 and title should say Maternity Photographer for Chicago and the North Shore, and open with a two-sentence answer to 'maternity photographer in Chicago'. Use 'pregnancy' as well as 'maternity' in H2s and FAQs. Also cover 'maternity photographer near me' in one H3 and one FAQ. Link /sessions/maternity-and-newborn-photography, /blog/maternity-photoshoot-cost-chicago and /blog/maternity-photos-when-to-book-what-to-wear, and the Chicago page /locations/chicago if it exists by then. Never name or compare other photographers. Search volume 2026-11-15 (US monthly, OpenSEO): pregnancy photographer chicago 1,000, maternity photographer chicago il 720, maternity photoshoot chicago 590, maternity photos chicago 590, pregnancy photos chicago 70. Use 'pregnancy' as well as 'maternity' in the H2s and FAQs. Live results: 4 to 5 of the top 10 are directories (Yelp, Expertise, Peerspace), the rest individual photographers.",
-      "searchVolume": 720
+      "searchVolume": 720,
+      "publishedAt": "2026-11-16"
     },
     {
       "slug": "rewrite-proposal-photography",
       "type": "rewrite",
-      "status": "queued",
+      "status": "in_review",
+      "branch": "content/rewrite-proposal-photography",
+      "pr": 69,
+      "updatedAt": "2026-11-18",
       "phase": 3,
       "primaryKeyword": "proposal photographer chicago",
       "target": {
