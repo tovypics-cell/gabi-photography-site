@@ -366,7 +366,10 @@
     {
       "slug": "chicago",
       "type": "location",
-      "status": "queued",
+      "status": "in_review",
+      "branch": "content/chicago",
+      "pr": null,
+      "updatedAt": "2026-11-19",
       "phase": 4,
       "primaryKeyword": "family photographer chicago",
       "sourceDraft": null,

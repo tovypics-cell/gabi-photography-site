@@ -460,6 +460,7 @@ export const services: Record<string, ServicePage> = {
       { label: "Maternity Photoshoot Cost in Chicago", href: "/blog/maternity-photoshoot-cost-chicago" },
       { label: "Maternity and Newborn Photography", href: "/sessions/maternity-and-newborn-photography" },
       { label: "Newborn Photography", href: "/sessions/newborn-photography" },
+      { label: "Maternity Photos in Chicago", href: "/locations/chicago" },
       { label: "Sessions and Pricing", href: "/sessions" },
     ],
     cta: {
