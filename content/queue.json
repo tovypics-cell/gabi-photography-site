@@ -347,7 +347,7 @@
     {
       "slug": "rewrite-proposal-photography",
       "type": "rewrite",
-      "status": "in_review",
+      "status": "published",
       "branch": "content/rewrite-proposal-photography",
       "pr": 69,
       "updatedAt": "2026-11-18",
@@ -360,12 +360,16 @@
       "sourceDraft": null,
       "notes": "Added 2026-11-15 from search volume. US monthly searches (OpenSEO): proposal photographer chicago 320, chicago proposal photographer 320, proposal spots chicago 320, best places to propose in chicago 170. Search Console (3 months) already shows this page for about 55 impressions on 'chicago proposal photographer', 'proposal photographer chicago' and 'chicago surprise proposal photographer/photography' at positions 47 to 64, with 0 clicks, so Google ties it to Chicago but ranks it low. gallery-data.ts has no proposal gallery: never say Gabi has photographed a proposal. Write in the future tense: how a hidden-photographer proposal works, timing and light, how to signal, what happens right after, and Chicago and North Shore spots described factually. The Garfield Park Conservatory engagement session is real ('I photographed' allowed for that engagement session only). Add an H2 that answers 'Where to propose in Chicago' and FAQs on cost (from the packages list), hiding, and weather. Keep the title 'Chicago Proposal Photographer, North Shore', the URL and the package. Never name or compare other photographers. Moved up 2026-11-15 to about 11-23: highest buying intent on the list (advertisers pay about $7 a click) and proposals peak from Thanksgiving to Valentine's Day. Live Google results (Chicago, mobile): 8 of the top 10 are individual photographers' sites, so a strong page can compete.",
       "searchVolume": 320,
-      "addedAt": "2026-11-15"
+      "addedAt": "2026-11-15",
+      "publishedAt": "2026-11-18"
     },
     {
       "slug": "chicago",
       "type": "location",
-      "status": "queued",
+      "status": "in_review",
+      "branch": "content/chicago",
+      "pr": 70,
+      "updatedAt": "2026-11-19",
       "phase": 4,
       "primaryKeyword": "family photographer chicago",
       "sourceDraft": null,

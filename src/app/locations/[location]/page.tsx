@@ -23,6 +23,7 @@ const heroImages: Record<string, string> = {
   lincolnwood: "/photos/kids-kiss-couch.jpg",
   wilmette: "/photos/family-plaza-swinging.jpg",
   "west-rogers-park": "/photos/west-rogers-park-9-month-family/cover-home.jpg",
+  chicago: "/photos/west-rogers-park-9-month-family/15.jpg",
 };
 const defaultHero = "/photos/hero-family-baby-smile.jpg";
 

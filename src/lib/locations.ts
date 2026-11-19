@@ -790,8 +790,112 @@ export const locationPages: Record<string, LocationPage> = {
       faqKids,
     ],
     proof: [proofWestRogersPark, proofSkokieNewborn, proofDowntownNewborn],
-    nearby: ["skokie", "lincolnwood", "evanston"],
+    nearby: ["skokie", "lincolnwood", "evanston", "chicago"],
     driveNote: "Borders Skokie and Lincolnwood.",
+  },
+
+  chicago: {
+    slug: "chicago",
+    updated: "2026-11-19",
+    name: "Chicago",
+    title: "Chicago Family Photographer, Newborn and Maternity",
+    description:
+      "Chicago family photographer for family, newborn and maternity sessions on the North Side, at home or in a city park, next door to Skokie. From $300.",
+    h1: "Chicago Family Photographer, Newborns and Maternity",
+    heroLabel: "Chicago Hero Photo",
+    intro: [
+      "Tovy Photography is a family photographer in Chicago for families, newborns and expecting parents on the city's North Side, with in-home newborn and family sessions and outdoor sessions in natural light at neighborhood parks and along the lakefront.",
+      `I am based in Skokie, right on the city's northern edge, and packages start at $${site.pricing.mini} for a 30-minute session with 10+ edited images in a private online gallery with full print rights.`,
+    ],
+    content: [
+      "Most of the Chicago families I photograph live on the North Side, in the neighborhoods closest to my home in Skokie: West Ridge and West Rogers Park, Rogers Park, Edgewater, North Park, Albany Park, Lincoln Square and the blocks around them. Two-flats, courtyard buildings, condos and bungalows all work for an in-home family session. I find the brightest window, turn off the overhead lights, and let the morning go the way it usually does.",
+      "I photographed a nine-month family session in a West Rogers Park home that shows what this looks like in the city: a couch, a play mat, a laughing baby lifted up over their parents' heads, and soft light from one big window. Nothing was staged, and the photos look like that family's real life.",
+      "For outdoor family photos in Chicago, we can meet at Loyola Park in Rogers Park, where a walking path runs along Loyola Beach and the lake and sky open up behind you. Legion Park follows the North Branch of the Chicago River and the North Shore Channel Trail, with trees, a riverside path and a prairie natural area that feels far from the city. Indian Boundary Park in West Ridge has a lagoon and old trees, and the West Rogers Park page has more about that corner of the city.",
+      "In the colder months, the Lincoln Park Conservatory and the Garfield Park Conservatory keep the greenery going indoors. I photographed an engagement session at the Garfield Park Conservatory, and the soft light under the glass suits a small family just as well. Both conservatories require a Chicago Park District photography permit for portrait sessions, and Lincoln Park also asks for an entry reservation, so we plan that part ahead.",
+    ],
+    sections: [
+      {
+        heading: "Newborn photos in Chicago",
+        paragraphs: [
+          "Newborn sessions in Chicago happen in your home. A high-rise downtown, a condo in Edgewater or a two-flat in West Ridge all work, because one good window is enough. The baby eats, sleeps and wakes on their own schedule, a big sibling is welcome to help, and nothing needs to be styled or set up. My downtown Chicago newborn gallery shows how that window light can look, with the city right behind the family.",
+          "The sweetest window for newborn photos is 5 to 14 days after birth, so I suggest reaching out in your third trimester to hold a tentative date. Older newborns photograph beautifully too, and the session simply follows the baby.",
+        ],
+      },
+      {
+        heading: "Maternity photos in Chicago",
+        paragraphs: [
+          "For maternity photos in Chicago, the lakefront is where I would start. At Loyola Beach in the last hour before sunset, a long dress, the sand and a wide open sky are all a maternity session needs. When the wind off Lake Michigan is strong, the riverside trail at Legion Park is calmer and greener, and in the colder months the conservatories give you plants and warmth instead of a coat.",
+          "A maternity session at home works in every season. We can photograph you in the nursery you are getting ready, by your brightest window, with your partner and kids if you want them there, and plan your newborn session at the same time.",
+        ],
+      },
+    ],
+    landmarks: [
+      "Loyola Park and Loyola Beach",
+      "Legion Park and the North Shore Channel Trail",
+      "Indian Boundary Park",
+      "Lincoln Park Conservatory (reservation and permit required)",
+      "Garfield Park Conservatory (permit required)",
+    ],
+    why: [
+      {
+        title: "Chicago Park District parks have their own photography rules.",
+        body: "The Park District issues photography permits, and the conservatories require one for every portrait session. I keep sessions simple, one camera and no equipment, and I check what applies to the park we pick before we book.",
+      },
+      {
+        title: "Lakefront wind changes the plan.",
+        body: "Loyola Beach is beautiful, but a breeze off the lake turns hair, dresses and toddler moods unpredictable. I check the forecast the day before and keep Legion Park or your home as the backup.",
+      },
+      {
+        title: "City apartments have more light than you think.",
+        body: "One tall window in a condo or a courtyard building is enough for a newborn or family session. Small rooms make for close, cozy photos, and nobody needs to move furniture across the room.",
+      },
+      {
+        title: "Warm weekends on the lakefront are busy.",
+        body: "Beaches and lakefront paths fill up on sunny Saturday afternoons. Weekday evenings and early weekend mornings give us the light and the space without the crowd.",
+      },
+    ],
+    faqs: [
+      faqCost("Chicago"),
+      {
+        question: "Do you photograph newborns at home in Chicago?",
+        answer:
+          "Yes. Newborn sessions in Chicago happen in your own home, whether that is a high-rise downtown or a two-flat on the North Side, in the room with the best window light. The baby sets the pace, and your home does not need to be tidy or styled.",
+      },
+      {
+        question: "Where can we take maternity photos in Chicago?",
+        answer:
+          "Loyola Beach in Rogers Park is my first suggestion, for sand, water and open sky in the last hour before sunset. Legion Park's riverside trail is calmer when the lake is windy, the Lincoln Park and Garfield Park conservatories work in the colder months with a permit, and your home or nursery is lovely in any season.",
+      },
+      {
+        question: "Where are the best places for family photos in Chicago?",
+        answer:
+          "On the North Side, Loyola Park and Loyola Beach for the lakefront, Legion Park and the North Shore Channel Trail for trees and the river, and Indian Boundary Park for a lagoon and old trees. In winter the Lincoln Park and Garfield Park conservatories keep things green, and your own home is the best spot for newborns and everyday family photos.",
+      },
+      {
+        question: "Do I need a permit for family photos in a Chicago park?",
+        answer:
+          "Often, yes. The Chicago Park District issues photography permits, and the Lincoln Park and Garfield Park conservatories require one for portrait sessions, with an entry reservation at Lincoln Park too. I check the rules for the park we choose before we book.",
+      },
+      {
+        question: "Which parts of Chicago do you photograph?",
+        answer:
+          "Mostly the North Side, closest to my home in Skokie: West Ridge and West Rogers Park, Rogers Park, Edgewater, North Park, Albany Park and Lincoln Square, plus in-home newborn sessions downtown. If you live somewhere else in the city, just ask and I will tell you honestly whether it works.",
+      },
+      faqNewbornTiming,
+    ],
+    proof: [
+      {
+        ...proofWestRogersPark,
+        blurb: "Shot in a home on Chicago's North Side: a nine-month milestone with cuddles, play and window light.",
+      },
+      proofDowntownNewborn,
+      {
+        ...proofGarfield,
+        blurb: "An engagement session under the glass at the Garfield Park Conservatory, soft indoor light in any season.",
+      },
+    ],
+    nearby: ["west-rogers-park", "skokie", "evanston", "lincolnwood"],
+    driveNote: "Skokie borders Chicago's North Side.",
   },
 };
 
