@@ -368,7 +368,7 @@
       "type": "location",
       "status": "in_review",
       "branch": "content/chicago",
-      "pr": null,
+      "pr": 70,
       "updatedAt": "2026-11-19",
       "phase": 4,
       "primaryKeyword": "family photographer chicago",
