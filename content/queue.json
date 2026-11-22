@@ -422,6 +422,22 @@
       "searchVolume": 6600
     },
     {
+      "slug": "rewrite-family-cost-guide",
+      "type": "rewrite",
+      "primaryKeyword": "family photo session cost",
+      "target": {
+        "url": "/blog/how-much-do-family-photos-cost-north-shore",
+        "file": "src/lib/blog-posts-seo.ts"
+      },
+      "sourceDraft": null,
+      "status": "queued",
+      "pr": null,
+      "phase": 3,
+      "notes": "From the 2026-11-22 weekly review. Search Console 10-25 to 11-21: 416 impressions at 17.9 and 0 clicks, the most impressions of any page; Tuesday to Sunday it slid from 18.4 (75 impressions, 11-08 to 11-14) to 23.3 (135, 11-15 to 11-21). Queries: 'family session photography prices' 30.0, 'family photography pricing' 24.8, 'family photographer prices' 34.0, 'average price for family photos' 18.0, 'family photography pricing guide' 12.4. US monthly searches (OpenSEO, 2026-11-22): family photo session cost 260, how much do family photos cost 140, family photography pricing 110, family photographer prices 50, family session photography prices 40, family photography pricing guide 10. Mostly a snippet fix: change seoTitle (now 'Family Photography Prices and Costs') to lead with 'Family Photography Pricing' and 'Session Cost' and name Chicago's North Shore and 2026, under 60 characters; start seoDescription with the $300 to $550 range and the 2026 typical range already on the page ($300 to $750). Keep the H1, the price table, every section and every FAQ; add one FAQ 'How much does a family photo session cost near Chicago?' only if no existing FAQ answers it. Set updated to the publish date. Prices only from site.pricing; no travel-fee wording beyond Gabi's exact sentence. Never name or compare other photographers. npm run check:pricing and check:headings must pass.",
+      "addedAt": "2026-11-22",
+      "searchVolume": 260
+    },
+    {
       "slug": "rewrite-sessions-pricing",
       "type": "rewrite",
       "status": "queued",
