@@ -385,7 +385,7 @@
       "sourceDraft": null,
       "status": "in_review",
       "branch": "content/rewrite-engagement-photography",
-      "pr": null,
+      "pr": 72,
       "updatedAt": "2026-11-23",
       "phase": 3,
       "notes": "Add an engagement party section (literal H3 'Do you photograph engagement parties?') and an anniversary mention, plus 'near me' phrasing in the summary. Keep the page's own FAQs. File is a static page. Retargeted 2026-11-15 to Chicago: US monthly searches (OpenSEO) engagement photos chicago 390, engagement photographer chicago 260; 'engagement photographer near me' (3,600) is decided by the Maps pack, not this page. The title already says 'Chicago North Shore Engagement Photographer': keep it. The Garfield Park Conservatory engagement session is real Chicago proof ('I photographed' allowed); lead the Chicago section with it and link the Garfield Park guide. Never name or compare other photographers. Moved up 2026-11-15 to about 11-30: live Google results for 'engagement photos chicago' (Chicago, mobile) show 9 of the top 10 as individual photographers' sites, the least directory-heavy result on the list, and the Garfield Park session is real proof.",
