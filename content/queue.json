@@ -366,7 +366,7 @@
     {
       "slug": "chicago",
       "type": "location",
-      "status": "in_review",
+      "status": "published",
       "branch": "content/chicago",
       "pr": 70,
       "updatedAt": "2026-11-19",
@@ -375,7 +375,8 @@
       "sourceDraft": null,
       "notes": "Added 2026-11-15: Chicago is the biggest market next to Skokie and no page targets it. US monthly searches (OpenSEO): family photographer chicago 480, family photos chicago 480, chicago family photographer 390, chicago newborn photographer 260, newborn photographer chicago 260, newborn photography chicago 210. Search Console shows Chicago searches landing on the homepage and session pages at 34 to 42. Build /locations/chicago about Chicago's North Side, the part of the city next to Skokie: in-home newborn and family sessions first, then maternity, each under its own heading (use the `sections` field: 'Newborn photos in Chicago', 'Maternity photos in Chicago'). Real Chicago galleries in gallery-data.ts: the West Rogers Park nine-month family session and the Garfield Park Conservatory engagement session; 'I photographed' is allowed for those two only. Gabi's River North maternity session is not on the site yet, so do not mention it. Describe North Side neighborhoods and parks factually and in the future tense. West Rogers Park keeps its own page: link to it, and add 'chicago' to its `nearby` list and 'west-rogers-park' to this page's. Title and H1 lead with 'Chicago Family Photographer' and mention newborn; open with a two-sentence answer to 'family photographer in Chicago'. Travel: only Gabi's exact sentence. Never name or compare other photographers.",
       "searchVolume": 480,
-      "addedAt": "2026-11-15"
+      "addedAt": "2026-11-15",
+      "publishedAt": "2026-11-19"
     },
     {
       "slug": "rewrite-engagement-photography",
