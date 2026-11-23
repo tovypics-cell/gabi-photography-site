@@ -10,14 +10,14 @@ import { site, breadcrumbJsonLd, serviceJsonLd as buildServiceJsonLd, ogImages }
 export const metadata: Metadata = {
   title: "Chicago North Shore Engagement Photographer",
   description:
-    "Natural, joyful engagement photography in Evanston, Wilmette, Skokie and Chicago. Lakefront, conservatory and neighborhood sessions from $300.",
+    "Engagement photos in Chicago and the North Shore, from the Garfield Park Conservatory to the Evanston lakefront. Relaxed natural light sessions from $300.",
   alternates: {
     canonical: "https://tovyphotography.com/sessions/engagement-photography",
   },
   openGraph: {
-    title: "Engagement Photography on Chicago's North Shore | Tovy Photography",
+    title: "Engagement Photos in Chicago and the North Shore | Tovy Photography",
     description:
-      "Natural, joyful engagement photography in Evanston, Wilmette, Skokie, and across Chicago's North Shore.",
+      "Relaxed, natural light engagement photos in Chicago, Evanston, Wilmette and Skokie, plus engagement parties and anniversary sessions.",
     url: "https://tovyphotography.com/sessions/engagement-photography",
     images: ogImages("/photos/garfield-park-conservatory-engagement/cover-bench.jpg", "Engagement session at Garfield Park Conservatory in Chicago"),
   },
@@ -52,6 +52,18 @@ const faqs = [
     q: "Do you also photograph weddings?",
     a: "Weddings aren't my main focus. I specialize in family, newborn, milestone, and event photography. That said, if you love my style and want to talk through what wedding coverage could look like, I'm open to the conversation. Reach out and let's chat.",
   },
+  {
+    q: "How much do engagement photos cost in Chicago?",
+    a: "My engagement sessions run from $300 to $550. The Mini is $300 for 30 minutes and 10+ edited images, the Classic is $425 for 60 minutes and 25+ images, and the Full is $550 for 90 minutes and 40+ images, all with full print rights.",
+  },
+  {
+    q: "Do you photograph engagement parties?",
+    a: "Yes. I photograph engagement parties at home, in a backyard, or at a restaurant or event space, the same relaxed way I photograph birthday parties and family celebrations. A short party fits one of my standard packages, and a longer evening is a Tailored session priced for your plans.",
+  },
+  {
+    q: "Do you do anniversary photo sessions?",
+    a: "Yes. An anniversary session works just like an engagement session: an hour or so at a place that means something to the two of you, with gentle prompts instead of stiff poses. It uses the same packages, starting at $300.",
+  },
 ];
 
 export default function EngagementPhotographyPage() {
@@ -61,7 +73,7 @@ export default function EngagementPhotographyPage() {
     serviceType: "Engagement Photography",
     url: `${site.url}/sessions/engagement-photography`,
     description:
-      "Natural, joyful engagement photography in Evanston, Wilmette, Skokie, and across Chicago's North Shore.",
+      "Relaxed, natural light engagement photos in Chicago and on the North Shore, including Evanston, Wilmette and Skokie, plus engagement parties and anniversary sessions.",
     image: `${site.url}/photos/garfield-park-conservatory-engagement/cover-bench.jpg`,
   });
 
@@ -98,7 +110,7 @@ export default function EngagementPhotographyPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
-      {/* Hero — image left, text right */}
+      {/* Hero: image left, text right */}
       <section
         className="pt-28 pb-16 md:pt-36 md:pb-20 px-6 lg:px-8"
         style={{ backgroundColor: "#E8D5CE" }}
@@ -133,8 +145,8 @@ export default function EngagementPhotographyPage() {
       {/* Citable summary */}
       <section className="px-6 pt-16 lg:px-8">
         <div className="mx-auto max-w-3xl space-y-4 text-lg md:text-xl leading-relaxed text-charcoal">
-          <p>Tovy Photography photographs engagement sessions in Chicago and on the North Shore, at the Garfield Park Conservatory, on the lakefront in Evanston and Wilmette, at the Skokie Lagoons, and in the neighborhoods where your story actually happened. Sessions are natural light and relaxed, and start at $300 with edited images and full print rights included.</p>
-          <p>I am Gabi, based in Skokie. Surprise proposals are welcome too: you tell me the spot and the plan, and I am hidden and ready.</p>
+          <p>Tovy Photography takes engagement photos in Chicago and on the North Shore, at the Garfield Park Conservatory, on the lakefront in Evanston and Wilmette, at the Skokie Lagoons, and in the neighborhoods where your story actually happened. If you are looking for an engagement photographer near you in Chicago, Evanston, Wilmette or Skokie, sessions are natural light and relaxed, and start at $300 for 30 minutes and 10+ edited images with full print rights included.</p>
+          <p>I am Gabi, based in Skokie. Surprise proposals are welcome too: you tell me the spot and the plan, and I am hidden and ready. I also photograph engagement parties and anniversary sessions.</p>
         </div>
       </section>
 
@@ -184,7 +196,7 @@ export default function EngagementPhotographyPage() {
             </div>
           </ScrollReveal>
           <ScrollReveal animation="fade-left" delay={150}>
-            {/* IMAGE 2: Couple laughing together — outdoor location, natural light */}
+            {/* IMAGE 2: Couple laughing together, outdoor location, natural light */}
             <PlaceholderImage
               alt="engagement photography session North Shore Chicago, couple laughing together at park"
               className="aspect-[4/5] w-full"
@@ -240,11 +252,61 @@ export default function EngagementPhotographyPage() {
         </div>
       </section>
 
+      {/* Section 2b: Engagement photos in Chicago */}
+      <section className="px-6 py-20 md:py-28 lg:px-8">
+        <div className="mx-auto max-w-3xl">
+          <ScrollReveal animation="fade-up">
+            <h2 className="font-[family-name:var(--font-cormorant)] text-3xl md:text-4xl mb-6 text-charcoal">
+              Engagement photos in Chicago
+            </h2>
+            <div className="space-y-5 text-charcoal-light leading-relaxed">
+              <p>
+                I photographed an engagement session at the{" "}
+                <Link href="/gallery/milestone/garfield-park-conservatory-engagement" className="text-sage-dark underline underline-offset-4">
+                  Garfield Park Conservatory
+                </Link>
+                , and it is still one of my favorite places in the city for
+                engagement photos. The glass houses fill every frame with soft,
+                green light, the benches, ferns and indoor pond give you a new
+                backdrop every few steps, and the weather outside never gets a
+                vote. I wrote about{" "}
+                <Link href="/blog/garfield-park-conservatory-engagement-photos-chicago" className="text-sage-dark underline underline-offset-4">
+                  how that conservatory session went
+                </Link>{" "}
+                if you want to see what a winter-proof engagement session looks like.
+              </p>
+              <h3 className="font-[family-name:var(--font-cormorant)] text-2xl pt-2 text-charcoal">
+                Where are the best places for engagement photos in Chicago?
+              </h3>
+              <p>
+                The best places for engagement photos in Chicago are the ones
+                with soft light and a little meaning: the Garfield Park
+                Conservatory for greenery in any season, the lakefront for sky
+                and water at golden hour, and the neighborhood where the two of
+                you actually live. We can also meet at the Lincoln Park
+                Conservatory, at the Alfred Caldwell Lily Pool in Lincoln Park
+                in the warmer months, or along the Chicago Riverwalk if you
+                want the skyline in your photos. Some of these spots have
+                their own photography rules, and I check what applies before
+                we book.
+              </p>
+              <p>
+                If you live in the city, my{" "}
+                <Link href="/locations/chicago" className="text-sage-dark underline underline-offset-4">
+                  Chicago page
+                </Link>{" "}
+                covers the family and newborn sessions I photograph there too.
+              </p>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* Section 3: What to Know */}
       <section className="px-6 py-20 md:py-28 lg:px-8">
         <div className="mx-auto max-w-6xl grid gap-12 md:grid-cols-2 items-center">
           <ScrollReveal animation="fade-right">
-            {/* IMAGE 3: Couple at outdoor location — ring detail or walking together */}
+            {/* IMAGE 3: Couple at outdoor location, ring detail or walking together */}
             <PlaceholderImage
               alt="engagement photographer Evanston, couple walking hand in hand at golden hour"
               className="aspect-[4/5] w-full"
@@ -293,7 +355,10 @@ export default function EngagementPhotographyPage() {
             <h2 className="font-[family-name:var(--font-cormorant)] text-3xl md:text-4xl mb-6 text-charcoal">
               Engagement session pricing
             </h2>
-            <p className="text-charcoal-light leading-relaxed mb-8">
+            <h3 className="font-[family-name:var(--font-cormorant)] text-2xl mb-4 text-charcoal">
+              How much do engagement photos cost in Chicago?
+            </h3>
+            <p className="text-charcoal-light leading-relaxed mb-4">
               Engagement sessions start at $300 for a focused 30-minute mini
               session. Most couples choose the Classic session ($425, 60
               minutes) which gives us time to explore a location and capture the
@@ -302,12 +367,63 @@ export default function EngagementPhotographyPage() {
               ($550, 90 minutes) is perfect if you want to include a second
               location or a wardrobe change.
             </p>
+            <p className="text-charcoal-light leading-relaxed mb-8">
+              Every session includes edited images in a private online gallery
+              with full print rights: 10+ images with the Mini, 25+ with the
+              Classic and 40+ with the Full.
+            </p>
             <Link
               href="/sessions#pricing"
               className="inline-block border border-sage px-6 py-2.5 text-sm font-medium uppercase tracking-widest text-sage transition-all hover:bg-sage hover:text-white"
             >
               View Full Pricing
             </Link>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Section 4b: Engagement parties and anniversaries */}
+      <section className="px-6 py-20 md:py-28 lg:px-8">
+        <div className="mx-auto max-w-3xl">
+          <ScrollReveal animation="fade-up">
+            <h2 className="font-[family-name:var(--font-cormorant)] text-3xl md:text-4xl mb-6 text-charcoal">
+              Engagement parties and anniversaries
+            </h2>
+            <div className="space-y-5 text-charcoal-light leading-relaxed">
+              <h3 className="font-[family-name:var(--font-cormorant)] text-2xl text-charcoal">
+                Do you photograph engagement parties?
+              </h3>
+              <p>
+                Yes, I photograph engagement parties at home, in a backyard, or
+                at a restaurant or event space in Chicago and on the North
+                Shore. I cover them the way I cover{" "}
+                <Link href="/sessions/birthday-party-photography" className="text-sage-dark underline underline-offset-4">
+                  birthday parties
+                </Link>{" "}
+                and family celebrations: the toasts, the hugs at the door, the
+                grandparents meeting the future in-laws, and a few calm
+                portraits of the two of you before the room fills up. A short
+                party fits one of my standard packages, and a longer evening is
+                a Tailored session priced for your plans.
+              </p>
+              <h3 className="font-[family-name:var(--font-cormorant)] text-2xl pt-2 text-charcoal">
+                Do you do anniversary photo sessions?
+              </h3>
+              <p>
+                Yes, and they work just like an engagement session. Whether it
+                has been one year or many, we spend an hour
+                or so somewhere that matters to the two of you, and I
+                photograph how you are together now. It uses the same
+                packages, starting at $300.
+              </p>
+              <p>
+                Still planning the question itself? My{" "}
+                <Link href="/sessions/proposal-photography" className="text-sage-dark underline underline-offset-4">
+                  proposal photography
+                </Link>{" "}
+                page explains how I stay hidden until the yes.
+              </p>
+            </div>
           </ScrollReveal>
         </div>
       </section>
