@@ -403,6 +403,7 @@ export default function SessionsPage() {
                 { href: "/sessions/christmas-mini-sessions", label: "Christmas Mini Sessions" },
                 { href: "/sessions/birthday-party-photography", label: "Birthday Parties" },
                 { href: "/sessions/first-birthday-photography", label: "First Birthdays" },
+                { href: "/sessions/cake-smash-photography", label: "Cake Smash Sessions" },
                 { href: "/sessions/bar-mitzvah-photography", label: "Bar and Bat Mitzvahs" },
                 { href: "/sessions/proposal-photography", label: "Proposal Photography" },
                 { href: "/sessions/extended-family-photography", label: "Extended Family Sessions" },

@@ -399,7 +399,10 @@
     {
       "slug": "cake-smash-photography",
       "type": "service",
-      "status": "queued",
+      "status": "in_review",
+      "branch": "content/cake-smash-photography",
+      "pr": null,
+      "updatedAt": "2026-11-25",
       "phase": 1,
       "primaryKeyword": "cake smash photographer",
       "sourceDraft": null,
