@@ -383,7 +383,7 @@
       "type": "rewrite",
       "primaryKeyword": "engagement photos chicago",
       "sourceDraft": null,
-      "status": "in_review",
+      "status": "published",
       "branch": "content/rewrite-engagement-photography",
       "pr": 72,
       "updatedAt": "2026-11-23",
@@ -393,7 +393,8 @@
         "url": "/sessions/engagement-photography",
         "file": "src/app/sessions/engagement-photography/page.tsx"
       },
-      "searchVolume": 390
+      "searchVolume": 390,
+      "publishedAt": "2026-11-23"
     },
     {
       "slug": "cake-smash-photography",
