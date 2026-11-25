@@ -582,6 +582,7 @@ export const services: Record<string, ServicePage> = {
       { label: "View the Milestone Gallery", href: "/gallery/milestone" },
       { label: "Birthday Party Photography", href: "/sessions/birthday-party-photography" },
       { label: "First Birthday Photoshoot", href: "/sessions/first-birthday-photography" },
+      { label: "Cake Smash Photography", href: "/sessions/cake-smash-photography" },
       { label: "What Is an Upsherin?", href: "/blog/what-is-an-upsherin" },
       { label: "Newborn Photography", href: "/sessions/newborn-photography" },
       { label: "Engagement Photography", href: "/sessions/engagement-photography" },
@@ -1486,6 +1487,7 @@ export const services: Record<string, ServicePage> = {
     related: [
       { label: "Milestone Photography", href: "/sessions/milestone-photography" },
       { label: "First Birthday Photoshoot", href: "/sessions/first-birthday-photography" },
+      { label: "Cake Smash Photography", href: "/sessions/cake-smash-photography" },
       { label: "Bar and Bat Mitzvahs", href: "/sessions/bar-mitzvah-photography" },
       { label: "What Is an Upsherin?", href: "/blog/what-is-an-upsherin" },
       { label: "View the Milestone Gallery", href: "/gallery/milestone" },
@@ -1634,6 +1636,7 @@ export const services: Record<string, ServicePage> = {
       { label: "Milestone Photography", href: "/sessions/milestone-photography" },
       { label: "Newborn Photography", href: "/sessions/newborn-photography" },
       { label: "Birthday Party Photography", href: "/sessions/birthday-party-photography" },
+      { label: "Cake Smash Photography", href: "/sessions/cake-smash-photography" },
       { label: "Sessions and Pricing", href: "/sessions" },
     ],
     cta: {
@@ -1642,6 +1645,152 @@ export const services: Record<string, ServicePage> = {
       button: "Plan the Session",
     },
     serviceType: "Milestone Photography",
+  },
+
+  "cake-smash-photography": {
+    slug: "cake-smash-photography",
+    shortName: "Cake Smash Sessions",
+    title: "Cake Smash Photographer in Skokie and the North Shore",
+    description:
+      "Cake smash photographer for Skokie, Evanston, Wilmette and Chicago's North Shore. Sessions at home or outdoors in natural light, from $300.",
+    eyebrow: "Skokie and Chicago North Shore",
+    h1: "Cake Smash Photography",
+    tagline: "A few clean portraits, one cake, and whatever your baby decides to do with it.",
+    heroImage: "/photos/shilo-upshirin-birthday/05-grandma-kiss-cake.jpg",
+    heroAlt: "Grandmother kissing her granddaughter's cheek while the little girl still has frosting on her face after birthday cake",
+    cardBlurb: "A cake smash session at home in {town} or at a park nearby, with clean portraits first and the cake at the end.",
+    intro: [
+      {
+        heading: "Looking for a cake smash photographer near me?",
+        paragraphs: [
+          "I am a cake smash photographer for families in Skokie, Evanston, Lincolnwood, Wilmette and across Chicago's North Shore, and I come to you: your home or a park nearby, in natural light, with no studio. Cake smash sessions use my regular packages, starting at $300 for a 30-minute mini session.",
+          "A cake smash photoshoot is a short session around your baby's first birthday where they meet a cake of their very own, usually for the first time. Some babies dive in with both hands. Some poke it once and look at you for help. Either way, the photos end up looking like your baby at one.",
+        ],
+      },
+      {
+        heading: "How does a cake smash session work?",
+        paragraphs: [
+          "A cake smash session runs in three parts: a few clean portraits first, then the cake, then a bath or cleanup moment if your family wants it. Starting clean means you get photos of your baby's face and outfit before the frosting arrives, plus a few with parents and siblings while everyone is still presentable.",
+          "Then the cake comes out, and I follow your baby's lead. I stay low and close, and nobody needs to direct anything. If you want the bath at the end, those bubbly, frosting-streaked photos are often the sweetest of the whole session.",
+        ],
+      },
+      {
+        heading: "What is the best age for a cake smash photoshoot?",
+        paragraphs: [
+          "The best time for a cake smash is around the first birthday, when your baby can sit up steadily, grab with both hands and is curious about everything in front of them. A few weeks before or after the birthday works just as well, and a session before the party means the photos can be ready to share.",
+          "Timing within the day matters even more than the date. A baby who just woke up from a nap and had a little something to eat is the happiest version of themselves, so we plan the session around naps instead of the other way around.",
+        ],
+      },
+      {
+        heading: "Can we do a cake smash at home or outdoors?",
+        paragraphs: [
+          "Yes, a cake smash can happen at home or outdoors. At home we work near your brightest window, on a floor or spot you do not mind getting messy, with the bath just down the hall. Outdoors works well in warmer months at a backyard or a quiet park with shade, where a little frosting on the grass is no big deal.",
+          "We will talk through the spot, the cake and the outfit before the day, so the session itself can be easy.",
+        ],
+      },
+    ],
+    includes: {
+      heading: "What you get",
+      items: [
+        { label: "At home or outdoors", text: "your living room, your backyard, or a park nearby" },
+        { label: "Clean portraits first", text: "your baby and family before the frosting arrives" },
+        { label: "The cake smash itself", text: "every grab, taste and surprised face" },
+        { label: "Optional bath or cleanup photos", text: "if your family wants that part too" },
+        { label: "Professionally edited images", text: "delivered in a private online gallery" },
+        { label: "Full print rights", text: "for the first birthday album, cards and the wall" },
+      ],
+    },
+    why: {
+      heading: "What makes cake smash photos work",
+      items: [
+        {
+          title: "Plan around the nap, not the clock.",
+          body: "A rested, fed baby is curious about the cake. A tired one is not. Tell me your baby's schedule and we will pick the time that fits it.",
+        },
+        {
+          title: "Clean first, cake last.",
+          body: "Once the frosting starts, there is no going back. Portraits and family photos come first, so you have both versions of the day.",
+        },
+        {
+          title: "A simple cake photographs best.",
+          body: "Soft colors and a plain shape keep the attention on your baby's face, not on the decorations.",
+        },
+        {
+          title: "There is no wrong reaction.",
+          body: "Some babies smash, some taste politely, some cry for a minute and then laugh. Every one of those is a real photo of your baby at one.",
+        },
+        {
+          title: "Expect a mess, and plan where it goes.",
+          body: "We choose a spot you do not mind getting sticky, and keep the bath or cleanup close by.",
+        },
+      ],
+    },
+    pricing: {
+      heading: "How much does a cake smash photographer cost?",
+      text: `Cake smash sessions use my standard packages: $300 for a 30-minute mini with 10+ edited images, $425 for a 60-minute Classic with 25+, and $550 for a 90-minute Full session with 40+. There is no separate cake smash price. The Classic usually fits best, because it leaves time for clean portraits, the cake and the cleanup without rushing your baby. ${pricingNote}`,
+    },
+    faqs: [
+      {
+        question: "How much does a cake smash photoshoot cost?",
+        answer:
+          "My cake smash sessions use the standard packages, from $300 for a 30-minute mini to $550 for a 90-minute Full session, with edited images and full print rights included. The $425 Classic usually fits best, with time for portraits, the cake and the cleanup.",
+      },
+      {
+        question: "Can a cake smash be done at home or outdoors?",
+        answer:
+          "Yes, both work. At home we set up near your brightest window with the bath close by, and outdoors a backyard or a quiet park with shade works well in warmer months. I do not use a studio.",
+      },
+      {
+        question: "How messy does a cake smash get?",
+        answer:
+          "Usually very messy, and that is part of the fun. We do the clean portraits first, pick a spot you do not mind getting sticky, and keep the bath or cleanup close by.",
+      },
+      {
+        question: "How long is a cake smash session?",
+        answer:
+          "A cake smash can fit a 30-minute mini, but most families choose the 60-minute Classic. It leaves time for clean portraits first, the cake, and a bath or cleanup without rushing your baby.",
+      },
+      {
+        question: "When should I book a cake smash session?",
+        answer:
+          "Reach out a few weeks before your baby's first birthday so we can find a date and a time that fits their naps. A session before the party means your photos can be ready to share.",
+      },
+      {
+        question: "What is the best age for cake smash photos?",
+        answer:
+          "Around the first birthday, when your baby sits steadily, grabs with both hands and is curious about everything. A few weeks either side of the birthday works just as well.",
+      },
+    ],
+    faqHeading: "Common questions about cake smash photography",
+    proof: [
+      {
+        title: "Birthday party and first haircut celebration",
+        href: "/gallery/milestone/shilo-3rd-birthday-upshirin",
+        blurb: "Shilo's third birthday and upsherin, from the farm cake and candles to a frosting-covered kiss from grandma.",
+      },
+      {
+        title: "In-home family session in West Rogers Park",
+        href: "/gallery/family/west-rogers-park-9-month-family-session",
+        blurb: "A nine-month milestone at home: couch cuddles, crib peekaboo and a lot of laughing.",
+      },
+      {
+        title: "In-home newborn session in Skokie",
+        href: "/gallery/newborn/cooper-family-welcome-baby-billie",
+        blurb: "Where the first year starts: baby Billie at home by the window light.",
+      },
+    ],
+    related: [
+      { label: "First Birthday Photoshoot", href: "/sessions/first-birthday-photography" },
+      { label: "Birthday Party Photography", href: "/sessions/birthday-party-photography" },
+      { label: "Milestone Photography", href: "/sessions/milestone-photography" },
+      { label: "Sessions and Pricing", href: "/sessions" },
+    ],
+    cta: {
+      heading: "Planning a cake smash?",
+      text: "Tell me your baby's birthday, their nap schedule, and whether home or a park feels right. I will suggest a time and a package.",
+      button: "Plan the Session",
+    },
+    serviceType: "Cake Smash Photography",
   },
 
   "christmas-mini-sessions": {
