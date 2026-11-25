@@ -401,7 +401,7 @@
       "type": "service",
       "status": "in_review",
       "branch": "content/cake-smash-photography",
-      "pr": null,
+      "pr": 73,
       "updatedAt": "2026-11-25",
       "phase": 1,
       "primaryKeyword": "cake smash photographer",
