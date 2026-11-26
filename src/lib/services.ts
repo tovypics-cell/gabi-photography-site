@@ -584,6 +584,7 @@ export const services: Record<string, ServicePage> = {
       { label: "First Birthday Photoshoot", href: "/sessions/first-birthday-photography" },
       { label: "Cake Smash Photography", href: "/sessions/cake-smash-photography" },
       { label: "What Is an Upsherin?", href: "/blog/what-is-an-upsherin" },
+      { label: "Baby's First Year Photo Plan", href: "/blog/babys-first-year-photo-plan" },
       { label: "Newborn Photography", href: "/sessions/newborn-photography" },
       { label: "Engagement Photography", href: "/sessions/engagement-photography" },
       { label: "Sessions and Pricing", href: "/sessions" },
@@ -1356,6 +1357,7 @@ export const services: Record<string, ServicePage> = {
       { label: "Newborn Photography", href: "/sessions/newborn-photography" },
       { label: "When to Take Maternity Photos", href: "/blog/maternity-photos-when-to-book-what-to-wear" },
       { label: "When to Book Newborn Photos", href: "/blog/when-to-book-newborn-photos-what-to-expect" },
+      { label: "Baby's First Year Photo Plan", href: "/blog/babys-first-year-photo-plan" },
     ],
     cta: {
       heading: "Expecting?",
@@ -1637,6 +1639,7 @@ export const services: Record<string, ServicePage> = {
       { label: "Newborn Photography", href: "/sessions/newborn-photography" },
       { label: "Birthday Party Photography", href: "/sessions/birthday-party-photography" },
       { label: "Cake Smash Photography", href: "/sessions/cake-smash-photography" },
+      { label: "Baby's First Year Photo Plan", href: "/blog/babys-first-year-photo-plan" },
       { label: "Sessions and Pricing", href: "/sessions" },
     ],
     cta: {
