@@ -399,7 +399,7 @@
     {
       "slug": "cake-smash-photography",
       "type": "service",
-      "status": "in_review",
+      "status": "published",
       "branch": "content/cake-smash-photography",
       "pr": 73,
       "updatedAt": "2026-11-25",
@@ -408,7 +408,8 @@
       "sourceDraft": null,
       "notes": "Confirmed by Omer 2026-11-15: Gabi offers maternity, Christmas and holiday, and cake smash sessions. US monthly searches (OpenSEO, 2026-11-15): cake smash photographer near me 590, cake smash photography near me 390, cake smash photo, photoshoot and photos near me 260 each, cake smash photoshoot 2,400, first birthday cake smash photoshoot 260. Live Google results near Skokie: 9 of the top 10 are individual photographers' sites. Search Console showed /sessions/first-birthday-photography at about 4 for 'cake smash photographer north shore'. No cake smash gallery exists: never say Gabi has photographed one; write in the future tense. Do not invent who provides the cake, backdrop, props, outfits or cleanup, and no studio: sessions happen at the family's home or outdoors in natural light. Prices only from site.pricing / the packages list; no special cake smash price. Title: Cake Smash Photographer in Skokie and the North Shore (or close, under 60 characters). Open with a two-sentence answer to 'cake smash photographer near me'. Cover how a cake smash session runs (a few clean portraits first, then the cake, then the bath or cleanup moment if the family wants it), the best age (around the first birthday), timing around naps, and what to plan. FAQs: price, at home or outdoors, how messy, how long, when to book. Link /sessions/first-birthday-photography both ways and /sessions/birthday-party-photography. Keep the first birthday page about the milestone and party; this page owns 'cake smash'. Travel: only Gabi's exact sentence. Never name or compare other photographers.",
       "searchVolume": 590,
-      "addedAt": "2026-11-15"
+      "addedAt": "2026-11-15",
+      "publishedAt": "2026-11-25"
     },
     {
       "slug": "rewrite-newborn-photography-2",
