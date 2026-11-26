@@ -539,8 +539,10 @@
       "type": "guide",
       "primaryKeyword": "newborn and family photoshoot",
       "sourceDraft": null,
-      "status": "queued",
+      "status": "in_review",
+      "branch": "content/babys-first-year-photo-plan",
       "pr": null,
+      "updatedAt": "2026-11-26",
       "phase": 1,
       "notes": "Newborn at 5 to 14 days, 3 months, 6 to 9 month sitter, first birthday. Link newborn, milestone, first-birthday and maternity-and-newborn pages. Proof: newborn galleries and the 9-month session.",
       "searchVolume": 3600

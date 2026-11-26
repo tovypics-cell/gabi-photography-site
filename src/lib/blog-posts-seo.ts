@@ -995,4 +995,129 @@ export const seoBlogPosts: BlogPost[] = [
 <p>Mazel tov. <a href="/contact">Tell me the date, the place and who will be there</a>, and I will suggest a session and a simple plan for the photos, so you can be in the moment while the first lock is cut.</p>
 `,
   },
+  {
+    slug: "babys-first-year-photo-plan",
+    title: "Baby's First Year Photo Plan: From a Newborn and Family Photoshoot to the First Birthday",
+    excerpt:
+      "When to photograph your baby's first year: a newborn and family photoshoot at 5 to 14 days, smiles at 3 months, a sitter session at 6 to 9 months, and the first birthday.",
+    date: "2026-11-26",
+    category: "Newborn",
+    image: "/photos/hoffman-family/02-family-couch.jpg",
+    imageAlt: "Parents on a couch by a bright window holding their two-week-old baby while kissing and hugging their two older children",
+    showsPrices: true,
+    seoTitle: "Baby's First Year Photo Plan: Newborn to One | Tovy Photography",
+    seoDescription:
+      "Plan your baby's first year of photos: a newborn and family photoshoot at 5 to 14 days, 3 months, a 6 to 9 month sitter session and the first birthday.",
+    faqs: [
+      {
+        question: "When should you take baby photos in the first year?",
+        answer:
+          "The four ages I suggest are newborn at 5 to 14 days, about 3 months for the first real smiles, 6 to 9 months when baby can sit on their own, and the first birthday. You do not need all four. Even two of them, the newborn session and the first birthday, show how much a year changes.",
+      },
+      {
+        question: "When is the best time for a newborn and family photoshoot?",
+        answer:
+          "The best time is when your baby is 5 to 14 days old, when they are still sleepy and curl up easily. I photograph newborn sessions at home, with parents and older siblings in the photos too, and we hold a tentative date during your third trimester and confirm it once the baby arrives.",
+      },
+      {
+        question: "What is a sitter session?",
+        answer:
+          "A sitter session is a baby milestone session at about 6 to 9 months, once your baby can sit up without help. Babies at this age are smiley and curious but not yet crawling away, so it is one of the easiest and happiest sessions of the first year.",
+      },
+      {
+        question: "How much does a first year photo plan cost?",
+        answer:
+          "Each session uses my standard packages: $300 for a 30-minute mini with 10+ edited images, $425 for a 60-minute Classic with 25+, and $550 for a 90-minute Full session with 40+. Many families choose a Classic or Full for the newborn session and a mini for the 3 and 6 to 9 month sessions.",
+      },
+      {
+        question: "Should first year photos be taken at home?",
+        answer:
+          "For most babies, yes. Home keeps naps and feeds on schedule, and photographing every session by the same window makes the year read like one story. Older babies and first birthdays can also be photographed at a park nearby.",
+      },
+      {
+        question: "When should I book first year photos?",
+        answer:
+          "Book the newborn session during your third trimester, ideally around 30 to 34 weeks. The later sessions can be planned a few weeks ahead, and I am happy to pencil in the next age at the end of each session.",
+      },
+    ],
+    content: `
+<p>A newborn and family photoshoot at 5 to 14 days is the first of four sessions I suggest for a baby's first year: newborn, about 3 months, a sitter session at 6 to 9 months, and the first birthday. I am a family and newborn photographer in Skokie, and I photograph these sessions at home across Chicago's North Shore. Here is what each age looks like, why it is worth photographing, and how to plan the year without it feeling like a project.</p>
+
+<img src="/photos/hoffman-family/02-family-couch.jpg" alt="Parents on a couch by a bright window holding their two-week-old baby while kissing and hugging their two older children" loading="lazy" />
+
+<h2>When should you take baby photos in the first year?</h2>
+
+<p>Take them at the ages when your baby changes the most: newborn, 3 months, 6 to 9 months and one year. Each of those stages lasts only a few weeks, and each one looks completely different from the one before. You do not need all four. A newborn session and a first birthday session alone tell a whole year. Adding a sitter session in the middle is the one most families tell me they are glad they did.</p>
+
+<h3>Do we need a session every month?</h3>
+
+<p>No. Monthly photos on a blanket at home are lovely, and you should keep taking them on your phone. Professional sessions work best spaced out, at the stages where your baby has truly become someone new.</p>
+
+<h2>Newborn and family photoshoot: 5 to 14 days</h2>
+
+<h3>When is the best time for a newborn and family photoshoot?</h3>
+
+<p>The best time is when your baby is 5 to 14 days old. During this window babies are sleepier, curlier, and still have that brand-new softness. I come to your home, so you do not need to pack a diaper bag or drive anywhere, and I work around feeds, diaper changes and naps.</p>
+
+<p>It is a family session as much as a newborn session. Parents, older siblings and grandparents if they are nearby are all part of it, and I photograph the family frames first while everyone is fresh. In the Hoffman family's session, baby Ava was two weeks old and her big brother and sister held her, lay next to her and squeezed onto the couch for the family photos. You can see the whole session in the <a href="/gallery/newborn/hoffman-family-welcome-baby-ava">in-home newborn lifestyle gallery</a>.</p>
+
+<h3>What if my baby is older than two weeks?</h3>
+
+<p>We can still do a beautiful session. Baby Henry was one month old for his <a href="/gallery/newborn/nemsick-family-welcome-baby-henry">downtown Chicago newborn session</a>, more awake and just as sweet. The photos just look a little different, with more open eyes and fewer tucked, curled poses.</p>
+
+<h3>When should I book the newborn session?</h3>
+
+<p>Book during your third trimester, ideally around 30 to 34 weeks. We set a tentative date around your due date and confirm it once your baby arrives. If you would also like maternity photos, my <a href="/sessions/maternity-and-newborn-photography">maternity and newborn page</a> explains how I plan the two sessions together. For more on timing, read <a href="/blog/when-to-book-newborn-photos-what-to-expect">when to take newborn photos and when to book</a>.</p>
+
+<h2>3 months: the first smiles</h2>
+
+<h3>Why take photos at 3 months?</h3>
+
+<p>Three months is when most babies start smiling back at you, holding their heads up and reaching for faces. The sleepy newborn becomes a little person who looks right into the camera. This session is usually short, at home, and mostly in a parent's arms or on a soft blanket for tummy time.</p>
+
+<p>A 30-minute mini session is usually enough at this age. Babies tire quickly, and the best photos come in the first stretch after a nap and a feed.</p>
+
+<h2>Sitter session: 6 to 9 months</h2>
+
+<h3>What is a sitter session?</h3>
+
+<p>A sitter session is a milestone session at about 6 to 9 months, once your baby can sit up on their own. Sitter sessions are my favorite. Baby is sturdy enough to sit, delighted by everything, and not yet fast enough to crawl out of frame.</p>
+
+<img src="/photos/west-rogers-park-9-month-family/11.jpg" alt="Smiling nine-month-old baby in a knit sweater sitting on a cream blanket held up behind him by his parents at home" loading="lazy" />
+
+<p>I photographed a nine-month milestone session for a family at home in West Rogers Park: cuddles on the couch, peekaboo through the crib, and a blanket held up behind him like a little backdrop. The parents were in it too, lifting him over the couch and tickling him until he laughed. See the <a href="/gallery/family/west-rogers-park-9-month-family-session">West Rogers Park nine-month session</a>.</p>
+
+<h3>What should my baby wear for a sitter session?</h3>
+
+<p>Soft, simple clothes in neutral or warm colors photograph best, like a knit sweater with plain pants or a simple romper. Skip big logos and anything that needs constant fixing, and bring one change of clothes in case of a spill.</p>
+
+<h2>First birthday: 12 months</h2>
+
+<h3>When should we take first birthday photos?</h3>
+
+<p>Any time in the weeks around the birthday works, and a few days before the party is often easiest, so the photos are ready to share and nobody is trying to pose a tired baby in the middle of the celebration. A first birthday session includes portraits of your one-year-old, photos with the family, and, if you want it, a cake at the end.</p>
+
+<p>We do the clean portraits first, then bring out the cake. My <a href="/sessions/first-birthday-photography">first birthday photography page</a> covers how I plan the session, and the <a href="/sessions/cake-smash-photography">cake smash page</a> covers the messy part.</p>
+
+<h2>How to plan the whole first year</h2>
+
+<h3>Should first year photos be taken at home?</h3>
+
+<p>For most babies, yes. Home means naps on schedule, favorite toys within reach, and photos in the space they are growing up in. If we photographed your newborn session by the nursery window, we come back to it. The same home and the same light are what make a first-year set feel like a story instead of four separate galleries.</p>
+
+<p>Older babies and first birthdays can also be photographed outdoors in spring, summer and early fall, at a quiet park with shade and soft grass. We can meet at a park near you, or I will suggest one when we plan.</p>
+
+<h3>How much does a first year photo plan cost?</h3>
+
+<p>Each session uses my standard packages. The Mini is $300 for 30 minutes with 10+ edited images, the Classic is $425 for 60 minutes with 25+, and the Full is $550 for 90 minutes with 40+. Many families choose a Classic or Full for the newborn session, when siblings and family frames need more time, and a Mini for the 3 month and sitter sessions. Every session includes a private online gallery and full print rights. A $50 travel fee may apply. If you're curious, just ask! All of my packages are on the <a href="/sessions">sessions and pricing page</a>, and my <a href="/sessions/milestone-photography">milestone photography page</a> has more on the sessions after the newborn one.</p>
+
+<h3>Do I have to book all four sessions at once?</h3>
+
+<p>No. Most families book the newborn session first and decide about the rest as the year goes on. At the end of each session I am happy to pencil in the next age, so you are not trying to remember it in the middle of a busy month.</p>
+
+<h2>Planning your baby's first year?</h2>
+
+<p><a href="/contact">Tell me your due date or your baby's age</a>, and which stages matter most to you. I will suggest a simple plan for the year, starting with the session that comes next.</p>
+`,
+  },
 ];
